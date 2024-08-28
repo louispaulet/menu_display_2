@@ -1,7 +1,7 @@
 // src/pages/Homepage.jsx
 
 import MenuPreview from '../components/MenuPreview';
-import menuData from '../menuData.js';
+import menuData from '../menuData';
 
 function Homepage() {
   return (
@@ -15,6 +15,7 @@ function Homepage() {
         {menuData.map((menu, index) => (
           <MenuPreview
             key={index}
+            id={index} // Pass the index as the ID
             restaurantName={menu.restaurant_name}
             chefName={menu.chef_name}
             location={menu.location}
