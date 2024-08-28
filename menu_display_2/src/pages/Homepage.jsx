@@ -7,7 +7,7 @@ function Homepage() {
   return (
     <div className="p-8">
       <header className="text-center mb-8">
-        <h1 className="text-4xl font-bold mb-2">🍽️ World of Food Photography 📸</h1>
+        <h1 className="text-4xl font-bold mb-2">🍽️ Exquisite Menus V2</h1>
         <p className="text-lg text-gray-600">Capturing the beauty and essence of culinary delights from around the globe.</p>
       </header>
 
