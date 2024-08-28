@@ -8,6 +8,13 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
     const courseDescriptionEncoded = encodeURIComponent(courseDescription.replace(/ /g, '_'));
     return `${baseImageUrl}${chefNameEncoded}-${restaurantNameEncoded}-${courseNameEncoded}-${courseDescriptionEncoded}.webp`;
   };
+  
+  const baseRestaurantImageUrl = "https://raw.githubusercontent.com/louispaulet/menu_display_2/main/restaurant_pictures/";
+
+  const generateRestaurantImageUrl = (restaurantName) => {
+    const restaurantNameEncoded = encodeURIComponent(restaurantName.replace(/ /g, '_'));
+    return `${baseRestaurantImageUrl}${restaurantNameEncoded}.webp`;
+  };
 
   return (
     <div className="p-8 bg-white shadow-md rounded-lg border border-gray-200 max-w-screen-lg mx-auto">
@@ -19,7 +26,12 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
       </header>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Dining Room Description</h2>
+      <img
+              src={generateRestaurantImageUrl(restaurantName)}
+              alt={`${restaurantName} image`}
+              className="w-full max-w-md h-auto rounded-lg"
+            />
+        <h2 className="text-2xl font-semibold my-4">Dining Room Description</h2>
         <p className="text-gray-700">{diningRoomDescription}</p>
       </section>
 
