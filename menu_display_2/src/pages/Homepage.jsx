@@ -4,6 +4,7 @@ import MenuPreview from '../components/MenuPreview';
 import menuData from '../menuData';
 
 function Homepage() {
+    
   return (
     <div className="p-8">
       <header className="text-center mb-8">
