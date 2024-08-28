@@ -369,7 +369,7 @@ const menuData = [
     },
     {
       "course": "Petit Fours",
-      "description": "Assorted French petit fours: éclairs, madeleines, and financiers",
+      "description": "Assorted French petit fours éclairs, madeleines, and financiers",
       "price": 25,
       "wine_pairing": "Château La Rame Sainte-Croix-du-Mont 2017"
     }
