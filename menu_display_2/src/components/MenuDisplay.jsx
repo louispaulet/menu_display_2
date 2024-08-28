@@ -1,36 +1,56 @@
-// src/components/MenuDisplay.jsx
-
 function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRoomDescription, grandTotal }) {
+  const baseImageUrl = "https://raw.githubusercontent.com/louispaulet/menu_display_2/main/dish_pictures/";
+
+  const generateImageUrl = (courseName, courseDescription) => {
+    const chefNameEncoded = encodeURIComponent(chefName.replace(/ /g, '_'));
+    const restaurantNameEncoded = encodeURIComponent(restaurantName.replace(/ /g, '_'));
+    const courseNameEncoded = encodeURIComponent(courseName.replace(/ /g, '_'));
+    const courseDescriptionEncoded = encodeURIComponent(courseDescription.replace(/ /g, '_'));
+    return `${baseImageUrl}${chefNameEncoded}-${restaurantNameEncoded}-${courseNameEncoded}-${courseDescriptionEncoded}.webp`;
+  };
+
   return (
-    <div className="p-8 bg-white shadow-md rounded-lg border border-gray-200">
-      <header className="mb-8">
+    <div className="p-8 bg-white shadow-md rounded-lg border border-gray-200 max-w-screen-lg mx-auto">
+      {/* Display restaurant, chef, location, and dining room description only once */}
+      <header className="mb-8 text-center md:text-left">
         <h1 className="text-3xl font-bold mb-4">{restaurantName}</h1>
         <p className="text-lg text-gray-600"><strong>Chef:</strong> {chefName}</p>
         <p className="text-lg text-gray-600"><strong>Location:</strong> {location}</p>
       </header>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Tasting Menu</h2>
-        <ul>
-          {tastingMenu.map((item, index) => (
-            <li key={index} className="mb-4">
-              <h3 className="text-xl font-semibold">{item.course}</h3>
-              <p className="text-gray-700">{item.description}</p>
-              <p className="text-gray-500"><strong>Price:</strong> ${item.price}</p>
-              <p className="text-gray-500"><strong>Wine Pairing:</strong> {item.wine_pairing}</p>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">Dining Room Description</h2>
         <p className="text-gray-700">{diningRoomDescription}</p>
       </section>
 
-      <footer>
-        <h2 className="text-2xl font-semibold">Total Price</h2>
-        <p className="text-lg text-gray-700">${grandTotal}</p>
+      {/* Display each dish with its own image */}
+      {tastingMenu.map((item, index) => (
+        <div key={index} className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+          {/* Column 1: Text Information */}
+          <div className="flex flex-col justify-center text-center md:text-justified">
+            <section className="mb-4">
+              <h3 className="text-xl font-semibold">{item.course}</h3>
+              <p className="text-gray-700">{item.description}</p>
+              <p className="text-gray-500"><strong></strong> - ${item.price} - </p>
+              <p className="text-gray-500"><strong>Wine Pairing:</strong> {item.wine_pairing}</p>
+            </section>
+          </div>
+
+          {/* Column 2: Image */}
+          <div className="flex justify-center md:justify-start">
+            <img
+              src={generateImageUrl(item.course, item.description)}
+              alt={`${item.course} image`}
+              className="w-full max-w-md h-auto rounded-lg"
+            />
+          </div>
+        </div>
+      ))}
+
+      {/* Display total price only once */}
+      <footer className="mt-8">
+        <h2 className="text-2xl font-semibold text-center md:text-left">Total Price</h2>
+        <p className="text-lg text-gray-700 text-center md:text-left">${grandTotal}</p>
       </footer>
     </div>
   );
