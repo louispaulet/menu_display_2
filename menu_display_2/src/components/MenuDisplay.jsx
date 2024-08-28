@@ -1,5 +1,3 @@
-// src/components/MenuDisplay.jsx
-
 function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRoomDescription, grandTotal }) {
   const baseImageUrl = "https://raw.githubusercontent.com/louispaulet/menu_display_2/main/dish_pictures/";
 
@@ -12,7 +10,7 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
   };
 
   return (
-    <div className="p-8 bg-white shadow-md rounded-lg border border-gray-200">
+    <div className="p-8 bg-white shadow-md rounded-lg border border-gray-200 max-w-screen-lg mx-auto">
       {/* Display restaurant, chef, location, and dining room description only once */}
       <header className="mb-8 text-center md:text-left">
         <h1 className="text-3xl font-bold mb-4">{restaurantName}</h1>
