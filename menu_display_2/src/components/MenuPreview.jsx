@@ -19,7 +19,7 @@ function MenuPreview({ restaurantName, chefName, location, numberOfCourses, tota
               className="w-full max-w-md h-auto rounded-lg"
             />
           </div>
-          <h2 className="text-xl font-bold my-2 text-center">{restaurantName}</h2>
+          <h2 className="text-3xl my-2 text-center font-playfair">{restaurantName}</h2>
       <p className="text-gray-600 mb-2 flex items-center">
         <GiChefToque className="mr-2" /> {chefName}
       </p>

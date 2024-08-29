@@ -5,7 +5,7 @@ function Header() {
     <header className="bg-gradient-to-r from-red-400 via-yellow-500 to-orange-500 text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
         <a href="/" className="text-2xl font-bold font-montserrat">
-          <h1>🍽️ Exquisite Menus V2</h1>
+          <h1>🍽️ Exquisite Menus</h1>
         </a>
         <nav>
           <ul className="flex space-x-4">

@@ -20,7 +20,7 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
     <div className="p-8 bg-white shadow-md rounded-lg border border-gray-200 max-w-screen-lg mx-auto">
       {/* Display restaurant, chef, location, and dining room description only once */}
     <header className="mb-8 text-center">
-      <h1 className="text-4xl font-bold mb-2">{restaurantName}</h1>
+      <h1 className="text-5xl font-playfair mb-2">{restaurantName}</h1>
         <p className="text-center text-gray-600 text-xl mb-4">
           {chefName} @ {location}
         </p>
@@ -36,7 +36,7 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
       <p className="text-gray-700 text-left">{diningRoomDescription}</p>
     </section>
 
-    <h2 className="text-3xl font-bold mb-2 text-center mb-8"> The Menu </h2>
+    <h2 className="text-2xl font-semibold my-8 text-center"> The Menu </h2>
 
       {/* Display each dish with its own image */}
       {tastingMenu.map((item, index) => (
