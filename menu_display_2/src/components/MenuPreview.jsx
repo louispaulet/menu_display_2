@@ -3,7 +3,7 @@ import { GiChefToque } from 'react-icons/gi';  // Chef icon
 import { MdLocationOn, MdRestaurantMenu, MdAttachMoney } from 'react-icons/md';  // Location, Courses, and Price icons
 
 function MenuPreview({ restaurantName, chefName, location, numberOfCourses, totalPrice, id }) {
-  const baseImageUrl = "https://raw.githubusercontent.com/louispaulet/menu_display_2/main/restaurant_pictures/";
+  const baseImageUrl = "https://raw.githubusercontent.com/louispaulet/menu_display_2/main/restaurant_pictures/thumbnails";
 
   const generateImageUrl = (restaurantName) => {
     const restaurantNameEncoded = encodeURIComponent(restaurantName.replace(/ /g, '_'));
