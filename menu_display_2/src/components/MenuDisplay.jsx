@@ -47,7 +47,7 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
               <h3 className="text-xl font-semibold">{item.course}</h3>
               <p className="text-gray-700">{item.description}</p>
               <p className="text-gray-500"><strong></strong> - ${item.price} - </p>
-              <p className="text-gray-500"><strong>Wine Pairing:</strong> {item.wine_pairing}</p>
+              <p className="text-gray-500 italic"><strong>Wine Pairing:</strong> {item.wine_pairing}</p>
             </section>
           </div>
 
