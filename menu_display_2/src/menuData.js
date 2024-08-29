@@ -605,7 +605,7 @@ const menuData = [
     },
     {
       "course": "Petit Fours",
-      "description": "Assorted vegan petit fours: passion fruit truffles, matcha macarons, and raspberry-filled chocolates",
+      "description": "Assorted vegan petit fours- passion fruit truffles, matcha macarons, and raspberry-filled chocolates",
       "price": 200,
       "wine_pairing": "Louis Roederer Cristal 2012"
     }
