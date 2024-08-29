@@ -4,7 +4,7 @@ function V1() {
   return (
     <div className="p-8 max-w-screen-lg mx-auto">
       <header className="text-center mb-8">
-        <h1 className="text-4xl font-bold mb-2">Exquisite Menus V1</h1>
+        <h1 className="text-4xl font-bold mb-2 font-montserrat">Exquisite Menus V1</h1>
         <p className="text-lg text-gray-600">The previous version, made with Stable Diffusion 1.5</p>
         <a
           href="https://exquisite-menus.thefrenchartist.dev/"

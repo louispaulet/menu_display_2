@@ -4,7 +4,7 @@ function About() {
   return (
     <div className="p-8 max-w-screen-lg mx-auto">
       <header className="text-center mb-8">
-        <h1 className="text-4xl font-bold mb-2">🤖 About Our Project</h1>
+        <h1 className="text-4xl font-bold mb-2 font-montserrat">🤖 About Our Project</h1>
         <p className="text-lg text-gray-600">Exquisite Menus, an innovative fusion of AI and culinary creativity.</p>
       </header>
 
