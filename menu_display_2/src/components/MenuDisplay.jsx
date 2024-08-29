@@ -19,21 +19,24 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
   return (
     <div className="p-8 bg-white shadow-md rounded-lg border border-gray-200 max-w-screen-lg mx-auto">
       {/* Display restaurant, chef, location, and dining room description only once */}
-      <header className="mb-8 text-center md:text-left">
-        <h1 className="text-3xl font-bold mb-4">{restaurantName}</h1>
-        <p className="text-lg text-gray-600"><strong>Chef:</strong> {chefName}</p>
-        <p className="text-lg text-gray-600"><strong>Location:</strong> {location}</p>
-      </header>
+    <header className="mb-8 text-center">
+      <h1 className="text-4xl font-bold mb-2">{restaurantName}</h1>
+        <p className="text-center text-gray-600 text-xl mb-4">
+          {chefName} @ {location}
+        </p>
+    </header>
 
-      <section className="mb-8">
+    <section className="mb-8 text-center">
       <img
-              src={generateRestaurantImageUrl(restaurantName)}
-              alt={`${restaurantName} image`}
-              className="w-full max-w-md h-auto rounded-lg"
-            />
-        <h2 className="text-2xl font-semibold my-4">Dining Room Description</h2>
-        <p className="text-gray-700">{diningRoomDescription}</p>
-      </section>
+        src={generateRestaurantImageUrl(restaurantName)}
+        alt={`${restaurantName} image`}
+        className="w-full max-w-md h-auto rounded-lg mx-auto"
+      />
+      <h2 className="text-2xl font-semibold my-4">Dining Room Description</h2>
+      <p className="text-gray-700 text-left">{diningRoomDescription}</p>
+    </section>
+
+    <h2 className="text-3xl font-bold mb-2 text-center mb-8"> The Menu </h2>
 
       {/* Display each dish with its own image */}
       {tastingMenu.map((item, index) => (
