@@ -64,7 +64,21 @@ const hotSauceData = {
         "bottling_date": "2023-10-20",
         "hotness_level": 7,
         "description": "Smoky Oak Inferno is a sophisticated hot sauce crafted through an artisanal process of aging in charred oak barrels for six months. This patient maturation process infuses the sauce with a deep, smoky aroma and a subtle sweetness reminiscent of fine bourbon. The sauce features a blend of smoked jalape\u00f1os and habaneros for a complex and robust heat, balanced with hints of garlic, onion, and a touch of molasses. Ideal for those who appreciate a refined heat in their culinary experiences. The oak barrel aging adds layers of flavor depth, making it perfect for both gourmet dishes and everyday fare."
+    },
+        "Truffle Blaze": {
+        "name": "Truffle Blaze",
+        "bottling_date": "2023-10-18",
+        "hotness_level": 5,
+        "description": "Truffle Blaze is an exquisite fusion of earthy richness and fiery heat, crafted for those who desire luxury with a kick. This hot sauce combines the robust, aromatic flavor of Italian black truffles with the smoky heat of chipotle peppers. Enhanced with a hint of garlic and a splash of lime, Truffle Blaze delivers a sophisticated balance, making it the perfect companion for grilled meats, creamy pasta, or gourmet pizzas. Every drop promises a taste adventure that dances from deep umami to exhilarating spice, elevating any dish to gourmet status."
+    },
+    "Sweet Sting Honey Fire": {
+        "name": "Sweet Sting Honey Fire",
+        "bottling_date": "2023-11-08",
+        "hotness_level": 4,
+        "description": "Sweet Sting Honey Fire is a delightful blend that marries the natural sweetness of honey with a fiery kick, delivering a perfectly balanced heat. Ideal for those who love a gentle, warm sensation that lingers just enough to tantalize the taste buds. This hot sauce combines the rich, floral notes of locally sourced wildflower honey with a blend of hand-picked chilis, including fresh jalape\u00f1os for a smooth burn and ghost peppers for an unexpected stinger finish. Use it to glaze grilled chicken, drizzle over roasted vegetables, or enhance the flavor of your favorite Sunday brunch spread, making every meal a sweet yet spicy adventure."
     }
 };
+
+
 
 export default hotSauceData;
