@@ -5,6 +5,8 @@ import Homepage from './pages/Homepage';
 import About from './pages/About';
 import Menu from './pages/Menu';
 import V1 from './pages/V1';
+import HotSaucePage from './pages/HotSaucePage'; // Import the HotSaucePage
+import HotSauceDetails from './components/HotSauceDetails'; // Import the HotSauceDetails page
 import NotFound from './pages/NotFound'; // Import the NotFound component
 
 function App() {
@@ -17,7 +19,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/v1" element={<V1 />} />
           <Route path="/menu/:id" element={<Menu />} />
-          <Route path="*" element={<NotFound />} /> {/* Add this line */}
+          <Route path="/hot-sauces" element={<HotSaucePage />} /> 
+          <Route path="/hot-sauce/:id" element={<HotSauceDetails />} /> 
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />
