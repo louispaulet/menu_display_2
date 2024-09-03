@@ -10,6 +10,7 @@ function Header() {
         <nav>
           <ul className="flex space-x-4">
             <li><a href="#" className="hover:underline">Home</a></li>
+            <li><a href="#hot-sauces" className="hover:underline">Hot sauces</a></li>
             <li><a href="#about" className="hover:underline">About</a></li>
             <li><a href="#v1" className="hover:underline">V1</a></li>
           </ul>
