@@ -8,6 +8,7 @@ import V1 from './pages/V1';
 import HotSaucePage from './pages/HotSaucePage'; // Import the HotSaucePage
 import HotSauceDetails from './components/HotSauceDetails'; // Import the HotSauceDetails page
 import NotFound from './pages/NotFound'; // Import the NotFound component
+import Recipe from './components/Recipe'; // Import the Recipe component
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/menu/:id" element={<Menu />} />
           <Route path="/hot-sauces" element={<HotSaucePage />} /> 
           <Route path="/hot-sauce/:id" element={<HotSauceDetails />} /> 
+          <Route path="/recipe/:recipeName" element={<Recipe />} /> {/* New Recipe Route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
