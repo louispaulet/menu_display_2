@@ -15,6 +15,12 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
     const restaurantNameEncoded = encodeURIComponent(restaurantName.replace(/ /g, '_'));
     return `${baseRestaurantImageUrl}${restaurantNameEncoded}.webp`;
   };
+  
+  const getRecipeLink = (course, description) => {
+      const courseEncoded = course.replace(/ /g, '_')
+      const descriptionEncoded = description.replace(/ /g, '_')
+      return `#recipe/${courseEncoded}-${descriptionEncoded}`
+  }
 
   return (
     <div className="p-8 bg-white shadow-md rounded-lg border border-gray-200 max-w-screen-lg mx-auto">
@@ -48,6 +54,7 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
               <p className="text-gray-700">{item.description}</p>
               <p className="text-gray-500"><strong></strong> - ${item.price} - </p>
               <p className="text-gray-500 italic"><strong>Wine Pairing:</strong> {item.wine_pairing}</p>
+              <a className="text-gray-700 underlined" href={getRecipeLink(item.course, item.description)} className="hover:underline"> 🍽️ check recipe</a>
             </section>
           </div>
 
