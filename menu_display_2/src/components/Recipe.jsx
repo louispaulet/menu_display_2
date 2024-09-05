@@ -11,7 +11,7 @@ const Recipe = () => {
     const loadRecipe = async () => {
       try {
         // Dynamically import the markdown file
-        const module = await import(`/dish_recipes/${recipeName}.md`);
+        const module = await import(`./../dish_recipes/${recipeName}.md`);
         const response = await fetch(module.default);
 
         const text = await response.text();
