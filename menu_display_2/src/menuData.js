@@ -1020,7 +1020,7 @@ const menuData = [
             },
             {
                 "course": "Appetizer",
-                "description": "Trio of ceviches: shrimp, tuna, and octopus, with avocado, serrano, and lime",
+                "description": "Trio of ceviches- shrimp, tuna, and octopus, with avocado, serrano, and lime",
                 "price": 30,
                 "wine_pairing": "Albariño Pazo Señorans 2020"
             },
@@ -1154,7 +1154,7 @@ const menuData = [
             },
             {
                 "course": "Dessert",
-                "description": "Chocolate textures: frozen chocolate mousse, chocolate soil, and warm chocolate foam",
+                "description": "Chocolate textures - frozen chocolate mousse, chocolate soil, and warm chocolate foam",
                 "price": 30,
                 "wine_pairing": "Pedro Ximénez Bodegas Toro Albala Don PX Gran Reserva 1987"
             }
