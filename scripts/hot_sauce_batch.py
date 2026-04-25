@@ -32,12 +32,13 @@ from urllib.request import Request, urlopen
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-CSV_PATH = REPO_ROOT / "hot_sauce_requests.csv"
-JSONL_PATH = REPO_ROOT / "hot_sauce_requests.jsonl"
-STATE_PATH = REPO_ROOT / "hot_sauce_batch_state.json"
-OUTPUT_JSONL_PATH = REPO_ROOT / "hot_sauce_batch_output.jsonl"
-ERROR_JSONL_PATH = REPO_ROOT / "hot_sauce_batch_errors.jsonl"
-NEW_IMAGES_DIR = REPO_ROOT / "new_images"
+ARTIFACT_DIR = REPO_ROOT / "artifacts" / "hot_sauce"
+CSV_PATH = ARTIFACT_DIR / "hot_sauce_requests.csv"
+JSONL_PATH = ARTIFACT_DIR / "hot_sauce_requests.jsonl"
+STATE_PATH = ARTIFACT_DIR / "hot_sauce_batch_state.json"
+OUTPUT_JSONL_PATH = ARTIFACT_DIR / "hot_sauce_batch_output.jsonl"
+ERROR_JSONL_PATH = ARTIFACT_DIR / "hot_sauce_batch_errors.jsonl"
+NEW_IMAGES_DIR = ARTIFACT_DIR / "new_images"
 
 API_BASE = os.environ.get("OPENAI_API_BASE", "https://api.openai.com/v1").rstrip("/")
 API_KEY = os.environ.get("OPENAI_API_KEY")
@@ -229,6 +230,7 @@ def generate_csv() -> None:
 
 def build_jsonl() -> None:
     rows = load_rows()
+    JSONL_PATH.parent.mkdir(parents=True, exist_ok=True)
     with JSONL_PATH.open("w", encoding="utf-8") as handle:
         for row in rows:
             body = {
@@ -363,6 +365,7 @@ def download_file(file_id: str, destination: Path) -> None:
 
 
 def save_state(state: dict[str, Any]) -> None:
+    STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
     STATE_PATH.write_text(json.dumps(state, indent=2, ensure_ascii=False), encoding="utf-8")
 
 

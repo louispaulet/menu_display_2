@@ -93,6 +93,41 @@ npm run build
 
 The build output will be generated in the `dist/` directory.
 
+## 🖼️ Recipe Image Batch Workflow
+
+Recipe and menu dish images are generated from the same source paths in `dish_pictures/`. The source of truth for request generation is `menu_display_2/src/menuData.js`, which maps each restaurant, chef, course, and dish description to the matching WebP filename.
+
+Generated manifests and OpenAI batch output are stored under `artifacts/recipe_images/`. Existing WebP backups are written to `backups/` before overwrite.
+
+Useful commands from the repository root:
+
+```bash
+make recipe-images-refresh   # Generate CSV + JSONL and validate all 289 dish image requests
+make recipe-images-submit    # Submit the OpenAI batch request
+make recipe-images-check     # Poll once; downloads and decodes output if complete
+make recipe-images-download  # Download/decode completed output from saved batch state
+make recipe-images-backup    # Zip the current mapped dish_pictures/*.webp files
+make recipe-images-apply     # Backup, convert received PNGs to WebP, and overwrite mapped targets
+```
+
+The recipe image requests use `gpt-image-2`, `1024x1024`, and `medium` quality through `/v1/images/generations`. The generated CSV includes each target WebP path and prompt; the JSONL is ready for OpenAI Batch API upload.
+
+For one-off image conversion:
+
+```bash
+make images-webp IMAGE_INPUT_DIR=/path/to/pngs IMAGE_OUTPUT_DIR=/path/to/webps WEBP_QUALITY=90
+```
+
+After applying image changes, run:
+
+```bash
+cd menu_display_2
+npm run lint
+npm run build
+```
+
+Then refresh a menu and recipe route in the in-app browser before shipping.
+
 ### 🌐 Deploying the Project
 
 This project uses **GitHub Pages** for easy deployment.
@@ -110,4 +145,3 @@ Contributions are welcome! If you have suggestions or improvements, feel free to
 ## 📄 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-

@@ -162,6 +162,7 @@ cython_debug/
 #.idea/
 
 
+.DS_Store
 .DS_STORE
 node_modules
 scripts/flow/*/.flowconfig
@@ -202,9 +203,10 @@ packages/react-devtools-inline/dist
 packages/react-devtools-shell/dist
 packages/react-devtools-timeline/dist
 
-# OpenAI hot sauce batch artifacts
-hot_sauce_batch_state.json
-hot_sauce_requests.jsonl
-hot_sauce_batch_output.jsonl
-hot_sauce_batch_errors.jsonl
-new_images/
+# OpenAI batch runtime artifacts
+artifacts/**/new_images/
+artifacts/**/new_pngs/
+artifacts/**/*_batch_state.json
+artifacts/**/*_batch_output.jsonl
+artifacts/**/*_batch_errors.jsonl
+backups/recipe_webp_backup_*.zip
