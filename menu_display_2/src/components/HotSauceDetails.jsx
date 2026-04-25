@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import hotSauceData from '../hotsauceData';
 import { FaCalendarAlt, FaPepperHot } from 'react-icons/fa';
 
@@ -19,6 +19,15 @@ function HotSauceDetails() {
 
   return (
     <div className="page-shell">
+      <div className="mb-6 hidden md:block">
+        <Link
+          to="/hot-sauces"
+          className="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-linen px-4 py-2 text-sm font-semibold text-ink shadow-sm transition hover:border-clay hover:text-clay"
+        >
+          <span aria-hidden="true">←</span>
+          Back to hot sauces
+        </Link>
+      </div>
       <article className="mx-auto grid max-w-6xl lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)]">
         <div className="flex items-center justify-center bg-transparent px-0 py-2 sm:py-4 lg:py-6">
           <img
