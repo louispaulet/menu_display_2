@@ -19,12 +19,12 @@ function HotSauceDetails() {
 
   return (
     <div className="page-shell">
-      <article className="mx-auto grid max-w-6xl overflow-hidden rounded-lg border border-stone-200/80 bg-linen shadow-editorial lg:grid-cols-[minmax(0,1.45fr)_minmax(300px,0.75fr)] lg:items-stretch">
-        <div className="flex min-h-[520px] items-center justify-center bg-gradient-to-b from-white to-stone-100 p-8 sm:p-12 lg:min-h-[620px] lg:p-8 xl:min-h-[680px]">
+      <article className="mx-auto grid max-w-6xl overflow-hidden rounded-lg border border-stone-200/80 bg-linen shadow-editorial lg:grid-cols-[minmax(0,1.35fr)_minmax(280px,0.7fr)] lg:items-stretch">
+        <div className="flex min-h-[420px] items-center justify-center bg-gradient-to-b from-white to-stone-100 p-8 sm:p-12 lg:min-h-[500px] lg:p-8 xl:min-h-[540px]">
           <img
             src={`/sauce_pictures/${encodeURIComponent(sauce.name.replace(/ /g, '_'))}.webp`}
             alt={`${sauce.name} bottle`}
-            className="h-full w-full max-h-[620px] object-contain object-center xl:max-h-[680px]"
+            className="h-full w-full max-h-[420px] object-contain object-center lg:max-h-[500px] xl:max-h-[540px]"
           />
         </div>
         <div className="flex flex-col justify-center p-7 sm:p-10 lg:max-w-[28rem] lg:p-12">
