@@ -1,6 +1,43 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
+import menuData from '../menuData';
+
+const dishImageBaseUrl = 'https://raw.githubusercontent.com/louispaulet/menu_display_2/main/dish_pictures/';
+
+const normalizeText = (value = '') =>
+  value
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+
+const extractRecipeTitle = (markdown = '') => {
+  const match = markdown.match(/^#{1,6}\s+(.+)$/m);
+  return match ? match[1].trim() : '';
+};
+
+const stripMarkdownImages = (markdown = '') => markdown.replace(/!\[[^\]]*]\([^)]+\)\s*/g, '').trim();
+
+const getDishImageUrl = (markdown) => {
+  const recipeTitle = normalizeText(extractRecipeTitle(markdown).replace(/^recipe:\s*/i, '').replace(/\s+recipe$/i, ''));
+
+  for (const menu of menuData) {
+    for (const item of menu.tasting_menu) {
+      if (normalizeText(item.description) === recipeTitle) {
+        const chefNameEncoded = encodeURIComponent(menu.chef_name.replace(/ /g, '_'));
+        const restaurantNameEncoded = encodeURIComponent(menu.restaurant_name.replace(/ /g, '_'));
+        const courseNameEncoded = encodeURIComponent(item.course.replace(/ /g, '_'));
+        const courseDescriptionEncoded = encodeURIComponent(item.description.replace(/ /g, '_'));
+
+        return `${dishImageBaseUrl}${chefNameEncoded}-${restaurantNameEncoded}-${courseNameEncoded}-${courseDescriptionEncoded}.webp`;
+      }
+    }
+  }
+
+  return null;
+};
 
 const Recipe = () => {
   const { recipeName } = useParams(); // Get the recipe name from the URL
@@ -32,6 +69,9 @@ const Recipe = () => {
     loadRecipe();
   }, [recipeName]);
 
+  const dishImageUrl = getDishImageUrl(content);
+  const renderedContent = stripMarkdownImages(content);
+
   return (
     <div className="page-shell">
       {error ? (
@@ -43,9 +83,21 @@ const Recipe = () => {
           </p>
         </div>
       ) : (
-        <article className="prose prose-stone mx-auto max-w-4xl rounded-lg border border-stone-200/80 bg-linen p-7 shadow-card prose-headings:font-playfair prose-headings:text-ink prose-a:text-clay prose-strong:text-ink sm:p-10">
-          <ReactMarkdown>{content}</ReactMarkdown>
-        </article>
+        <div className="mx-auto max-w-4xl overflow-hidden rounded-lg border border-stone-200/80 bg-linen shadow-card">
+          {dishImageUrl ? (
+            <div className="aspect-[16/9] border-b border-stone-200/80 bg-stone-100">
+              <img
+                src={dishImageUrl}
+                alt={`${extractRecipeTitle(content) || recipeName.replace(/-/g, ' ')} dish image`}
+                className="h-full w-full object-cover"
+                loading="eager"
+              />
+            </div>
+          ) : null}
+          <article className="prose prose-stone max-w-none p-7 prose-headings:font-playfair prose-headings:text-ink prose-a:text-clay prose-strong:text-ink sm:p-10">
+            <ReactMarkdown>{renderedContent}</ReactMarkdown>
+          </article>
+        </div>
       )}
     </div>
   );
