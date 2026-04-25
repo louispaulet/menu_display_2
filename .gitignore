@@ -201,3 +201,10 @@ packages/react-devtools-fusebox/dist
 packages/react-devtools-inline/dist
 packages/react-devtools-shell/dist
 packages/react-devtools-timeline/dist
+
+# OpenAI hot sauce batch artifacts
+hot_sauce_batch_state.json
+hot_sauce_requests.jsonl
+hot_sauce_batch_output.jsonl
+hot_sauce_batch_errors.jsonl
+new_images/
