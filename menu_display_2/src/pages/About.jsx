@@ -52,6 +52,9 @@ function About() {
             <p className="mt-4 leading-8 text-stone-600">
               The site is built with Vite, React, and TailwindCSS, then hosted on GitHub Pages. The interface is designed to stay fast, responsive, and image-forward while preserving the original project data.
             </p>
+            <p className="mt-4 leading-8 text-stone-600">
+              The current editorial design refresh was created with <strong className="text-ink">GPT-5.5</strong>, giving the project a warmer, more polished restaurant-guide presentation.
+            </p>
           </section>
         </div>
       </article>
