@@ -1,14 +1,5 @@
 import HotSaucePreview from '../components/HotSaucePreview';
 import hotSauceData from '../hotsauceData';
-import goldFrame from '../assets/hot_sauce_frames/gold_frame.webp';
-import silverFrame from '../assets/hot_sauce_frames/silver_frame.webp';
-import bronzeFrame from '../assets/hot_sauce_frames/bronze_frame.webp';
-
-const medalFramesByName = {
-  'Truffle Blaze': goldFrame,
-  'Smoky Oak Inferno': silverFrame,
-  'Pique de Azteca': bronzeFrame,
-};
 
 function HotSaucePage() {
   return (
@@ -30,7 +21,6 @@ function HotSaucePage() {
             hotnessLevel={sauce.hotness_level}
             bottlingDate={sauce.bottling_date}
             description={sauce.description}
-            medalFrame={medalFramesByName[sauce.name]}
           />
         ))}
       </section>
