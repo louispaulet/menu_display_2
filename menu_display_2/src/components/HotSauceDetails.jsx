@@ -19,19 +19,15 @@ function HotSauceDetails() {
 
   return (
     <div className="page-shell">
-      <article className="mx-auto grid max-w-6xl overflow-visible rounded-[2rem] border border-stone-200/80 bg-linen shadow-editorial lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)]">
-        <div className="relative flex items-center justify-center overflow-visible bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.95),_rgba(247,241,232,0.98)_58%,_rgba(239,229,215,1)_100%)] p-6 sm:p-10 lg:min-h-[42rem] lg:p-12">
-          <div className="w-full max-w-[30rem]">
-            <div className="relative aspect-[3/4] rounded-[2rem] border border-white/70 bg-gradient-to-b from-white via-white to-stone-100 p-6 shadow-[0_24px_60px_-34px_rgba(57,34,18,0.45)]">
-              <img
-                src={`/sauce_pictures/${encodeURIComponent(sauce.name.replace(/ /g, '_'))}.webp`}
-                alt={`${sauce.name} bottle`}
-                className="h-full w-full object-contain object-center drop-shadow-[0_18px_24px_rgba(57,34,18,0.14)]"
-              />
-            </div>
-          </div>
+      <article className="mx-auto grid max-w-6xl lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)]">
+        <div className="flex items-center justify-center bg-transparent px-0 py-2 sm:py-4 lg:py-6">
+          <img
+            src={`/sauce_pictures/${encodeURIComponent(sauce.name.replace(/ /g, '_'))}.webp`}
+            alt={`${sauce.name} bottle`}
+            className="h-auto w-full max-w-[18rem] object-contain object-center sm:max-w-[20rem] lg:max-w-[22rem]"
+          />
         </div>
-        <div className="flex flex-col justify-center border-t border-stone-200/70 p-7 sm:p-10 lg:border-t-0 lg:border-l lg:border-stone-200/70 lg:p-12">
+        <div className="flex flex-col justify-center px-0 py-8 sm:py-10 lg:pl-12 lg:pr-0 lg:py-12">
           <p className="page-kicker">Small batch sauce</p>
           <h1 className="mt-3 font-playfair text-5xl font-semibold leading-tight text-ink">{sauce.name}</h1>
 
