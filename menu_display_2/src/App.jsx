@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import BackToTopButton from './components/BackToTopButton';
 import Homepage from './pages/Homepage';
 import About from './pages/About';
 import Menu from './pages/Menu';
@@ -26,6 +27,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
+      <BackToTopButton />
       <Footer />
     </div>
   );
