@@ -1,7 +1,28 @@
+import { useState } from 'react';
 import HotSaucePreview from '../components/HotSaucePreview';
 import hotSauceData from '../hotsauceData';
 
+function shuffleArray(items) {
+  const shuffled = [...items];
+
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [shuffled[index], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[index]];
+  }
+
+  return shuffled;
+}
+
 function HotSaucePage() {
+  const [hotSauces] = useState(() =>
+    shuffleArray(
+      Object.values(hotSauceData).map((sauce, id) => ({
+        ...sauce,
+        id,
+      })),
+    ),
+  );
+
   return (
     <div className="page-shell">
       <header className="mx-auto mb-12 max-w-4xl text-center">
@@ -13,10 +34,10 @@ function HotSaucePage() {
       </header>
 
       <section className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {Object.values(hotSauceData).map((sauce, index) => (
+        {hotSauces.map((sauce) => (
           <HotSaucePreview
             key={sauce.name}
-            id={index}
+            id={sauce.id}
             name={sauce.name}
             hotnessLevel={sauce.hotness_level}
             bottlingDate={sauce.bottling_date}
