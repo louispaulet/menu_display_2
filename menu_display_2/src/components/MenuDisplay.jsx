@@ -29,12 +29,12 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
   return (
     <article className="mx-auto max-w-6xl">
       <header className="overflow-hidden rounded-lg border border-stone-200/80 bg-linen shadow-editorial">
-        <div className="grid lg:grid-cols-[0.92fr_1.08fr]">
-          <div className="aspect-[4/3] lg:aspect-auto">
+        <div className="grid lg:grid-cols-[1fr_1.08fr]">
+          <div className="aspect-square">
             <img
               src={generateRestaurantImageUrl(restaurantName)}
               alt={`${restaurantName} dining room`}
-              className="h-full w-full"
+              className="h-full w-full object-cover"
             />
           </div>
           <div className="flex flex-col justify-center p-7 sm:p-10 lg:p-12">
@@ -81,11 +81,11 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
               key={index}
               className="grid overflow-hidden rounded-lg border border-stone-200/80 bg-linen shadow-card lg:grid-cols-2"
             >
-              <div className={`aspect-[4/3] lg:aspect-auto ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
+              <div className={`aspect-square ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
                 <img
                   src={generateImageUrl(item.course, item.description)}
                   alt={`${item.course}: ${item.description}`}
-                  className="h-full w-full"
+                  className="h-full w-full object-cover"
                   loading="lazy"
                 />
               </div>
