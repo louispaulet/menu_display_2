@@ -604,6 +604,21 @@ def main(argv: Iterable[str] | None = None) -> int:
     if args.poll_once:
         final_batch = get_batch(batch_id)
         print_batch_status(final_batch)
+        if final_batch.get("status") not in {"completed", "failed", "expired", "cancelled"}:
+            final_state = load_state() or {}
+            final_state.update(
+                {
+                    "last_checked_at": now_iso(),
+                    "status": final_batch.get("status"),
+                }
+            )
+            save_state(final_state)
+            return 0
+
+        current_state = load_state() or {}
+        if current_state.get("downloaded_at") and final_batch.get("status") == "completed":
+            print("batch already completed and downloaded")
+            return 0
     else:
         final_batch = poll_until_done(batch_id)
     download_results_if_available(final_batch)
@@ -617,6 +632,8 @@ def main(argv: Iterable[str] | None = None) -> int:
             "error_file_id": final_batch.get("error_file_id"),
         }
     )
+    if final_batch.get("status") == "completed" and final_batch.get("output_file_id"):
+        final_state["downloaded_at"] = now_iso()
     save_state(final_state)
     return 0
 

@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hot Sauce Before / After</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f6f2ea;
+        --panel: #ffffff;
+        --ink: #1f1a17;
+        --muted: #6f655c;
+        --line: #ded4c8;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+      }
+
+      header {
+        padding: 24px 28px 8px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 28px;
+        line-height: 1.15;
+      }
+
+      p {
+        margin: 8px 0 0;
+        color: var(--muted);
+      }
+
+      .grid {
+        display: grid;
+        gap: 18px;
+        padding: 20px 28px 32px;
+      }
+
+      .row {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 24px rgba(34, 24, 16, 0.06);
+      }
+
+      .title {
+        padding: 14px 16px 10px;
+        border-bottom: 1px solid var(--line);
+        font-weight: 700;
+      }
+
+      .compare {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .pane {
+        padding: 12px;
+      }
+
+      .label {
+        display: inline-block;
+        margin-bottom: 10px;
+        padding: 4px 8px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: var(--muted);
+        background: #faf7f2;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: 520px;
+        object-fit: contain;
+        background: #fff;
+        border-radius: 10px;
+        border: 1px solid var(--line);
+      }
+
+      .after img {
+        background: #fefefe;
+      }
+
+      @media (max-width: 900px) {
+        .compare {
+          grid-template-columns: 1fr;
+        }
+
+        img {
+          height: 420px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Hot Sauce Before / After</h1>
+      <p>Left: original sauce image. Right: regenerated batch image.</p>
+    </header>
+
+    <main class="grid" id="grid"></main>
+
+    <script>
+      const rows = [
+        {
+          name: "Fiery Margherita Blaze",
+          before: "./sauce_pictures/Fiery_Margherita_Blaze.jpg",
+          after: "./menu_display_2/public/sauce_pictures/Fiery_Margherita_Blaze.webp",
+        },
+        {
+          name: "Ghostly Inferno",
+          before: "./sauce_pictures/Ghostly_Inferno.jpg",
+          after: "./menu_display_2/public/sauce_pictures/Ghostly_Inferno.webp",
+        },
+        {
+          name: "Inferno Blaze",
+          before: "./sauce_pictures/Inferno_Blaze.jpg",
+          after: "./menu_display_2/public/sauce_pictures/Inferno_Blaze.webp",
+        },
+        {
+          name: "Inferno Ember",
+          before: "./sauce_pictures/Inferno_Ember.jpg",
+          after: "./menu_display_2/public/sauce_pictures/Inferno_Ember.webp",
+        },
+        {
+          name: "Inferno Queso",
+          before: "./sauce_pictures/Inferno_Queso.jpg",
+          after: "./menu_display_2/public/sauce_pictures/Inferno_Queso.webp",
+        },
+        {
+          name: "Pique de Azteca",
+          before: "./sauce_pictures/Pique_de_Azteca.jpg",
+          after: "./menu_display_2/public/sauce_pictures/Pique_de_Azteca.webp",
+        },
+        {
+          name: "Arctic Blaze",
+          before: "./sauce_pictures/Arctic_Blaze.jpg",
+          after: "./menu_display_2/public/sauce_pictures/Arctic_Blaze.webp",
+        },
+        {
+          name: "Blaze Berry Inferno",
+          before: "./sauce_pictures/Blaze_Berry_Inferno.jpg",
+          after: "./menu_display_2/public/sauce_pictures/Blaze_Berry_Inferno.webp",
+        },
+        {
+          name: "Esprit de Provence",
+          before: "./sauce_pictures/Esprit_de_Provence.jpg",
+          after: "./menu_display_2/public/sauce_pictures/Esprit_de_Provence.webp",
+        },
+        {
+          name: "Fiery Garlic Inferno",
+          before: "./sauce_pictures/Fiery_Garlic_Inferno.jpg",
+          after: "./menu_display_2/public/sauce_pictures/Fiery_Garlic_Inferno.webp",
+        },
+        {
+          name: "Smoky Oak Inferno",
+          before: "./sauce_pictures/Smoky_Oak_Inferno.jpg",
+          after: "./menu_display_2/public/sauce_pictures/Smoky_Oak_Inferno.webp",
+        },
+        {
+          name: "Truffle Blaze",
+          before: "./sauce_pictures/Truffle_Blaze.jpg",
+          after: "./menu_display_2/public/sauce_pictures/Truffle_Blaze.webp",
+        },
+        {
+          name: "Sweet Sting Honey Fire",
+          before: "./sauce_pictures/Sweet_Sting_Honey_Fire.jpg",
+          after: "./menu_display_2/public/sauce_pictures/Sweet_Sting_Honey_Fire.webp",
+        },
+      ];
+
+      const grid = document.getElementById("grid");
+      grid.innerHTML = rows
+        .map(
+          (row) => `
+            <section class="row">
+              <div class="title">${row.name}</div>
+              <div class="compare">
+                <div class="pane before">
+                  <div class="label">Before</div>
+                  <img src="${row.before}" alt="${row.name} before image" />
+                </div>
+                <div class="pane after">
+                  <div class="label">After</div>
+                  <img src="${row.after}" alt="${row.name} after image" />
+                </div>
+              </div>
+            </section>
+          `
+        )
+        .join("");
+    </script>
+  </body>
+</html>

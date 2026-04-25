@@ -3,11 +3,9 @@ import { Link } from 'react-router-dom';
 import { FaCalendarAlt, FaPepperHot } from 'react-icons/fa';
 
 function HotSaucePreview({ name, hotnessLevel, bottlingDate, description, id, medalFrame }) {
-  const baseImageUrl = "https://raw.githubusercontent.com/louispaulet/menu_display_2/main/sauce_pictures/";
-
   const generateImageUrl = (name) => {
     const nameEncoded = encodeURIComponent(name.replace(/ /g, '_'));
-    return `${baseImageUrl}${nameEncoded}.jpg`;
+    return `/sauce_pictures/${nameEncoded}.webp`;
   };
 
   return (
