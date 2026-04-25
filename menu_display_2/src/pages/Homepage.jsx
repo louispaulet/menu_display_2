@@ -87,6 +87,9 @@ const zones = [
 function Homepage() {
   // Create a map for quick access to menu items by their original index
   const indexedMenuData = menuData.map((menu, index) => ({ ...menu, originalIndex: index }));
+  const availableZones = zones.filter((zone) =>
+    indexedMenuData.some((menu) => zone.restaurantNames.includes(menu.restaurant_name))
+  );
 
   return (
     <div className="page-shell">
@@ -98,6 +101,49 @@ function Homepage() {
         </p>
       </header>
 
+      <nav className="mb-16" aria-label="Jump to category">
+        <div className="rounded-3xl border border-stone-200/80 bg-linen/85 p-4 shadow-card backdrop-blur-sm sm:p-5">
+          <div className="flex items-center justify-between gap-4">
+            <div>
+              <p className="page-kicker">Quick jump</p>
+              <h2 className="mt-1 font-playfair text-2xl font-semibold text-ink">Pick a category</h2>
+            </div>
+            <p className="hidden max-w-sm text-sm leading-6 text-stone-500 sm:block">
+              Jump straight to any of the 13 curated menu regions below.
+            </p>
+          </div>
+          <div className="mt-5 flex gap-3 overflow-x-auto pb-1 pr-1">
+            {availableZones.map((zone) => (
+              <button
+                key={zone.id}
+                type="button"
+                onClick={() => {
+                  const target = document.getElementById(zone.id);
+                  if (!target) return;
+
+                  const root = document.documentElement;
+                  const previousScrollBehavior = root.style.scrollBehavior;
+                  root.style.scrollBehavior = 'auto';
+
+                  const targetTop = Math.max(
+                    0,
+                    target.getBoundingClientRect().top + window.scrollY - 112
+                  );
+                  window.scrollTo({ top: targetTop, behavior: 'auto' });
+
+                  window.requestAnimationFrame(() => {
+                    root.style.scrollBehavior = previousScrollBehavior;
+                  });
+                }}
+                className="shrink-0 rounded-full border border-stone-200 bg-white px-4 py-2 text-sm font-semibold text-stone-700 shadow-sm transition hover:border-saffron/50 hover:bg-parchment hover:text-ink"
+              >
+                {zone.title}
+              </button>
+            ))}
+          </div>
+        </div>
+      </nav>
+
       <div className="space-y-24">
         {zones.map((zone) => {
           const zoneRestaurants = indexedMenuData.filter((menu) => 
@@ -107,7 +153,7 @@ function Homepage() {
           if (zoneRestaurants.length === 0) return null;
 
           return (
-            <div key={zone.id} className="zone-section">
+            <div key={zone.id} id={zone.id} className="zone-section scroll-mt-28">
               <div className="mb-10 border-b border-stone-200 pb-6">
                 <h2 className="font-playfair text-4xl font-bold text-ink sm:text-5xl">{zone.title}</h2>
                 <p className="mt-3 max-w-2xl text-lg text-stone-600 italic">
