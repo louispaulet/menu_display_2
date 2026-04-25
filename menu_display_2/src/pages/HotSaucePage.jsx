@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { FaChevronDown } from 'react-icons/fa';
 import HotSaucePreview from '../components/HotSaucePreview';
 import hotSauceData from '../hotsauceData';
 
@@ -68,17 +69,23 @@ function HotSaucePage() {
         </div>
         <label className="flex flex-col gap-2 text-sm font-semibold text-ink sm:min-w-64">
           Filter by
-          <select
-            value={sortBy}
-            onChange={(event) => setSortBy(event.target.value)}
-            className="rounded-full border border-stone-300 bg-white px-4 py-3 text-sm font-semibold text-ink shadow-sm outline-none transition focus:border-clay focus:ring-2 focus:ring-clay/20"
-          >
-            {sortOptions.map((option) => (
-              <option key={option.value} value={option.value}>
-                {option.label}
-              </option>
-            ))}
-          </select>
+          <span className="relative">
+            <select
+              value={sortBy}
+              onChange={(event) => setSortBy(event.target.value)}
+              className="w-full appearance-none rounded-full border border-stone-300 bg-white py-3 pl-4 pr-12 text-sm font-semibold text-ink shadow-sm outline-none transition focus:border-clay focus:ring-2 focus:ring-clay/20"
+            >
+              {sortOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+            <FaChevronDown
+              aria-hidden="true"
+              className="pointer-events-none absolute right-4 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-ink"
+            />
+          </span>
         </label>
       </div>
 
