@@ -12,11 +12,11 @@ function HotSaucePreview({ name, hotnessLevel, bottlingDate, description, id }) 
 
   return (
     <Link to={`/hot-sauce/${id}`} className="editorial-card group block">
-      <div className="aspect-[4/3] overflow-hidden bg-stone-100">
+      <div className="flex aspect-[3/4] items-center justify-center overflow-hidden bg-gradient-to-b from-white to-stone-100 p-6">
         <img
           src={generateImageUrl(name)}
           alt={`${name} bottle`}
-          className="h-full w-full transition duration-500 group-hover:scale-105"
+          className="h-full w-full object-contain transition duration-500 group-hover:scale-105"
           loading="lazy"
         />
       </div>

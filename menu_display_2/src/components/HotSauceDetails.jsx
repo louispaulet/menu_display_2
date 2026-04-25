@@ -20,11 +20,11 @@ function HotSauceDetails() {
   return (
     <div className="page-shell">
       <article className="mx-auto grid max-w-5xl overflow-hidden rounded-lg border border-stone-200/80 bg-linen shadow-editorial lg:grid-cols-[0.9fr_1.1fr]">
-        <div className="aspect-[4/3] lg:aspect-auto">
+        <div className="flex min-h-[520px] items-center justify-center bg-gradient-to-b from-white to-stone-100 p-8 sm:p-12">
           <img
             src={`https://raw.githubusercontent.com/louispaulet/menu_display_2/main/sauce_pictures/${encodeURIComponent(sauce.name.replace(/ /g, '_'))}.jpg`}
             alt={`${sauce.name} bottle`}
-            className="h-full w-full"
+            className="max-h-[680px] w-full object-contain"
           />
         </div>
         <div className="flex flex-col justify-center p-7 sm:p-10 lg:p-12">
