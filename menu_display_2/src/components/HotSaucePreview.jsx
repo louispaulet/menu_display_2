@@ -1,8 +1,19 @@
 /* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
-import { FaCalendarAlt, FaPepperHot } from 'react-icons/fa';
+import { FaCalendarAlt, FaDollarSign, FaHourglassHalf, FaPepperHot, FaWarehouse } from 'react-icons/fa';
+import { GiFireBottle } from 'react-icons/gi';
 
-function HotSaucePreview({ name, hotnessLevel, bottlingDate, description, id }) {
+function HotSaucePreview({
+  name,
+  hotnessLevel,
+  bottlingDate,
+  price,
+  scovilleUnits,
+  ageMonths,
+  batchSize,
+  description,
+  id,
+}) {
   const generateImageUrl = (name) => {
     const nameEncoded = encodeURIComponent(name.replace(/ /g, '_'));
     return `/sauce_pictures/${nameEncoded}.webp`;
@@ -26,6 +37,18 @@ function HotSaucePreview({ name, hotnessLevel, bottlingDate, description, id }) 
         <div className="space-y-2">
           <p className="meta-row">
             <FaPepperHot className="meta-icon" /> <span>Heat level {hotnessLevel}/10</span>
+          </p>
+          <p className="meta-row">
+            <GiFireBottle className="meta-icon" /> <span>{scovilleUnits.toLocaleString()} SHU</span>
+          </p>
+          <p className="meta-row">
+            <FaDollarSign className="meta-icon" /> <span>${price} bottle</span>
+          </p>
+          <p className="meta-row">
+            <FaHourglassHalf className="meta-icon" /> <span>Aged {ageMonths} months</span>
+          </p>
+          <p className="meta-row">
+            <FaWarehouse className="meta-icon" /> <span>{batchSize} bottle batch</span>
           </p>
           <p className="meta-row">
             <FaCalendarAlt className="meta-icon" /> <span>Bottled {bottlingDate}</span>

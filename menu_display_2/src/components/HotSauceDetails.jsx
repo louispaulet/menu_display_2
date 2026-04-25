@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import hotSauceData from '../hotsauceData';
-import { FaCalendarAlt, FaPepperHot } from 'react-icons/fa';
+import { FaCalendarAlt, FaDollarSign, FaHourglassHalf, FaPepperHot, FaWarehouse } from 'react-icons/fa';
+import { GiFireBottle } from 'react-icons/gi';
 
 function HotSauceDetails() {
   const { id } = useParams();
@@ -46,8 +47,27 @@ function HotSauceDetails() {
               Heat level {sauce.hotness_level}/10
             </p>
             <p className="flex items-center gap-2 text-sm font-semibold">
+              <GiFireBottle className="h-4 w-4 text-clay" />
+              {sauce.scoville_units.toLocaleString()} SHU
+            </p>
+            <p className="flex items-center gap-2 text-sm font-semibold">
+              <FaDollarSign className="h-4 w-4 text-clay" />
+              ${sauce.price} bottle
+            </p>
+            <p className="flex items-center gap-2 text-sm font-semibold">
+              <FaHourglassHalf className="h-4 w-4 text-clay" />
+              Aged {sauce.age_months} months
+            </p>
+            <p className="flex items-center gap-2 text-sm font-semibold">
+              <FaWarehouse className="h-4 w-4 text-clay" />
+              {sauce.batch_size} bottle batch
+            </p>
+            <p className="flex items-center gap-2 text-sm font-semibold">
               <FaCalendarAlt className="h-4 w-4 text-clay" />
               Bottled {sauce.bottling_date}
+            </p>
+            <p className="flex items-center gap-2 text-sm font-semibold">
+              pH {sauce.acidity_ph.toFixed(1)}
             </p>
           </div>
 
