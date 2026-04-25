@@ -6,17 +6,20 @@ import menuData from '../menuData';
 function Homepage() {
     
   return (
-    <div className="p-8">
-      <header className="text-center mb-8">
-        <h1 className="font-montserrat text-4xl font-bold mb-2">🍽️ Exquisite Menus</h1>
-        <p className="text-lg text-gray-600">Capturing the beauty and essence of culinary delights from around the globe.</p>
+    <div className="page-shell">
+      <header className="mx-auto mb-12 max-w-4xl text-center">
+        <p className="page-kicker">Restaurant guide</p>
+        <h1 className="page-title">Exquisite tasting menus from imagined kitchens.</h1>
+        <p className="page-lede">
+          Browse AI-conceived restaurants, atmospheric dining rooms, wine pairings, and full tasting menus from around the globe.
+        </p>
       </header>
 
-      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
+      <section className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {menuData.map((menu, index) => (
           <MenuPreview
             key={index}
-            id={index} // Pass the index as the ID
+            id={index}
             restaurantName={menu.restaurant_name}
             chefName={menu.chef_name}
             location={menu.location}

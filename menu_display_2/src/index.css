@@ -2,6 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply font-montserrat;
+@layer base {
+  :root {
+    color: #252019;
+    background: #f7f1e8;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply min-h-screen bg-parchment font-montserrat text-ink;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+      linear-gradient(135deg, rgba(164, 86, 56, 0.08), transparent 34%),
+      radial-gradient(circle at top right, rgba(196, 144, 63, 0.14), transparent 28%),
+      linear-gradient(180deg, #fffaf3 0%, #f7f1e8 52%, #efe5d7 100%);
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+
+  img {
+    @apply bg-stone-100 object-cover;
+  }
+}
+
+@layer components {
+  .page-shell {
+    @apply mx-auto w-full max-w-7xl px-5 py-10 sm:px-8 lg:px-10 lg:py-14;
+  }
+
+  .page-kicker {
+    @apply text-xs font-bold uppercase tracking-[0.22em] text-clay;
+  }
+
+  .page-title {
+    @apply mt-3 font-playfair text-4xl font-semibold leading-tight text-ink sm:text-5xl lg:text-6xl;
+  }
+
+  .page-lede {
+    @apply mx-auto mt-4 max-w-3xl text-base leading-8 text-stone-600 sm:text-lg;
+  }
+
+  .editorial-card {
+    @apply overflow-hidden rounded-lg border border-stone-200/80 bg-linen shadow-card transition duration-300 hover:-translate-y-1 hover:border-saffron/50 hover:shadow-editorial;
+  }
+
+  .meta-row {
+    @apply flex items-start gap-2 text-sm leading-6 text-stone-600;
+  }
+
+  .meta-icon {
+    @apply mt-1 h-4 w-4 shrink-0 text-clay;
+  }
 }

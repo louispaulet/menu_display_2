@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 
@@ -33,13 +33,19 @@ const Recipe = () => {
   }, [recipeName]);
 
   return (
-    <div className="prose max-w-4xl mx-auto p-6">
+    <div className="page-shell">
       {error ? (
-        <div className="text-red-500">
-          Sorry, the recipe "{recipeName}" was not found or could not be loaded.
+        <div className="mx-auto max-w-2xl rounded-lg border border-stone-200 bg-linen p-8 text-center shadow-card">
+          <p className="page-kicker">Recipe unavailable</p>
+          <h1 className="mt-3 font-playfair text-4xl font-semibold">Recipe not found</h1>
+          <p className="mt-4 text-stone-600">
+            Sorry, the recipe named {recipeName} was not found or could not be loaded.
+          </p>
         </div>
       ) : (
-        <ReactMarkdown>{content}</ReactMarkdown>
+        <article className="prose prose-stone mx-auto max-w-4xl rounded-lg border border-stone-200/80 bg-linen p-7 shadow-card prose-headings:font-playfair prose-headings:text-ink prose-a:text-clay prose-strong:text-ink sm:p-10">
+          <ReactMarkdown>{content}</ReactMarkdown>
+        </article>
       )}
     </div>
   );

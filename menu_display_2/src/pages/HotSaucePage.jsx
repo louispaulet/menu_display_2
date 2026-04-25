@@ -3,13 +3,16 @@ import hotSauceData from '../hotsauceData';
 
 function HotSaucePage() {
   return (
-    <div className="p-8">
-      <header className="text-center mb-8">
-        <h1 className="font-montserrat text-4xl font-bold mb-2">🔥 Hot Sauces Collection</h1>
-        <p className="text-lg text-gray-600">Explore our artisanal hot sauces crafted to elevate your culinary experience.</p>
+    <div className="page-shell">
+      <header className="mx-auto mb-12 max-w-4xl text-center">
+        <p className="page-kicker">Condiment cellar</p>
+        <h1 className="page-title">Artisanal hot sauces with a chef’s point of view.</h1>
+        <p className="page-lede">
+          Explore heat levels, tasting notes, and small-batch bottlings designed to sharpen the menus without overwhelming them.
+        </p>
       </header>
 
-      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
+      <section className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {Object.values(hotSauceData).map((sauce, index) => (
           <HotSaucePreview
             key={index}

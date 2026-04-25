@@ -1,55 +1,60 @@
-// src/pages/About.jsx
+import { Link } from 'react-router-dom';
 
 function About() {
   return (
-    <div className="p-8 max-w-screen-lg mx-auto">
-      <header className="text-center mb-8">
-        <h1 className="text-4xl font-bold mb-2 font-montserrat">🤖 About Our Project : Exquisite Menus V2</h1>
-        <p className="text-lg text-gray-600">Exquisite Menus, an innovative fusion of AI and culinary creativity.</p>
-      </header>
+    <div className="page-shell">
+      <article className="mx-auto max-w-4xl">
+        <header className="mb-12 text-center">
+          <p className="page-kicker">About the project</p>
+          <h1 className="page-title">A culinary atlas made with AI imagination.</h1>
+          <p className="page-lede">
+            Exquisite Menus is an experiment at the intersection of technology, gastronomy, and visual storytelling.
+          </p>
+        </header>
 
-      <section className="mb-12">
-        <h2 className="text-3xl font-semibold mb-4">🌐 The Project</h2>
-        <p className="text-gray-700 mb-6">
-          Our project is at the intersection of technology and gastronomy. Using the advanced capabilities of <strong>GPT-4</strong>, we generate fictional yet captivating menus in JSON format, each one meticulously designed to reflect the culinary vision of an imagined chef and restaurant.
-        </p>
-        <p className="text-gray-700 mb-6">
-          These menus aren't just lists of dishes—they tell stories. Each menu features a chef, a restaurant name and location, and a carefully calculated total price, along with the price per dish, offering a complete dining experience. This allows us to explore and showcase the limitless possibilities of AI in the culinary world.
-        </p>
-        <p className="text-gray-700 mb-6 italic">
-          The current website your are on is the second version (V2). To learn more about version 1, checkout out the <a href="#V1" className="underline">V1 page</a>.
-        </p>
-      </section>
+        <div className="space-y-8">
+          <section className="rounded-lg border border-stone-200/80 bg-linen p-7 shadow-card sm:p-9">
+            <h2 className="font-playfair text-3xl font-semibold">The project</h2>
+            <p className="mt-4 leading-8 text-stone-600">
+              Using the advanced capabilities of <strong className="text-ink">GPT-4</strong>, we generate fictional yet captivating menus in JSON format, each one designed to reflect the culinary vision of an imagined chef and restaurant.
+            </p>
+            <p className="mt-4 leading-8 text-stone-600">
+              These menus are more than lists of dishes. Each one features a chef, a restaurant name and location, a complete tasting sequence, dish pricing, and a total price.
+            </p>
+            <p className="mt-4 leading-8 text-stone-600">
+              This website is the second version of the project. To learn more about the earlier version, visit the{' '}
+              <Link to="/v1" className="font-semibold text-clay underline-offset-4 hover:underline">
+                V1 page
+              </Link>
+              .
+            </p>
+          </section>
 
-      <section className="mb-12">
-        <h2 className="text-3xl font-semibold mb-4">🎨 Visualizing the Cuisine</h2>
-        <p className="text-gray-700 mb-6">
-          To bring these AI-generated menus to life, we use the <strong>FLUX-DEV-1</strong> image generation model to create stunning visuals of each dish. These images capture the essence of the fictional dishes, making the menus not just a digital text but a feast for the eyes.
-        </p>
-        <p className="text-gray-700">
-          The visual component is crucial in our project, as it allows us to demonstrate how AI can push the boundaries of creativity, even in areas traditionally dominated by human artistry. Through this project, we aim to inspire both food enthusiasts and tech innovators.
-        </p>
-      </section>
+          <section className="rounded-lg border border-stone-200/80 bg-linen p-7 shadow-card sm:p-9">
+            <h2 className="font-playfair text-3xl font-semibold">Visualizing the cuisine</h2>
+            <p className="mt-4 leading-8 text-stone-600">
+              To bring these AI-generated menus to life, we use the <strong className="text-ink">FLUX-DEV-1</strong> image generation model to create visuals of each dish. The images turn the menus into a more sensory experience.
+            </p>
+            <p className="mt-4 leading-8 text-stone-600">
+              The visual layer is central to the project because it shows how AI can push the boundaries of creativity, even in domains traditionally led by human craft and taste.
+            </p>
+          </section>
 
-      <section className="mb-12">
-        <h2 className="text-3xl font-semibold mb-4">💡 Our Vision</h2>
-        <p className="text-gray-700 mb-6">
-          Our vision is to merge technology and creativity to revolutionize how we think about food and its presentation. We believe that AI has the potential to open new doors in culinary arts, offering novel perspectives and unexpected combinations that challenge the status quo.
-        </p>
-        <p className="text-gray-700">
-          Whether you're a tech enthusiast, a foodie, or just curious about the future of AI, we invite you to explore these menus and enjoy the blend of innovation and gastronomy.
-        </p>
-      </section>
+          <section className="rounded-lg border border-stone-200/80 bg-linen p-7 shadow-card sm:p-9">
+            <h2 className="font-playfair text-3xl font-semibold">Our vision</h2>
+            <p className="mt-4 leading-8 text-stone-600">
+              The goal is to merge technology and creativity to explore new ways of imagining food, place, and presentation. Whether you are a technologist, a food lover, or simply curious, the site is built as a gallery of possible dining worlds.
+            </p>
+          </section>
 
-      <section className="mb-12">
-        <h2 className="text-3xl font-semibold mb-4">🛠️ The Website</h2>
-        <p className="text-gray-700 mb-6">
-          Our website is built using modern web technologies to ensure a fast and responsive user experience. We have chosen <strong>Vite</strong> as our build tool and <strong>React</strong> for building the user interface. The design is styled using <strong>TailwindCSS</strong>, allowing us to create a clean and minimalistic look that complements the content.
-        </p>
-        <p className="text-gray-700">
-          We host the website on <strong>GitHub Pages</strong>, which provides a reliable and accessible platform for serving our project to a global audience. By leveraging these technologies, we aim to deliver a seamless and engaging experience as you explore the AI-generated menus.
-        </p>
-      </section>
+          <section className="rounded-lg border border-stone-200/80 bg-linen p-7 shadow-card sm:p-9">
+            <h2 className="font-playfair text-3xl font-semibold">The website</h2>
+            <p className="mt-4 leading-8 text-stone-600">
+              The site is built with Vite, React, and TailwindCSS, then hosted on GitHub Pages. The interface is designed to stay fast, responsive, and image-forward while preserving the original project data.
+            </p>
+          </section>
+        </div>
+      </article>
     </div>
   );
 }

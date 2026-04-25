@@ -1,43 +1,46 @@
-// src/pages/V1.jsx
-
-function V1() {
+function VersionOnePage() {
   return (
-    <div className="p-8 max-w-screen-lg mx-auto">
-      <header className="text-center mb-8">
-        <h1 className="text-4xl font-bold mb-2 font-montserrat">Exquisite Menus V1</h1>
-        <p className="text-lg text-gray-600">The previous version, made with Stable Diffusion 1.5</p>
-        <a
-          href="https://exquisite-menus-old.thefrenchartist.dev/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block mt-4 text-xl font-semibold text-white bg-blue-500 px-6 py-3 rounded-lg hover:bg-blue-600 transition"
-        >
-          Visit Exquisite Menus V1
-        </a>
-      </header>
+    <div className="page-shell">
+      <article className="mx-auto max-w-4xl">
+        <header className="mb-12 text-center">
+          <p className="page-kicker">Archive</p>
+          <h1 className="page-title">Exquisite Menus V1</h1>
+          <p className="page-lede">The previous version, made with Stable Diffusion 1.5 and a simpler JavaScript stack.</p>
+          <a
+            href="https://exquisite-menus-old.thefrenchartist.dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-8 inline-flex rounded-full bg-ink px-6 py-3 text-sm font-bold text-linen hover:bg-clay"
+          >
+            Visit Exquisite Menus V1
+          </a>
+        </header>
 
-      <section className="mb-12">
-        <h2 className="text-3xl font-semibold mb-4">🤖 Image Generation with Stable Diffusion 1.5</h2>
-        <p className="text-gray-700 mb-6">
-          In our V1 version, we utilized the Stable Diffusion 1.5 model to generate the images for our menus. While this model provided a solid foundation for visualizing AI-generated dishes, it lacked some of the advanced features and fine-tuning capabilities of the FLUX-DEV-1 model used in our current version. However, it still played a critical role in bringing our culinary concepts to life, offering a glimpse into the potential of AI in visual art.
-        </p>
-      </section>
+        <div className="space-y-8">
+          <section className="rounded-lg border border-stone-200/80 bg-linen p-7 shadow-card sm:p-9">
+            <h2 className="font-playfair text-3xl font-semibold">Image generation with Stable Diffusion 1.5</h2>
+            <p className="mt-4 leading-8 text-stone-600">
+              In V1, the project used Stable Diffusion 1.5 to generate menu imagery. It provided a useful foundation for visualizing AI-generated dishes, while the current version uses FLUX-DEV-1 for richer, more refined output.
+            </p>
+          </section>
 
-      <section className="mb-12">
-        <h2 className="text-3xl font-semibold mb-4">💻 Simpler Development with JavaScript</h2>
-        <p className="text-gray-700 mb-6">
-          The V1 version was developed using simple JavaScript, without the modern tooling of Vite and ReactJS. This approach, while more straightforward, meant that the development process lacked some of the efficiencies and performance enhancements offered by more contemporary frameworks. The focus was on creating a functional prototype that could effectively showcase our concept.
-        </p>
-      </section>
+          <section className="rounded-lg border border-stone-200/80 bg-linen p-7 shadow-card sm:p-9">
+            <h2 className="font-playfair text-3xl font-semibold">Simpler development with JavaScript</h2>
+            <p className="mt-4 leading-8 text-stone-600">
+              The first version was developed with simple JavaScript rather than the modern Vite and React tooling used today. It served as a functional prototype for the core concept.
+            </p>
+          </section>
 
-      <section className="mb-12">
-        <h2 className="text-3xl font-semibold mb-4">🎨 Styling with Bootstrap</h2>
-        <p className="text-gray-700 mb-6">
-          Instead of TailwindCSS, the V1 version used Bootstrap for styling. Bootstrap provided a robust and responsive framework, making it easier to create a polished and consistent design across different devices. However, the switch to TailwindCSS in our current version has allowed for greater flexibility and customization in the design process, enabling us to create a more unique and tailored user experience.
-        </p>
-      </section>
+          <section className="rounded-lg border border-stone-200/80 bg-linen p-7 shadow-card sm:p-9">
+            <h2 className="font-playfair text-3xl font-semibold">Styling with Bootstrap</h2>
+            <p className="mt-4 leading-8 text-stone-600">
+              V1 used Bootstrap for layout and styling. The current TailwindCSS version gives the interface more flexibility and a more distinctive editorial identity.
+            </p>
+          </section>
+        </div>
+      </article>
     </div>
   );
 }
 
-export default V1;
+export default VersionOnePage;

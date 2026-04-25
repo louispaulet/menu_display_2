@@ -1,3 +1,7 @@
+/* eslint-disable react/prop-types */
+import { Link } from 'react-router-dom';
+import { MdAttachMoney, MdLocalBar, MdLocationOn, MdRestaurantMenu } from 'react-icons/md';
+
 function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRoomDescription, grandTotal }) {
   const baseImageUrl = "https://raw.githubusercontent.com/louispaulet/menu_display_2/main/dish_pictures/";
 
@@ -8,73 +12,108 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
     const courseDescriptionEncoded = encodeURIComponent(courseDescription.replace(/ /g, '_'));
     return `${baseImageUrl}${chefNameEncoded}-${restaurantNameEncoded}-${courseNameEncoded}-${courseDescriptionEncoded}.webp`;
   };
-  
+
   const baseRestaurantImageUrl = "https://raw.githubusercontent.com/louispaulet/menu_display_2/main/restaurant_pictures/";
 
-  const generateRestaurantImageUrl = (restaurantName) => {
-    const restaurantNameEncoded = encodeURIComponent(restaurantName.replace(/ /g, '_'));
+  const generateRestaurantImageUrl = (name) => {
+    const restaurantNameEncoded = encodeURIComponent(name.replace(/ /g, '_'));
     return `${baseRestaurantImageUrl}${restaurantNameEncoded}.webp`;
   };
-  
+
   const getRecipeLink = (course, description) => {
-      const courseEncoded = course.replace(/ /g, '_')
-      const descriptionEncoded = description.replace(/ /g, '_')
-      return `#recipe/${courseEncoded}-${descriptionEncoded}`
-  }
+    const courseEncoded = course.replace(/ /g, '_');
+    const descriptionEncoded = description.replace(/ /g, '_');
+    return `/recipe/${courseEncoded}-${descriptionEncoded}`;
+  };
 
   return (
-    <div className="p-8 bg-white shadow-md rounded-lg border border-gray-200 max-w-screen-lg mx-auto">
-      {/* Display restaurant, chef, location, and dining room description only once */}
-    <header className="mb-8 text-center">
-      <h1 className="text-5xl font-playfair mb-2">{restaurantName}</h1>
-        <p className="text-center text-gray-600 text-xl mb-4">
-          {chefName} @ {location}
-        </p>
-    </header>
-
-    <section className="mb-8 text-center">
-      <img
-        src={generateRestaurantImageUrl(restaurantName)}
-        alt={`${restaurantName} image`}
-        className="w-full max-w-md h-auto rounded-lg mx-auto"
-      />
-      <h2 className="text-2xl font-semibold my-4">Dining Room Description</h2>
-      <p className="text-gray-700 text-left">{diningRoomDescription}</p>
-    </section>
-
-    <h2 className="text-2xl font-semibold my-8 text-center"> The Menu </h2>
-
-      {/* Display each dish with its own image */}
-      {tastingMenu.map((item, index) => (
-        <div key={index} className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-          {/* Column 1: Text Information */}
-          <div className="flex flex-col justify-center text-center md:text-justified">
-            <section className="mb-4">
-              <h3 className="text-xl font-semibold">{item.course}</h3>
-              <p className="text-gray-700">{item.description}</p>
-              <p className="text-gray-500"><strong></strong> - ${item.price} - </p>
-              <p className="text-gray-500 italic"><strong>Wine Pairing:</strong> {item.wine_pairing}</p>
-              <a className="text-gray-700 hover:underline" href={getRecipeLink(item.course, item.description)}> 🍽️ check recipe</a>
-            </section>
-          </div>
-
-          {/* Column 2: Image */}
-          <div className="flex justify-center md:justify-start">
+    <article className="mx-auto max-w-6xl">
+      <header className="overflow-hidden rounded-lg border border-stone-200/80 bg-linen shadow-editorial">
+        <div className="grid lg:grid-cols-[0.92fr_1.08fr]">
+          <div className="aspect-[4/3] lg:aspect-auto">
             <img
-              src={generateImageUrl(item.course, item.description)}
-              alt={`${item.course} image`}
-              className="w-full max-w-md h-auto rounded-lg"
+              src={generateRestaurantImageUrl(restaurantName)}
+              alt={`${restaurantName} dining room`}
+              className="h-full w-full"
             />
           </div>
+          <div className="flex flex-col justify-center p-7 sm:p-10 lg:p-12">
+            <p className="page-kicker">Featured tasting menu</p>
+            <h1 className="mt-3 font-playfair text-5xl font-semibold leading-tight text-ink sm:text-6xl">
+              {restaurantName}
+            </h1>
+            <div className="mt-6 grid gap-3 text-stone-600 sm:grid-cols-2">
+              <p className="meta-row">
+                <MdRestaurantMenu className="meta-icon" />
+                <span>{tastingMenu.length} courses</span>
+              </p>
+              <p className="meta-row">
+                <MdLocationOn className="meta-icon" />
+                <span>{location}</span>
+              </p>
+              <p className="meta-row sm:col-span-2">
+                <span className="mt-1 h-4 w-4 shrink-0 rounded-full border border-clay/40" />
+                <span>{chefName}</span>
+              </p>
+            </div>
+            <div className="mt-8 border-t border-stone-200 pt-8">
+              <h2 className="font-playfair text-2xl font-semibold text-ink">Dining room</h2>
+              <p className="mt-3 max-w-2xl text-base leading-8 text-stone-600">{diningRoomDescription}</p>
+            </div>
+          </div>
         </div>
-      ))}
+      </header>
 
-      {/* Display total price only once */}
-      <footer className="mt-8">
-        <h2 className="text-2xl font-semibold text-center md:text-left">Total Price</h2>
-        <p className="text-lg text-gray-700 text-center md:text-left">${grandTotal}</p>
-      </footer>
-    </div>
+      <section className="py-14">
+        <div className="mb-10 flex flex-col gap-4 border-b border-stone-200 pb-6 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="page-kicker">The menu</p>
+            <h2 className="mt-2 font-playfair text-4xl font-semibold text-ink">Courses and pairings</h2>
+          </div>
+          <div className="rounded-full border border-saffron/40 bg-linen px-5 py-3 text-sm font-bold text-ink shadow-sm">
+            Total ${grandTotal}
+          </div>
+        </div>
+
+        <div className="space-y-8">
+          {tastingMenu.map((item, index) => (
+            <section
+              key={index}
+              className="grid overflow-hidden rounded-lg border border-stone-200/80 bg-linen shadow-card lg:grid-cols-2"
+            >
+              <div className={`aspect-[4/3] lg:aspect-auto ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
+                <img
+                  src={generateImageUrl(item.course, item.description)}
+                  alt={`${item.course}: ${item.description}`}
+                  className="h-full w-full"
+                  loading="lazy"
+                />
+              </div>
+              <div className="flex flex-col justify-center p-7 sm:p-10">
+                <p className="page-kicker">Course {index + 1}</p>
+                <h3 className="mt-2 font-playfair text-3xl font-semibold leading-tight text-ink">{item.course}</h3>
+                <p className="mt-4 text-lg leading-8 text-stone-700">{item.description}</p>
+                <div className="mt-6 grid gap-3 border-y border-stone-200 py-5 text-sm font-semibold text-stone-700 sm:grid-cols-2">
+                  <p className="flex items-center gap-2">
+                    <MdAttachMoney className="h-4 w-4 text-clay" /> {item.price}
+                  </p>
+                  <p className="flex items-start gap-2">
+                    <MdLocalBar className="mt-1 h-4 w-4 shrink-0 text-clay" />
+                    <span>{item.wine_pairing}</span>
+                  </p>
+                </div>
+                <Link
+                  to={getRecipeLink(item.course, item.description)}
+                  className="mt-6 inline-flex w-fit items-center rounded-full border border-clay/30 px-5 py-2 text-sm font-bold text-clay hover:border-clay hover:bg-clay hover:text-white"
+                >
+                  View recipe
+                </Link>
+              </div>
+            </section>
+          ))}
+        </div>
+      </section>
+    </article>
   );
 }
 

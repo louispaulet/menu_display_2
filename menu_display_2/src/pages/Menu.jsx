@@ -11,15 +11,18 @@ function Menu() {
   // Ensure a valid menu is selected
   if (!menu) {
     return (
-      <div className="p-8">
-        <h1 className="text-3xl font-bold">Menu Not Found</h1>
-        <p className="text-gray-600">Sorry, the menu you are looking for does not exist.</p>
+      <div className="page-shell">
+        <div className="mx-auto max-w-2xl rounded-lg border border-stone-200 bg-linen p-8 text-center shadow-card">
+          <p className="page-kicker">Missing menu</p>
+          <h1 className="mt-3 font-playfair text-4xl font-semibold">Menu not found</h1>
+          <p className="mt-4 text-stone-600">Sorry, the menu you are looking for does not exist.</p>
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="p-8">
+    <div className="page-shell">
       <MenuDisplay
         restaurantName={menu.restaurant_name}
         chefName={menu.chef_name}
