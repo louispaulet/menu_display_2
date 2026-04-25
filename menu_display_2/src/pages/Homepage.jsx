@@ -3,11 +3,94 @@
 import MenuPreview from '../components/MenuPreview';
 import menuData from '../menuData';
 
+const zones = [
+  {
+    id: 'french',
+    title: 'French Excellence',
+    description: 'Indulge in the cradle of fine dining, from the heart of Paris to the snow-capped Alps.',
+    restaurantNames: ["L'Etoile d'Or", "Le Paradis des Douceurs", "L'Étoile des Neiges", "Le Jardin Végétal", "Le Festin Opulent", "Le Papillon d'Or", "Le Château des Choux", "La Dame de Pic", "The Imperial Room"]
+  },
+  {
+    id: 'japanese',
+    title: 'Japanese Artistry',
+    description: 'Experience the precision and seasonal purity of traditional and modern Japanese cuisine.',
+    restaurantNames: ["Sakura No Hana", "Le Jardin Zen", "Sushi Zenkai"]
+  },
+  {
+    id: 'southeast-asian',
+    title: 'South East Asian Jewels',
+    description: 'A journey through the vibrant spices and delicate balance of Vietnam and Indonesia.',
+    restaurantNames: ["Taman Sari", "Sen Vàng"]
+  },
+  {
+    id: 'south-asian',
+    title: 'South Asian & Indian Ocean',
+    description: 'Exotic flavors from the bustling streets of Mumbai to the serene shores of the Maldives.',
+    restaurantNames: ["Fisherman's Grill", "Sarvottam"]
+  },
+  {
+    id: 'polynesian',
+    title: 'Polynesian Paradise',
+    description: 'Tropical paradises offering the freshest catches from the crystal-clear waters of the Pacific.',
+    restaurantNames: ["Le Lagon", "Island Elysium", "Kai 'Olu"]
+  },
+  {
+    id: 'nordic',
+    title: 'Nordic Spirit',
+    description: 'Bold and innovative flavors from the pristine landscapes of Finland and Iceland.',
+    restaurantNames: ["Nordic Essence", "Nordic Haven", "Aurora Borealis"]
+  },
+  {
+    id: 'mediterranean',
+    title: 'Mediterranean Charm',
+    description: 'Sun-drenched ingredients and timeless recipes from Italy, Spain, and Greece.',
+    restaurantNames: ["La Serenissima", "La Dolce Vita", "Lab de Sabores", "The Golden Aegean", "La Cucina dei Sogni", "La Esencia"]
+  },
+  {
+    id: 'latin-american',
+    title: 'Latin American Soul',
+    description: 'A celebration of diverse cultures and vibrant ingredients from Mexico to the Amazon.',
+    restaurantNames: ["Inti Raymi", "Cielo Azul", "Pescado Sagrado"]
+  },
+  {
+    id: 'north-american',
+    title: 'North American Modern',
+    description: 'Contemporary culinary landmarks from the streets of New York to the Pacific coast.',
+    restaurantNames: ["Verdant Elegance", "The American Tapestry", "Parkview Elegance", "Sol y Sakura"]
+  },
+  {
+    id: 'european-heritage',
+    title: 'European Heritage',
+    description: 'Refined classics from the heart of Germany, Switzerland, and the grandeur of Russia.',
+    restaurantNames: ["Deutscher Geschmack", "Imperial Caviar", "Alpine Heights"]
+  },
+  {
+    id: 'middle-eastern',
+    title: 'Middle Eastern Oasis',
+    description: 'Opulent dining experiences blending modern elegance with rich regional traditions.',
+    restaurantNames: ["Alcazar"]
+  },
+  {
+    id: 'african',
+    title: 'African Savanna',
+    description: 'Unique dining adventures amidst the breathtaking landscapes and wildlife of the Serengeti.',
+    restaurantNames: ["Majani"]
+  },
+  {
+    id: 'outer-space',
+    title: 'Interstellar Gastronomy',
+    description: 'Avant-garde dining beyond our atmosphere, from the Red Planet to the far future.',
+    restaurantNames: ["The Red Planet Bistro", "Galactic Delights"]
+  }
+];
+
 function Homepage() {
-    
+  // Create a map for quick access to menu items by their original index
+  const indexedMenuData = menuData.map((menu, index) => ({ ...menu, originalIndex: index }));
+
   return (
     <div className="page-shell">
-      <header className="mx-auto mb-12 max-w-4xl text-center">
+      <header className="mx-auto mb-16 max-w-4xl text-center">
         <p className="page-kicker">Restaurant guide</p>
         <h1 className="page-title">Exquisite tasting menus from imagined kitchens.</h1>
         <p className="page-lede">
@@ -15,19 +98,39 @@ function Homepage() {
         </p>
       </header>
 
-      <section className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {menuData.map((menu, index) => (
-          <MenuPreview
-            key={index}
-            id={index}
-            restaurantName={menu.restaurant_name}
-            chefName={menu.chef_name}
-            location={menu.location}
-            numberOfCourses={menu.tasting_menu.length}
-            totalPrice={menu.grand_total}
-          />
-        ))}
-      </section>
+      <div className="space-y-24">
+        {zones.map((zone) => {
+          const zoneRestaurants = indexedMenuData.filter((menu) => 
+            zone.restaurantNames.includes(menu.restaurant_name)
+          );
+
+          if (zoneRestaurants.length === 0) return null;
+
+          return (
+            <div key={zone.id} className="zone-section">
+              <div className="mb-10 border-b border-stone-200 pb-6">
+                <h2 className="font-playfair text-4xl font-bold text-ink sm:text-5xl">{zone.title}</h2>
+                <p className="mt-3 max-w-2xl text-lg text-stone-600 italic">
+                  {zone.description}
+                </p>
+              </div>
+              <section className="grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                {zoneRestaurants.map((menu) => (
+                  <MenuPreview
+                    key={menu.originalIndex}
+                    id={menu.originalIndex}
+                    restaurantName={menu.restaurant_name}
+                    chefName={menu.chef_name}
+                    location={menu.location}
+                    numberOfCourses={menu.tasting_menu.length}
+                    totalPrice={menu.grand_total}
+                  />
+                ))}
+              </section>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
