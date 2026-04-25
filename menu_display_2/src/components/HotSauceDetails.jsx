@@ -19,15 +19,15 @@ function HotSauceDetails() {
 
   return (
     <div className="page-shell">
-      <article className="mx-auto grid max-w-5xl overflow-hidden rounded-lg border border-stone-200/80 bg-linen shadow-editorial lg:grid-cols-[0.9fr_1.1fr]">
-        <div className="flex min-h-[520px] items-center justify-center bg-gradient-to-b from-white to-stone-100 p-8 sm:p-12">
+      <article className="mx-auto grid max-w-7xl overflow-hidden rounded-lg border border-stone-200/80 bg-linen shadow-editorial lg:grid-cols-[minmax(0,2.5fr)_minmax(280px,0.6fr)] lg:items-stretch">
+        <div className="flex min-h-[520px] items-center justify-center bg-gradient-to-b from-white to-stone-100 p-8 sm:p-12 lg:min-h-[calc(100vh-10rem)] lg:p-8">
           <img
             src={`/sauce_pictures/${encodeURIComponent(sauce.name.replace(/ /g, '_'))}.webp`}
             alt={`${sauce.name} bottle`}
-            className="max-h-[680px] w-full object-contain"
+            className="h-full w-full max-h-none object-contain object-center"
           />
         </div>
-        <div className="flex flex-col justify-center p-7 sm:p-10 lg:p-12">
+        <div className="flex flex-col justify-center p-7 sm:p-10 lg:max-w-[28rem] lg:p-12">
           <p className="page-kicker">Small batch sauce</p>
           <h1 className="mt-3 font-playfair text-5xl font-semibold leading-tight text-ink">{sauce.name}</h1>
 
