@@ -22,7 +22,7 @@ function About() {
               These menus are more than lists of dishes. Each one features a chef, a restaurant name and location, a complete tasting sequence, dish pricing, and a total price.
             </p>
             <p className="mt-4 leading-8 text-stone-600">
-              This website is the second version of the project. To learn more about the earlier version, visit the{' '}
+              This website is now in its third version. To learn more about the earliest public version, visit the{' '}
               <Link to="/v1" className="font-semibold text-clay underline-offset-4 hover:underline">
                 V1 page
               </Link>
@@ -33,7 +33,10 @@ function About() {
           <section className="rounded-lg border border-stone-200/80 bg-linen p-7 shadow-card sm:p-9">
             <h2 className="font-playfair text-3xl font-semibold">Visualizing the cuisine</h2>
             <p className="mt-4 leading-8 text-stone-600">
-              To bring these AI-generated menus to life, we use the <strong className="text-ink">FLUX-DEV-1</strong> image generation model to create visuals of each dish. The images turn the menus into a more sensory experience.
+              The image system has evolved with the project. Version 1 used <strong className="text-ink">Stable Diffusion</strong> to picture the original menus, while version 2 moved to <strong className="text-ink">FLUX.DEV1</strong> for a richer, more polished visual language.
+            </p>
+            <p className="mt-4 leading-8 text-stone-600">
+              Version 3 is powered by <strong className="text-ink">OpenAI Image Generator v2.0</strong>. Everything in the refreshed website image set was generated with it: hot sauces, restaurants, menu items, supporting food imagery, and the rest of the visual library.
             </p>
             <p className="mt-4 leading-8 text-stone-600">
               The visual layer is central to the project because it shows how AI can push the boundaries of creativity, even in domains traditionally led by human craft and taste.
@@ -53,7 +56,10 @@ function About() {
               The site is built with Vite, React, and TailwindCSS, then hosted on GitHub Pages. The interface is designed to stay fast, responsive, and image-forward while preserving the original project data.
             </p>
             <p className="mt-4 leading-8 text-stone-600">
-              The current editorial design refresh was created with <strong className="text-ink">GPT-5.5</strong>, giving the project a warmer, more polished restaurant-guide presentation.
+              The v3 migration from FLUX.DEV1 to OpenAI Image Generator v2.0 was planned with <strong className="text-ink">GPT-5.5 in plan mode</strong>. It mapped the places that needed image updates, designed a PNG-to-WebP pipeline, added the Make command used for conversion, and archived the previous generated assets before the new set replaced them.
+            </p>
+            <p className="mt-4 leading-8 text-stone-600">
+              The full v3 image refresh cost <strong className="text-ink">$15</strong> in generation spend, covering the complete replacement set for the site.
             </p>
           </section>
         </div>
