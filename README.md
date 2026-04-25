@@ -112,6 +112,25 @@ make recipe-images-apply     # Backup, convert received PNGs to WebP, and overwr
 
 The recipe image requests use `gpt-image-2`, `1024x1024`, and `medium` quality through `/v1/images/generations`. The generated CSV includes each target WebP path and prompt; the JSONL is ready for OpenAI Batch API upload.
 
+## 🏨 Restaurant Image Batch Workflow
+
+Restaurant interior images are generated from `menu_display_2/src/menuData.js`. Each batch creates one `1024x1024` PNG per restaurant, then `make restaurant-images-apply` converts it into both the full-size `restaurant_pictures/*.webp` file and its `320x320` thumbnail under `restaurant_pictures/thumbnails/`.
+
+Generated manifests and OpenAI batch output are stored under `artifacts/restaurant_images/`. Existing full-size and thumbnail WebPs are zipped into `backups/` before overwrite.
+
+Useful commands from the repository root:
+
+```bash
+make restaurant-images-refresh   # Generate CSV + JSONL and validate all 42 restaurant requests
+make restaurant-images-submit    # Submit the OpenAI batch request
+make restaurant-images-check     # Poll once; downloads and decodes output if complete
+make restaurant-images-download  # Download/decode completed output from saved batch state
+make restaurant-images-backup    # Zip the current restaurant_pictures/*.webp and thumbnails
+make restaurant-images-apply     # Backup, convert received PNGs to full/thumbnail WebP, and overwrite mapped targets
+```
+
+The restaurant image requests use `gpt-image-2`, `1024x1024`, and `medium` quality through `/v1/images/generations`. Prompts are photoreal dining-room interior briefs based on each restaurant name, chef, location, dining-room description, and menu context.
+
 For one-off image conversion:
 
 ```bash
@@ -127,6 +146,7 @@ npm run build
 ```
 
 Then refresh a menu and recipe route in the in-app browser before shipping.
+For restaurant image changes, refresh the homepage and a menu route.
 
 ### 🌐 Deploying the Project
 

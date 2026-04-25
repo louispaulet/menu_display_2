@@ -210,3 +210,4 @@ artifacts/**/*_batch_state.json
 artifacts/**/*_batch_output.jsonl
 artifacts/**/*_batch_errors.jsonl
 backups/recipe_webp_backup_*.zip
+backups/restaurant_webp_backup_*.zip

@@ -19,7 +19,9 @@ Always read this `agents.md` file before starting any task in this repository.
   - `npm run build`
 - When changing the frontend, open or refresh the in-app browser on the affected route before reporting completion.
 - Recipe image batches use `scripts/recipe_image_batch.py` and the Make targets documented in `README.md`.
+- Restaurant image batches use `scripts/restaurant_image_batch.py`; full-size restaurant images are generated and thumbnails are derived locally.
 - Before overwriting generated recipe WebP files, create a backup zip with `make recipe-images-backup` or let `make recipe-images-apply` create one automatically.
+- Before overwriting restaurant WebP files, create a backup zip with `make restaurant-images-backup` or let `make restaurant-images-apply` create one automatically.
 - Use `make images-webp IMAGE_INPUT_DIR=/path/to/pngs IMAGE_OUTPUT_DIR=/path/to/webps` for quick PNG/JPEG to WebP conversion.
 
 ## Git Hygiene
