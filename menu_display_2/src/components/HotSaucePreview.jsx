@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import { FaCalendarAlt, FaPepperHot } from 'react-icons/fa';
 
-function HotSaucePreview({ name, hotnessLevel, bottlingDate, description, id }) {
+function HotSaucePreview({ name, hotnessLevel, bottlingDate, description, id, medalFrame }) {
   const baseImageUrl = "https://raw.githubusercontent.com/louispaulet/menu_display_2/main/sauce_pictures/";
 
   const generateImageUrl = (name) => {
@@ -12,13 +12,24 @@ function HotSaucePreview({ name, hotnessLevel, bottlingDate, description, id }) 
 
   return (
     <Link to={`/hot-sauce/${id}`} className="editorial-card group block">
-      <div className="flex aspect-[3/4] items-center justify-center overflow-hidden bg-gradient-to-b from-white to-stone-100 p-6">
+      <div className="relative flex aspect-[3/4] items-center justify-center overflow-hidden bg-gradient-to-b from-white to-stone-100 p-5">
         <img
           src={generateImageUrl(name)}
           alt={`${name} bottle`}
-          className="h-full w-full object-contain transition duration-500 group-hover:scale-105"
+          className={`relative z-10 h-full w-full object-contain transition duration-500 group-hover:scale-105 ${
+            medalFrame ? 'scale-[0.9]' : ''
+          }`}
           loading="lazy"
         />
+        {medalFrame ? (
+          <img
+            src={medalFrame}
+            alt=""
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 z-20 h-full w-full object-contain"
+            loading="lazy"
+          />
+        ) : null}
       </div>
       <div className="space-y-4 p-5">
         <div>
