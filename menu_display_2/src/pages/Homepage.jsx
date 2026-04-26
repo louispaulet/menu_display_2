@@ -112,7 +112,7 @@ function Homepage() {
               Jump straight to any of the 13 curated menu regions below.
             </p>
           </div>
-          <div className="mt-5 flex gap-3 overflow-x-auto pb-1 pr-1">
+          <div className="mt-5 flex flex-wrap gap-3 pb-1 pr-1">
             {availableZones.map((zone) => (
               <button
                 key={zone.id}
@@ -135,7 +135,7 @@ function Homepage() {
                     root.style.scrollBehavior = previousScrollBehavior;
                   });
                 }}
-                className="shrink-0 rounded-full border border-stone-200 bg-white px-4 py-2 text-sm font-semibold text-stone-700 shadow-sm transition hover:border-saffron/50 hover:bg-parchment hover:text-ink"
+                className="rounded-full border border-stone-200 bg-white px-4 py-2 text-sm font-semibold text-stone-700 shadow-sm transition hover:border-saffron/50 hover:bg-parchment hover:text-ink"
               >
                 {zone.title}
               </button>
