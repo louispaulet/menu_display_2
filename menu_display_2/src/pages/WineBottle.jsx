@@ -2,6 +2,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { buildWineImageIndex, resolveWineImageFilename } from '../lib/wineImages';
+import WineImageZoom from '../components/WineImageZoom';
 
 const currencyFormatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
@@ -91,15 +92,14 @@ function WineBottle() {
       <article className="grid gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-start">
         <div className="lg:sticky lg:top-24">
           <div className="rounded-3xl border border-stone-200 bg-white/85 p-6 shadow-lg">
-            <div className="aspect-square overflow-hidden rounded-2xl border border-stone-200 bg-white">
-              <img
-                src={`/the_cellar/${imageFilename}`}
-                alt={`${wine.name} bottle`}
-                loading="eager"
-                decoding="async"
-                className="h-full w-full object-contain p-4"
-              />
-            </div>
+            <WineImageZoom
+              src={`/the_cellar/${imageFilename}`}
+              alt={`${wine.name} bottle`}
+              className="shadow-none hover:shadow-none"
+            />
+            <p className="mt-3 text-center text-xs uppercase tracking-[0.22em] text-stone-400">
+              Click image to open a larger frame
+            </p>
           </div>
         </div>
 
