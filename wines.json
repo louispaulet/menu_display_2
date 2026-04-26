@@ -41,7 +41,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "Bright grapefruit and floral top notes with a wet stone finish elegantly threaded with saline energy."
     },
     {
       "id": 2,
@@ -62,7 +62,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "Ripe white peach and lemon zest grip a thread of fennel and chalk, finishing with precise saline clarity."
     },
     {
       "id": 3,
@@ -83,7 +83,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "Pure lime, green apple, and saline complexity with a crisp alabaster finish."
     },
     {
       "id": 4,
@@ -104,7 +104,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "Candied grapefruit, honeyed florals, and lingering river-stone mineral tension."
     },
     {
       "id": 5,
@@ -125,7 +125,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "Serrated citrus core, salted apricot brightness, and a chalky, invigorating finish."
     },
     {
       "id": 6,
@@ -146,7 +146,7 @@
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
       "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
-      "tasting_note": "Imaginative cosmic aromatics with bright tang and a refined sparkle."
+      "tasting_note": "Celestial citrus, frosted melon, and a hint of violet dust with a luminous finish."
     },
     {
       "id": 7,
@@ -167,7 +167,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "White peach, jasmine blossom, and a touch of rosemary oil over a racy backbone."
     },
     {
       "id": 8,
@@ -188,7 +188,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
+      "tasting_note": "Dried cherry, cocoa nibs, star anise, and a hint of cedar delivering a layered, plush finish."
     },
     {
       "id": 9,
@@ -209,7 +209,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
+      "tasting_note": "Black cherry, espresso powder, dried figs, and a whisper of graphite round out an intense, elegant finish."
     },
     {
       "id": 10,
@@ -230,7 +230,7 @@
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
       "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
-      "tasting_note": "Imaginative cosmic aromatics with bright tang and a refined sparkle."
+      "tasting_note": "Opaline honey, candied orange peel, and a ribbon of stardust spice finish with neon clarity."
     },
     {
       "id": 11,
@@ -251,7 +251,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "Luminous cranberry, violet, and forest-floor whispers, finished with fine-grained tannins."
     },
     {
       "id": 12,
@@ -272,7 +272,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "Candied orange peel, dried fig, saline loquat, and a trailing bitterness that keeps the sweetness honest."
     },
     {
       "id": 13,
@@ -293,7 +293,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "Black tea, plum compote, winter spice, and a thread of leather that unwinds into caramel warmth."
     },
     {
       "id": 14,
@@ -314,7 +314,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "Blood orange, sarsaparilla, cocoa nib dust, and a chalky mineral seam anchoring the finish."
     },
     {
       "id": 15,
@@ -335,7 +335,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
+      "tasting_note": "Wild cherry, licorice root, tar, and a cedar spine framing a mineral-clad finish."
     },
     {
       "id": 16,
@@ -356,7 +356,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
+      "tasting_note": "Rose petal, smoked salami, graphite, and crushed herb acidity on a long velvet tannin fade."
     },
     {
       "id": 17,
@@ -377,7 +377,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
+      "tasting_note": "Ink, black cherry, dark chocolate, and porcini with an iron grip and a balsamic lift at the end."
     },
     {
       "id": 18,
@@ -398,7 +398,7 @@
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
       "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
-      "tasting_note": "Imaginative cosmic aromatics with bright tang and a refined sparkle."
+      "tasting_note": "Neon lime zest, yuzu blossom, honeyed ginger, and a polished slate seam keeping the sweetness crystalline."
     },
     {
       "id": 19,
@@ -419,7 +419,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
+      "tasting_note": "Toasty brioche, citrus pith, orchard blossom, and leesy warmth balanced by chalky minerality."
     },
     {
       "id": 20,
@@ -440,7 +440,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "Sparkling raspberry, rosewater fizz, candied hibiscus, and levitating acidity that feels like a kiss."
     },
     {
       "id": 21,
