@@ -4,10 +4,9 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navItems = [
   { to: '/', label: 'Menus', activePaths: ['/', '/menu', '/recipe'] },
+  { to: '/wines', label: 'Wine List', activePaths: ['/wines'] },
   { to: '/hot-sauces', label: 'Hot sauces', activePaths: ['/hot-sauces', '/hot-sauce'] },
   { to: '/about', label: 'About', activePaths: ['/about'] },
-  { to: '/v1', label: 'V1', activePaths: ['/v1'] },
-  { to: '/wines', label: 'Wine list', activePaths: ['/wines'] },
 ];
 
 function Header() {
