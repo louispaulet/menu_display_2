@@ -11,6 +11,7 @@ import HotSauceDetails from './components/HotSauceDetails';
 import NotFound from './pages/NotFound';
 import Recipe from './components/Recipe';
 import WineList from './pages/WineList';
+import WineBottle from './pages/WineBottle';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/hot-sauce/:id" element={<HotSauceDetails />} /> 
           <Route path="/recipe/:recipeName" element={<Recipe />} /> {/* New Recipe Route */}
           <Route path="/wines" element={<WineList />} />
+          <Route path="/wines/:id" element={<WineBottle />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

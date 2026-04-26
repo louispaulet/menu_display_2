@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
+import { Link } from 'react-router-dom';
 import { useEffect, useMemo, useState } from 'react';
+import { buildWineImageIndex, resolveWineImageFilename } from '../lib/wineImages';
 
 const currencyFormatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
@@ -10,21 +12,6 @@ const currencyFormatter = new Intl.NumberFormat('en-US', {
 function formatPrice(value) {
   if (typeof value !== 'number') return '—';
   return currencyFormatter.format(value);
-}
-
-function slugify(text) {
-  return text
-    .normalize('NFKD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '');
-}
-
-function defaultWineImageFilename(wine) {
-  const idPart = String(wine.id).padStart(3, '0');
-  const namePart = slugify(wine.name).slice(0, 60);
-  return `wine-image-${idPart}-${namePart}.webp`;
 }
 
 function tastingNoteFor(wine) {
@@ -47,7 +34,7 @@ function tastingNoteFor(wine) {
 
 function WineBottleCard({ wine, imageSrc }) {
   return (
-    <article className="editorial-card flex h-full flex-col bg-white/85">
+    <Link to={`/wines/${wine.id}`} className="editorial-card block h-full bg-white/85 transition hover:-translate-y-1 hover:border-clay/40">
       <div className="border-b border-stone-100 bg-white p-4">
         <div className="aspect-square overflow-hidden rounded-2xl border border-stone-200 bg-white">
           <img
@@ -87,7 +74,7 @@ function WineBottleCard({ wine, imageSrc }) {
           <span>Confidence {wine.confidence}</span>
         </div>
       </div>
-    </article>
+    </Link>
   );
 }
 
@@ -122,10 +109,7 @@ function WineList() {
 
   const metadata = wineData?.metadata;
   const wines = useMemo(() => wineData?.wines ?? [], [wineData]);
-  const imageByWineName = useMemo(() => {
-    const entries = cellarManifest?.items ?? [];
-    return new Map(entries.map((entry) => [entry.wine_name, entry.filename]));
-  }, [cellarManifest]);
+  const imageByWineName = useMemo(() => buildWineImageIndex(cellarManifest), [cellarManifest]);
 
   const featured = useMemo(() => {
     if (!wineData?.wines?.length) return [];
@@ -136,7 +120,7 @@ function WineList() {
     () =>
       wines.map((wine) => ({
         wine,
-        imageFilename: imageByWineName.get(wine.name) ?? defaultWineImageFilename(wine),
+        imageFilename: resolveWineImageFilename(wine, imageByWineName),
       })),
     [imageByWineName, wines],
   );
@@ -184,22 +168,26 @@ function WineList() {
         </div>
         <div className="grid gap-6 md:grid-cols-2">
           {featured.map((wine) => (
-            <article key={wine.id} className="flex flex-col gap-4 rounded-3xl border border-stone-200 bg-parchment/80 p-6 shadow-lg">
+            <Link
+              key={wine.id}
+              to={`/wines/${wine.id}`}
+              className="block rounded-3xl border border-stone-200 bg-parchment/80 p-6 shadow-lg transition hover:-translate-y-1 hover:border-clay/40 hover:shadow-editorial"
+            >
               <div>
                 <p className="text-xs uppercase tracking-[0.3em] text-stone-400">{wine.price_type.replace(/_/g, ' ')}</p>
                 <h3 className="mt-1 text-2xl font-semibold text-ink">{wine.name}</h3>
               </div>
-              <div className="grid gap-4 sm:grid-cols-2">
+              <div className="mt-4 grid gap-4 sm:grid-cols-2">
                 <PriceBadge label="Base price" value={wine.base_price_eur_750ml} range={wine.base_price_range_eur_750ml} />
                 <PriceBadge label="Michelin markup" value={wine.michelin_star_price_eur_750ml} range={wine.michelin_star_price_range_eur_750ml} />
               </div>
-              <div className="flex items-center gap-3 text-sm text-stone-500">
+              <div className="mt-4 flex items-center gap-3 text-sm text-stone-500">
                 <span className="rounded-full border border-stone-300 px-3 py-1 text-[0.65rem] uppercase tracking-[0.2em]">
                   ×{wine.michelin_markup_multiple_used}
                 </span>
                 <span className="text-xs">Confidence: {wine.confidence}</span>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </section>
