@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useMemo, useState } from 'react';
 import { buildWineImageIndex, resolveWineImageFilename } from '../lib/wineImages';
+import { buildWineBottlePath } from '../lib/wineLinks';
 
 const currencyFormatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
@@ -34,7 +35,7 @@ function tastingNoteFor(wine) {
 
 function WineBottleCard({ wine, imageSrc }) {
   return (
-    <Link to={`/wines/${wine.id}`} className="editorial-card block h-full bg-white/85 transition hover:-translate-y-1 hover:border-clay/40">
+    <Link to={buildWineBottlePath(wine)} className="editorial-card block h-full bg-white/85 transition hover:-translate-y-1 hover:border-clay/40">
       <div className="border-b border-stone-100 bg-white p-4">
         <div className="aspect-square overflow-hidden rounded-2xl border border-stone-200 bg-white">
           <img
@@ -170,7 +171,7 @@ function WineList() {
           {featured.map((wine) => (
             <Link
               key={wine.id}
-              to={`/wines/${wine.id}`}
+              to={buildWineBottlePath(wine)}
               className="block rounded-3xl border border-stone-200 bg-parchment/80 p-6 shadow-lg transition hover:-translate-y-1 hover:border-clay/40 hover:shadow-editorial"
             >
               <div>

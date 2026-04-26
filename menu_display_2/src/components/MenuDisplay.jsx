@@ -1,8 +1,10 @@
 /* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
+import { useWineLinkContext, linkifyWineText } from '../lib/wineLinks';
 import { MdAttachMoney, MdLocalBar, MdLocationOn, MdRestaurantMenu } from 'react-icons/md';
 
 function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRoomDescription, grandTotal }) {
+  const wineLinkContext = useWineLinkContext();
   const baseImageUrl = "https://raw.githubusercontent.com/louispaulet/menu_display_2/main/dish_pictures/";
 
   const generateImageUrl = (courseName, courseDescription) => {
@@ -99,7 +101,7 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
                   </p>
                   <p className="flex items-start gap-2">
                     <MdLocalBar className="mt-1 h-4 w-4 shrink-0 text-clay" />
-                    <span>{item.wine_pairing}</span>
+                    <span className="leading-6">{linkifyWineText(item.wine_pairing, wineLinkContext)}</span>
                   </p>
                 </div>
                 <Link

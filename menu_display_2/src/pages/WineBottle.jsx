@@ -2,6 +2,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { buildWineImageIndex, resolveWineImageFilename } from '../lib/wineImages';
+import { slugify } from '../lib/wineLinks';
 import WineImageZoom from '../components/WineImageZoom';
 
 const currencyFormatter = new Intl.NumberFormat('en-US', {
@@ -25,8 +26,7 @@ function InfoPair({ label, value }) {
 }
 
 function WineBottle() {
-  const { id } = useParams();
-  const wineId = Number(id);
+  const { wineKey } = useParams();
   const [wineData, setWineData] = useState(null);
   const [cellarManifest, setCellarManifest] = useState(null);
 
@@ -43,7 +43,18 @@ function WineBottle() {
 
   const wines = useMemo(() => wineData?.wines ?? [], [wineData]);
   const imageIndex = useMemo(() => buildWineImageIndex(cellarManifest), [cellarManifest]);
-  const wine = useMemo(() => wines.find((entry) => entry.id === wineId), [wineId, wines]);
+  const wine = useMemo(() => {
+    if (!wineKey) return null;
+
+    const numericMatch = wineKey.match(/^(\d+)(?:-.+)?$/);
+    if (numericMatch) {
+      const wineId = Number(numericMatch[1]);
+      return wines.find((entry) => entry.id === wineId) ?? null;
+    }
+
+    const normalizedKey = slugify(wineKey);
+    return wines.find((entry) => slugify(entry.name) === normalizedKey) ?? null;
+  }, [wineKey, wines]);
 
   if (!wineData) {
     return (

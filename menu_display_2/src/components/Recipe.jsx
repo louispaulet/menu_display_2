@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useState, useEffect, useMemo } from 'react';
+import { Link, useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import menuData from '../menuData';
+import { linkifyWineMarkdown, useWineLinkContext } from '../lib/wineLinks';
 
 const dishImageBaseUrl = 'https://raw.githubusercontent.com/louispaulet/menu_display_2/main/dish_pictures/';
 
@@ -43,6 +44,7 @@ const Recipe = () => {
   const { recipeName } = useParams(); // Get the recipe name from the URL
   const [content, setContent] = useState('');
   const [error, setError] = useState(false);
+  const wineLinkContext = useWineLinkContext();
 
   useEffect(() => {
     const loadRecipe = async () => {
@@ -71,6 +73,23 @@ const Recipe = () => {
 
   const dishImageUrl = getDishImageUrl(content);
   const renderedContent = stripMarkdownImages(content);
+  const linkedContent = useMemo(
+    () => linkifyWineMarkdown(renderedContent, wineLinkContext),
+    [renderedContent, wineLinkContext],
+  );
+  const markdownComponents = useMemo(
+    () => ({
+      a: ({ href, children }) =>
+        href?.startsWith('/wines/') ? (
+          <Link to={href} className="text-clay underline decoration-clay/40 underline-offset-4 hover:text-ink">
+            {children}
+          </Link>
+        ) : (
+          <a href={href}>{children}</a>
+        ),
+    }),
+    [],
+  );
 
   return (
     <div className="page-shell">
@@ -95,7 +114,7 @@ const Recipe = () => {
             </div>
           ) : null}
           <article className="prose prose-stone max-w-none p-7 prose-headings:font-playfair prose-headings:text-ink prose-a:text-clay prose-strong:text-ink sm:p-10">
-            <ReactMarkdown>{renderedContent}</ReactMarkdown>
+            <ReactMarkdown components={markdownComponents}>{linkedContent}</ReactMarkdown>
           </article>
         </div>
       )}
