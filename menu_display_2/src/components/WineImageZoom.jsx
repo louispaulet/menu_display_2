@@ -60,12 +60,12 @@ function WineImageZoom({ src, alt, className = '' }) {
 
       {isOpen && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 p-4 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-start justify-center bg-black/75 px-4 pb-4 pt-24 backdrop-blur-sm sm:pt-28"
           onClick={closeZoom}
           role="presentation"
         >
           <div
-            className="relative flex h-[92vh] w-full max-w-6xl flex-col gap-4 rounded-[1.5rem] border border-white/10 bg-stone-950 p-4 shadow-2xl"
+            className="relative flex h-[calc(100vh-7rem)] w-full max-w-6xl flex-col gap-4 rounded-[1.5rem] border border-white/10 bg-stone-950 p-4 shadow-2xl"
             onClick={(event) => event.stopPropagation()}
             role="dialog"
             aria-modal="true"
