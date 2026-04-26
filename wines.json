@@ -40,7 +40,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Bright grapefruit and floral top notes with a wet stone finish elegantly threaded with saline energy."
     },
     {
       "id": 2,
@@ -60,7 +61,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Ripe white peach and lemon zest grip a thread of fennel and chalk, finishing with precise saline clarity."
     },
     {
       "id": 3,
@@ -80,7 +82,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Pure lime, green apple, and saline complexity with a crisp alabaster finish."
     },
     {
       "id": 4,
@@ -100,7 +103,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Candied grapefruit, honeyed florals, and lingering river-stone mineral tension."
     },
     {
       "id": 5,
@@ -120,7 +124,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Serrated citrus core, salted apricot brightness, and a chalky, invigorating finish."
     },
     {
       "id": 6,
@@ -140,7 +145,8 @@
       "confidence": "made_up",
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
-      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price."
+      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
+      "tasting_note": "Celestial citrus, frosted melon, and a hint of violet dust with a luminous finish."
     },
     {
       "id": 7,
@@ -160,7 +166,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "White peach, jasmine blossom, and a touch of rosemary oil over a racy backbone."
     },
     {
       "id": 8,
@@ -180,7 +187,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Dried cherry, cocoa nibs, star anise, and a hint of cedar delivering a layered, plush finish."
     },
     {
       "id": 9,
@@ -200,7 +208,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Black cherry, espresso powder, dried figs, and a whisper of graphite round out an intense, elegant finish."
     },
     {
       "id": 10,
@@ -220,7 +229,8 @@
       "confidence": "made_up",
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
-      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price."
+      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
+      "tasting_note": "Opaline honey, candied orange peel, and a ribbon of stardust spice finish with neon clarity."
     },
     {
       "id": 11,
@@ -235,12 +245,13 @@
         "low": 210,
         "high": 290
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Luminous cranberry, violet, and forest-floor whispers, finished with fine-grained tannins."
     },
     {
       "id": 12,
@@ -260,7 +271,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Candied orange peel, dried fig, saline loquat, and a trailing bitterness that keeps the sweetness honest."
     },
     {
       "id": 13,
@@ -280,7 +292,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Black tea, plum compote, winter spice, and a thread of leather that unwinds into caramel warmth."
     },
     {
       "id": 14,
@@ -300,7 +313,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Blood orange, sarsaparilla, cocoa nib dust, and a chalky mineral seam anchoring the finish."
     },
     {
       "id": 15,
@@ -320,7 +334,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Wild cherry, licorice root, tar, and a cedar spine framing a mineral-clad finish."
     },
     {
       "id": 16,
@@ -340,7 +355,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Rose petal, smoked salami, graphite, and crushed herb acidity on a long velvet tannin fade."
     },
     {
       "id": 17,
@@ -360,7 +376,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Ink, black cherry, dark chocolate, and porcini with an iron grip and a balsamic lift at the end."
     },
     {
       "id": 18,
@@ -380,7 +397,8 @@
       "confidence": "made_up",
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
-      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price."
+      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
+      "tasting_note": "Neon lime zest, yuzu blossom, honeyed ginger, and a polished slate seam keeping the sweetness crystalline."
     },
     {
       "id": 19,
@@ -400,7 +418,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Toasty brioche, citrus pith, orchard blossom, and leesy warmth balanced by chalky minerality."
     },
     {
       "id": 20,
@@ -420,7 +439,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Sparkling raspberry, rosewater fizz, candied hibiscus, and levitating acidity that feels like a kiss."
     },
     {
       "id": 21,
@@ -440,7 +460,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
     },
     {
       "id": 22,
@@ -460,7 +481,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
     },
     {
       "id": 23,
@@ -480,7 +502,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 24,
@@ -500,7 +523,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
     },
     {
       "id": 25,
@@ -520,7 +544,8 @@
       "confidence": "medium",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Imposing depth, dark berries, polished tannins, and lingering smoke."
     },
     {
       "id": 26,
@@ -540,7 +565,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
     },
     {
       "id": 27,
@@ -560,7 +586,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 28,
@@ -580,7 +607,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 29,
@@ -600,7 +628,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 30,
@@ -620,7 +649,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 31,
@@ -640,7 +670,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 32,
@@ -660,7 +691,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 33,
@@ -675,12 +707,13 @@
         "low": 180,
         "high": 260
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 34,
@@ -695,12 +728,13 @@
         "low": 180,
         "high": 260
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 35,
@@ -720,7 +754,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 36,
@@ -740,7 +775,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 37,
@@ -760,7 +796,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
     },
     {
       "id": 38,
@@ -775,12 +812,13 @@
         "low": 240,
         "high": 340
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 39,
@@ -795,12 +833,13 @@
         "low": 240,
         "high": 340
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 40,
@@ -820,7 +859,8 @@
       "confidence": "medium",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
     },
     {
       "id": 41,
@@ -835,12 +875,13 @@
         "low": 240,
         "high": 340
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 42,
@@ -855,12 +896,13 @@
         "low": 240,
         "high": 340
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 43,
@@ -880,7 +922,8 @@
       "confidence": "medium",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
     },
     {
       "id": 44,
@@ -895,12 +938,13 @@
         "low": 240,
         "high": 340
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 45,
@@ -915,12 +959,13 @@
         "low": 240,
         "high": 340
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 46,
@@ -935,12 +980,13 @@
         "low": 240,
         "high": 340
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 47,
@@ -955,12 +1001,13 @@
         "low": 240,
         "high": 340
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 48,
@@ -980,7 +1027,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 49,
@@ -1000,7 +1048,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 50,
@@ -1020,7 +1069,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 51,
@@ -1040,7 +1090,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 52,
@@ -1060,7 +1111,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
     },
     {
       "id": 53,
@@ -1080,7 +1132,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
     },
     {
       "id": 54,
@@ -1100,7 +1153,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
     },
     {
       "id": 55,
@@ -1120,7 +1174,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 56,
@@ -1140,7 +1195,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 57,
@@ -1160,7 +1216,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
     },
     {
       "id": 58,
@@ -1180,7 +1237,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 59,
@@ -1200,7 +1258,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 60,
@@ -1220,7 +1279,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 61,
@@ -1240,7 +1300,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 62,
@@ -1260,7 +1321,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 63,
@@ -1280,7 +1342,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 64,
@@ -1300,7 +1363,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 65,
@@ -1320,7 +1384,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 66,
@@ -1335,12 +1400,13 @@
         "low": 170,
         "high": 240
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 67,
@@ -1355,12 +1421,13 @@
         "low": 170,
         "high": 240
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 68,
@@ -1380,7 +1447,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 69,
@@ -1400,7 +1468,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
     },
     {
       "id": 70,
@@ -1420,7 +1489,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Imposing depth, dark berries, polished tannins, and lingering smoke."
     },
     {
       "id": 71,
@@ -1440,7 +1510,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
     },
     {
       "id": 72,
@@ -1460,7 +1531,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
     },
     {
       "id": 73,
@@ -1480,7 +1552,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Imposing depth, dark berries, polished tannins, and lingering smoke."
     },
     {
       "id": 74,
@@ -1495,12 +1568,13 @@
         "low": 170,
         "high": 240
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 75,
@@ -1515,12 +1589,13 @@
         "low": 170,
         "high": 240
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 76,
@@ -1535,12 +1610,13 @@
         "low": 170,
         "high": 240
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 77,
@@ -1560,7 +1636,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 78,
@@ -1580,7 +1657,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
     },
     {
       "id": 79,
@@ -1600,7 +1678,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
     },
     {
       "id": 80,
@@ -1620,7 +1699,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
     },
     {
       "id": 81,
@@ -1640,7 +1720,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
     },
     {
       "id": 82,
@@ -1660,7 +1741,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 83,
@@ -1680,7 +1762,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
     },
     {
       "id": 84,
@@ -1700,7 +1783,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 85,
@@ -1720,7 +1804,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 86,
@@ -1740,7 +1825,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Imposing depth, dark berries, polished tannins, and lingering smoke."
     },
     {
       "id": 87,
@@ -1760,7 +1846,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 88,
@@ -1775,12 +1862,13 @@
         "low": 230,
         "high": 330
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 89,
@@ -1795,12 +1883,13 @@
         "low": 230,
         "high": 330
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 90,
@@ -1820,7 +1909,8 @@
       "confidence": "made_up",
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
-      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price."
+      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
+      "tasting_note": "Imaginative cosmic aromatics with bright tang and a refined sparkle."
     },
     {
       "id": 91,
@@ -1840,7 +1930,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 92,
@@ -1855,12 +1946,13 @@
         "low": 170,
         "high": 240
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 93,
@@ -1880,7 +1972,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 94,
@@ -1900,7 +1993,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
     },
     {
       "id": 95,
@@ -1920,7 +2014,8 @@
       "confidence": "medium",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
     },
     {
       "id": 96,
@@ -1935,12 +2030,13 @@
         "low": 200,
         "high": 280
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 97,
@@ -1960,7 +2056,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 98,
@@ -1975,12 +2072,13 @@
         "low": 160,
         "high": 220
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 99,
@@ -2000,7 +2098,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 100,
@@ -2020,7 +2119,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
     },
     {
       "id": 101,
@@ -2040,7 +2140,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 102,
@@ -2060,7 +2161,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 103,
@@ -2080,7 +2182,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 104,
@@ -2100,7 +2203,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 105,
@@ -2120,7 +2224,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Imposing depth, dark berries, polished tannins, and lingering smoke."
     },
     {
       "id": 106,
@@ -2135,12 +2240,13 @@
         "low": 200,
         "high": 280
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 107,
@@ -2160,7 +2266,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 108,
@@ -2180,7 +2287,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 109,
@@ -2200,7 +2308,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 110,
@@ -2220,7 +2329,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 111,
@@ -2235,12 +2345,13 @@
         "low": 200,
         "high": 280
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 112,
@@ -2260,7 +2371,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 113,
@@ -2280,7 +2392,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 114,
@@ -2300,7 +2413,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 115,
@@ -2320,7 +2434,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 116,
@@ -2340,7 +2455,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 117,
@@ -2360,7 +2476,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 118,
@@ -2380,7 +2497,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
     },
     {
       "id": 119,
@@ -2395,12 +2513,13 @@
         "low": 250,
         "high": 350
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "made_up",
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
-      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price."
+      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
+      "tasting_note": "Imaginative cosmic aromatics with bright tang and a refined sparkle."
     },
     {
       "id": 120,
@@ -2420,7 +2539,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 121,
@@ -2435,12 +2555,13 @@
         "low": 210,
         "high": 290
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 122,
@@ -2460,7 +2581,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 123,
@@ -2480,7 +2602,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 124,
@@ -2500,7 +2623,8 @@
       "confidence": "made_up",
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
-      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price."
+      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
+      "tasting_note": "Imaginative cosmic aromatics with bright tang and a refined sparkle."
     },
     {
       "id": 125,
@@ -2520,7 +2644,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 126,
@@ -2540,7 +2665,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 127,
@@ -2560,7 +2686,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 128,
@@ -2575,12 +2702,13 @@
         "low": 170,
         "high": 240
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 129,
@@ -2600,7 +2728,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 130,
@@ -2615,12 +2744,13 @@
         "low": 170,
         "high": 240
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 131,
@@ -2635,12 +2765,13 @@
         "low": 170,
         "high": 240
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 132,
@@ -2660,7 +2791,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 133,
@@ -2680,7 +2812,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 134,
@@ -2695,12 +2828,13 @@
         "low": 200,
         "high": 280
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 135,
@@ -2715,12 +2849,13 @@
         "low": 170,
         "high": 240
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 136,
@@ -2740,7 +2875,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 137,
@@ -2760,7 +2896,8 @@
       "confidence": "made_up",
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
-      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price."
+      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
+      "tasting_note": "Imaginative cosmic aromatics with bright tang and a refined sparkle."
     },
     {
       "id": 138,
@@ -2780,7 +2917,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 139,
@@ -2800,7 +2938,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Imposing depth, dark berries, polished tannins, and lingering smoke."
     },
     {
       "id": 140,
@@ -2820,7 +2959,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Imposing depth, dark berries, polished tannins, and lingering smoke."
     },
     {
       "id": 141,
@@ -2840,7 +2980,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Imposing depth, dark berries, polished tannins, and lingering smoke."
     },
     {
       "id": 142,
@@ -2860,7 +3001,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 143,
@@ -2875,12 +3017,13 @@
         "low": 170,
         "high": 240
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 144,
@@ -2895,12 +3038,13 @@
         "low": 170,
         "high": 240
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 145,
@@ -2920,7 +3064,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 146,
@@ -2940,7 +3085,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 147,
@@ -2960,7 +3106,8 @@
       "confidence": "medium",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
     },
     {
       "id": 148,
@@ -2980,7 +3127,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
     },
     {
       "id": 149,
@@ -3000,7 +3148,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 150,
@@ -3020,7 +3169,8 @@
       "confidence": "made_up",
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
-      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price."
+      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
+      "tasting_note": "Imaginative cosmic aromatics with bright tang and a refined sparkle."
     },
     {
       "id": 151,
@@ -3035,12 +3185,13 @@
         "low": 190,
         "high": 270
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 152,
@@ -3060,7 +3211,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 153,
@@ -3080,7 +3232,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 154,
@@ -3100,7 +3253,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Imposing depth, dark berries, polished tannins, and lingering smoke."
     },
     {
       "id": 155,
@@ -3120,7 +3274,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
     },
     {
       "id": 156,
@@ -3140,7 +3295,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 157,
@@ -3160,7 +3316,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 158,
@@ -3180,7 +3337,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 159,
@@ -3200,7 +3358,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 160,
@@ -3220,7 +3379,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 161,
@@ -3235,12 +3395,13 @@
         "low": 240,
         "high": 340
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 162,
@@ -3260,7 +3421,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 163,
@@ -3280,7 +3442,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 164,
@@ -3300,7 +3463,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 165,
@@ -3320,7 +3484,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 166,
@@ -3340,7 +3505,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 167,
@@ -3360,7 +3526,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
     },
     {
       "id": 168,
@@ -3380,7 +3547,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 169,
@@ -3400,7 +3568,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 170,
@@ -3420,7 +3589,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 171,
@@ -3435,12 +3605,13 @@
         "low": 190,
         "high": 270
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 172,
@@ -3455,12 +3626,13 @@
         "low": 190,
         "high": 270
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 173,
@@ -3475,12 +3647,13 @@
         "low": 190,
         "high": 270
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 174,
@@ -3500,7 +3673,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 175,
@@ -3520,7 +3694,8 @@
       "confidence": "made_up",
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
-      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price."
+      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
+      "tasting_note": "Imaginative cosmic aromatics with bright tang and a refined sparkle."
     },
     {
       "id": 176,
@@ -3540,7 +3715,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 177,
@@ -3560,7 +3736,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
     },
     {
       "id": 178,
@@ -3580,7 +3757,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 179,
@@ -3600,7 +3778,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 180,
@@ -3620,7 +3799,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 181,
@@ -3640,7 +3820,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 182,
@@ -3655,12 +3836,13 @@
         "low": 210,
         "high": 290
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 183,
@@ -3675,12 +3857,13 @@
         "low": 210,
         "high": 290
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 184,
@@ -3695,12 +3878,13 @@
         "low": 210,
         "high": 290
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 185,
@@ -3715,12 +3899,13 @@
         "low": 210,
         "high": 290
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 186,
@@ -3735,12 +3920,13 @@
         "low": 210,
         "high": 290
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 187,
@@ -3760,7 +3946,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Imposing depth, dark berries, polished tannins, and lingering smoke."
     },
     {
       "id": 188,
@@ -3780,7 +3967,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Imposing depth, dark berries, polished tannins, and lingering smoke."
     },
     {
       "id": 189,
@@ -3795,12 +3983,13 @@
         "low": 210,
         "high": 290
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 190,
@@ -3820,7 +4009,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 191,
@@ -3835,12 +4025,13 @@
         "low": 240,
         "high": 340
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 192,
@@ -3860,7 +4051,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 193,
@@ -3880,7 +4072,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 194,
@@ -3895,12 +4088,13 @@
         "low": 160,
         "high": 220
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 195,
@@ -3920,7 +4114,8 @@
       "confidence": "made_up",
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
-      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price."
+      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
+      "tasting_note": "Imaginative cosmic aromatics with bright tang and a refined sparkle."
     },
     {
       "id": 196,
@@ -3940,7 +4135,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Imposing depth, dark berries, polished tannins, and lingering smoke."
     },
     {
       "id": 197,
@@ -3960,7 +4156,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 198,
@@ -3975,12 +4172,13 @@
         "low": 190,
         "high": 270
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 199,
@@ -4000,7 +4198,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 200,
@@ -4020,7 +4219,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 201,
@@ -4040,7 +4240,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 202,
@@ -4060,7 +4261,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 203,
@@ -4080,7 +4282,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
     },
     {
       "id": 204,
@@ -4100,7 +4303,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 205,
@@ -4120,7 +4324,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 206,
@@ -4135,12 +4340,13 @@
         "low": 160,
         "high": 220
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 207,
@@ -4155,12 +4361,13 @@
         "low": 160,
         "high": 220
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 208,
@@ -4175,12 +4382,13 @@
         "low": 160,
         "high": 220
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 209,
@@ -4200,7 +4408,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 210,
@@ -4220,7 +4429,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 211,
@@ -4240,7 +4450,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 212,
@@ -4255,12 +4466,13 @@
         "low": 200,
         "high": 280
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 213,
@@ -4280,7 +4492,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 214,
@@ -4300,7 +4513,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 215,
@@ -4320,7 +4534,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 216,
@@ -4340,7 +4555,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 217,
@@ -4360,7 +4576,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 218,
@@ -4380,7 +4597,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 219,
@@ -4400,7 +4618,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
     },
     {
       "id": 220,
@@ -4415,12 +4634,13 @@
         "low": 170,
         "high": 240
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 221,
@@ -4435,12 +4655,13 @@
         "low": 170,
         "high": 240
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 222,
@@ -4455,12 +4676,13 @@
         "low": 170,
         "high": 240
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 223,
@@ -4475,12 +4697,13 @@
         "low": 170,
         "high": 240
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 224,
@@ -4495,12 +4718,13 @@
         "low": 170,
         "high": 240
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 225,
@@ -4520,7 +4744,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
     },
     {
       "id": 226,
@@ -4540,7 +4765,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 227,
@@ -4560,7 +4786,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 228,
@@ -4580,7 +4807,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 229,
@@ -4600,7 +4828,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 230,
@@ -4620,7 +4849,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 231,
@@ -4640,7 +4870,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 232,
@@ -4660,7 +4891,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 233,
@@ -4675,12 +4907,13 @@
         "low": 190,
         "high": 270
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 234,
@@ -4700,7 +4933,8 @@
       "confidence": "made_up",
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
-      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price."
+      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
+      "tasting_note": "Imaginative cosmic aromatics with bright tang and a refined sparkle."
     },
     {
       "id": 235,
@@ -4720,7 +4954,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 236,
@@ -4740,7 +4975,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 237,
@@ -4760,7 +4996,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 238,
@@ -4780,7 +5017,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 239,
@@ -4795,12 +5033,13 @@
         "low": 240,
         "high": 340
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 240,
@@ -4820,7 +5059,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
     },
     {
       "id": 241,
@@ -4835,12 +5075,13 @@
         "low": 170,
         "high": 240
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 242,
@@ -4855,12 +5096,13 @@
         "low": 190,
         "high": 270
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 243,
@@ -4875,12 +5117,13 @@
         "low": 160,
         "high": 220
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 244,
@@ -4900,7 +5143,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
     },
     {
       "id": 245,
@@ -4920,7 +5164,8 @@
       "confidence": "made_up",
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
-      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price."
+      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
+      "tasting_note": "Imaginative cosmic aromatics with bright tang and a refined sparkle."
     },
     {
       "id": 246,
@@ -4940,7 +5185,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 247,
@@ -4960,7 +5206,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
     },
     {
       "id": 248,
@@ -4980,7 +5227,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 249,
@@ -4995,12 +5243,13 @@
         "low": 200,
         "high": 280
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 250,
@@ -5015,12 +5264,13 @@
         "low": 200,
         "high": 280
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 251,
@@ -5040,7 +5290,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 252,
@@ -5060,7 +5311,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 253,
@@ -5080,7 +5332,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 254,
@@ -5100,7 +5353,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 255,
@@ -5120,7 +5374,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 256,
@@ -5140,7 +5395,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 257,
@@ -5155,12 +5411,13 @@
         "low": 240,
         "high": 340
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 258,
@@ -5175,12 +5432,13 @@
         "low": 200,
         "high": 280
       },
-      "michelin_markup_multiple_used": 3.0,
+      "michelin_markup_multiple_used": 3,
       "price_type": "made_up_practical_estimate",
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
     },
     {
       "id": 259,
@@ -5200,7 +5458,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 260,
@@ -5220,7 +5479,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     },
     {
       "id": 261,
@@ -5240,7 +5500,8 @@
       "confidence": "low",
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
-      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
+      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
     }
   ]
 }
