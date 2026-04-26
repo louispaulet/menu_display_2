@@ -6,10 +6,11 @@ import Homepage from './pages/Homepage';
 import About from './pages/About';
 import Menu from './pages/Menu';
 import V1 from './pages/V1';
-import HotSaucePage from './pages/HotSaucePage'; // Import the HotSaucePage
-import HotSauceDetails from './components/HotSauceDetails'; // Import the HotSauceDetails page
-import NotFound from './pages/NotFound'; // Import the NotFound component
-import Recipe from './components/Recipe'; // Import the Recipe component
+import HotSaucePage from './pages/HotSaucePage';
+import HotSauceDetails from './components/HotSauceDetails';
+import NotFound from './pages/NotFound';
+import Recipe from './components/Recipe';
+import WineList from './pages/WineList';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/hot-sauces" element={<HotSaucePage />} /> 
           <Route path="/hot-sauce/:id" element={<HotSauceDetails />} /> 
           <Route path="/recipe/:recipeName" element={<Recipe />} /> {/* New Recipe Route */}
+          <Route path="/wines" element={<WineList />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

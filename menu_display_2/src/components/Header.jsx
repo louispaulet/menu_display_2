@@ -7,6 +7,7 @@ const navItems = [
   { to: '/hot-sauces', label: 'Hot sauces', activePaths: ['/hot-sauces', '/hot-sauce'] },
   { to: '/about', label: 'About', activePaths: ['/about'] },
   { to: '/v1', label: 'V1', activePaths: ['/v1'] },
+  { to: '/wines', label: 'Wine list', activePaths: ['/wines'] },
 ];
 
 function Header() {
