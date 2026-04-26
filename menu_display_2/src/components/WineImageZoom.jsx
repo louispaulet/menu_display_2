@@ -65,7 +65,7 @@ function WineImageZoom({ src, alt, className = '' }) {
           role="presentation"
         >
           <div
-            className="relative flex w-full max-w-6xl flex-col gap-4 rounded-[1.5rem] border border-white/10 bg-stone-950 p-4 shadow-2xl"
+            className="relative flex h-[92vh] w-full max-w-6xl flex-col gap-4 rounded-[1.5rem] border border-white/10 bg-stone-950 p-4 shadow-2xl"
             onClick={(event) => event.stopPropagation()}
             role="dialog"
             aria-modal="true"
@@ -106,14 +106,15 @@ function WineImageZoom({ src, alt, className = '' }) {
               </div>
             </div>
 
-            <div className="flex min-h-[65vh] items-center justify-center overflow-auto rounded-[1.25rem] bg-white p-4">
+            <div className="min-h-0 flex-1 overflow-auto overscroll-contain rounded-[1.25rem] bg-white p-4">
               <img
                 src={src}
                 alt={alt}
-                className="origin-center select-none"
+                className="mx-auto block select-none"
                 style={{
                   transform: `scale(${scale})`,
                   transition: 'transform 160ms ease',
+                  transformOrigin: 'top center',
                   maxHeight: 'none',
                   maxWidth: 'none',
                 }}
