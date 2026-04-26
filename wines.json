@@ -1,0 +1,5246 @@
+{
+  "metadata": {
+    "description": "Practical made-up price-buddy estimates for a wine list: base market price and Michelin-star restaurant list price in EUR per 750ml bottle.",
+    "assumptions": {
+      "currency": "EUR",
+      "bottle_size": "750ml unless original item is sake/fortified/non-standard; still normalized as a listed bottle price",
+      "base_price": "plausible normal retail/market estimate, not guaranteed current availability",
+      "michelin_star_price": "plausible 1-star to 3-star restaurant wine-list price using tiered markup; trophy wines use lower multiple, affordable wines higher multiple",
+      "fictional_items": "assigned fantasy prices so the list remains complete"
+    },
+    "count": 261,
+    "fictional_or_unpriceable_count": 12,
+    "base_price_summary_eur": {
+      "min": 20,
+      "median": 50,
+      "max": 6250
+    },
+    "michelin_price_summary_eur": {
+      "min": 85,
+      "median": 170,
+      "max": 11900
+    }
+  },
+  "wines": [
+    {
+      "id": 1,
+      "name": "Albariño Do Ferreiro Cepas Vellas 2019",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 2,
+      "name": "Albariño Pazo Barrantes 2020",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 3,
+      "name": "Albariño Pazo Señorans 2020",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 4,
+      "name": "Albariño Pazo Señorans Selección de Añada 2015",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 5,
+      "name": "Albariño Pazo de Señoráns 2020",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 6,
+      "name": "Algol Binary Star Sauvignon Blanc 2999",
+      "base_price_eur_750ml": 130,
+      "base_price_range_eur_750ml": {
+        "low": 105,
+        "high": 160
+      },
+      "michelin_star_price_eur_750ml": 360,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 310,
+        "high": 440
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "made_up",
+      "is_fictional_or_unpriceable": true,
+      "pricing_source_basis": "invented_fantasy_price",
+      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price."
+    },
+    {
+      "id": 7,
+      "name": "Alpha Estate Axia Malagousia 2019",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 8,
+      "name": "Amarone della Valpolicella Classico Allegrini 2016",
+      "base_price_eur_750ml": 120,
+      "base_price_range_eur_750ml": {
+        "low": 96,
+        "high": 150
+      },
+      "michelin_star_price_eur_750ml": 330,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 290,
+        "high": 400
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 9,
+      "name": "Amarone della Valpolicella Quintarelli Riserva 2009",
+      "base_price_eur_750ml": 120,
+      "base_price_range_eur_750ml": {
+        "low": 96,
+        "high": 150
+      },
+      "michelin_star_price_eur_750ml": 330,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 290,
+        "high": 400
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 10,
+      "name": "Andromeda Winery Late Harvest Nebula Nectar 2045",
+      "base_price_eur_750ml": 125,
+      "base_price_range_eur_750ml": {
+        "low": 100,
+        "high": 155
+      },
+      "michelin_star_price_eur_750ml": 340,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 290,
+        "high": 410
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "made_up",
+      "is_fictional_or_unpriceable": true,
+      "pricing_source_basis": "invented_fantasy_price",
+      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price."
+    },
+    {
+      "id": 11,
+      "name": "August Kesseler Pinot Noir 'R' 2017",
+      "base_price_eur_750ml": 78,
+      "base_price_range_eur_750ml": {
+        "low": 62,
+        "high": 98
+      },
+      "michelin_star_price_eur_750ml": 240,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 210,
+        "high": 290
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 12,
+      "name": "Banyuls Domaine La Tour Vieille 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 13,
+      "name": "Banyuls Domaine La Tour Vieille Rimage 2017",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 14,
+      "name": "Banyuls Domaine La Tour Vieille Rimage 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 15,
+      "name": "Barbaresco Produttori del Barbaresco Montefico 2016",
+      "base_price_eur_750ml": 120,
+      "base_price_range_eur_750ml": {
+        "low": 96,
+        "high": 150
+      },
+      "michelin_star_price_eur_750ml": 330,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 290,
+        "high": 400
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 16,
+      "name": "Barolo G.D. Vajra Bricco delle Viole 2016",
+      "base_price_eur_750ml": 120,
+      "base_price_range_eur_750ml": {
+        "low": 96,
+        "high": 150
+      },
+      "michelin_star_price_eur_750ml": 330,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 290,
+        "high": 400
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 17,
+      "name": "Barolo Gaja Sperss 2016",
+      "base_price_eur_750ml": 400,
+      "base_price_range_eur_750ml": {
+        "low": 320,
+        "high": 500
+      },
+      "michelin_star_price_eur_750ml": 1000,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 850,
+        "high": 1200
+      },
+      "michelin_markup_multiple_used": 2.45,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 18,
+      "name": "Betelgeuse Supernova Riesling 2997",
+      "base_price_eur_750ml": 130,
+      "base_price_range_eur_750ml": {
+        "low": 105,
+        "high": 160
+      },
+      "michelin_star_price_eur_750ml": 360,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 310,
+        "high": 440
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "made_up",
+      "is_fictional_or_unpriceable": true,
+      "pricing_source_basis": "invented_fantasy_price",
+      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price."
+    },
+    {
+      "id": 19,
+      "name": "Billecart-Salmon Cuvée Nicolas François Billecart 2006",
+      "base_price_eur_750ml": 225,
+      "base_price_range_eur_750ml": {
+        "low": 180,
+        "high": 280
+      },
+      "michelin_star_price_eur_750ml": 625,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 550,
+        "high": 750
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 20,
+      "name": "Brachetto d'Acqui Marenco Pineto 2020",
+      "base_price_eur_750ml": 20,
+      "base_price_range_eur_750ml": {
+        "low": 16,
+        "high": 24
+      },
+      "michelin_star_price_eur_750ml": 85,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 75,
+        "high": 110
+      },
+      "michelin_markup_multiple_used": 3.8,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 21,
+      "name": "Brunello di Montalcino Biondi Santi Riserva 2013",
+      "base_price_eur_750ml": 700,
+      "base_price_range_eur_750ml": {
+        "low": 560,
+        "high": 880
+      },
+      "michelin_star_price_eur_750ml": 1600,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 1375,
+        "high": 1950
+      },
+      "michelin_markup_multiple_used": 2.25,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 22,
+      "name": "Brunello di Montalcino Poggio Antico 2015",
+      "base_price_eur_750ml": 120,
+      "base_price_range_eur_750ml": {
+        "low": 96,
+        "high": 150
+      },
+      "michelin_star_price_eur_750ml": 330,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 290,
+        "high": 400
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 23,
+      "name": "Ca' del Bosco Franciacorta Cuvée Prestige Brut NV",
+      "base_price_eur_750ml": 50,
+      "base_price_range_eur_750ml": {
+        "low": 40,
+        "high": 62
+      },
+      "michelin_star_price_eur_750ml": 170,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 150,
+        "high": 210
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 24,
+      "name": "Cabernet Sauvignon Château Montelena Napa Valley 2017",
+      "base_price_eur_750ml": 130,
+      "base_price_range_eur_750ml": {
+        "low": 105,
+        "high": 160
+      },
+      "michelin_star_price_eur_750ml": 360,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 310,
+        "high": 440
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 25,
+      "name": "Cabernet Sauvignon Harlan Estate 2014",
+      "base_price_eur_750ml": 1025,
+      "base_price_range_eur_750ml": {
+        "low": 820,
+        "high": 1275
+      },
+      "michelin_star_price_eur_750ml": 2150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 1850,
+        "high": 2600
+      },
+      "michelin_markup_multiple_used": 2.05,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "medium",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 26,
+      "name": "Cabernet Sauvignon Silver Oak Alexander Valley 2016",
+      "base_price_eur_750ml": 130,
+      "base_price_range_eur_750ml": {
+        "low": 105,
+        "high": 160
+      },
+      "michelin_star_price_eur_750ml": 360,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 310,
+        "high": 440
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 27,
+      "name": "Cahors Château du Cèdre 2017",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 28,
+      "name": "Cava Codorníu Gran Plus Ultra Brut Reserva",
+      "base_price_eur_750ml": 50,
+      "base_price_range_eur_750ml": {
+        "low": 40,
+        "high": 62
+      },
+      "michelin_star_price_eur_750ml": 170,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 150,
+        "high": 210
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 29,
+      "name": "Cava Gramona III Lustros Brut Nature 2012",
+      "base_price_eur_750ml": 50,
+      "base_price_range_eur_750ml": {
+        "low": 40,
+        "high": 62
+      },
+      "michelin_star_price_eur_750ml": 170,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 150,
+        "high": 210
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 30,
+      "name": "Cava Gramona Imperial Gran Reserva Brut 2016",
+      "base_price_eur_750ml": 50,
+      "base_price_range_eur_750ml": {
+        "low": 40,
+        "high": 62
+      },
+      "michelin_star_price_eur_750ml": 170,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 150,
+        "high": 210
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 31,
+      "name": "Cava Recaredo Brut Nature Gran Reserva 2015",
+      "base_price_eur_750ml": 50,
+      "base_price_range_eur_750ml": {
+        "low": 40,
+        "high": 62
+      },
+      "michelin_star_price_eur_750ml": 170,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 150,
+        "high": 210
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 32,
+      "name": "Cederberg Sauvignon Blanc 2020",
+      "base_price_eur_750ml": 34,
+      "base_price_range_eur_750ml": {
+        "low": 28,
+        "high": 42
+      },
+      "michelin_star_price_eur_750ml": 120,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 110,
+        "high": 150
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 33,
+      "name": "Chablis 1er Cru Domaine William Fèvre Montée de Tonnerre 2018",
+      "base_price_eur_750ml": 68,
+      "base_price_range_eur_750ml": {
+        "low": 54,
+        "high": 84
+      },
+      "michelin_star_price_eur_750ml": 210,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 180,
+        "high": 260
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 34,
+      "name": "Chablis 1er Cru Montée de Tonnerre Domaine Servin 2019",
+      "base_price_eur_750ml": 68,
+      "base_price_range_eur_750ml": {
+        "low": 54,
+        "high": 84
+      },
+      "michelin_star_price_eur_750ml": 210,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 180,
+        "high": 260
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 35,
+      "name": "Chablis Domaine Laroche Saint Martin 2019",
+      "base_price_eur_750ml": 32,
+      "base_price_range_eur_750ml": {
+        "low": 26,
+        "high": 40
+      },
+      "michelin_star_price_eur_750ml": 110,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 95,
+        "high": 140
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 36,
+      "name": "Chablis Domaine William Fèvre 2019",
+      "base_price_eur_750ml": 32,
+      "base_price_range_eur_750ml": {
+        "low": 26,
+        "high": 40
+      },
+      "michelin_star_price_eur_750ml": 110,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 95,
+        "high": 140
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 37,
+      "name": "Chablis Domaine William Fèvre Grand Cru Les Clos 2018",
+      "base_price_eur_750ml": 175,
+      "base_price_range_eur_750ml": {
+        "low": 140,
+        "high": 220
+      },
+      "michelin_star_price_eur_750ml": 480,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 410,
+        "high": 600
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 38,
+      "name": "Champagne Billecart-Salmon Brut Réserve",
+      "base_price_eur_750ml": 92,
+      "base_price_range_eur_750ml": {
+        "low": 74,
+        "high": 115
+      },
+      "michelin_star_price_eur_750ml": 280,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 240,
+        "high": 340
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 39,
+      "name": "Champagne Bollinger Special Cuvée Brut",
+      "base_price_eur_750ml": 92,
+      "base_price_range_eur_750ml": {
+        "low": 74,
+        "high": 115
+      },
+      "michelin_star_price_eur_750ml": 280,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 240,
+        "high": 340
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 40,
+      "name": "Champagne Dom Pérignon Vintage 2010",
+      "base_price_eur_750ml": 210,
+      "base_price_range_eur_750ml": {
+        "low": 170,
+        "high": 260
+      },
+      "michelin_star_price_eur_750ml": 575,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 490,
+        "high": 700
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "medium",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 41,
+      "name": "Champagne Drappier Brut Nature Zero Dosage",
+      "base_price_eur_750ml": 92,
+      "base_price_range_eur_750ml": {
+        "low": 74,
+        "high": 115
+      },
+      "michelin_star_price_eur_750ml": 280,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 240,
+        "high": 340
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 42,
+      "name": "Champagne Henriot Brut Souverain",
+      "base_price_eur_750ml": 92,
+      "base_price_range_eur_750ml": {
+        "low": 74,
+        "high": 115
+      },
+      "michelin_star_price_eur_750ml": 280,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 240,
+        "high": 340
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 43,
+      "name": "Champagne Krug Grande Cuvée",
+      "base_price_eur_750ml": 280,
+      "base_price_range_eur_750ml": {
+        "low": 225,
+        "high": 350
+      },
+      "michelin_star_price_eur_750ml": 700,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 600,
+        "high": 850
+      },
+      "michelin_markup_multiple_used": 2.45,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "medium",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 44,
+      "name": "Champagne Ruinart Blanc de Blancs",
+      "base_price_eur_750ml": 92,
+      "base_price_range_eur_750ml": {
+        "low": 74,
+        "high": 115
+      },
+      "michelin_star_price_eur_750ml": 280,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 240,
+        "high": 340
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 45,
+      "name": "Champagne Ruinart Blanc de Blancs Brut",
+      "base_price_eur_750ml": 92,
+      "base_price_range_eur_750ml": {
+        "low": 74,
+        "high": 115
+      },
+      "michelin_star_price_eur_750ml": 280,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 240,
+        "high": 340
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 46,
+      "name": "Champagne Taittinger Brut La Française",
+      "base_price_eur_750ml": 92,
+      "base_price_range_eur_750ml": {
+        "low": 74,
+        "high": 115
+      },
+      "michelin_star_price_eur_750ml": 280,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 240,
+        "high": 340
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 47,
+      "name": "Champagne Taittinger Brut Réserve",
+      "base_price_eur_750ml": 92,
+      "base_price_range_eur_750ml": {
+        "low": 74,
+        "high": 115
+      },
+      "michelin_star_price_eur_750ml": 280,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 240,
+        "high": 340
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 48,
+      "name": "Chardonnay Cakebread Cellars Napa Valley 2019",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 49,
+      "name": "Chardonnay Catena Zapata Adrianna Vineyard White Bones 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 50,
+      "name": "Chardonnay Domaine Laroche Les Vaudevey 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 51,
+      "name": "Chardonnay Flowers Sonoma Coast 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 52,
+      "name": "Chardonnay Joseph Drouhin Puligny-Montrachet 2018",
+      "base_price_eur_750ml": 150,
+      "base_price_range_eur_750ml": {
+        "low": 120,
+        "high": 190
+      },
+      "michelin_star_price_eur_750ml": 410,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 350,
+        "high": 500
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 53,
+      "name": "Chardonnay Kistler Les Noisetiers 2019",
+      "base_price_eur_750ml": 135,
+      "base_price_range_eur_750ml": {
+        "low": 110,
+        "high": 170
+      },
+      "michelin_star_price_eur_750ml": 370,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 320,
+        "high": 450
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 54,
+      "name": "Chardonnay Kistler Vine Hill Vineyard 2017",
+      "base_price_eur_750ml": 135,
+      "base_price_range_eur_750ml": {
+        "low": 110,
+        "high": 170
+      },
+      "michelin_star_price_eur_750ml": 370,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 320,
+        "high": 450
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 55,
+      "name": "Chardonnay Marimar Estate La Màsía 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 56,
+      "name": "Chardonnay Olivier Leflaive Bourgogne 2019",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 57,
+      "name": "Chardonnay Peter Michael Ma Belle-Fille 2018",
+      "base_price_eur_750ml": 135,
+      "base_price_range_eur_750ml": {
+        "low": 110,
+        "high": 170
+      },
+      "michelin_star_price_eur_750ml": 370,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 320,
+        "high": 450
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 58,
+      "name": "Chardonnay Sonoma-Cutrer Russian River Ranches 2019",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 59,
+      "name": "Chasselas Domaine de Autecour 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 60,
+      "name": "Chenin Blanc Domaine Huet Le Mont Sec 2019",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 61,
+      "name": "Chenin Blanc Domaine Huet Vouvray Le Mont Demi-Sec 2019",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 62,
+      "name": "Chenin Blanc François Chidaine Montlouis-sur-Loire Les Bournais 2016",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 63,
+      "name": "Chenin Blanc François Chidaine Montlouis-sur-Loire Les Bournais 2019",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 64,
+      "name": "Chenin Blanc François Chidaine Montlouis-sur-Loire Les Choisilles 2019",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 65,
+      "name": "Chianti Classico Fontodi 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 66,
+      "name": "Château Climens Barsac 2016",
+      "base_price_eur_750ml": 64,
+      "base_price_range_eur_750ml": {
+        "low": 52,
+        "high": 80
+      },
+      "michelin_star_price_eur_750ml": 200,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 170,
+        "high": 240
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 67,
+      "name": "Château Climens Barsac 2017",
+      "base_price_eur_750ml": 64,
+      "base_price_range_eur_750ml": {
+        "low": 52,
+        "high": 80
+      },
+      "michelin_star_price_eur_750ml": 200,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 170,
+        "high": 240
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 68,
+      "name": "Château La Rame Sainte-Croix-du-Mont 2017",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 69,
+      "name": "Château Margaux Blanc 2016",
+      "base_price_eur_750ml": 420,
+      "base_price_range_eur_750ml": {
+        "low": 340,
+        "high": 520
+      },
+      "michelin_star_price_eur_750ml": 1050,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 900,
+        "high": 1275
+      },
+      "michelin_markup_multiple_used": 2.45,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 70,
+      "name": "Château Mouton Rothschild 2009",
+      "base_price_eur_750ml": 920,
+      "base_price_range_eur_750ml": {
+        "low": 740,
+        "high": 1150
+      },
+      "michelin_star_price_eur_750ml": 2100,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 1800,
+        "high": 2550
+      },
+      "michelin_markup_multiple_used": 2.25,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 71,
+      "name": "Château Mouton Rothschild 2012",
+      "base_price_eur_750ml": 580,
+      "base_price_range_eur_750ml": {
+        "low": 460,
+        "high": 720
+      },
+      "michelin_star_price_eur_750ml": 1325,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 1150,
+        "high": 1600
+      },
+      "michelin_markup_multiple_used": 2.25,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 72,
+      "name": "Château Mouton Rothschild Pauillac 2015",
+      "base_price_eur_750ml": 660,
+      "base_price_range_eur_750ml": {
+        "low": 530,
+        "high": 820
+      },
+      "michelin_star_price_eur_750ml": 1500,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 1275,
+        "high": 1800
+      },
+      "michelin_markup_multiple_used": 2.25,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 73,
+      "name": "Château Pétrus Pomerol 2014",
+      "base_price_eur_750ml": 3500,
+      "base_price_range_eur_750ml": {
+        "low": 2800,
+        "high": 4400
+      },
+      "michelin_star_price_eur_750ml": 6700,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 5700,
+        "high": 8100
+      },
+      "michelin_markup_multiple_used": 1.9,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 74,
+      "name": "Château Rieussec Sauternes 2017",
+      "base_price_eur_750ml": 64,
+      "base_price_range_eur_750ml": {
+        "low": 52,
+        "high": 80
+      },
+      "michelin_star_price_eur_750ml": 200,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 170,
+        "high": 240
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 75,
+      "name": "Château Suduiraut Sauternes 2015",
+      "base_price_eur_750ml": 64,
+      "base_price_range_eur_750ml": {
+        "low": 52,
+        "high": 80
+      },
+      "michelin_star_price_eur_750ml": 200,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 170,
+        "high": 240
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 76,
+      "name": "Château Suduiraut Sauternes 2016",
+      "base_price_eur_750ml": 64,
+      "base_price_range_eur_750ml": {
+        "low": 52,
+        "high": 80
+      },
+      "michelin_star_price_eur_750ml": 200,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 170,
+        "high": 240
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 77,
+      "name": "Château d'Esclans Whispering Angel Rosé 2020",
+      "base_price_eur_750ml": 34,
+      "base_price_range_eur_750ml": {
+        "low": 28,
+        "high": 42
+      },
+      "michelin_star_price_eur_750ml": 120,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 110,
+        "high": 150
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 78,
+      "name": "Château d'Yquem 1999",
+      "base_price_eur_750ml": 380,
+      "base_price_range_eur_750ml": {
+        "low": 300,
+        "high": 480
+      },
+      "michelin_star_price_eur_750ml": 950,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 825,
+        "high": 1150
+      },
+      "michelin_markup_multiple_used": 2.45,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 79,
+      "name": "Château d'Yquem Sauternes 2009",
+      "base_price_eur_750ml": 540,
+      "base_price_range_eur_750ml": {
+        "low": 430,
+        "high": 680
+      },
+      "michelin_star_price_eur_750ml": 1225,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 1050,
+        "high": 1475
+      },
+      "michelin_markup_multiple_used": 2.25,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 80,
+      "name": "Château d'Yquem Sauternes 2017",
+      "base_price_eur_750ml": 420,
+      "base_price_range_eur_750ml": {
+        "low": 340,
+        "high": 520
+      },
+      "michelin_star_price_eur_750ml": 1050,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 900,
+        "high": 1275
+      },
+      "michelin_markup_multiple_used": 2.45,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 81,
+      "name": "Château d'Yquem Sauternes 2018",
+      "base_price_eur_750ml": 360,
+      "base_price_range_eur_750ml": {
+        "low": 290,
+        "high": 450
+      },
+      "michelin_star_price_eur_750ml": 900,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 775,
+        "high": 1100
+      },
+      "michelin_markup_multiple_used": 2.45,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 82,
+      "name": "Château de Beaucastel Châteauneuf-du-Pape 2019",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 83,
+      "name": "Château-Grillet 2015",
+      "base_price_eur_750ml": 380,
+      "base_price_range_eur_750ml": {
+        "low": 300,
+        "high": 480
+      },
+      "michelin_star_price_eur_750ml": 950,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 825,
+        "high": 1150
+      },
+      "michelin_markup_multiple_used": 2.45,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 84,
+      "name": "Clos des Papes Châteauneuf-du-Pape Blanc 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 85,
+      "name": "Cloudy Bay Sauvignon Blanc 2020",
+      "base_price_eur_750ml": 34,
+      "base_price_range_eur_750ml": {
+        "low": 28,
+        "high": 42
+      },
+      "michelin_star_price_eur_750ml": 120,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 110,
+        "high": 150
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 86,
+      "name": "Corton-Charlemagne Grand Cru Domaine Coche-Dury 2017",
+      "base_price_eur_750ml": 6250,
+      "base_price_range_eur_750ml": {
+        "low": 5000,
+        "high": 7800
+      },
+      "michelin_star_price_eur_750ml": 11900,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 10200,
+        "high": 14300
+      },
+      "michelin_markup_multiple_used": 1.9,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 87,
+      "name": "Craggy Range Te Kahu Gimblett Gravels Vineyard 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 88,
+      "name": "Dassai 23 Junmai Daiginjo",
+      "base_price_eur_750ml": 88,
+      "base_price_range_eur_750ml": {
+        "low": 70,
+        "high": 110
+      },
+      "michelin_star_price_eur_750ml": 270,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 230,
+        "high": 330
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 89,
+      "name": "Dassai 23 Junmai Daiginjo Sake",
+      "base_price_eur_750ml": 88,
+      "base_price_range_eur_750ml": {
+        "low": 70,
+        "high": 110
+      },
+      "michelin_star_price_eur_750ml": 270,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 230,
+        "high": 330
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 90,
+      "name": "Deimos Heights Pinot Noir 2050",
+      "base_price_eur_750ml": 220,
+      "base_price_range_eur_750ml": {
+        "low": 175,
+        "high": 275
+      },
+      "michelin_star_price_eur_750ml": 600,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 525,
+        "high": 725
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "made_up",
+      "is_fictional_or_unpriceable": true,
+      "pricing_source_basis": "invented_fantasy_price",
+      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price."
+    },
+    {
+      "id": 91,
+      "name": "Delaire Graff Botmaskop 2017",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 92,
+      "name": "Dewazakura Oka Ginjo",
+      "base_price_eur_750ml": 64,
+      "base_price_range_eur_750ml": {
+        "low": 52,
+        "high": 80
+      },
+      "michelin_star_price_eur_750ml": 200,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 170,
+        "high": 240
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 93,
+      "name": "Dog Point Vineyard Sauvignon Blanc 2020",
+      "base_price_eur_750ml": 34,
+      "base_price_range_eur_750ml": {
+        "low": 28,
+        "high": 42
+      },
+      "michelin_star_price_eur_750ml": 120,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 110,
+        "high": 150
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 94,
+      "name": "Dom Pérignon Vintage 2010",
+      "base_price_eur_750ml": 210,
+      "base_price_range_eur_750ml": {
+        "low": 170,
+        "high": 260
+      },
+      "michelin_star_price_eur_750ml": 575,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 490,
+        "high": 700
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 95,
+      "name": "Dom Pérignon Vintage 2015",
+      "base_price_eur_750ml": 245,
+      "base_price_range_eur_750ml": {
+        "low": 195,
+        "high": 310
+      },
+      "michelin_star_price_eur_750ml": 675,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 575,
+        "high": 825
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "medium",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 96,
+      "name": "Domaine Disznókő Tokaji Aszú 5 Puttonyos 2015",
+      "base_price_eur_750ml": 76,
+      "base_price_range_eur_750ml": {
+        "low": 60,
+        "high": 96
+      },
+      "michelin_star_price_eur_750ml": 230,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 200,
+        "high": 280
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 97,
+      "name": "Domaine Gerovassiliou Viognier Epanomi 2019",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 98,
+      "name": "Domaine Huet Vouvray Moelleux Le Mont 2019",
+      "base_price_eur_750ml": 60,
+      "base_price_range_eur_750ml": {
+        "low": 48,
+        "high": 76
+      },
+      "michelin_star_price_eur_750ml": 180,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 160,
+        "high": 220
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 99,
+      "name": "Domaine Laroche Chablis Saint Martin 2019",
+      "base_price_eur_750ml": 32,
+      "base_price_range_eur_750ml": {
+        "low": 26,
+        "high": 40
+      },
+      "michelin_star_price_eur_750ml": 110,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 95,
+        "high": 140
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 100,
+      "name": "Domaine Leflaive Puligny-Montrachet 2018",
+      "base_price_eur_750ml": 720,
+      "base_price_range_eur_750ml": {
+        "low": 580,
+        "high": 900
+      },
+      "michelin_star_price_eur_750ml": 1650,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 1425,
+        "high": 2000
+      },
+      "michelin_markup_multiple_used": 2.25,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 101,
+      "name": "Domaine Louis Moreau Chablis 2019",
+      "base_price_eur_750ml": 32,
+      "base_price_range_eur_750ml": {
+        "low": 26,
+        "high": 40
+      },
+      "michelin_star_price_eur_750ml": 110,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 95,
+        "high": 140
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 102,
+      "name": "Domaine Sigalas Assyrtiko Santorini 2020",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 103,
+      "name": "Domaine Zind-Humbrecht Riesling 2019",
+      "base_price_eur_750ml": 44,
+      "base_price_range_eur_750ml": {
+        "low": 36,
+        "high": 56
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 104,
+      "name": "Domaine de Rancy Rivesaltes Ambré Hors d'Age 2000",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 105,
+      "name": "Domaine de la Romanée-Conti Échézeaux 2015",
+      "base_price_eur_750ml": 4350,
+      "base_price_range_eur_750ml": {
+        "low": 3500,
+        "high": 5450
+      },
+      "michelin_star_price_eur_750ml": 8300,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 7100,
+        "high": 10000
+      },
+      "michelin_markup_multiple_used": 1.9,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 106,
+      "name": "Domaine des Baumard Quarts de Chaume 2017",
+      "base_price_eur_750ml": 76,
+      "base_price_range_eur_750ml": {
+        "low": 60,
+        "high": 96
+      },
+      "michelin_star_price_eur_750ml": 230,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 200,
+        "high": 280
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 107,
+      "name": "Domäne Wachau Riesling Terrassen Federspiel 2019",
+      "base_price_eur_750ml": 44,
+      "base_price_range_eur_750ml": {
+        "low": 36,
+        "high": 56
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 108,
+      "name": "Donnhoff Oberhäuser Leistenberg Riesling Kabinett 2019",
+      "base_price_eur_750ml": 44,
+      "base_price_range_eur_750ml": {
+        "low": 36,
+        "high": 56
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 109,
+      "name": "Dr. Loosen Blue Slate Riesling Kabinett 2019",
+      "base_price_eur_750ml": 44,
+      "base_price_range_eur_750ml": {
+        "low": 36,
+        "high": 56
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 110,
+      "name": "Dr. Loosen Riesling Sekt Brut 2018",
+      "base_price_eur_750ml": 44,
+      "base_price_range_eur_750ml": {
+        "low": 36,
+        "high": 56
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 111,
+      "name": "Eiswein Domaine des Muses 2017",
+      "base_price_eur_750ml": 76,
+      "base_price_range_eur_750ml": {
+        "low": 60,
+        "high": 96
+      },
+      "michelin_star_price_eur_750ml": 230,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 200,
+        "high": 280
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 112,
+      "name": "Enrique Foster Reserva Malbec 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 113,
+      "name": "Falanghina Feudi di San Gregorio 2020",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 114,
+      "name": "Fendant Clos de la Morge Domaine Rouvinez 2019",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 115,
+      "name": "Franciacorta Ca' del Bosco Cuvée Annamaria Clementi 2010",
+      "base_price_eur_750ml": 50,
+      "base_price_range_eur_750ml": {
+        "low": 40,
+        "high": 62
+      },
+      "michelin_star_price_eur_750ml": 170,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 150,
+        "high": 210
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 116,
+      "name": "Franciacorta Ca' del Bosco Cuvée Prestige",
+      "base_price_eur_750ml": 50,
+      "base_price_range_eur_750ml": {
+        "low": 40,
+        "high": 62
+      },
+      "michelin_star_price_eur_750ml": 170,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 150,
+        "high": 210
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 117,
+      "name": "Franz Hirtzberger Rotes Tor Grüner Veltliner Federspiel 2019",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 118,
+      "name": "Gaja Barbaresco 2016",
+      "base_price_eur_750ml": 340,
+      "base_price_range_eur_750ml": {
+        "low": 270,
+        "high": 420
+      },
+      "michelin_star_price_eur_750ml": 850,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 725,
+        "high": 1025
+      },
+      "michelin_markup_multiple_used": 2.45,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 119,
+      "name": "Gamma-7 Sparkling Nebula Wine",
+      "base_price_eur_750ml": 96,
+      "base_price_range_eur_750ml": {
+        "low": 76,
+        "high": 120
+      },
+      "michelin_star_price_eur_750ml": 290,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 250,
+        "high": 350
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "made_up",
+      "is_fictional_or_unpriceable": true,
+      "pricing_source_basis": "invented_fantasy_price",
+      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price."
+    },
+    {
+      "id": 120,
+      "name": "Georges Vernay Côte-Rôtie Blonde du Seigneur 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 121,
+      "name": "Gevrey-Chambertin Domaine Fourrier Vieilles Vignes 2017",
+      "base_price_eur_750ml": 78,
+      "base_price_range_eur_750ml": {
+        "low": 62,
+        "high": 98
+      },
+      "michelin_star_price_eur_750ml": 240,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 210,
+        "high": 290
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 122,
+      "name": "Gewürztraminer Trimbach 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 123,
+      "name": "Gewürztraminer Zind-Humbrecht Alsace 2019",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 124,
+      "name": "Gliese 581g Merlot 2995",
+      "base_price_eur_750ml": 160,
+      "base_price_range_eur_750ml": {
+        "low": 130,
+        "high": 200
+      },
+      "michelin_star_price_eur_750ml": 440,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 380,
+        "high": 550
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "made_up",
+      "is_fictional_or_unpriceable": true,
+      "pricing_source_basis": "invented_fantasy_price",
+      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price."
+    },
+    {
+      "id": 125,
+      "name": "Godello Bodegas Avancia 2019",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 126,
+      "name": "Gruner Veltliner Hirsch Kammern Heiligenstein 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 127,
+      "name": "Grüner Veltliner Hirsch Kammern Kammerner Heiligenstein 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 128,
+      "name": "Hakkaisan Junmai Ginjo Sake",
+      "base_price_eur_750ml": 64,
+      "base_price_range_eur_750ml": {
+        "low": 52,
+        "high": 80
+      },
+      "michelin_star_price_eur_750ml": 200,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 170,
+        "high": 240
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 129,
+      "name": "Hakkaisan Tokubetsu Honjozo",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 130,
+      "name": "Hakushika Hanaomoi Junmai Ginjo",
+      "base_price_eur_750ml": 64,
+      "base_price_range_eur_750ml": {
+        "low": 52,
+        "high": 80
+      },
+      "michelin_star_price_eur_750ml": 200,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 170,
+        "high": 240
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 131,
+      "name": "Hakutsuru Excellent Junmai Sake",
+      "base_price_eur_750ml": 64,
+      "base_price_range_eur_750ml": {
+        "low": 52,
+        "high": 80
+      },
+      "michelin_star_price_eur_750ml": 200,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 170,
+        "high": 240
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 132,
+      "name": "Hamilton Russell Vineyards Chardonnay 2020",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 133,
+      "name": "Humagne Rouge Domaine de Beudon 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 134,
+      "name": "Ice Cider Domaine Neige Première 2017",
+      "base_price_eur_750ml": 76,
+      "base_price_range_eur_750ml": {
+        "low": 60,
+        "high": 96
+      },
+      "michelin_star_price_eur_750ml": 230,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 200,
+        "high": 280
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 135,
+      "name": "Isojiman Junmai Daiginjo Sake",
+      "base_price_eur_750ml": 64,
+      "base_price_range_eur_750ml": {
+        "low": 52,
+        "high": 80
+      },
+      "michelin_star_price_eur_750ml": 200,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 170,
+        "high": 240
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 136,
+      "name": "Joseph Drouhin Côte de Beaune 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 137,
+      "name": "Kepler-186f Pinot Noir 2996",
+      "base_price_eur_750ml": 160,
+      "base_price_range_eur_750ml": {
+        "low": 130,
+        "high": 200
+      },
+      "michelin_star_price_eur_750ml": 440,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 380,
+        "high": 550
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "made_up",
+      "is_fictional_or_unpriceable": true,
+      "pricing_source_basis": "invented_fantasy_price",
+      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price."
+    },
+    {
+      "id": 138,
+      "name": "Kir-Yianni Ramnista Xinomavro Naoussa 2016",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 139,
+      "name": "Krug Clos d'Ambonnay 2000",
+      "base_price_eur_750ml": 4000,
+      "base_price_range_eur_750ml": {
+        "low": 3200,
+        "high": 5000
+      },
+      "michelin_star_price_eur_750ml": 7600,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 6500,
+        "high": 9200
+      },
+      "michelin_markup_multiple_used": 1.9,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 140,
+      "name": "Krug Clos du Mesnil 2006",
+      "base_price_eur_750ml": 1225,
+      "base_price_range_eur_750ml": {
+        "low": 980,
+        "high": 1525
+      },
+      "michelin_star_price_eur_750ml": 2550,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 2200,
+        "high": 3100
+      },
+      "michelin_markup_multiple_used": 2.05,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 141,
+      "name": "Krug Clos du Mesnil Blanc de Blancs 2013",
+      "base_price_eur_750ml": 1400,
+      "base_price_range_eur_750ml": {
+        "low": 1125,
+        "high": 1750
+      },
+      "michelin_star_price_eur_750ml": 2900,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 2500,
+        "high": 3500
+      },
+      "michelin_markup_multiple_used": 2.05,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 142,
+      "name": "Ktima Pavlidis Thema Red Drama 2017",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 143,
+      "name": "Kubota Manju Junmai Daiginjo Sake",
+      "base_price_eur_750ml": 64,
+      "base_price_range_eur_750ml": {
+        "low": 52,
+        "high": 80
+      },
+      "michelin_star_price_eur_750ml": 200,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 170,
+        "high": 240
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 144,
+      "name": "Kubota Senju Ginjo",
+      "base_price_eur_750ml": 64,
+      "base_price_range_eur_750ml": {
+        "low": 52,
+        "high": 80
+      },
+      "michelin_star_price_eur_750ml": 200,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 170,
+        "high": 240
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 145,
+      "name": "Livio Felluga Terre Alte 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 146,
+      "name": "Louis Jadot Moulin-à-Vent 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 147,
+      "name": "Louis Roederer Cristal 2012",
+      "base_price_eur_750ml": 370,
+      "base_price_range_eur_750ml": {
+        "low": 295,
+        "high": 460
+      },
+      "michelin_star_price_eur_750ml": 925,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 800,
+        "high": 1125
+      },
+      "michelin_markup_multiple_used": 2.45,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "medium",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 148,
+      "name": "Louis Roederer Cristal Brut 2012",
+      "base_price_eur_750ml": 370,
+      "base_price_range_eur_750ml": {
+        "low": 295,
+        "high": 460
+      },
+      "michelin_star_price_eur_750ml": 925,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 800,
+        "high": 1125
+      },
+      "michelin_markup_multiple_used": 2.45,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 149,
+      "name": "Loupiac Château du Cros 2016",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 150,
+      "name": "Lunar Valley Chardonnay 2049",
+      "base_price_eur_750ml": 155,
+      "base_price_range_eur_750ml": {
+        "low": 125,
+        "high": 195
+      },
+      "michelin_star_price_eur_750ml": 420,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 360,
+        "high": 525
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "made_up",
+      "is_fictional_or_unpriceable": true,
+      "pricing_source_basis": "invented_fantasy_price",
+      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price."
+    },
+    {
+      "id": 151,
+      "name": "Madeira Blandy's 10-Year-Old Sercial",
+      "base_price_eur_750ml": 72,
+      "base_price_range_eur_750ml": {
+        "low": 58,
+        "high": 90
+      },
+      "michelin_star_price_eur_750ml": 220,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 190,
+        "high": 270
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 152,
+      "name": "Malbec Catena Zapata Nicasia Vineyard 2016",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 153,
+      "name": "Markus Molitor Zeltinger Sonnenuhr Riesling Spätlese 2018",
+      "base_price_eur_750ml": 44,
+      "base_price_range_eur_750ml": {
+        "low": 36,
+        "high": 56
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 154,
+      "name": "Meursault Domaine des Comtes Lafon Les Perrières 2018",
+      "base_price_eur_750ml": 1150,
+      "base_price_range_eur_750ml": {
+        "low": 920,
+        "high": 1450
+      },
+      "michelin_star_price_eur_750ml": 2400,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 2050,
+        "high": 2900
+      },
+      "michelin_markup_multiple_used": 2.05,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 155,
+      "name": "Meursault Les Narvaux Domaine Michelot 2018",
+      "base_price_eur_750ml": 150,
+      "base_price_range_eur_750ml": {
+        "low": 120,
+        "high": 190
+      },
+      "michelin_star_price_eur_750ml": 410,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 350,
+        "high": 500
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 156,
+      "name": "Moscato d'Asti Elio Perrone Sourgal 2020",
+      "base_price_eur_750ml": 20,
+      "base_price_range_eur_750ml": {
+        "low": 16,
+        "high": 24
+      },
+      "michelin_star_price_eur_750ml": 85,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 75,
+        "high": 110
+      },
+      "michelin_markup_multiple_used": 3.8,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 157,
+      "name": "Moscato d'Asti G.D. Vajra 2020",
+      "base_price_eur_750ml": 20,
+      "base_price_range_eur_750ml": {
+        "low": 16,
+        "high": 24
+      },
+      "michelin_star_price_eur_750ml": 85,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 75,
+        "high": 110
+      },
+      "michelin_markup_multiple_used": 3.8,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 158,
+      "name": "Moscato d'Asti La Spinetta Bricco Quaglia 2020",
+      "base_price_eur_750ml": 20,
+      "base_price_range_eur_750ml": {
+        "low": 16,
+        "high": 24
+      },
+      "michelin_star_price_eur_750ml": 85,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 75,
+        "high": 110
+      },
+      "michelin_markup_multiple_used": 3.8,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 159,
+      "name": "Moscato d'Asti Vietti Cascinetta 2020",
+      "base_price_eur_750ml": 20,
+      "base_price_range_eur_750ml": {
+        "low": 16,
+        "high": 24
+      },
+      "michelin_star_price_eur_750ml": 85,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 75,
+        "high": 110
+      },
+      "michelin_markup_multiple_used": 3.8,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 160,
+      "name": "Moscato d'Asti Vietti Cascinetta 2021",
+      "base_price_eur_750ml": 20,
+      "base_price_range_eur_750ml": {
+        "low": 16,
+        "high": 24
+      },
+      "michelin_star_price_eur_750ml": 85,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 75,
+        "high": 110
+      },
+      "michelin_markup_multiple_used": 3.8,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 161,
+      "name": "Moët & Chandon Grand Vintage Rosé 2013",
+      "base_price_eur_750ml": 92,
+      "base_price_range_eur_750ml": {
+        "low": 74,
+        "high": 115
+      },
+      "michelin_star_price_eur_750ml": 280,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 240,
+        "high": 340
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 162,
+      "name": "Mulderbosch Chenin Blanc 2019",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 163,
+      "name": "Muscat de Beaumes-de-Venise Domaine de Durban 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 164,
+      "name": "Muscat de Rivesaltes Domaine Cazes 2019",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 165,
+      "name": "Muscat of Samos Nectar 2017",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 166,
+      "name": "Müller-Catoir Haardter Bürgergarten Rieslaner Auslese 2017",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 167,
+      "name": "Pahlmeyer Napa Valley Chardonnay 2017",
+      "base_price_eur_750ml": 135,
+      "base_price_range_eur_750ml": {
+        "low": 110,
+        "high": 170
+      },
+      "michelin_star_price_eur_750ml": 370,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 320,
+        "high": 450
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 168,
+      "name": "Pascal Jolivet Pouilly-Fumé 2020",
+      "base_price_eur_750ml": 48,
+      "base_price_range_eur_750ml": {
+        "low": 38,
+        "high": 60
+      },
+      "michelin_star_price_eur_750ml": 170,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 150,
+        "high": 210
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 169,
+      "name": "Pascal Jolivet Sancerre 2020",
+      "base_price_eur_750ml": 48,
+      "base_price_range_eur_750ml": {
+        "low": 38,
+        "high": 60
+      },
+      "michelin_star_price_eur_750ml": 170,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 150,
+        "high": 210
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 170,
+      "name": "Paul Jaboulet Aîné Hermitage La Chapelle 2015",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 171,
+      "name": "Pedro Ximénez Bodegas Toro Albala Don PX Gran Reserva 1987",
+      "base_price_eur_750ml": 72,
+      "base_price_range_eur_750ml": {
+        "low": 58,
+        "high": 90
+      },
+      "michelin_star_price_eur_750ml": 220,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 190,
+        "high": 270
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 172,
+      "name": "Pedro Ximénez Emilio Hidalgo Gobernador",
+      "base_price_eur_750ml": 72,
+      "base_price_range_eur_750ml": {
+        "low": 58,
+        "high": 90
+      },
+      "michelin_star_price_eur_750ml": 220,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 190,
+        "high": 270
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 173,
+      "name": "Pedro Ximénez Toro Albala Don PX Gran Reserva 1987",
+      "base_price_eur_750ml": 72,
+      "base_price_range_eur_750ml": {
+        "low": 58,
+        "high": 90
+      },
+      "michelin_star_price_eur_750ml": 220,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 190,
+        "high": 270
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 174,
+      "name": "Penfolds Bin 28 Kalimna Shiraz 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 175,
+      "name": "Phobos Estate Mars-grown Riesling 2047",
+      "base_price_eur_750ml": 155,
+      "base_price_range_eur_750ml": {
+        "low": 125,
+        "high": 195
+      },
+      "michelin_star_price_eur_750ml": 420,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 360,
+        "high": 525
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "made_up",
+      "is_fictional_or_unpriceable": true,
+      "pricing_source_basis": "invented_fantasy_price",
+      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price."
+    },
+    {
+      "id": 176,
+      "name": "Pieropan Soave Classico La Rocca 2017",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 177,
+      "name": "Pierre-Yves Colin-Morey Chassagne-Montrachet 2019",
+      "base_price_eur_750ml": 150,
+      "base_price_range_eur_750ml": {
+        "low": 120,
+        "high": 190
+      },
+      "michelin_star_price_eur_750ml": 410,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 350,
+        "high": 500
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 178,
+      "name": "Pinot Grigio Livio Felluga Colli Orientali del Friuli 2020",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 179,
+      "name": "Pinot Gris Domaine Zind-Humbrecht 2019",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 180,
+      "name": "Pinot Gris Domaine Zind-Humbrecht Clos Windsbuhl 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 181,
+      "name": "Pinot Gris Willamette Valley Vineyards 2020",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 182,
+      "name": "Pinot Noir Domaine Drouhin Oregon 2018",
+      "base_price_eur_750ml": 78,
+      "base_price_range_eur_750ml": {
+        "low": 62,
+        "high": 98
+      },
+      "michelin_star_price_eur_750ml": 240,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 210,
+        "high": 290
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 183,
+      "name": "Pinot Noir Domaine Drouhin Oregon Dundee Hills 2017",
+      "base_price_eur_750ml": 78,
+      "base_price_range_eur_750ml": {
+        "low": 62,
+        "high": 98
+      },
+      "michelin_star_price_eur_750ml": 240,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 210,
+        "high": 290
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 184,
+      "name": "Pinot Noir Domaine Gille Bourgogne 2018",
+      "base_price_eur_750ml": 78,
+      "base_price_range_eur_750ml": {
+        "low": 62,
+        "high": 98
+      },
+      "michelin_star_price_eur_750ml": 240,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 210,
+        "high": 290
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 185,
+      "name": "Pinot Noir Domaine Jean-René Germanier Cayas 2017",
+      "base_price_eur_750ml": 78,
+      "base_price_range_eur_750ml": {
+        "low": 62,
+        "high": 98
+      },
+      "michelin_star_price_eur_750ml": 240,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 210,
+        "high": 290
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 186,
+      "name": "Pinot Noir Domaine Serene Yamhill Cuvée 2018",
+      "base_price_eur_750ml": 78,
+      "base_price_range_eur_750ml": {
+        "low": 62,
+        "high": 98
+      },
+      "michelin_star_price_eur_750ml": 240,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 210,
+        "high": 290
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 187,
+      "name": "Pinot Noir Domaine de la Romanée-Conti Echezeaux Grand Cru 2016",
+      "base_price_eur_750ml": 4700,
+      "base_price_range_eur_750ml": {
+        "low": 3750,
+        "high": 5900
+      },
+      "michelin_star_price_eur_750ml": 9000,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 7700,
+        "high": 10800
+      },
+      "michelin_markup_multiple_used": 1.9,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 188,
+      "name": "Pinot Noir Domaine de la Romanée-Conti Échézeaux 2015",
+      "base_price_eur_750ml": 4350,
+      "base_price_range_eur_750ml": {
+        "low": 3500,
+        "high": 5450
+      },
+      "michelin_star_price_eur_750ml": 8300,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 7100,
+        "high": 10000
+      },
+      "michelin_markup_multiple_used": 1.9,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 189,
+      "name": "Pinot Noir Kosta Browne Russian River Valley 2018",
+      "base_price_eur_750ml": 78,
+      "base_price_range_eur_750ml": {
+        "low": 62,
+        "high": 98
+      },
+      "michelin_star_price_eur_750ml": 240,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 210,
+        "high": 290
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 190,
+      "name": "Planeta Chardonnay 2019",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 191,
+      "name": "Pol Roger Brut Vintage 2012",
+      "base_price_eur_750ml": 92,
+      "base_price_range_eur_750ml": {
+        "low": 74,
+        "high": 115
+      },
+      "michelin_star_price_eur_750ml": 280,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 240,
+        "high": 340
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 192,
+      "name": "Pomerol Château Gazin 2016",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 193,
+      "name": "Pomerol Château La Pointe 2016",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 194,
+      "name": "Priorat Clos Mogador 2017",
+      "base_price_eur_750ml": 60,
+      "base_price_range_eur_750ml": {
+        "low": 48,
+        "high": 76
+      },
+      "michelin_star_price_eur_750ml": 180,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 160,
+        "high": 220
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 195,
+      "name": "Proxima Centauri Chardonnay 2998",
+      "base_price_eur_750ml": 130,
+      "base_price_range_eur_750ml": {
+        "low": 105,
+        "high": 160
+      },
+      "michelin_star_price_eur_750ml": 360,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 310,
+        "high": 440
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "made_up",
+      "is_fictional_or_unpriceable": true,
+      "pricing_source_basis": "invented_fantasy_price",
+      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price."
+    },
+    {
+      "id": 196,
+      "name": "Puligny-Montrachet Domaine Leflaive Les Pucelles 2016",
+      "base_price_eur_750ml": 1225,
+      "base_price_range_eur_750ml": {
+        "low": 980,
+        "high": 1525
+      },
+      "michelin_star_price_eur_750ml": 2550,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 2200,
+        "high": 3100
+      },
+      "michelin_markup_multiple_used": 2.05,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 197,
+      "name": "Quintessa Illumination Sauvignon Blanc 2019",
+      "base_price_eur_750ml": 34,
+      "base_price_range_eur_750ml": {
+        "low": 28,
+        "high": 42
+      },
+      "michelin_star_price_eur_750ml": 120,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 110,
+        "high": 150
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 198,
+      "name": "Ramos Pinto Quinta do Bom Retiro 20 Year Tawny Port",
+      "base_price_eur_750ml": 72,
+      "base_price_range_eur_750ml": {
+        "low": 58,
+        "high": 90
+      },
+      "michelin_star_price_eur_750ml": 220,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 190,
+        "high": 270
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 199,
+      "name": "Riesling Chateau Ste. Michelle Eroica 2019",
+      "base_price_eur_750ml": 44,
+      "base_price_range_eur_750ml": {
+        "low": 36,
+        "high": 56
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 200,
+      "name": "Riesling Domaine Weinbach Cuvée Ste. Catherine 2019",
+      "base_price_eur_750ml": 44,
+      "base_price_range_eur_750ml": {
+        "low": 36,
+        "high": 56
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 201,
+      "name": "Riesling Dr. Loosen Blue Slate Kabinett 2020",
+      "base_price_eur_750ml": 44,
+      "base_price_range_eur_750ml": {
+        "low": 36,
+        "high": 56
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 202,
+      "name": "Riesling Dr. Loosen Erdener Prälat Alte Reben 2018",
+      "base_price_eur_750ml": 44,
+      "base_price_range_eur_750ml": {
+        "low": 36,
+        "high": 56
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 203,
+      "name": "Riesling Egon Müller Scharzhofberger Kabinett 2019",
+      "base_price_eur_750ml": 185,
+      "base_price_range_eur_750ml": {
+        "low": 150,
+        "high": 230
+      },
+      "michelin_star_price_eur_750ml": 500,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 430,
+        "high": 600
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 204,
+      "name": "Riesling Trimbach Cuvée Frédéric Emile 2014",
+      "base_price_eur_750ml": 44,
+      "base_price_range_eur_750ml": {
+        "low": 36,
+        "high": 56
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 205,
+      "name": "Riesling Trimbach Cuvée Frédéric Émile 2016",
+      "base_price_eur_750ml": 44,
+      "base_price_range_eur_750ml": {
+        "low": 36,
+        "high": 56
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 206,
+      "name": "Rioja Marqués de Riscal Reserva 2015",
+      "base_price_eur_750ml": 60,
+      "base_price_range_eur_750ml": {
+        "low": 48,
+        "high": 76
+      },
+      "michelin_star_price_eur_750ml": 180,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 160,
+        "high": 220
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 207,
+      "name": "Rioja Roda I Reserva 2012",
+      "base_price_eur_750ml": 60,
+      "base_price_range_eur_750ml": {
+        "low": 48,
+        "high": 76
+      },
+      "michelin_star_price_eur_750ml": 180,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 160,
+        "high": 220
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 208,
+      "name": "Rioja Roda Reserva 2016",
+      "base_price_eur_750ml": 60,
+      "base_price_range_eur_750ml": {
+        "low": 48,
+        "high": 76
+      },
+      "michelin_star_price_eur_750ml": 180,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 160,
+        "high": 220
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 209,
+      "name": "Robert Mondavi Fumé Blanc 2019",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 210,
+      "name": "Rosé Château d'Esclans Whispering Angel 2020",
+      "base_price_eur_750ml": 34,
+      "base_price_range_eur_750ml": {
+        "low": 28,
+        "high": 42
+      },
+      "michelin_star_price_eur_750ml": 120,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 110,
+        "high": 150
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 211,
+      "name": "Rosé Domaine Tempier Bandol 2020",
+      "base_price_eur_750ml": 34,
+      "base_price_range_eur_750ml": {
+        "low": 28,
+        "high": 42
+      },
+      "michelin_star_price_eur_750ml": 120,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 110,
+        "high": 150
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 212,
+      "name": "Royal Tokaji Late Harvest 2017",
+      "base_price_eur_750ml": 76,
+      "base_price_range_eur_750ml": {
+        "low": 60,
+        "high": 96
+      },
+      "michelin_star_price_eur_750ml": 230,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 200,
+        "high": 280
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 213,
+      "name": "Rust en Vrede Estate Cabernet Sauvignon 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 214,
+      "name": "Saint-Émilion Château Figeac 2015",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 215,
+      "name": "Sancerre Domaine Vacheron 2020",
+      "base_price_eur_750ml": 48,
+      "base_price_range_eur_750ml": {
+        "low": 38,
+        "high": 60
+      },
+      "michelin_star_price_eur_750ml": 170,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 150,
+        "high": 210
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 216,
+      "name": "Sancerre Domaine Vacheron Belle Dame 2018",
+      "base_price_eur_750ml": 48,
+      "base_price_range_eur_750ml": {
+        "low": 38,
+        "high": 60
+      },
+      "michelin_star_price_eur_750ml": 170,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 150,
+        "high": 210
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 217,
+      "name": "Sancerre Domaine Vacheron Belle Dame 2019",
+      "base_price_eur_750ml": 48,
+      "base_price_range_eur_750ml": {
+        "low": 38,
+        "high": 60
+      },
+      "michelin_star_price_eur_750ml": 170,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 150,
+        "high": 210
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 218,
+      "name": "Sancerre François Cotat Les Monts Damnés 2019",
+      "base_price_eur_750ml": 48,
+      "base_price_range_eur_750ml": {
+        "low": 38,
+        "high": 60
+      },
+      "michelin_star_price_eur_750ml": 170,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 150,
+        "high": 210
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 219,
+      "name": "Sassicaia Tenuta San Guido 2018",
+      "base_price_eur_750ml": 340,
+      "base_price_range_eur_750ml": {
+        "low": 270,
+        "high": 420
+      },
+      "michelin_star_price_eur_750ml": 850,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 725,
+        "high": 1025
+      },
+      "michelin_markup_multiple_used": 2.45,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 220,
+      "name": "Sauternes Château Coutet 2016",
+      "base_price_eur_750ml": 64,
+      "base_price_range_eur_750ml": {
+        "low": 52,
+        "high": 80
+      },
+      "michelin_star_price_eur_750ml": 200,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 170,
+        "high": 240
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 221,
+      "name": "Sauternes Château Guiraud 2017",
+      "base_price_eur_750ml": 64,
+      "base_price_range_eur_750ml": {
+        "low": 52,
+        "high": 80
+      },
+      "michelin_star_price_eur_750ml": 200,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 170,
+        "high": 240
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 222,
+      "name": "Sauternes Château Lafaurie-Peyraguey 2017",
+      "base_price_eur_750ml": 64,
+      "base_price_range_eur_750ml": {
+        "low": 52,
+        "high": 80
+      },
+      "michelin_star_price_eur_750ml": 200,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 170,
+        "high": 240
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 223,
+      "name": "Sauternes Château Rieussec 2017",
+      "base_price_eur_750ml": 64,
+      "base_price_range_eur_750ml": {
+        "low": 52,
+        "high": 80
+      },
+      "michelin_star_price_eur_750ml": 200,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 170,
+        "high": 240
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 224,
+      "name": "Sauternes Château Suduiraut 2017",
+      "base_price_eur_750ml": 64,
+      "base_price_range_eur_750ml": {
+        "low": 52,
+        "high": 80
+      },
+      "michelin_star_price_eur_750ml": 200,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 170,
+        "high": 240
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 225,
+      "name": "Sauternes Château d'Yquem 2011",
+      "base_price_eur_750ml": 460,
+      "base_price_range_eur_750ml": {
+        "low": 370,
+        "high": 580
+      },
+      "michelin_star_price_eur_750ml": 1150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 1000,
+        "high": 1400
+      },
+      "michelin_markup_multiple_used": 2.45,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 226,
+      "name": "Sauvignon Blanc Casa Marin Cipreses Vineyard 2019",
+      "base_price_eur_750ml": 34,
+      "base_price_range_eur_750ml": {
+        "low": 28,
+        "high": 42
+      },
+      "michelin_star_price_eur_750ml": 120,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 110,
+        "high": 150
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 227,
+      "name": "Sauvignon Blanc Cloudy Bay 2020",
+      "base_price_eur_750ml": 34,
+      "base_price_range_eur_750ml": {
+        "low": 28,
+        "high": 42
+      },
+      "michelin_star_price_eur_750ml": 120,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 110,
+        "high": 150
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 228,
+      "name": "Sauvignon Blanc Cloudy Bay Marlborough 2020",
+      "base_price_eur_750ml": 34,
+      "base_price_range_eur_750ml": {
+        "low": 28,
+        "high": 42
+      },
+      "michelin_star_price_eur_750ml": 120,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 110,
+        "high": 150
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 229,
+      "name": "Sauvignon Blanc Cloudy Bay Te Koko 2017",
+      "base_price_eur_750ml": 34,
+      "base_price_range_eur_750ml": {
+        "low": 28,
+        "high": 42
+      },
+      "michelin_star_price_eur_750ml": 120,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 110,
+        "high": 150
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 230,
+      "name": "Sauvignon Blanc Domaine Jean-René Germanier 2020",
+      "base_price_eur_750ml": 34,
+      "base_price_range_eur_750ml": {
+        "low": 28,
+        "high": 42
+      },
+      "michelin_star_price_eur_750ml": 120,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 110,
+        "high": 150
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 231,
+      "name": "Sauvignon Blanc Kim Crawford Signature Reserve 2020",
+      "base_price_eur_750ml": 34,
+      "base_price_range_eur_750ml": {
+        "low": 28,
+        "high": 42
+      },
+      "michelin_star_price_eur_750ml": 120,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 110,
+        "high": 150
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 232,
+      "name": "Sauvignon Blanc Pascal Jolivet Sancerre 2020",
+      "base_price_eur_750ml": 48,
+      "base_price_range_eur_750ml": {
+        "low": 38,
+        "high": 60
+      },
+      "michelin_star_price_eur_750ml": 170,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 150,
+        "high": 210
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 233,
+      "name": "Sherry Lustau East India Solera",
+      "base_price_eur_750ml": 72,
+      "base_price_range_eur_750ml": {
+        "low": 58,
+        "high": 90
+      },
+      "michelin_star_price_eur_750ml": 220,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 190,
+        "high": 270
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 234,
+      "name": "Sirius Star System Ice Wine 2994",
+      "base_price_eur_750ml": 160,
+      "base_price_range_eur_750ml": {
+        "low": 130,
+        "high": 200
+      },
+      "michelin_star_price_eur_750ml": 440,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 380,
+        "high": 550
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "made_up",
+      "is_fictional_or_unpriceable": true,
+      "pricing_source_basis": "invented_fantasy_price",
+      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price."
+    },
+    {
+      "id": 235,
+      "name": "Susana Balbo Late Harvest Malbec 2017",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 236,
+      "name": "Syrah E. Guigal Crozes-Hermitage 2017",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 237,
+      "name": "Syrah E. Guigal Côtes du Rhône 2017",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 238,
+      "name": "Tabernero Gran Tinto Petit Verdot 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 239,
+      "name": "Taittinger Brut Réserve",
+      "base_price_eur_750ml": 92,
+      "base_price_range_eur_750ml": {
+        "low": 74,
+        "high": 115
+      },
+      "michelin_star_price_eur_750ml": 280,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 240,
+        "high": 340
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 240,
+      "name": "Taittinger Comtes de Champagne Blanc de Blancs 2010",
+      "base_price_eur_750ml": 240,
+      "base_price_range_eur_750ml": {
+        "low": 190,
+        "high": 300
+      },
+      "michelin_star_price_eur_750ml": 650,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 575,
+        "high": 800
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 241,
+      "name": "Tatenokawa 18 Junmai Daiginjo Sake",
+      "base_price_eur_750ml": 64,
+      "base_price_range_eur_750ml": {
+        "low": 52,
+        "high": 80
+      },
+      "michelin_star_price_eur_750ml": 200,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 170,
+        "high": 240
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 242,
+      "name": "Taylor Fladgate 20 Year Old Tawny Port",
+      "base_price_eur_750ml": 72,
+      "base_price_range_eur_750ml": {
+        "low": 58,
+        "high": 90
+      },
+      "michelin_star_price_eur_750ml": 220,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 190,
+        "high": 270
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 243,
+      "name": "Tempranillo Muga Reserva 2017",
+      "base_price_eur_750ml": 60,
+      "base_price_range_eur_750ml": {
+        "low": 48,
+        "high": 76
+      },
+      "michelin_star_price_eur_750ml": 180,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 160,
+        "high": 220
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 244,
+      "name": "Tenuta San Guido Sassicaia 2017",
+      "base_price_eur_750ml": 320,
+      "base_price_range_eur_750ml": {
+        "low": 255,
+        "high": 400
+      },
+      "michelin_star_price_eur_750ml": 800,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 700,
+        "high": 975
+      },
+      "michelin_markup_multiple_used": 2.45,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 245,
+      "name": "Terran Vineyards Earth-to-Mars Cabernet Sauvignon 2048",
+      "base_price_eur_750ml": 220,
+      "base_price_range_eur_750ml": {
+        "low": 175,
+        "high": 275
+      },
+      "michelin_star_price_eur_750ml": 600,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 525,
+        "high": 725
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "made_up",
+      "is_fictional_or_unpriceable": true,
+      "pricing_source_basis": "invented_fantasy_price",
+      "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price."
+    },
+    {
+      "id": 246,
+      "name": "Terrazas de los Andes Reserva Torrontés 2019",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 247,
+      "name": "Tignanello Antinori 2017",
+      "base_price_eur_750ml": 185,
+      "base_price_range_eur_750ml": {
+        "low": 150,
+        "high": 230
+      },
+      "michelin_star_price_eur_750ml": 500,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 430,
+        "high": 600
+      },
+      "michelin_markup_multiple_used": 2.7,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 248,
+      "name": "Tikal Natural Mendoza Blend 2017",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 249,
+      "name": "Tokaji Aszú 5 Puttonyos Disznókő 2013",
+      "base_price_eur_750ml": 76,
+      "base_price_range_eur_750ml": {
+        "low": 60,
+        "high": 96
+      },
+      "michelin_star_price_eur_750ml": 230,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 200,
+        "high": 280
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 250,
+      "name": "Tokaji Aszú 6 Puttonyos Oremus 2013",
+      "base_price_eur_750ml": 76,
+      "base_price_range_eur_750ml": {
+        "low": 60,
+        "high": 96
+      },
+      "michelin_star_price_eur_750ml": 230,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 200,
+        "high": 280
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 251,
+      "name": "Umetsu Yuzushu",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 252,
+      "name": "Veramonte Sauvignon Blanc 2020",
+      "base_price_eur_750ml": 34,
+      "base_price_range_eur_750ml": {
+        "low": 28,
+        "high": 42
+      },
+      "michelin_star_price_eur_750ml": 120,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 110,
+        "high": 150
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 253,
+      "name": "Verdejo Belondrade y Lurton 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 254,
+      "name": "Verdejo Bodegas Naia Naiades 2017",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 255,
+      "name": "Verdicchio dei Castelli di Jesi Classico Superiore Bucci 2019",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 256,
+      "name": "Vermentino di Sardegna Cantina del Vermentino Funtanaliras 2020",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 257,
+      "name": "Veuve Clicquot Demi-Sec",
+      "base_price_eur_750ml": 92,
+      "base_price_range_eur_750ml": {
+        "low": 74,
+        "high": 115
+      },
+      "michelin_star_price_eur_750ml": 280,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 240,
+        "high": 340
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 258,
+      "name": "Vin Santo del Chianti Classico Felsina 2009",
+      "base_price_eur_750ml": 76,
+      "base_price_range_eur_750ml": {
+        "low": 60,
+        "high": 96
+      },
+      "michelin_star_price_eur_750ml": 230,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 200,
+        "high": 280
+      },
+      "michelin_markup_multiple_used": 3.0,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 259,
+      "name": "Viognier Yves Cuilleron Les Vignes d'à Côté 2019",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 260,
+      "name": "Warwick The First Lady Unoaked Chardonnay 2020",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    },
+    {
+      "id": 261,
+      "name": "Zinfandel Ridge Vineyards East Bench 2018",
+      "base_price_eur_750ml": 42,
+      "base_price_range_eur_750ml": {
+        "low": 34,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 150,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 130,
+        "high": 180
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "low",
+      "is_fictional_or_unpriceable": false,
+      "pricing_source_basis": "estimated_retail_price_from_previous_file",
+      "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle."
+    }
+  ]
+}
