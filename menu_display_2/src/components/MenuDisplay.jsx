@@ -31,15 +31,15 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
   return (
     <article className="mx-auto max-w-6xl">
       <header className="overflow-hidden rounded-lg border border-stone-200/80 bg-linen shadow-editorial">
-        <div className="grid lg:grid-cols-[1fr_1.08fr]">
-          <div className="aspect-square">
+        <div className="grid lg:min-h-[34rem] lg:grid-cols-[0.82fr_1.18fr]">
+          <div className="flex min-h-72 items-center justify-center bg-stone-100 p-4 sm:min-h-80 sm:p-6 lg:min-h-full">
             <img
               src={generateRestaurantImageUrl(restaurantName)}
               alt={`${restaurantName} dining room`}
-              className="h-full w-full object-cover"
+              className="max-h-full max-w-full object-contain"
             />
           </div>
-          <div className="flex flex-col justify-center p-7 sm:p-10 lg:p-12">
+          <div className="flex flex-col justify-center p-8 sm:p-10 lg:p-14 xl:p-16">
             <p className="page-kicker">Featured tasting menu</p>
             <h1 className="mt-3 font-playfair text-5xl font-semibold leading-tight text-ink sm:text-6xl">
               {restaurantName}
@@ -60,7 +60,9 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
             </div>
             <div className="mt-8 border-t border-stone-200 pt-8">
               <h2 className="font-playfair text-2xl font-semibold text-ink">Dining room</h2>
-              <p className="mt-3 max-w-2xl text-base leading-8 text-stone-600">{diningRoomDescription}</p>
+              <p className="mt-3 max-w-4xl text-base leading-8 text-stone-600 sm:text-lg sm:leading-9">
+                {diningRoomDescription}
+              </p>
             </div>
           </div>
         </div>
