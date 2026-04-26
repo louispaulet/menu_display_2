@@ -148,6 +148,22 @@ npm run build
 Then refresh a menu and recipe route in the in-app browser before shipping.
 For restaurant image changes, refresh the homepage and a menu route.
 
+## 🍷 Wine Image Batch Workflow
+
+Wine bottle images are generated from `wines.json`, with paired dishes pulled from `menu_display_2/src/menuData.js`. Exact menu pairings are used where available, and the lone unmatched bottle is recorded with a recipe-corpus fallback in `artifacts/wine_images/match_audit.json`.
+
+Useful commands from the repository root:
+
+```bash
+make wine-images-refresh   # Generate CSV + JSONL + audit and validate all 261 wine image requests
+make wine-images-submit    # Submit the OpenAI batch request
+make wine-images-check     # Poll once; downloads and decodes output if complete
+make wine-images-download  # Download/decode completed output from saved batch state
+make wine-images-apply     # Fit decoded PNGs to 768x1024 portrait canvases
+```
+
+The wine image requests use `gpt-image-2`, `1024x1024`, `high` quality, and an opaque white background through `/v1/images/generations`. Prompts describe a single bottle on a uniform white background, include the Michelin list price, and reference the paired dishes from the menus. After download, the square PNGs are fitted to a 768x1024 portrait canvas for the final presentation.
+
 ### 🌐 Deploying the Project
 
 This project uses **GitHub Pages** for easy deployment.

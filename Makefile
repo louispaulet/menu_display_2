@@ -2,13 +2,14 @@ PYTHON ?= python3
 HOT_SAUCE_BATCH_SCRIPT := scripts/hot_sauce_batch.py
 RECIPE_IMAGE_BATCH_SCRIPT := scripts/recipe_image_batch.py
 RESTAURANT_IMAGE_BATCH_SCRIPT := scripts/restaurant_image_batch.py
+WINE_IMAGE_BATCH_SCRIPT := scripts/wine_image_batch.py
 WEBP_CONVERT_SCRIPT := scripts/convert_images_to_webp.py
 FRONTEND_DIR := menu_display_2
 IMAGE_INPUT_DIR ?= artifacts/recipe_images/new_pngs
 IMAGE_OUTPUT_DIR ?=
 WEBP_QUALITY ?= 90
 
-.PHONY: up test lint build deploy images-webp hot-sauce-csv hot-sauce-jsonl hot-sauce-batch hot-sauce-check hot-sauce-submit hot-sauce-resume hot-sauce-refresh recipe-images-csv recipe-images-jsonl recipe-images-validate recipe-images-submit recipe-images-check recipe-images-download recipe-images-backup recipe-images-apply recipe-images-refresh restaurant-images-csv restaurant-images-jsonl restaurant-images-validate restaurant-images-submit restaurant-images-check restaurant-images-download restaurant-images-backup restaurant-images-apply restaurant-images-refresh
+.PHONY: up test lint build deploy images-webp hot-sauce-csv hot-sauce-jsonl hot-sauce-batch hot-sauce-check hot-sauce-submit hot-sauce-resume hot-sauce-refresh recipe-images-csv recipe-images-jsonl recipe-images-validate recipe-images-submit recipe-images-check recipe-images-download recipe-images-backup recipe-images-apply recipe-images-refresh restaurant-images-csv restaurant-images-jsonl restaurant-images-validate restaurant-images-submit restaurant-images-check restaurant-images-download restaurant-images-backup restaurant-images-apply restaurant-images-refresh wine-images-csv wine-images-jsonl wine-images-validate wine-images-submit wine-images-check wine-images-download wine-images-apply wine-images-refresh
 
 up:
 	cd $(FRONTEND_DIR) && npm run dev
@@ -106,3 +107,29 @@ restaurant-images-refresh:
 	$(PYTHON) $(RESTAURANT_IMAGE_BATCH_SCRIPT) --refresh-csv
 	$(PYTHON) $(RESTAURANT_IMAGE_BATCH_SCRIPT) --build-jsonl
 	$(PYTHON) $(RESTAURANT_IMAGE_BATCH_SCRIPT) --validate
+
+wine-images-csv:
+	$(PYTHON) $(WINE_IMAGE_BATCH_SCRIPT) --refresh-csv
+
+wine-images-jsonl:
+	$(PYTHON) $(WINE_IMAGE_BATCH_SCRIPT) --build-jsonl
+
+wine-images-validate:
+	$(PYTHON) $(WINE_IMAGE_BATCH_SCRIPT) --validate
+
+wine-images-submit:
+	$(PYTHON) $(WINE_IMAGE_BATCH_SCRIPT) --submit-only
+
+wine-images-check:
+	$(PYTHON) $(WINE_IMAGE_BATCH_SCRIPT) --poll-once
+
+wine-images-download:
+	$(PYTHON) $(WINE_IMAGE_BATCH_SCRIPT) --download
+
+wine-images-apply:
+	$(PYTHON) $(WINE_IMAGE_BATCH_SCRIPT) --apply
+
+wine-images-refresh:
+	$(PYTHON) $(WINE_IMAGE_BATCH_SCRIPT) --refresh-csv
+	$(PYTHON) $(WINE_IMAGE_BATCH_SCRIPT) --build-jsonl
+	$(PYTHON) $(WINE_IMAGE_BATCH_SCRIPT) --validate
