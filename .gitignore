@@ -211,3 +211,7 @@ artifacts/**/*_batch_output.jsonl
 artifacts/**/*_batch_errors.jsonl
 backups/recipe_webp_backup_*.zip
 backups/restaurant_webp_backup_*.zip
+backups/wine_pngs_originals_*.zip
+batch_output.jsonl
+response.txt
+output_pngs/
