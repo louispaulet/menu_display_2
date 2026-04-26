@@ -12,6 +12,24 @@ function formatPrice(value) {
   return currencyFormatter.format(value);
 }
 
+function tastingNoteFor(wine) {
+  if (!wine) return 'Balanced and precise.';
+  if (wine.is_fictional_or_unpriceable) {
+    return 'Fantasized profile: vibrant, curious, and space-age.';
+  }
+  const price = wine.base_price_eur_750ml ?? 0;
+  if (price < 45) {
+    return 'Fresh citrus and mineral lift with a clean, agile finish.';
+  }
+  if (price < 150) {
+    return 'Layered orchard fruit, luminous body, and subtle spice.';
+  }
+  if (price < 500) {
+    return 'Silky texture, ripe stone fruit, and a salivating savory streak.';
+  }
+  return 'Opulent, deeply layered, with lingering spice and truffle notes.';
+}
+
 function PriceBadge({ label, value, range }) {
   return (
     <div className="text-sm text-stone-500">
@@ -144,7 +162,7 @@ function WineList() {
                     </span>
                   </td>
                   <td className="px-4 py-3 text-stone-600">×{wine.michelin_markup_multiple_used}</td>
-                  <td className="px-4 py-3 text-stone-600">{wine.notes}</td>
+                  <td className="px-4 py-3 text-stone-600">{tastingNoteFor(wine)}</td>
                 </tr>
               ))}
             </tbody>
