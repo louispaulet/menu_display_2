@@ -4,6 +4,15 @@ import { Link, useParams } from 'react-router-dom';
 import { buildWineImageIndex, resolveWineImageFilename } from '../lib/wineImages';
 import { slugify } from '../lib/wineLinks';
 import WineImageZoom from '../components/WineImageZoom';
+import {
+  classifyWineCountry,
+  classifyWineStyle,
+  getWinePopularityScore,
+  getWinePriceBand,
+  getWineRarityScore,
+  popularityTier,
+  rarityTier,
+} from '../lib/wineFacets';
 
 const currencyFormatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
@@ -55,6 +64,13 @@ function WineBottle() {
     const normalizedKey = slugify(wineKey);
     return wines.find((entry) => slugify(entry.name) === normalizedKey) ?? null;
   }, [wineKey, wines]);
+  const style = useMemo(() => classifyWineStyle(wine), [wine]);
+  const country = useMemo(() => classifyWineCountry(wine), [wine]);
+  const priceBand = useMemo(() => getWinePriceBand(wine), [wine]);
+  const rarityScore = useMemo(() => getWineRarityScore(wine), [wine]);
+  const popularityScore = useMemo(() => getWinePopularityScore(wine), [wine]);
+  const rarity = useMemo(() => rarityTier(rarityScore), [rarityScore]);
+  const popularity = useMemo(() => popularityTier(popularityScore), [popularityScore]);
 
   if (!wineData) {
     return (
@@ -127,6 +143,13 @@ function WineBottle() {
               label="Michelin list price"
               value={`${formatPrice(wine.michelin_star_price_eur_750ml)} per 750ml bottle`}
             />
+            <InfoPair label="Style" value={style.label} />
+            <InfoPair label="Origin" value={country.label} />
+            <InfoPair label="Price band" value={priceBand.label} />
+            <InfoPair label="Rarity / popularity" value={`${rarity.label} · ${popularity.label}`} />
+          </section>
+
+          <section className="grid gap-4 sm:grid-cols-2">
             <InfoPair
               label="Price range"
               value={`${formatPrice(wine.base_price_range_eur_750ml?.low)} to ${formatPrice(
