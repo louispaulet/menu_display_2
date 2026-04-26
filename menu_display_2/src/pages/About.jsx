@@ -21,13 +21,6 @@ function About() {
             <p className="mt-4 leading-8 text-stone-600">
               These menus are more than lists of dishes. Each one features a chef, a restaurant name and location, a complete tasting sequence, dish pricing, and a total price.
             </p>
-            <p className="mt-4 leading-8 text-stone-600">
-              This website is now in its third version. To learn more about the earliest public version, visit the{' '}
-              <Link to="/v1" className="font-semibold text-clay underline-offset-4 hover:underline">
-                V1 page
-              </Link>
-              .
-            </p>
           </section>
 
           <section className="rounded-lg border border-stone-200/80 bg-linen p-7 shadow-card sm:p-9">
@@ -40,6 +33,21 @@ function About() {
             </p>
             <p className="mt-4 leading-8 text-stone-600">
               The visual layer is central to the project because it shows how AI can push the boundaries of creativity, even in domains traditionally led by human craft and taste.
+            </p>
+          </section>
+
+          <section className="rounded-lg border border-stone-200/80 bg-parchment p-7 shadow-card sm:p-9">
+            <p className="page-kicker">Archive</p>
+            <h2 className="font-playfair text-3xl font-semibold">V1 still lives on</h2>
+            <p className="mt-4 leading-8 text-stone-600">
+              The original public version of Exquisite Menus is still available for posterity at the{' '}
+              <Link to="/v1" className="font-semibold text-clay underline-offset-4 hover:underline">
+                V1 page
+              </Link>
+              . It shows the project&apos;s first visual language, earlier stack, and the foundation that led to the current site.
+            </p>
+            <p className="mt-4 leading-8 text-stone-600">
+              Keeping that version accessible makes it easier to trace how the project evolved from the earliest experiment into the current atlas.
             </p>
           </section>
 

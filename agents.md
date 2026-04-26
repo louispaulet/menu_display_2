@@ -28,4 +28,5 @@ Always read this `agents.md` file before starting any task in this repository.
 
 - Do not revert unrelated user changes.
 - Ignore unrelated untracked assets unless the task explicitly asks to include them.
+- After every completed change, commit and push the work before moving on.
 - Always commit and push completed changes, even when working directly on `main`.
