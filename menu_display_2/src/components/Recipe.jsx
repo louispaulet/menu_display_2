@@ -42,12 +42,51 @@ const extractRecipeTitle = (markdown = '') => {
 
 const stripMarkdownImages = (markdown = '') => markdown.replace(/!\[[^\]]*]\([^)]+\)\s*/g, '').trim();
 
+const stripLeadingTitleHeading = (markdown = '', title = '') => {
+  const lines = markdown.split('\n');
+  const firstHeadingIndex = lines.findIndex((line) => /^#{1,6}\s+/.test(line.trim()));
+  if (firstHeadingIndex === -1) return markdown;
+
+  const headingText = lines[firstHeadingIndex].replace(/^#{1,6}\s+/, '').trim();
+  if (normalizeText(headingText) !== normalizeText(title)) return markdown;
+
+  return [
+    ...lines.slice(0, firstHeadingIndex),
+    ...lines.slice(firstHeadingIndex + 1),
+  ].join('\n').trim();
+};
+
+const isListItem = (line = '') => /^(-|\d+\.)\s+/.test(line.trim());
+
 const countBullets = (markdown = '', startHeading = 'Ingredients', endHeading = 'Instructions') => {
-  const startIndex = markdown.toLowerCase().indexOf(`## ${startHeading.toLowerCase()}`);
-  const endIndex = markdown.toLowerCase().indexOf(`## ${endHeading.toLowerCase()}`);
+  const lines = markdown.split('\n');
+  const headingPattern = /^#{2,4}\s+(.+)$/;
+  const startIndex = lines.findIndex((line) => normalizeText(line.match(headingPattern)?.[1] ?? '') === normalizeText(startHeading));
   if (startIndex === -1) return 0;
-  const slice = markdown.slice(startIndex, endIndex === -1 ? markdown.length : endIndex);
-  return slice.split('\n').filter((line) => line.trim().startsWith('- ')).length;
+
+  const endIndex = lines.findIndex((line, index) => (
+    index > startIndex && normalizeText(line.match(headingPattern)?.[1] ?? '') === normalizeText(endHeading)
+  ));
+  const slice = lines.slice(startIndex + 1, endIndex === -1 ? lines.length : endIndex).join('\n');
+  return slice.split('\n').filter(isListItem).length;
+};
+
+const countMethodSteps = (markdown = '') => {
+  const lines = markdown.split('\n');
+  const headingPattern = /^#{2,4}\s+(.+)$/;
+  const startIndex = lines.findIndex((line) => normalizeText(line.match(headingPattern)?.[1] ?? '') === 'instructions');
+  if (startIndex === -1) return 0;
+
+  const endIndex = lines.findIndex((line, index) => {
+    if (index <= startIndex) return false;
+    const heading = normalizeText(line.match(headingPattern)?.[1] ?? '');
+    return heading === 'suggested wine pairing' || heading === 'wine pairing' || heading === 'notes';
+  });
+
+  return lines
+    .slice(startIndex + 1, endIndex === -1 ? lines.length : endIndex)
+    .filter(isListItem)
+    .length;
 };
 
 const buildOutline = (markdown = '') =>
@@ -114,14 +153,14 @@ const Recipe = () => {
   }, [recipeName]);
 
   const dishImageUrl = getDishImageUrl(content);
-  const renderedContent = stripMarkdownImages(content);
+  const title = extractRecipeTitle(content) || recipeName.replace(/-/g, ' ');
+  const renderedContent = stripLeadingTitleHeading(stripMarkdownImages(content), title);
   const linkedContent = useMemo(() => linkifyWineMarkdown(renderedContent, wineLinkContext), [renderedContent, wineLinkContext]);
   const outline = useMemo(() => buildOutline(renderedContent), [renderedContent]);
-  const title = extractRecipeTitle(content) || recipeName.replace(/-/g, ' ');
   const recipeContext = useMemo(() => findRecipeContext(title), [title]);
   const accent = recipeContext ? getZoneAccentForRestaurant(recipeContext.restaurantName) : { border: 'border-stone-200/80', wash: 'bg-white/80', fill: 'bg-stone-100', text: 'text-stone-700', glow: 'from-stone-200/20 via-transparent to-transparent' };
   const ingredientsCount = countBullets(renderedContent, 'Ingredients', 'Instructions');
-  const methodCount = countBullets(renderedContent, 'Instructions', 'Suggested Wine Pairing');
+  const methodCount = countMethodSteps(renderedContent);
 
   const markdownComponents = useMemo(
     () => ({
@@ -161,7 +200,7 @@ const Recipe = () => {
     <div className="page-shell">
       <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[minmax(0,0.72fr)_minmax(280px,0.28fr)]">
         <div className="space-y-6">
-          <article className="overflow-hidden rounded-[1.75rem] border border-stone-200/80 bg-linen shadow-editorial">
+          <article className="content-card shadow-editorial">
             {dishImageUrl ? (
               <div className="relative aspect-[16/9] border-b border-stone-200/80 bg-stone-100">
                 <ProgressiveImage
@@ -186,25 +225,25 @@ const Recipe = () => {
                 )}
               </div>
 
-              <h1 className="mt-4 font-playfair text-5xl font-semibold leading-tight text-ink sm:text-6xl">{title}</h1>
+              <h1 className="mt-4 font-playfair text-4xl font-semibold leading-tight text-ink sm:text-5xl lg:text-6xl">{title}</h1>
               <p className="mt-4 max-w-3xl text-lg leading-8 text-stone-600">
                 {recipeContext
-                  ? `${recipeContext.chefName} at ${recipeContext.location} pairs this dish with a tasting menu that leans into the same mood and texture.`
-                  : 'A plated recipe pulled from the generated tasting menu library, rendered as a more substantial culinary article.'}
+                  ? `${recipeContext.chefName} at ${recipeContext.location} serves this dish inside a tasting menu with the same mood and texture.`
+                  : 'A plated recipe from the generated tasting menu library.'}
               </p>
 
               <div className="mt-8 grid gap-3 sm:grid-cols-3">
-                <div className="rounded-2xl border border-stone-200 bg-white/80 p-4">
-                  <p className="text-[0.65rem] uppercase tracking-[0.22em] text-stone-400">Ingredients</p>
-                  <p className="mt-1 text-2xl font-semibold text-ink">{ingredientsCount}</p>
+                <div className="stat-tile">
+                  <p className="stat-label">Ingredients</p>
+                  <p className="stat-value text-2xl">{ingredientsCount}</p>
                 </div>
-                <div className="rounded-2xl border border-stone-200 bg-white/80 p-4">
-                  <p className="text-[0.65rem] uppercase tracking-[0.22em] text-stone-400">Method steps</p>
-                  <p className="mt-1 text-2xl font-semibold text-ink">{methodCount}</p>
+                <div className="stat-tile">
+                  <p className="stat-label">Method steps</p>
+                  <p className="stat-value text-2xl">{methodCount}</p>
                 </div>
-                <div className="rounded-2xl border border-stone-200 bg-white/80 p-4">
-                  <p className="text-[0.65rem] uppercase tracking-[0.22em] text-stone-400">Wine pairing</p>
-                  <p className="mt-1 text-sm font-semibold text-ink">Linked in the article</p>
+                <div className="stat-tile">
+                  <p className="stat-label">Pairing</p>
+                  <p className="stat-value text-sm">Linked below</p>
                 </div>
               </div>
             </div>
@@ -212,7 +251,7 @@ const Recipe = () => {
 
           <article className="soft-panel p-6 sm:p-8">
             <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_240px] lg:items-start">
-              <div className="prose prose-stone max-w-none prose-headings:font-playfair prose-headings:text-ink prose-a:text-clay prose-strong:text-ink prose-li:marker:text-clay sm:prose-lg">
+              <div className="prose prose-stone max-w-none prose-headings:font-playfair prose-headings:text-ink prose-p:leading-8 prose-a:text-clay prose-strong:text-ink prose-li:my-1 prose-li:leading-7 prose-li:marker:text-clay sm:prose-lg">
                 <ReactMarkdown components={markdownComponents}>{linkedContent}</ReactMarkdown>
               </div>
 
@@ -221,11 +260,11 @@ const Recipe = () => {
                   <p className="page-kicker">On this page</p>
                   <h2 className="mt-2 font-playfair text-2xl font-semibold text-ink">Recipe outline</h2>
                   <nav className="mt-4 space-y-2" aria-label="Recipe sections">
-                    {outline.map((entry) => (
+                    {outline.map((entry, index) => (
                       <a
-                        key={`${entry.id}-${entry.level}`}
+                        key={`${entry.id}-${entry.level}-${index}`}
                         href={`#${entry.id}`}
-                        className={`block rounded-2xl border border-stone-200/80 bg-white/85 px-4 py-3 text-sm font-semibold text-stone-700 transition hover:border-clay/50 hover:bg-parchment hover:text-ink ${
+                        className={`index-link ${
                           entry.level === 3 ? 'pl-6' : ''
                         }`}
                       >
@@ -244,16 +283,16 @@ const Recipe = () => {
             <p className="page-kicker">Summary</p>
             <h2 className="mt-2 font-playfair text-2xl font-semibold text-ink">At a glance</h2>
             <div className="mt-4 space-y-3">
-              <div className="rounded-2xl border border-stone-200 bg-white/80 p-4">
-                <p className="text-[0.65rem] uppercase tracking-[0.22em] text-stone-400">Restaurant</p>
+              <div className="stat-tile">
+                <p className="stat-label">Restaurant</p>
                 <p className="mt-1 font-semibold text-ink">{recipeContext?.restaurantName ?? 'Generated kitchen'}</p>
               </div>
-              <div className="rounded-2xl border border-stone-200 bg-white/80 p-4">
-                <p className="text-[0.65rem] uppercase tracking-[0.22em] text-stone-400">Chef</p>
+              <div className="stat-tile">
+                <p className="stat-label">Chef</p>
                 <p className="mt-1 font-semibold text-ink">{recipeContext?.chefName ?? 'Exquisite Menus'}</p>
               </div>
-              <div className="rounded-2xl border border-stone-200 bg-white/80 p-4">
-                <p className="text-[0.65rem] uppercase tracking-[0.22em] text-stone-400">Location</p>
+              <div className="stat-tile">
+                <p className="stat-label">Location</p>
                 <p className="mt-1 font-semibold text-ink">{recipeContext?.location ?? 'Imagined dining room'}</p>
               </div>
             </div>
@@ -262,7 +301,7 @@ const Recipe = () => {
           <div className={`soft-panel border ${accent.border} p-5`}>
             <p className="page-kicker">Editorial tone</p>
             <p className="mt-2 text-sm leading-7 text-stone-600">
-              Recipes now behave like compact magazine articles: a hero, a summary, a navigable outline, and the full markdown content below.
+              A compact recipe article keeps the plated image, context, outline, and method close at hand.
             </p>
           </div>
         </aside>

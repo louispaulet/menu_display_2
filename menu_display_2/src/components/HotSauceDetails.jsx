@@ -1,8 +1,25 @@
+/* eslint-disable react/prop-types */
 import { Link, useParams } from 'react-router-dom';
 import hotSauceData from '../hotsauceData';
 import { FaCalendarAlt, FaDollarSign, FaHourglassHalf, FaPepperHot, FaWarehouse } from 'react-icons/fa';
 import { GiFireBottle } from 'react-icons/gi';
 import ProgressiveImage from './ProgressiveImage';
+
+function HeatBar({ level }) {
+  const heatColor = level >= 9 ? 'bg-rose-700' : level >= 7 ? 'bg-orange-600' : level >= 5 ? 'bg-amber-500' : 'bg-lime-600';
+
+  return (
+    <div>
+      <div className="mb-2 flex items-center justify-between text-sm font-semibold text-stone-600">
+        <span>Heat level</span>
+        <span>{level}/10</span>
+      </div>
+      <div className="h-2 overflow-hidden rounded-full bg-stone-100">
+        <div className={`h-full ${heatColor}`} style={{ width: `${Math.min(100, level * 10)}%` }} />
+      </div>
+    </div>
+  );
+}
 
 function HotSauceDetails() {
   const { id } = useParams();
@@ -28,10 +45,10 @@ function HotSauceDetails() {
 
   return (
     <div className="page-shell">
-      <div className="mb-6 hidden md:block">
+      <div className="mb-6">
         <Link
           to="/hot-sauces"
-          className="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-linen px-4 py-2 text-sm font-semibold text-ink shadow-sm transition hover:border-clay hover:text-clay"
+          className="quiet-link inline-flex items-center gap-2"
         >
           <span aria-hidden="true">←</span>
           Back to hot sauces
@@ -55,13 +72,15 @@ function HotSauceDetails() {
             <span className="accent-chip border-rose-200 bg-rose-100/70 text-rose-800">Small batch sauce</span>
             <span className="accent-chip border-amber-200 bg-amber-50 text-amber-900">Spice cellar</span>
           </div>
-          <h1 className="mt-3 font-playfair text-5xl font-semibold leading-tight text-ink">{sauce.name}</h1>
+          <h1 className="mt-3 font-playfair text-4xl font-semibold leading-tight text-ink sm:text-5xl">{sauce.name}</h1>
 
           <p className="mt-5 max-w-3xl text-lg leading-8 text-stone-600">
             {sauce.description}
           </p>
 
-          <div className="mt-6 grid gap-3 rounded-[1.6rem] border border-stone-200/80 bg-white/70 p-5 text-stone-700 sm:grid-cols-2">
+          <div className="mt-6 rounded-lg border border-stone-200/80 bg-white/70 p-5 text-stone-700">
+            <HeatBar level={sauce.hotness_level} />
+            <div className="mt-5 grid gap-3 sm:grid-cols-2">
             <p className="flex items-center gap-2 text-sm font-semibold">
               <FaPepperHot className="h-4 w-4 text-rose-600" />
               Heat level {sauce.hotness_level}/10
@@ -89,6 +108,7 @@ function HotSauceDetails() {
             <p className="flex items-center gap-2 text-sm font-semibold">
               pH {sauce.acidity_ph.toFixed(1)}
             </p>
+            </div>
           </div>
         </div>
       </article>

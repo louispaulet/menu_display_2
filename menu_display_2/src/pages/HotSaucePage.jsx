@@ -56,15 +56,15 @@ function HotSaucePage() {
         <p className="page-kicker">Condiment cellar</p>
         <h1 className="page-title">Artisanal hot sauces with a chef’s point of view.</h1>
         <p className="page-lede">
-          Explore heat levels, tasting notes, and small-batch bottlings designed to sharpen the menus without overwhelming them.
+          Explore heat levels, tasting notes, and small-batch bottlings designed to sharpen the menus.
         </p>
       </header>
 
-      <div className="mb-8 flex flex-col gap-3 rounded-[1.6rem] border border-rose-200/70 bg-gradient-to-br from-rose-50/70 via-white to-amber-50/70 p-4 shadow-sm sm:flex-row sm:items-center sm:justify-between">
+      <div className="mb-8 flex flex-col gap-3 rounded-lg border border-rose-200/70 bg-gradient-to-br from-rose-50/70 via-white to-amber-50/70 p-4 shadow-sm sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="page-kicker text-[0.65rem] text-rose-700">Cellar order</p>
           <p className="mt-1 text-sm leading-6 text-stone-600">
-            Sauces are listed A-Z by default. Use the cellar filter to reshuffle by the tasting stats.
+            Sort the bottles by name, price, age, heat, Scoville rating, or batch size.
           </p>
         </div>
         <label className="flex flex-col gap-2 text-sm font-semibold text-ink sm:min-w-64">

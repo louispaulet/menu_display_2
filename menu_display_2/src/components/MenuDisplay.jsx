@@ -10,6 +10,7 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
   const wineLinkContext = useWineLinkContext();
   const menuZone = useMemo(() => findZoneByRestaurantName(restaurantName), [restaurantName]);
   const accent = getZoneAccentForRestaurant(restaurantName);
+  const averageCoursePrice = Math.round(grandTotal / Math.max(tastingMenu.length, 1));
   const baseImageUrl = 'https://raw.githubusercontent.com/louispaulet/menu_display_2/main/dish_pictures/';
   const baseRestaurantImageUrl = 'https://raw.githubusercontent.com/louispaulet/menu_display_2/main/restaurant_pictures/';
 
@@ -51,8 +52,8 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
               src={generateRestaurantImageUrl(restaurantName)}
               alt={`${restaurantName} dining room`}
               loading="eager"
-              className="relative z-10 h-full w-full rounded-[1.4rem] border border-white/65 bg-white/80 shadow-editorial"
-              imageClassName="h-full w-full object-contain object-center p-4 sm:p-6"
+              className="relative z-10 h-full w-full rounded-lg border border-white/65 bg-white/80 shadow-editorial"
+              imageClassName="h-full w-full object-cover object-center"
               placeholderClassName="bg-white/75"
             />
           </div>
@@ -87,20 +88,20 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
             </div>
 
             <div className="mt-8 grid gap-3 sm:grid-cols-3">
-              <div className="rounded-2xl border border-stone-200/80 bg-white/75 p-4">
-                <p className="text-[0.65rem] uppercase tracking-[0.22em] text-stone-400">Course rhythm</p>
-                <p className="mt-1 text-lg font-semibold text-ink">Alternating plates</p>
-                <p className="mt-1 text-sm leading-6 text-stone-600">Image and text swap sides to keep the menu moving.</p>
+              <div className="stat-tile">
+                <p className="stat-label">Courses</p>
+                <p className="stat-value text-lg">{tastingMenu.length} plates</p>
+                <p className="mt-1 text-sm leading-6 text-stone-600">A full tasting sequence.</p>
               </div>
-              <div className="rounded-2xl border border-stone-200/80 bg-white/75 p-4">
-                <p className="text-[0.65rem] uppercase tracking-[0.22em] text-stone-400">Total</p>
-                <p className="mt-1 text-lg font-semibold text-ink">${grandTotal}</p>
-                <p className="mt-1 text-sm leading-6 text-stone-600">Chef’s tasting menu price.</p>
+              <div className="stat-tile">
+                <p className="stat-label">Tasting total</p>
+                <p className="stat-value text-lg">${grandTotal}</p>
+                <p className="mt-1 text-sm leading-6 text-stone-600">Chef menu price.</p>
               </div>
-              <div className="rounded-2xl border border-stone-200/80 bg-white/75 p-4">
-                <p className="text-[0.65rem] uppercase tracking-[0.22em] text-stone-400">Identity</p>
-                <p className="mt-1 text-lg font-semibold text-ink">{menuZone?.title ?? 'Curated destination'}</p>
-                <p className="mt-1 text-sm leading-6 text-stone-600">A subtle regional accent without leaving the brand.</p>
+              <div className="stat-tile">
+                <p className="stat-label">Average plate</p>
+                <p className="stat-value text-lg">${averageCoursePrice}</p>
+                <p className="mt-1 text-sm leading-6 text-stone-600">{menuZone?.title ?? 'Curated destination'}.</p>
               </div>
             </div>
 
@@ -120,7 +121,7 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
             <p className="page-kicker">The menu</p>
             <h2 className="mt-2 font-playfair text-4xl font-semibold text-ink">Courses and pairings</h2>
             <p className="mt-3 max-w-3xl text-sm leading-7 text-stone-600">
-              Use the sticky course index to jump around the tasting menu. Each plate has a slightly different layout so the pacing stays lively on long scrolls.
+              Move through the tasting sequence by plate, wine, and recipe.
             </p>
           </div>
           <div className={`rounded-full border px-5 py-3 text-sm font-bold shadow-sm ${accent.border} ${accent.wash} ${accent.text}`}>
@@ -136,7 +137,7 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
                 <section
                   key={index}
                   id={`course-${index + 1}`}
-                  className={`scroll-mt-28 overflow-hidden rounded-[1.75rem] border border-stone-200/80 bg-linen shadow-card ${
+                  className={`content-card scroll-mt-28 ${
                     isEven ? 'lg:bg-white/70' : ''
                   }`}
                 >
@@ -156,16 +157,16 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
                     <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-10">
                       <div className="flex items-center justify-between gap-3">
                         <p className="page-kicker">Course {index + 1}</p>
-                        <span className="rounded-full border border-stone-200 bg-white px-3 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-stone-500">
-                          {item.price}
+                        <span className="rounded-full border border-stone-200 bg-white px-3 py-1 text-[0.7rem] font-bold text-stone-600">
+                          ${item.price}
                         </span>
                       </div>
-                      <h3 className="mt-3 font-playfair text-3xl font-semibold leading-tight text-ink">{item.course}</h3>
-                      <p className="mt-4 max-w-2xl text-lg leading-8 text-stone-700">{item.description}</p>
-                      <div className="mt-6 grid gap-3 border-y border-stone-200/80 py-5 text-sm font-semibold text-stone-700 sm:grid-cols-2">
+                      <h3 className="mt-3 font-playfair text-3xl font-semibold leading-tight text-ink sm:text-4xl">{item.course}</h3>
+                      <p className="mt-4 max-w-2xl text-base leading-8 text-stone-700 sm:text-lg">{item.description}</p>
+                      <div className="mt-6 grid gap-3 border-y border-stone-200/80 py-5 text-sm font-semibold text-stone-700 sm:grid-cols-[0.35fr_0.65fr]">
                         <p className="flex items-center gap-2">
                           <MdAttachMoney className={`h-4 w-4 ${accent.text}`} />
-                          {item.price}
+                          ${item.price}
                         </p>
                         <p className="flex items-start gap-2">
                           <MdLocalBar className={`mt-1 h-4 w-4 shrink-0 ${accent.text}`} />
@@ -174,7 +175,7 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
                       </div>
                       <Link
                         to={getRecipeLink(item.course, item.description)}
-                        className={`mt-6 inline-flex w-fit items-center rounded-full border px-5 py-2 text-sm font-bold transition ${
+                        className={`action-pill mt-6 ${
                           accent.border
                         } ${accent.wash} ${accent.text} hover:border-clay hover:bg-clay hover:text-white`}
                       >
@@ -190,14 +191,13 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
           <aside className="lg:sticky lg:top-24 lg:self-start">
             <div className="soft-panel p-5">
               <p className="page-kicker">Jump to course</p>
-              <h3 className="mt-2 font-playfair text-2xl font-semibold text-ink">Sticky index</h3>
-              <p className="mt-2 text-sm leading-6 text-stone-600">A faster way to move through the tasting sequence.</p>
-              <nav className="mt-5 space-y-2" aria-label="Menu courses">
+              <h3 className="mt-2 font-playfair text-2xl font-semibold text-ink">Course index</h3>
+              <nav className="mt-4 space-y-2" aria-label="Menu courses">
                 {courseIds.map((course) => (
                   <a
                     key={course.id}
                     href={`#${course.id}`}
-                    className={`block rounded-2xl border border-stone-200/80 bg-white/85 px-4 py-3 text-sm font-semibold text-stone-700 transition hover:border-clay/50 hover:bg-parchment hover:text-ink`}
+                    className="index-link"
                   >
                     {course.label}
                   </a>

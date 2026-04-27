@@ -41,7 +41,7 @@ function Homepage() {
             <p className="page-kicker">Restaurant guide</p>
             <h1 className="page-title">Exquisite tasting menus from imagined kitchens.</h1>
             <p className="page-lede mx-0 max-w-2xl">
-              Browse AI-conceived restaurants, atmospheric dining rooms, wine pairings, and full tasting menus from around the globe. The site is organized like an editorial atlas, but each destination keeps a small and distinct identity.
+              Browse imagined restaurants, dining rooms, wine pairings, and full tasting menus from around the globe. Each destination keeps a distinct regional mood inside one warm editorial atlas.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -85,12 +85,12 @@ function Homepage() {
                   <h2 className="mt-4 font-playfair text-3xl font-semibold text-ink">{featuredMenu.restaurant_name}</h2>
                   <p className="mt-2 text-sm leading-6 text-stone-600">{featuredMenu.chef_name}</p>
                   <div className="mt-5 grid grid-cols-2 gap-3 text-sm">
-                    <div className="rounded-2xl border border-stone-200 bg-white/80 p-3">
-                      <p className="text-[0.65rem] uppercase tracking-[0.22em] text-stone-400">Location</p>
+                    <div className="stat-tile">
+                      <p className="stat-label">Location</p>
                       <p className="mt-1 font-semibold text-ink">{featuredMenu.location}</p>
                     </div>
-                    <div className="rounded-2xl border border-stone-200 bg-white/80 p-3">
-                      <p className="text-[0.65rem] uppercase tracking-[0.22em] text-stone-400">Courses</p>
+                    <div className="stat-tile">
+                      <p className="stat-label">Courses</p>
                       <p className="mt-1 font-semibold text-ink">{featuredMenu.tasting_menu.length}</p>
                     </div>
                   </div>
@@ -99,9 +99,9 @@ function Homepage() {
             )}
 
             <div className="soft-panel p-5">
-              <p className="page-kicker">Editorial note</p>
+              <p className="page-kicker">Atlas note</p>
               <p className="mt-2 text-sm leading-7 text-stone-600">
-                The current direction keeps the warm, luxury editorial palette, but it now lets regions, sauces, and cellar views breathe a little differently through accent washes and more varied panel rhythm.
+                Regional tints guide the eye without splitting the site into separate brands: Paris stays polished, Bali glows green, and Mars keeps a violet edge.
               </p>
             </div>
           </aside>
@@ -113,10 +113,10 @@ function Homepage() {
           <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="page-kicker">Quick jump</p>
-              <h2 className="mt-1 font-playfair text-2xl font-semibold text-ink">Pick a category</h2>
+              <h2 className="mt-1 font-playfair text-2xl font-semibold text-ink">Pick a region</h2>
             </div>
             <p className="max-w-sm text-sm leading-6 text-stone-500">
-              Jump straight to any of the curated menu regions below.
+              Move straight into the dining worlds below.
             </p>
           </div>
           <div className="mt-5 flex flex-wrap gap-3 pb-1 pr-1">
@@ -142,9 +142,9 @@ function Homepage() {
 
           return (
             <div key={zone.id} id={zone.id} className="zone-section scroll-mt-28">
-              <div className={`mb-8 rounded-[2rem] border px-6 py-6 sm:px-8 ${zone.accent.border} ${zone.accent.wash}`}>
+              <div className={`mb-8 rounded-lg border px-6 py-6 sm:px-8 ${zone.accent.border} ${zone.accent.wash}`}>
                 <p className="page-kicker">{zone.title}</p>
-                <h2 className="mt-2 font-playfair text-4xl font-bold text-ink sm:text-5xl">Featured kitchens</h2>
+                <h2 className="mt-2 font-playfair text-3xl font-bold text-ink sm:text-4xl">Featured kitchens</h2>
                 <p className="mt-3 max-w-2xl text-lg leading-8 text-stone-600">{zone.description}</p>
               </div>
               <section className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

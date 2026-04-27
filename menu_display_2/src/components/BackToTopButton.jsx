@@ -26,7 +26,7 @@ function BackToTopButton() {
       type="button"
       aria-label="Back to top"
       onClick={() => window.scrollTo({ top: 0, behavior: 'auto' })}
-      className="fixed bottom-6 right-6 z-40 flex items-center gap-2 rounded-full border border-saffron/30 bg-linen px-4 py-3 text-sm font-semibold text-ink shadow-[0_12px_30px_rgba(37,32,25,0.14)] transition hover:-translate-y-0.5 hover:border-saffron/60 hover:bg-parchment"
+      className="fixed bottom-4 right-4 z-40 flex items-center gap-1.5 rounded-full border border-saffron/30 bg-white/95 px-3.5 py-2.5 text-sm font-semibold text-ink shadow-[0_12px_30px_rgba(37,32,25,0.14)] transition hover:-translate-y-0.5 hover:border-saffron/60 hover:bg-linen sm:bottom-6 sm:right-6 sm:px-4"
     >
       <MdKeyboardArrowUp className="h-5 w-5 text-clay" />
       Top

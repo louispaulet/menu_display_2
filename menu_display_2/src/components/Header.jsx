@@ -16,17 +16,17 @@ function Header() {
     item.activePaths.some((path) => pathname === path || (path !== '/' && pathname.startsWith(`${path}/`)));
   const navLinkClass = (isActive) =>
     [
-      'rounded-full px-4 py-2 text-sm font-semibold transition',
+      'rounded-lg px-4 py-2 text-sm font-semibold transition',
       isActive
         ? 'bg-ink text-linen shadow-sm'
-        : 'text-stone-600 hover:bg-stone-100 hover:text-ink',
+        : 'text-stone-600 hover:bg-white hover:text-ink',
     ].join(' ');
 
   return (
-    <header className="sticky top-0 z-50 border-b border-stone-200/80 bg-linen/92 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-10">
+    <header className="sticky top-0 z-50 border-b border-stone-200 bg-linen/95 shadow-[0_8px_24px_rgba(55,38,19,0.04)] backdrop-blur-xl">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3.5 sm:px-8 lg:px-10">
         <Link to="/" className="group flex items-center gap-3" onClick={() => setIsOpen(false)}>
-          <span className="flex h-10 w-10 items-center justify-center rounded-full border border-saffron/40 bg-parchment font-playfair text-lg font-semibold text-clay shadow-sm">
+          <span className="flex h-10 w-10 items-center justify-center rounded-full border border-saffron/40 bg-white font-playfair text-lg font-semibold text-clay shadow-sm">
             EM
           </span>
           <span>
@@ -66,7 +66,7 @@ function Header() {
         </div>
       </div>
       {isOpen && (
-        <nav className="border-t border-stone-200/80 bg-linen px-5 py-3 md:hidden" aria-label="Mobile navigation">
+        <nav className="border-t border-stone-200 bg-linen/98 px-5 py-3 shadow-card md:hidden" aria-label="Mobile navigation">
           <ul className="space-y-1">
             {navItems.map((item) => (
               <li key={item.to}>
@@ -75,8 +75,8 @@ function Header() {
                   onClick={() => setIsOpen(false)}
                   aria-current={isItemActive(item) ? 'page' : undefined}
                   className={[
-                    'block rounded-lg px-4 py-3 text-sm font-semibold',
-                    isItemActive(item) ? 'bg-ink text-linen shadow-sm' : 'text-stone-700 hover:bg-stone-100',
+                    'block rounded-lg px-4 py-3 text-sm font-semibold transition',
+                    isItemActive(item) ? 'bg-ink text-linen shadow-sm' : 'text-stone-700 hover:bg-white',
                   ].join(' ')}
                 >
                   {item.label}

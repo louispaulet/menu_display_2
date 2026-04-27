@@ -36,7 +36,7 @@ function About() {
             </p>
           </section>
 
-          <section className="rounded-[1.6rem] border border-stone-200/80 bg-parchment p-7 shadow-card sm:p-9">
+          <section className="rounded-lg border border-stone-200/80 bg-parchment p-7 shadow-card sm:p-9">
             <p className="page-kicker">Archive</p>
             <h2 className="font-playfair text-3xl font-semibold">V1 still lives on</h2>
             <p className="mt-4 leading-8 text-stone-600">

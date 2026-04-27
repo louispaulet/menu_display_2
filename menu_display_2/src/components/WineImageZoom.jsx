@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from 'react';
+import { ArrowPathIcon, MagnifyingGlassMinusIcon, MagnifyingGlassPlusIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { TransformComponent, TransformWrapper } from 'react-zoom-pan-pinch';
 import ProgressiveImage from './ProgressiveImage';
 
@@ -37,11 +38,11 @@ function WineImageZoom({ src, alt, className = '' }) {
       <button
         type="button"
         onClick={openZoom}
-        className={`group relative block w-full overflow-hidden rounded-2xl border border-stone-200 bg-white text-left shadow-sm transition hover:border-clay/40 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-clay/40 ${className}`}
+        className={`group relative block w-full overflow-hidden rounded-lg border border-stone-200 bg-white text-left shadow-sm transition hover:border-clay/40 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-clay/40 ${className}`}
         aria-label="Open larger bottle image"
       >
-        <div className="absolute right-4 top-4 z-10 rounded-full border border-stone-200 bg-white/90 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-stone-500 opacity-0 shadow-sm transition group-hover:opacity-100">
-          Zoom
+        <div className="absolute right-4 top-4 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-stone-200 bg-white/90 text-stone-600 opacity-0 shadow-sm transition group-hover:opacity-100">
+          <MagnifyingGlassPlusIcon className="h-5 w-5" />
         </div>
         <div className="aspect-square bg-white">
           <ProgressiveImage
@@ -62,7 +63,7 @@ function WineImageZoom({ src, alt, className = '' }) {
           role="presentation"
         >
           <div
-            className="relative flex h-[calc(100vh-7rem)] w-full max-w-6xl flex-col gap-4 rounded-[1.5rem] border border-white/10 bg-stone-950 p-4 shadow-2xl"
+            className="relative flex h-[calc(100vh-7rem)] w-full max-w-6xl flex-col gap-4 rounded-lg border border-white/10 bg-stone-950 p-4 shadow-2xl"
             onClick={(event) => event.stopPropagation()}
             role="dialog"
             aria-modal="true"
@@ -87,39 +88,43 @@ function WineImageZoom({ src, alt, className = '' }) {
                       <button
                         type="button"
                         onClick={() => zoomOut()}
-                        className="rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-sm font-semibold text-white transition hover:bg-white/15"
+                        className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white transition hover:bg-white/15"
                         aria-label="Zoom out"
+                        title="Zoom out"
                       >
-                        -
+                        <MagnifyingGlassMinusIcon className="h-5 w-5" />
                       </button>
                       <button
                         type="button"
                         onClick={() => resetTransform()}
-                        className="rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-sm font-semibold text-white transition hover:bg-white/15"
+                        className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white transition hover:bg-white/15"
                         aria-label="Reset zoom"
+                        title="Reset zoom"
                       >
-                        Reset
+                        <ArrowPathIcon className="h-5 w-5" />
                       </button>
                       <button
                         type="button"
                         onClick={() => zoomIn()}
-                        className="rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-sm font-semibold text-white transition hover:bg-white/15"
+                        className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white transition hover:bg-white/15"
                         aria-label="Zoom in"
+                        title="Zoom in"
                       >
-                        +
+                        <MagnifyingGlassPlusIcon className="h-5 w-5" />
                       </button>
                       <button
                         type="button"
                         onClick={closeZoom}
-                        className="rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-sm font-semibold text-white transition hover:bg-white/15"
+                        className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white transition hover:bg-white/15"
                         aria-label="Close large bottle image preview"
+                        title="Close"
                       >
-                        Close
+                        <XMarkIcon className="h-5 w-5" />
                       </button>
                     </div>
                   </div>
 
-                  <div className="min-h-0 flex-1 overflow-hidden rounded-[1.25rem] bg-white">
+                  <div className="min-h-0 flex-1 overflow-hidden rounded-lg bg-white">
                     <div className="flex h-full w-full items-center justify-center bg-white">
                       <TransformComponent
                         wrapperClass="h-full w-full"

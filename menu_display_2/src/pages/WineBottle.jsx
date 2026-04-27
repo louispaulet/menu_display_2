@@ -27,8 +27,8 @@ function formatPrice(value) {
 
 function InfoPair({ label, value }) {
   return (
-    <div className="rounded-2xl border border-stone-200/80 bg-white/78 p-4 shadow-sm">
-      <p className="text-[0.65rem] uppercase tracking-[0.24em] text-stone-400">{label}</p>
+    <div className="stat-tile">
+      <p className="stat-label">{label}</p>
       <p className="mt-2 text-sm leading-6 text-ink">{value}</p>
     </div>
   );
@@ -107,7 +107,7 @@ function WineBottle() {
       <div className="mb-8">
         <Link
           to="/wines"
-          className="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-white/80 px-4 py-2 text-sm font-semibold text-ink shadow-sm transition hover:border-clay hover:text-clay"
+          className="quiet-link inline-flex items-center gap-2"
         >
           <span aria-hidden="true">←</span>
           Back to cellar
@@ -118,7 +118,7 @@ function WineBottle() {
         <div className="lg:sticky lg:top-24 lg:self-start">
           <div className="strong-panel p-5 sm:p-6">
             <WineImageZoom src={`/the_cellar/${imageFilename}`} alt={`${wine.name} bottle`} className="shadow-none hover:shadow-none" />
-            <p className="mt-3 text-center text-xs uppercase tracking-[0.22em] text-stone-400">
+            <p className="stat-label mt-3 text-center">
               Click image to open a larger frame
             </p>
           </div>
@@ -135,21 +135,26 @@ function WineBottle() {
             <p className="mt-4 max-w-3xl text-lg leading-8 text-stone-600">{wine.tasting_note}</p>
 
             <div className="mt-8 grid gap-3 sm:grid-cols-3">
-              <div className="rounded-2xl border border-stone-200 bg-white/80 p-4">
-                <p className="text-[0.65rem] uppercase tracking-[0.22em] text-stone-400">Michelin price</p>
-                <p className="mt-1 text-2xl font-semibold text-ink">{formatPrice(wine.michelin_star_price_eur_750ml)}</p>
+              <div className="stat-tile">
+                <p className="stat-label">List price</p>
+                <p className="stat-value text-2xl">{formatPrice(wine.michelin_star_price_eur_750ml)}</p>
                 <p className="mt-1 text-xs text-stone-400">per 750ml bottle</p>
               </div>
-              <div className="rounded-2xl border border-stone-200 bg-white/80 p-4">
-                <p className="text-[0.65rem] uppercase tracking-[0.22em] text-stone-400">Base price</p>
-                <p className="mt-1 text-2xl font-semibold text-ink">{formatPrice(wine.base_price_eur_750ml)}</p>
+              <div className="stat-tile">
+                <p className="stat-label">Market price</p>
+                <p className="stat-value text-2xl">{formatPrice(wine.base_price_eur_750ml)}</p>
                 <p className="mt-1 text-xs text-stone-400">{priceBand.label}</p>
               </div>
-              <div className="rounded-2xl border border-stone-200 bg-white/80 p-4">
-                <p className="text-[0.65rem] uppercase tracking-[0.22em] text-stone-400">Markup</p>
-                <p className="mt-1 text-2xl font-semibold text-ink">×{wine.michelin_markup_multiple_used}</p>
-                <p className="mt-1 text-xs text-stone-400">{rarityText}</p>
+              <div className="stat-tile">
+                <p className="stat-label">Cellar read</p>
+                <p className="stat-value text-2xl">{rarityText}</p>
+                <p className="mt-1 text-xs text-stone-400">{popularityText}</p>
               </div>
+            </div>
+            <div className="mt-5 flex flex-wrap gap-2 text-xs font-semibold text-stone-500">
+              <span className="rounded-full border border-stone-200 bg-white/80 px-3 py-1">Markup ×{wine.michelin_markup_multiple_used}</span>
+              <span className="rounded-full border border-stone-200 bg-white/80 px-3 py-1">{popularityText}</span>
+              <span className="rounded-full border border-stone-200 bg-white/80 px-3 py-1">Confidence {wine.confidence}</span>
             </div>
           </header>
 

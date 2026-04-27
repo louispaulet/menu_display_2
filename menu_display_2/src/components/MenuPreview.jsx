@@ -14,7 +14,7 @@ function MenuPreview({ restaurantName, chefName, location, numberOfCourses, tota
     return `${baseImageUrl}${restaurantNameEncoded}.webp`;
   };
   return (
-    <Link to={`/menu/${id}`} className={`editorial-card group block ${accent.border}`}>
+    <Link to={`/menu/${id}`} className={`editorial-card group flex h-full flex-col ${accent.border}`}>
       <div className={`relative aspect-[4/3] overflow-hidden bg-gradient-to-br ${accent.wash} from-white to-stone-100`}>
         <ProgressiveImage
           src={generateImageUrl(restaurantName)}
@@ -23,12 +23,17 @@ function MenuPreview({ restaurantName, chefName, location, numberOfCourses, tota
           className="h-full w-full"
           imageClassName="h-full w-full object-cover transition duration-500 group-hover:scale-105"
         />
-        <div className={`absolute inset-x-4 top-4 h-20 rounded-[1.25rem] bg-gradient-to-b ${accent.glow} opacity-60`} />
+        <div className={`absolute inset-x-0 top-0 h-20 bg-gradient-to-b ${accent.glow} opacity-55`} />
       </div>
-      <div className="space-y-4 p-5">
+      <div className="flex flex-1 flex-col gap-4 p-5">
         <div>
-          <p className="page-kicker text-[0.65rem]">Tasting menu</p>
-          <h2 className="mt-2 font-playfair text-3xl font-semibold leading-tight text-ink">{restaurantName}</h2>
+          <div className="flex items-center justify-between gap-3">
+            <p className="page-kicker text-[0.65rem]">Tasting menu</p>
+            <span className={`rounded-full border px-2.5 py-1 text-xs font-bold ${accent.border} ${accent.wash} ${accent.text}`}>
+              ${totalPrice}
+            </span>
+          </div>
+          <h2 className="mt-2 font-playfair text-2xl font-semibold leading-tight text-ink">{restaurantName}</h2>
         </div>
         <div className="space-y-2">
           <p className="meta-row">
@@ -38,12 +43,12 @@ function MenuPreview({ restaurantName, chefName, location, numberOfCourses, tota
             <MdLocationOn className="meta-icon" /> <span>{location}</span>
           </p>
         </div>
-        <div className="flex items-center justify-between gap-3 border-t border-stone-200 pt-4 text-sm font-semibold text-stone-700">
+        <div className="mt-auto flex items-center justify-between gap-3 border-t border-stone-200 pt-4 text-sm font-semibold text-stone-700">
           <span className="flex items-center gap-2">
             <MdRestaurantMenu className={`h-4 w-4 ${accent.text}`} /> {numberOfCourses} courses
           </span>
-          <span className="flex items-center gap-1 rounded-full border border-stone-200 bg-white px-3 py-1 text-xs uppercase tracking-[0.16em] text-stone-500">
-            <MdAttachMoney className={`h-4 w-4 ${accent.text}`} /> {totalPrice}
+          <span className="flex items-center gap-1 rounded-full border border-stone-200 bg-white px-3 py-1 text-xs font-bold text-stone-500">
+            <MdAttachMoney className={`h-4 w-4 ${accent.text}`} /> tasting
           </span>
         </div>
       </div>

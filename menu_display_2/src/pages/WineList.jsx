@@ -125,10 +125,10 @@ function WineBottleCard({ wine, imageSrc, style, country, priceBand, rarityScore
   return (
     <Link
       to={buildWineBottlePath(wine)}
-      className="editorial-card block h-full bg-white/92 transition hover:-translate-y-1 hover:border-clay/40"
+      className="editorial-card flex h-full flex-col transition hover:border-clay/40"
     >
       <div className="relative border-b border-stone-100 bg-white p-4">
-        <div className="aspect-[4/3] overflow-hidden rounded-[1.3rem] border border-stone-200 bg-white">
+        <div className="aspect-[4/3] overflow-hidden rounded-lg border border-stone-200 bg-white">
           <ProgressiveImage
             src={imageSrc}
             alt={`${wine.name} bottle`}
@@ -139,56 +139,34 @@ function WineBottleCard({ wine, imageSrc, style, country, priceBand, rarityScore
           />
         </div>
         <div className="absolute left-6 top-6 flex flex-wrap gap-2">
-          <span className={`rounded-full border px-3 py-1 text-[0.65rem] font-bold uppercase tracking-[0.22em] ${cardToneForStyle(style.key)}`}>
+          <span className={`accent-chip ${cardToneForStyle(style.key)}`}>
             {style.shortLabel}
           </span>
-          <span className={`rounded-full border px-3 py-1 text-[0.65rem] font-bold uppercase tracking-[0.22em] ${cardToneForCountry(country.key)}`}>
+          <span className={`accent-chip ${cardToneForCountry(country.key)}`}>
             {country.label}
           </span>
         </div>
       </div>
       <div className="flex flex-1 flex-col gap-4 p-5">
         <div>
-          <p className="text-[0.65rem] uppercase tracking-[0.24em] text-stone-400">{priceBand.label}</p>
+          <p className="stat-label">{priceBand.label}</p>
           <h3 className="mt-2 text-lg font-semibold leading-tight text-ink">{wine.name}</h3>
         </div>
         <div className="grid gap-3 sm:grid-cols-2">
-          <div className="rounded-2xl border border-stone-200/80 bg-stone-50 p-3">
-            <p className="text-xs uppercase tracking-[0.18em] text-stone-400">Michelin price</p>
-            <p className="mt-1 text-lg font-semibold text-ink">{formatPrice(wine.michelin_star_price_eur_750ml)}</p>
-            {wine.michelin_star_price_range_eur_750ml && (
-              <p className="text-xs text-stone-400">
-                {formatPrice(wine.michelin_star_price_range_eur_750ml.low)} –{' '}
-                {formatPrice(wine.michelin_star_price_range_eur_750ml.high)}
-              </p>
-            )}
+          <div className="stat-tile bg-stone-50/80">
+            <p className="stat-label">List price</p>
+            <p className="stat-value text-lg">{formatPrice(wine.michelin_star_price_eur_750ml)}</p>
           </div>
-          <div className="rounded-2xl border border-stone-200/80 bg-stone-50 p-3">
-            <p className="text-xs uppercase tracking-[0.18em] text-stone-400">Markup</p>
-            <p className="mt-1 text-lg font-semibold text-ink">×{wine.michelin_markup_multiple_used}</p>
-            <p className="text-xs text-stone-400">{rarity}</p>
+          <div className="stat-tile bg-stone-50/80">
+            <p className="stat-label">Market</p>
+            <p className="stat-value text-lg">{formatPrice(wine.base_price_eur_750ml)}</p>
           </div>
         </div>
         <p className="text-sm leading-6 text-stone-600">{tastingNoteFor(wine)}</p>
-        <div className="grid gap-3 sm:grid-cols-2">
-          <div className="rounded-2xl border border-stone-200 bg-stone-50 p-3">
-            <p className="text-[0.65rem] uppercase tracking-[0.2em] text-stone-400">Base</p>
-            <p className="mt-1 text-sm font-semibold text-ink">{formatPrice(wine.base_price_eur_750ml)}</p>
-            {wine.base_price_range_eur_750ml && (
-              <p className="text-xs text-stone-400">
-                {formatPrice(wine.base_price_range_eur_750ml.low)} – {formatPrice(wine.base_price_range_eur_750ml.high)}
-              </p>
-            )}
-          </div>
-          <div className="rounded-2xl border border-stone-200 bg-stone-50 p-3">
-            <p className="text-[0.65rem] uppercase tracking-[0.2em] text-stone-400">Status</p>
-            <p className="mt-1 text-sm font-semibold text-ink">{rarity}</p>
-            <p className="text-xs text-stone-400">{popularity}</p>
-          </div>
-        </div>
-        <div className="mt-auto flex items-center justify-between gap-3 text-xs text-stone-500">
-          <span>Confidence {wine.confidence}</span>
-          <span>{wine.is_fictional_or_unpriceable ? 'Fictional or unpriceable' : 'Real bottle'}</span>
+        <div className="mt-auto flex flex-wrap items-center gap-2 border-t border-stone-200 pt-4 text-xs font-semibold text-stone-500">
+          <span className="rounded-full bg-stone-100 px-3 py-1">{rarity}</span>
+          <span className="rounded-full bg-stone-100 px-3 py-1">{popularity}</span>
+          <span className="rounded-full bg-stone-100 px-3 py-1">×{wine.michelin_markup_multiple_used}</span>
         </div>
       </div>
     </Link>
@@ -197,7 +175,7 @@ function WineBottleCard({ wine, imageSrc, style, country, priceBand, rarityScore
 
 function SectionHeader({ title, description, count, totalPrice, scoreLabel, scoreValue }) {
   return (
-    <div className="mb-6 rounded-[1.75rem] border border-stone-200/80 bg-linen/78 p-5 shadow-sm backdrop-blur-sm">
+    <div className="section-panel mb-6">
       <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
         <div>
           <p className="page-kicker">{scoreLabel}</p>
@@ -205,17 +183,17 @@ function SectionHeader({ title, description, count, totalPrice, scoreLabel, scor
           <p className="mt-2 max-w-3xl text-sm leading-7 text-stone-600">{description}</p>
         </div>
         <div className="grid gap-3 sm:grid-cols-3">
-          <div className="rounded-2xl border border-stone-200 bg-white/80 px-4 py-3">
-            <p className="text-[0.65rem] uppercase tracking-[0.24em] text-stone-400">Bottles</p>
-            <p className="mt-1 text-2xl font-semibold text-ink">{count}</p>
+          <div className="stat-tile">
+            <p className="stat-label">Bottles</p>
+            <p className="stat-value text-2xl">{count}</p>
           </div>
-          <div className="rounded-2xl border border-stone-200 bg-white/80 px-4 py-3">
-            <p className="text-[0.65rem] uppercase tracking-[0.24em] text-stone-400">Median price</p>
-            <p className="mt-1 text-2xl font-semibold text-ink">{formatPrice(medianPrice(totalPrice))}</p>
+          <div className="stat-tile">
+            <p className="stat-label">Median price</p>
+            <p className="stat-value text-2xl">{formatPrice(medianPrice(totalPrice))}</p>
           </div>
-          <div className="rounded-2xl border border-stone-200 bg-white/80 px-4 py-3">
-            <p className="text-[0.65rem] uppercase tracking-[0.24em] text-stone-400">{scoreLabel}</p>
-            <p className="mt-1 text-2xl font-semibold text-ink">{scoreValue}</p>
+          <div className="stat-tile">
+            <p className="stat-label">{scoreLabel}</p>
+            <p className="stat-value text-2xl">{scoreValue}</p>
           </div>
         </div>
       </div>
@@ -423,7 +401,7 @@ function WineList() {
   if (!wineData) {
     return (
       <div className="page-shell">
-        <div className="mx-auto max-w-4xl rounded-2xl border border-stone-200 bg-white/80 p-8 text-center shadow-sm">
+        <div className="mx-auto max-w-4xl soft-panel p-8 text-center">
           <p className="page-kicker">Wine list</p>
           <p className="mt-3 text-lg text-stone-600">Loading cellar intelligence…</p>
         </div>
@@ -433,26 +411,26 @@ function WineList() {
 
   return (
     <div className="page-shell">
-      <header className="relative mb-10 overflow-hidden rounded-[2rem] border border-stone-200/80 bg-linen/88 p-6 shadow-editorial sm:p-8 lg:p-10">
+      <header className="relative mb-10 overflow-hidden rounded-2xl border border-stone-200/80 bg-linen/90 p-6 shadow-editorial sm:p-8 lg:p-10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(196,144,63,0.14),transparent_28%),linear-gradient(135deg,rgba(169,86,56,0.08),transparent_40%)]" />
         <div className="relative grid gap-10 lg:grid-cols-[minmax(0,1.3fr)_minmax(320px,0.7fr)] lg:items-end">
           <div>
             <p className="page-kicker">Wine list</p>
             <h1 className="page-title">Browse the cellar by style, origin, and mood.</h1>
             <p className="page-lede mx-0 max-w-4xl">
-              {metadata.description} The presentation now separates reds, whites, and champagnes, while also letting you browse by country, price, popularity, or rarity. Style and origin are inferred from the bottle names, so the list stays flexible without changing the source data.
+              {metadata.description} Move through reds, whites, sparkling bottles, origins, price ladders, and collector-coded shelves.
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="segmented-control mt-8">
               {VIEW_MODES.map((mode) => (
                 <button
                   key={mode.key}
                   type="button"
                   onClick={() => setViewMode(mode.key)}
-                  className={`rounded-full border px-4 py-2 text-sm font-semibold transition ${
+                  className={`segment-button ${
                     viewMode === mode.key
-                      ? 'border-ink bg-ink text-linen shadow-sm'
-                      : 'border-stone-200 bg-white/80 text-stone-700 hover:border-saffron/50 hover:bg-parchment hover:text-ink'
+                      ? 'segment-button-active'
+                      : ''
                   }`}
                 >
                   {mode.label}
@@ -462,13 +440,13 @@ function WineList() {
           </div>
 
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
-            <div className="rounded-3xl border border-stone-200 bg-white/80 p-5 shadow-sm backdrop-blur-sm">
+            <div className="stat-tile p-5 backdrop-blur-sm">
               <p className="text-sm text-stone-500">Total bottles tracked</p>
               <p className="mt-1 text-3xl font-semibold text-ink">{metadata.count}</p>
-              <p className="mt-2 text-xs uppercase tracking-[0.22em] text-stone-400">Source data</p>
+              <p className="stat-label mt-2">Source data</p>
               <p className="mt-1 text-sm text-stone-600">{metadata.fictional_or_unpriceable_count} fictional or unpriceable entries included.</p>
             </div>
-            <div className="rounded-3xl border border-stone-200 bg-white/80 p-5 shadow-sm backdrop-blur-sm">
+            <div className="stat-tile p-5 backdrop-blur-sm">
               <p className="text-sm text-stone-500">Current focus</p>
               <p className="mt-1 text-2xl font-semibold text-ink">{VIEW_MODES.find((mode) => mode.key === viewMode)?.label}</p>
               <p className="mt-2 text-sm text-stone-600">{VIEW_MODES.find((mode) => mode.key === viewMode)?.description}</p>
@@ -485,42 +463,49 @@ function WineList() {
             <p className="mt-2 max-w-3xl text-sm leading-7 text-stone-600">{VIEW_MODES.find((mode) => mode.key === viewMode)?.description}</p>
           </div>
           <p className="max-w-sm text-sm leading-6 text-stone-500">
-            Cards now read a little more like compact cellar labels: the most important price and identity signals stay near the top, while secondary details stay tucked lower.
+            Jump into a shelf or open any bottle for the full label, pricing, and tasting note.
           </p>
         </div>
+        <nav className="mt-5 flex flex-wrap gap-2" aria-label="Wine shelves">
+          {sections.map((section) => (
+            <a key={section.key} href={`#wine-section-${section.key}`} className="quiet-link px-3 py-1.5 text-xs">
+              {section.title}
+            </a>
+          ))}
+        </nav>
       </section>
 
       <section className="mb-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-        <div className="rounded-3xl border border-stone-200 bg-white/75 p-5 shadow-sm">
+        <div className="stat-tile p-5">
           <p className="text-sm text-stone-500">Dominant style</p>
           <p className="mt-1 text-2xl font-semibold text-ink">{summary.topStyle}</p>
           <p className="mt-2 text-sm text-stone-600">{summary.styleCount} style buckets detected.</p>
         </div>
-        <div className="rounded-3xl border border-stone-200 bg-white/75 p-5 shadow-sm">
+        <div className="stat-tile p-5">
           <p className="text-sm text-stone-500">Top origin</p>
           <p className="mt-1 text-2xl font-semibold text-ink">{summary.topCountry}</p>
           <p className="mt-2 text-sm text-stone-600">{summary.countryCount} country buckets detected.</p>
         </div>
-        <div className="rounded-3xl border border-stone-200 bg-white/75 p-5 shadow-sm">
+        <div className="stat-tile p-5">
           <p className="text-sm text-stone-500">Sparkling shelf</p>
           <p className="mt-1 text-2xl font-semibold text-ink">{summary.sparklingCount}</p>
           <p className="mt-2 text-sm text-stone-600">Champagnes and related sparkling bottles.</p>
         </div>
-        <div className="rounded-3xl border border-stone-200 bg-white/75 p-5 shadow-sm">
+        <div className="stat-tile p-5">
           <p className="text-sm text-stone-500">Rare or legendary</p>
           <p className="mt-1 text-2xl font-semibold text-ink">{summary.rareCount}</p>
           <p className="mt-2 text-sm text-stone-600">Higher price and lower-confidence bottles.</p>
         </div>
       </section>
 
-      <section className="mb-14 rounded-3xl border border-stone-200/80 bg-white/70 p-5 shadow-sm backdrop-blur-sm">
+      <section className="section-panel mb-14">
         <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <div>
-            <p className="page-kicker">How to read it</p>
+            <p className="page-kicker">Cellar key</p>
             <h2 className="mt-1 font-playfair text-2xl font-semibold text-ink">Styles and origins are inferred, prices are listed per 750ml bottle</h2>
           </div>
           <p className="max-w-3xl text-sm leading-7 text-stone-600">
-            The view mode controls the main arrangement. Every card still links to the bottle detail page, so you can jump from a grouped shelf into a single bottle at any time.
+            Each bottle opens into a detail page with the larger label image, tasting note, confidence, and price guidance.
           </p>
         </div>
       </section>
@@ -549,7 +534,7 @@ function WineList() {
       ) : (
         <div className="space-y-14">
           {sections.map((section) => (
-            <section key={section.key} className="scroll-mt-28">
+            <section key={section.key} id={`wine-section-${section.key}`} className="scroll-mt-28">
               <SectionHeader
                 title={section.title}
                 description={section.description}
