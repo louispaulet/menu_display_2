@@ -9,7 +9,7 @@ function Footer() {
         className="pointer-events-none absolute inset-0 opacity-[0.22]"
         style={{
           backgroundImage: 'url("/branding/footer-pattern.webp")',
-          backgroundRepeat: 'repeat',
+          backgroundRepeat: 'repeat-x',
           backgroundSize: '180px auto',
           backgroundPosition: 'center',
           filter: 'saturate(1.05) contrast(1.1) brightness(0.98)',
