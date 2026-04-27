@@ -17,21 +17,21 @@ function VersionOnePage() {
         </header>
 
         <div className="space-y-8">
-          <section className="rounded-lg border border-stone-200/80 bg-linen p-7 shadow-card sm:p-9">
+          <section className="soft-panel p-7 sm:p-9">
             <h2 className="font-playfair text-3xl font-semibold">Image generation with Stable Diffusion 1.5</h2>
             <p className="mt-4 leading-8 text-stone-600">
               In V1, the project used Stable Diffusion 1.5 to generate menu imagery. It provided a useful foundation for visualizing AI-generated dishes, while the current version uses FLUX-DEV-1 for richer, more refined output.
             </p>
           </section>
 
-          <section className="rounded-lg border border-stone-200/80 bg-linen p-7 shadow-card sm:p-9">
+          <section className="soft-panel p-7 sm:p-9">
             <h2 className="font-playfair text-3xl font-semibold">Simpler development with JavaScript</h2>
             <p className="mt-4 leading-8 text-stone-600">
               The first version was developed with simple JavaScript rather than the modern Vite and React tooling used today. It served as a functional prototype for the core concept.
             </p>
           </section>
 
-          <section className="rounded-lg border border-stone-200/80 bg-linen p-7 shadow-card sm:p-9">
+          <section className="soft-panel p-7 sm:p-9">
             <h2 className="font-playfair text-3xl font-semibold">Styling with Bootstrap</h2>
             <p className="mt-4 leading-8 text-stone-600">
               V1 used Bootstrap for layout and styling. The current TailwindCSS version gives the interface more flexibility and a more distinctive editorial identity.

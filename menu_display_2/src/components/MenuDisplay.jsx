@@ -1,11 +1,17 @@
 /* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
-import { useWineLinkContext, linkifyWineText } from '../lib/wineLinks';
+import { useMemo } from 'react';
 import { MdAttachMoney, MdLocalBar, MdLocationOn, MdRestaurantMenu } from 'react-icons/md';
+import ProgressiveImage from './ProgressiveImage';
+import { useWineLinkContext, linkifyWineText } from '../lib/wineLinks';
+import { findZoneByRestaurantName, getZoneAccentForRestaurant } from '../lib/siteThemes';
 
 function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRoomDescription, grandTotal }) {
   const wineLinkContext = useWineLinkContext();
-  const baseImageUrl = "https://raw.githubusercontent.com/louispaulet/menu_display_2/main/dish_pictures/";
+  const menuZone = useMemo(() => findZoneByRestaurantName(restaurantName), [restaurantName]);
+  const accent = getZoneAccentForRestaurant(restaurantName);
+  const baseImageUrl = 'https://raw.githubusercontent.com/louispaulet/menu_display_2/main/dish_pictures/';
+  const baseRestaurantImageUrl = 'https://raw.githubusercontent.com/louispaulet/menu_display_2/main/restaurant_pictures/';
 
   const generateImageUrl = (courseName, courseDescription) => {
     const chefNameEncoded = encodeURIComponent(chefName.replace(/ /g, '_'));
@@ -14,8 +20,6 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
     const courseDescriptionEncoded = encodeURIComponent(courseDescription.replace(/ /g, '_'));
     return `${baseImageUrl}${chefNameEncoded}-${restaurantNameEncoded}-${courseNameEncoded}-${courseDescriptionEncoded}.webp`;
   };
-
-  const baseRestaurantImageUrl = "https://raw.githubusercontent.com/louispaulet/menu_display_2/main/restaurant_pictures/";
 
   const generateRestaurantImageUrl = (name) => {
     const restaurantNameEncoded = encodeURIComponent(name.replace(/ /g, '_'));
@@ -28,36 +32,78 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
     return `/recipe/${courseEncoded}-${descriptionEncoded}`;
   };
 
+  const courseIds = useMemo(
+    () => tastingMenu.map((item, index) => ({
+      id: `course-${index + 1}`,
+      label: `${index + 1}. ${item.course}`,
+    })),
+    [tastingMenu],
+  );
+
   return (
     <article className="mx-auto max-w-6xl">
-      <header className="overflow-hidden rounded-lg border border-stone-200/80 bg-linen shadow-editorial">
-        <div className="grid lg:min-h-[34rem] lg:grid-cols-[0.82fr_1.18fr]">
-          <div className="flex min-h-72 items-center justify-center bg-stone-100 p-4 sm:min-h-80 sm:p-6 lg:min-h-full">
-            <img
+      <header className="strong-panel overflow-hidden">
+        <div className="grid lg:min-h-[36rem] lg:grid-cols-[0.92fr_1.08fr]">
+          <div className={`relative flex min-h-80 items-end justify-center overflow-hidden bg-gradient-to-br ${accent.wash} p-4 sm:min-h-96 sm:p-6 lg:min-h-full`}>
+            <div className={`absolute inset-0 bg-gradient-to-br ${accent.glow} opacity-70`} />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.68),transparent_34%)]" />
+            <ProgressiveImage
               src={generateRestaurantImageUrl(restaurantName)}
               alt={`${restaurantName} dining room`}
-              className="max-h-full max-w-full object-contain"
+              loading="eager"
+              className="relative z-10 h-full w-full rounded-[1.4rem] border border-white/65 bg-white/80 shadow-editorial"
+              imageClassName="h-full w-full object-contain object-center p-4 sm:p-6"
+              placeholderClassName="bg-white/75"
             />
           </div>
-          <div className="flex flex-col justify-center p-8 sm:p-10 lg:p-14 xl:p-16">
-            <p className="page-kicker">Featured tasting menu</p>
-            <h1 className="mt-3 font-playfair text-5xl font-semibold leading-tight text-ink sm:text-6xl">
+
+          <div className="flex flex-col justify-center p-7 sm:p-10 lg:p-12 xl:p-16">
+            <div className="flex flex-wrap gap-2">
+              <span className={`accent-chip ${accent.border} ${accent.wash} ${accent.text}`}>Featured tasting menu</span>
+              {menuZone && (
+                <span className="accent-chip border-stone-200 bg-white/80 text-stone-600">
+                  {menuZone.title}
+                </span>
+              )}
+            </div>
+
+            <h1 className="mt-4 font-playfair text-5xl font-semibold leading-tight text-ink sm:text-6xl">
               {restaurantName}
             </h1>
+
             <div className="mt-6 grid gap-3 text-stone-600 sm:grid-cols-2">
               <p className="meta-row">
-                <MdRestaurantMenu className="meta-icon" />
+                <MdRestaurantMenu className={`meta-icon ${accent.text}`} />
                 <span>{tastingMenu.length} courses</span>
               </p>
               <p className="meta-row">
-                <MdLocationOn className="meta-icon" />
+                <MdLocationOn className={`meta-icon ${accent.text}`} />
                 <span>{location}</span>
               </p>
               <p className="meta-row sm:col-span-2">
-                <span className="mt-1 h-4 w-4 shrink-0 rounded-full border border-clay/40" />
+                <span className={`mt-1 h-4 w-4 shrink-0 rounded-full border ${accent.border} ${accent.fill}`} />
                 <span>{chefName}</span>
               </p>
             </div>
+
+            <div className="mt-8 grid gap-3 sm:grid-cols-3">
+              <div className="rounded-2xl border border-stone-200/80 bg-white/75 p-4">
+                <p className="text-[0.65rem] uppercase tracking-[0.22em] text-stone-400">Course rhythm</p>
+                <p className="mt-1 text-lg font-semibold text-ink">Alternating plates</p>
+                <p className="mt-1 text-sm leading-6 text-stone-600">Image and text swap sides to keep the menu moving.</p>
+              </div>
+              <div className="rounded-2xl border border-stone-200/80 bg-white/75 p-4">
+                <p className="text-[0.65rem] uppercase tracking-[0.22em] text-stone-400">Total</p>
+                <p className="mt-1 text-lg font-semibold text-ink">${grandTotal}</p>
+                <p className="mt-1 text-sm leading-6 text-stone-600">Chef’s tasting menu price.</p>
+              </div>
+              <div className="rounded-2xl border border-stone-200/80 bg-white/75 p-4">
+                <p className="text-[0.65rem] uppercase tracking-[0.22em] text-stone-400">Identity</p>
+                <p className="mt-1 text-lg font-semibold text-ink">{menuZone?.title ?? 'Curated destination'}</p>
+                <p className="mt-1 text-sm leading-6 text-stone-600">A subtle regional accent without leaving the brand.</p>
+              </div>
+            </div>
+
             <div className="mt-8 border-t border-stone-200 pt-8">
               <h2 className="font-playfair text-2xl font-semibold text-ink">Dining room</h2>
               <p className="mt-3 max-w-4xl text-base leading-8 text-stone-600 sm:text-lg sm:leading-9">
@@ -68,53 +114,97 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
         </div>
       </header>
 
-      <section className="py-14">
-        <div className="mb-10 flex flex-col gap-4 border-b border-stone-200 pb-6 sm:flex-row sm:items-end sm:justify-between">
+      <section className="py-12 sm:py-14">
+        <div className="mb-8 flex flex-col gap-4 border-b border-stone-200 pb-6 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <p className="page-kicker">The menu</p>
             <h2 className="mt-2 font-playfair text-4xl font-semibold text-ink">Courses and pairings</h2>
+            <p className="mt-3 max-w-3xl text-sm leading-7 text-stone-600">
+              Use the sticky course index to jump around the tasting menu. Each plate has a slightly different layout so the pacing stays lively on long scrolls.
+            </p>
           </div>
-          <div className="rounded-full border border-saffron/40 bg-linen px-5 py-3 text-sm font-bold text-ink shadow-sm">
+          <div className={`rounded-full border px-5 py-3 text-sm font-bold shadow-sm ${accent.border} ${accent.wash} ${accent.text}`}>
             Total ${grandTotal}
           </div>
         </div>
 
-        <div className="space-y-8">
-          {tastingMenu.map((item, index) => (
-            <section
-              key={index}
-              className="grid overflow-hidden rounded-lg border border-stone-200/80 bg-linen shadow-card lg:grid-cols-2"
-            >
-              <div className={`aspect-square ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
-                <img
-                  src={generateImageUrl(item.course, item.description)}
-                  alt={`${item.course}: ${item.description}`}
-                  className="h-full w-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-              <div className="flex flex-col justify-center p-7 sm:p-10">
-                <p className="page-kicker">Course {index + 1}</p>
-                <h3 className="mt-2 font-playfair text-3xl font-semibold leading-tight text-ink">{item.course}</h3>
-                <p className="mt-4 text-lg leading-8 text-stone-700">{item.description}</p>
-                <div className="mt-6 grid gap-3 border-y border-stone-200 py-5 text-sm font-semibold text-stone-700 sm:grid-cols-2">
-                  <p className="flex items-center gap-2">
-                    <MdAttachMoney className="h-4 w-4 text-clay" /> {item.price}
-                  </p>
-                  <p className="flex items-start gap-2">
-                    <MdLocalBar className="mt-1 h-4 w-4 shrink-0 text-clay" />
-                    <span className="leading-6">{linkifyWineText(item.wine_pairing, wineLinkContext)}</span>
-                  </p>
-                </div>
-                <Link
-                  to={getRecipeLink(item.course, item.description)}
-                  className="mt-6 inline-flex w-fit items-center rounded-full border border-clay/30 px-5 py-2 text-sm font-bold text-clay hover:border-clay hover:bg-clay hover:text-white"
+        <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_280px]">
+          <div className="space-y-6">
+            {tastingMenu.map((item, index) => {
+              const isEven = index % 2 === 1;
+              return (
+                <section
+                  key={index}
+                  id={`course-${index + 1}`}
+                  className={`scroll-mt-28 overflow-hidden rounded-[1.75rem] border border-stone-200/80 bg-linen shadow-card ${
+                    isEven ? 'lg:bg-white/70' : ''
+                  }`}
                 >
-                  View recipe
-                </Link>
-              </div>
-            </section>
-          ))}
+                  <div className={`grid lg:grid-cols-2 ${isEven ? 'lg:[&>div:first-child]:order-2' : ''}`}>
+                    <div className="relative aspect-[4/3] bg-stone-100 lg:aspect-auto">
+                      <ProgressiveImage
+                        src={generateImageUrl(item.course, item.description)}
+                        alt={`${item.course}: ${item.description}`}
+                        loading={index < 2 ? 'eager' : 'lazy'}
+                        className="h-full w-full"
+                        imageClassName="h-full w-full object-cover"
+                        placeholderClassName="bg-stone-100"
+                      />
+                      <div className={`absolute inset-0 bg-gradient-to-br ${accent.glow} opacity-35`} />
+                    </div>
+
+                    <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-10">
+                      <div className="flex items-center justify-between gap-3">
+                        <p className="page-kicker">Course {index + 1}</p>
+                        <span className="rounded-full border border-stone-200 bg-white px-3 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-stone-500">
+                          {item.price}
+                        </span>
+                      </div>
+                      <h3 className="mt-3 font-playfair text-3xl font-semibold leading-tight text-ink">{item.course}</h3>
+                      <p className="mt-4 max-w-2xl text-lg leading-8 text-stone-700">{item.description}</p>
+                      <div className="mt-6 grid gap-3 border-y border-stone-200/80 py-5 text-sm font-semibold text-stone-700 sm:grid-cols-2">
+                        <p className="flex items-center gap-2">
+                          <MdAttachMoney className={`h-4 w-4 ${accent.text}`} />
+                          {item.price}
+                        </p>
+                        <p className="flex items-start gap-2">
+                          <MdLocalBar className={`mt-1 h-4 w-4 shrink-0 ${accent.text}`} />
+                          <span className="leading-6">{linkifyWineText(item.wine_pairing, wineLinkContext)}</span>
+                        </p>
+                      </div>
+                      <Link
+                        to={getRecipeLink(item.course, item.description)}
+                        className={`mt-6 inline-flex w-fit items-center rounded-full border px-5 py-2 text-sm font-bold transition ${
+                          accent.border
+                        } ${accent.wash} ${accent.text} hover:border-clay hover:bg-clay hover:text-white`}
+                      >
+                        View recipe
+                      </Link>
+                    </div>
+                  </div>
+                </section>
+              );
+            })}
+          </div>
+
+          <aside className="lg:sticky lg:top-24 lg:self-start">
+            <div className="soft-panel p-5">
+              <p className="page-kicker">Jump to course</p>
+              <h3 className="mt-2 font-playfair text-2xl font-semibold text-ink">Sticky index</h3>
+              <p className="mt-2 text-sm leading-6 text-stone-600">A faster way to move through the tasting sequence.</p>
+              <nav className="mt-5 space-y-2" aria-label="Menu courses">
+                {courseIds.map((course) => (
+                  <a
+                    key={course.id}
+                    href={`#${course.id}`}
+                    className={`block rounded-2xl border border-stone-200/80 bg-white/85 px-4 py-3 text-sm font-semibold text-stone-700 transition hover:border-clay/50 hover:bg-parchment hover:text-ink`}
+                  >
+                    {course.label}
+                  </a>
+                ))}
+              </nav>
+            </div>
+          </aside>
         </div>
       </section>
     </article>

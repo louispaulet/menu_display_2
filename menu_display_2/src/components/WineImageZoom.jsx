@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from 'react';
 import { TransformComponent, TransformWrapper } from 'react-zoom-pan-pinch';
+import ProgressiveImage from './ProgressiveImage';
 
 function WineImageZoom({ src, alt, className = '' }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,12 +44,13 @@ function WineImageZoom({ src, alt, className = '' }) {
           Zoom
         </div>
         <div className="aspect-square bg-white">
-          <img
+          <ProgressiveImage
             src={src}
             alt={alt}
             loading="eager"
-            decoding="async"
-            className="h-full w-full object-contain p-4 transition duration-200 group-hover:scale-[1.01]"
+            className="h-full w-full"
+            imageClassName="h-full w-full object-contain p-4 transition duration-200 group-hover:scale-[1.01]"
+            placeholderClassName="bg-white"
           />
         </div>
       </button>

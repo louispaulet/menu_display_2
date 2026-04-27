@@ -23,7 +23,7 @@ function Header() {
     ].join(' ');
 
   return (
-    <header className="sticky top-0 z-50 border-b border-stone-200/80 bg-linen/90 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-stone-200/80 bg-linen/92 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-10">
         <Link to="/" className="group flex items-center gap-3" onClick={() => setIsOpen(false)}>
           <span className="flex h-10 w-10 items-center justify-center rounded-full border border-saffron/40 bg-parchment font-playfair text-lg font-semibold text-clay shadow-sm">
@@ -76,7 +76,7 @@ function Header() {
                   aria-current={isItemActive(item) ? 'page' : undefined}
                   className={[
                     'block rounded-lg px-4 py-3 text-sm font-semibold',
-                    isItemActive(item) ? 'bg-ink text-linen' : 'text-stone-700 hover:bg-stone-100',
+                    isItemActive(item) ? 'bg-ink text-linen shadow-sm' : 'text-stone-700 hover:bg-stone-100',
                   ].join(' ')}
                 >
                   {item.label}

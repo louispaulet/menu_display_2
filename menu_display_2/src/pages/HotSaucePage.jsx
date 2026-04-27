@@ -60,9 +60,9 @@ function HotSaucePage() {
         </p>
       </header>
 
-      <div className="mb-8 flex flex-col gap-3 rounded-lg border border-stone-200/80 bg-linen p-4 shadow-sm sm:flex-row sm:items-center sm:justify-between">
+      <div className="mb-8 flex flex-col gap-3 rounded-[1.6rem] border border-rose-200/70 bg-gradient-to-br from-rose-50/70 via-white to-amber-50/70 p-4 shadow-sm sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <p className="page-kicker text-[0.65rem]">Cellar order</p>
+          <p className="page-kicker text-[0.65rem] text-rose-700">Cellar order</p>
           <p className="mt-1 text-sm leading-6 text-stone-600">
             Sauces are listed A-Z by default. Use the cellar filter to reshuffle by the tasting stats.
           </p>
@@ -73,7 +73,7 @@ function HotSaucePage() {
             <select
               value={sortBy}
               onChange={(event) => setSortBy(event.target.value)}
-              className="w-full appearance-none rounded-full border border-stone-300 bg-white py-3 pl-4 pr-12 text-sm font-semibold text-ink shadow-sm outline-none transition focus:border-clay focus:ring-2 focus:ring-clay/20"
+              className="w-full appearance-none rounded-full border border-stone-300 bg-white py-3 pl-4 pr-12 text-sm font-semibold text-ink shadow-sm outline-none transition focus:border-rose-400 focus:ring-2 focus:ring-rose-200"
             >
               {sortOptions.map((option) => (
                 <option key={option.value} value={option.value}>
@@ -83,7 +83,7 @@ function HotSaucePage() {
             </select>
             <FaChevronDown
               aria-hidden="true"
-              className="pointer-events-none absolute right-4 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-ink"
+              className="pointer-events-none absolute right-4 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-rose-900"
             />
           </span>
         </label>

@@ -13,7 +13,7 @@ function About() {
         </header>
 
         <div className="space-y-8">
-          <section className="rounded-lg border border-stone-200/80 bg-linen p-7 shadow-card sm:p-9">
+          <section className="soft-panel p-7 sm:p-9">
             <h2 className="font-playfair text-3xl font-semibold">The project</h2>
             <p className="mt-4 leading-8 text-stone-600">
               Using the advanced capabilities of <strong className="text-ink">GPT-4</strong>, we generate fictional yet captivating menus in JSON format, each one designed to reflect the culinary vision of an imagined chef and restaurant.
@@ -23,7 +23,7 @@ function About() {
             </p>
           </section>
 
-          <section className="rounded-lg border border-stone-200/80 bg-linen p-7 shadow-card sm:p-9">
+          <section className="soft-panel p-7 sm:p-9">
             <h2 className="font-playfair text-3xl font-semibold">Visualizing the cuisine</h2>
             <p className="mt-4 leading-8 text-stone-600">
               The image system has evolved with the project. Version 1 used <strong className="text-ink">Stable Diffusion</strong> to picture the original menus, while version 2 moved to <strong className="text-ink">FLUX.DEV1</strong> for a richer, more polished visual language.
@@ -36,7 +36,7 @@ function About() {
             </p>
           </section>
 
-          <section className="rounded-lg border border-stone-200/80 bg-parchment p-7 shadow-card sm:p-9">
+          <section className="rounded-[1.6rem] border border-stone-200/80 bg-parchment p-7 shadow-card sm:p-9">
             <p className="page-kicker">Archive</p>
             <h2 className="font-playfair text-3xl font-semibold">V1 still lives on</h2>
             <p className="mt-4 leading-8 text-stone-600">
@@ -51,14 +51,14 @@ function About() {
             </p>
           </section>
 
-          <section className="rounded-lg border border-stone-200/80 bg-linen p-7 shadow-card sm:p-9">
+          <section className="soft-panel p-7 sm:p-9">
             <h2 className="font-playfair text-3xl font-semibold">Our vision</h2>
             <p className="mt-4 leading-8 text-stone-600">
               The goal is to merge technology and creativity to explore new ways of imagining food, place, and presentation. Whether you are a technologist, a food lover, or simply curious, the site is built as a gallery of possible dining worlds.
             </p>
           </section>
 
-          <section className="rounded-lg border border-stone-200/80 bg-linen p-7 shadow-card sm:p-9">
+          <section className="soft-panel p-7 sm:p-9">
             <h2 className="font-playfair text-3xl font-semibold">The website</h2>
             <p className="mt-4 leading-8 text-stone-600">
               The site is built with Vite, React, and TailwindCSS, then hosted on GitHub Pages. The interface is designed to stay fast, responsive, and image-forward while preserving the original project data.

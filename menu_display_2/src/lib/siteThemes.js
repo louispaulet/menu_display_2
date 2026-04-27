@@ -1,0 +1,185 @@
+export const CONTENT_ZONES = [
+  {
+    id: 'french',
+    title: 'French Excellence',
+    description: 'Indulge in the cradle of fine dining, from the heart of Paris to the snow-capped Alps.',
+    restaurantNames: ["L'Etoile d'Or", 'Le Paradis des Douceurs', "L'Étoile des Neiges", 'Le Jardin Végétal', 'Le Festin Opulent', "Le Papillon d'Or", 'Le Château des Choux', 'La Dame de Pic', 'The Imperial Room'],
+    accent: {
+      border: 'border-clay/20',
+      wash: 'bg-clay/8',
+      fill: 'bg-clay/12',
+      text: 'text-clay',
+      glow: 'from-clay/20 via-transparent to-transparent',
+    },
+  },
+  {
+    id: 'japanese',
+    title: 'Japanese Artistry',
+    description: 'Experience the precision and seasonal purity of traditional and modern Japanese cuisine.',
+    restaurantNames: ['Sakura No Hana', 'Le Jardin Zen', 'Sushi Zenkai'],
+    accent: {
+      border: 'border-slate-300/70',
+      wash: 'bg-slate-100/70',
+      fill: 'bg-slate-200/60',
+      text: 'text-slate-700',
+      glow: 'from-slate-200/30 via-transparent to-transparent',
+    },
+  },
+  {
+    id: 'southeast-asian',
+    title: 'South East Asian Jewels',
+    description: 'A journey through the vibrant spices and delicate balance of Vietnam and Indonesia.',
+    restaurantNames: ['Taman Sari', 'Sen Vàng'],
+    accent: {
+      border: 'border-emerald-200/80',
+      wash: 'bg-emerald-50/70',
+      fill: 'bg-emerald-100/70',
+      text: 'text-emerald-900',
+      glow: 'from-emerald-200/30 via-transparent to-transparent',
+    },
+  },
+  {
+    id: 'south-asian',
+    title: 'South Asian & Indian Ocean',
+    description: 'Exotic flavors from the bustling streets of Mumbai to the serene shores of the Maldives.',
+    restaurantNames: ["Fisherman's Grill", 'Sarvottam'],
+    accent: {
+      border: 'border-amber-200/80',
+      wash: 'bg-amber-50/70',
+      fill: 'bg-amber-100/70',
+      text: 'text-amber-900',
+      glow: 'from-amber-200/30 via-transparent to-transparent',
+    },
+  },
+  {
+    id: 'polynesian',
+    title: 'Polynesian Paradise',
+    description: 'Tropical paradises offering the freshest catches from the crystal-clear waters of the Pacific.',
+    restaurantNames: ["Le Lagon", 'Island Elysium', "Kai 'Olu"],
+    accent: {
+      border: 'border-cyan-200/80',
+      wash: 'bg-cyan-50/75',
+      fill: 'bg-cyan-100/70',
+      text: 'text-cyan-900',
+      glow: 'from-cyan-200/30 via-transparent to-transparent',
+    },
+  },
+  {
+    id: 'nordic',
+    title: 'Nordic Spirit',
+    description: 'Bold and innovative flavors from the pristine landscapes of Finland and Iceland.',
+    restaurantNames: ['Nordic Essence', 'Nordic Haven', 'Aurora Borealis'],
+    accent: {
+      border: 'border-sky-200/80',
+      wash: 'bg-sky-50/75',
+      fill: 'bg-sky-100/70',
+      text: 'text-sky-900',
+      glow: 'from-sky-200/30 via-transparent to-transparent',
+    },
+  },
+  {
+    id: 'mediterranean',
+    title: 'Mediterranean Charm',
+    description: 'Sun-drenched ingredients and timeless recipes from Italy, Spain, and Greece.',
+    restaurantNames: ['La Serenissima', 'La Dolce Vita', 'Lab de Sabores', 'The Golden Aegean', 'La Cucina dei Sogni', 'La Esencia'],
+    accent: {
+      border: 'border-amber-300/70',
+      wash: 'bg-amber-50/65',
+      fill: 'bg-amber-100/60',
+      text: 'text-amber-900',
+      glow: 'from-amber-300/25 via-transparent to-transparent',
+    },
+  },
+  {
+    id: 'latin-american',
+    title: 'Latin American Soul',
+    description: 'A celebration of diverse cultures and vibrant ingredients from Mexico to the Amazon.',
+    restaurantNames: ['Inti Raymi', 'Cielo Azul', 'Pescado Sagrado'],
+    accent: {
+      border: 'border-rose-200/80',
+      wash: 'bg-rose-50/70',
+      fill: 'bg-rose-100/70',
+      text: 'text-rose-900',
+      glow: 'from-rose-200/30 via-transparent to-transparent',
+    },
+  },
+  {
+    id: 'north-american',
+    title: 'North American Modern',
+    description: 'Contemporary culinary landmarks from the streets of New York to the Pacific coast.',
+    restaurantNames: ['Verdant Elegance', 'The American Tapestry', 'Parkview Elegance', 'Sol y Sakura'],
+    accent: {
+      border: 'border-indigo-200/80',
+      wash: 'bg-indigo-50/70',
+      fill: 'bg-indigo-100/60',
+      text: 'text-indigo-900',
+      glow: 'from-indigo-200/30 via-transparent to-transparent',
+    },
+  },
+  {
+    id: 'european-heritage',
+    title: 'European Heritage',
+    description: 'Refined classics from the heart of Germany, Switzerland, and the grandeur of Russia.',
+    restaurantNames: ['Deutscher Geschmack', 'Imperial Caviar', 'Alpine Heights'],
+    accent: {
+      border: 'border-stone-300/80',
+      wash: 'bg-stone-100/75',
+      fill: 'bg-stone-200/60',
+      text: 'text-stone-700',
+      glow: 'from-stone-200/30 via-transparent to-transparent',
+    },
+  },
+  {
+    id: 'middle-eastern',
+    title: 'Middle Eastern Oasis',
+    description: 'Opulent dining experiences blending modern elegance with rich regional traditions.',
+    restaurantNames: ['Alcazar'],
+    accent: {
+      border: 'border-fuchsia-200/80',
+      wash: 'bg-fuchsia-50/70',
+      fill: 'bg-fuchsia-100/70',
+      text: 'text-fuchsia-900',
+      glow: 'from-fuchsia-200/30 via-transparent to-transparent',
+    },
+  },
+  {
+    id: 'african',
+    title: 'African Savanna',
+    description: 'Unique dining adventures amidst the breathtaking landscapes and wildlife of the Serengeti.',
+    restaurantNames: ['Majani'],
+    accent: {
+      border: 'border-lime-200/80',
+      wash: 'bg-lime-50/70',
+      fill: 'bg-lime-100/70',
+      text: 'text-lime-900',
+      glow: 'from-lime-200/30 via-transparent to-transparent',
+    },
+  },
+  {
+    id: 'outer-space',
+    title: 'Interstellar Gastronomy',
+    description: 'Avant-garde dining beyond our atmosphere, from the Red Planet to the far future.',
+    restaurantNames: ['The Red Planet Bistro', 'Galactic Delights'],
+    accent: {
+      border: 'border-violet-200/80',
+      wash: 'bg-violet-50/70',
+      fill: 'bg-violet-100/70',
+      text: 'text-violet-900',
+      glow: 'from-violet-200/30 via-transparent to-transparent',
+    },
+  },
+];
+
+export function findZoneByRestaurantName(restaurantName) {
+  return CONTENT_ZONES.find((zone) => zone.restaurantNames.includes(restaurantName)) ?? null;
+}
+
+export function getZoneAccentForRestaurant(restaurantName) {
+  return findZoneByRestaurantName(restaurantName)?.accent ?? {
+    border: 'border-stone-200/80',
+    wash: 'bg-white/80',
+    fill: 'bg-stone-100',
+    text: 'text-stone-700',
+    glow: 'from-stone-200/30 via-transparent to-transparent',
+  };
+}

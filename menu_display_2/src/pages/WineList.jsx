@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useEffect, useMemo, useState } from 'react';
 import { buildWineImageIndex, resolveWineImageFilename } from '../lib/wineImages';
 import { buildWineBottlePath } from '../lib/wineLinks';
+import ProgressiveImage from '../components/ProgressiveImage';
 import {
   classifyWineCountry,
   classifyWineStyle,
@@ -124,16 +125,17 @@ function WineBottleCard({ wine, imageSrc, style, country, priceBand, rarityScore
   return (
     <Link
       to={buildWineBottlePath(wine)}
-      className="editorial-card block h-full bg-white/90 transition hover:-translate-y-1 hover:border-clay/40"
+      className="editorial-card block h-full bg-white/92 transition hover:-translate-y-1 hover:border-clay/40"
     >
       <div className="relative border-b border-stone-100 bg-white p-4">
-        <div className="aspect-[4/3] overflow-hidden rounded-2xl border border-stone-200 bg-white">
-          <img
+        <div className="aspect-[4/3] overflow-hidden rounded-[1.3rem] border border-stone-200 bg-white">
+          <ProgressiveImage
             src={imageSrc}
             alt={`${wine.name} bottle`}
             loading="lazy"
-            decoding="async"
-            className="h-full w-full object-contain p-3"
+            className="h-full w-full"
+            imageClassName="h-full w-full object-contain p-3"
+            placeholderClassName="bg-white"
           />
         </div>
         <div className="absolute left-6 top-6 flex flex-wrap gap-2">
@@ -148,10 +150,10 @@ function WineBottleCard({ wine, imageSrc, style, country, priceBand, rarityScore
       <div className="flex flex-1 flex-col gap-4 p-5">
         <div>
           <p className="text-[0.65rem] uppercase tracking-[0.24em] text-stone-400">{priceBand.label}</p>
-          <h3 className="mt-2 text-xl font-semibold leading-tight text-ink">{wine.name}</h3>
+          <h3 className="mt-2 text-lg font-semibold leading-tight text-ink">{wine.name}</h3>
         </div>
-        <div className="flex items-start justify-between gap-4">
-          <div>
+        <div className="grid gap-3 sm:grid-cols-2">
+          <div className="rounded-2xl border border-stone-200/80 bg-stone-50 p-3">
             <p className="text-xs uppercase tracking-[0.18em] text-stone-400">Michelin price</p>
             <p className="mt-1 text-lg font-semibold text-ink">{formatPrice(wine.michelin_star_price_eur_750ml)}</p>
             {wine.michelin_star_price_range_eur_750ml && (
@@ -161,9 +163,11 @@ function WineBottleCard({ wine, imageSrc, style, country, priceBand, rarityScore
               </p>
             )}
           </div>
-          <span className="rounded-full border border-stone-300 px-3 py-1 text-[0.65rem] uppercase tracking-[0.2em] text-stone-500">
-            ×{wine.michelin_markup_multiple_used}
-          </span>
+          <div className="rounded-2xl border border-stone-200/80 bg-stone-50 p-3">
+            <p className="text-xs uppercase tracking-[0.18em] text-stone-400">Markup</p>
+            <p className="mt-1 text-lg font-semibold text-ink">×{wine.michelin_markup_multiple_used}</p>
+            <p className="text-xs text-stone-400">{rarity}</p>
+          </div>
         </div>
         <p className="text-sm leading-6 text-stone-600">{tastingNoteFor(wine)}</p>
         <div className="grid gap-3 sm:grid-cols-2">
@@ -193,7 +197,7 @@ function WineBottleCard({ wine, imageSrc, style, country, priceBand, rarityScore
 
 function SectionHeader({ title, description, count, totalPrice, scoreLabel, scoreValue }) {
   return (
-    <div className="mb-6 rounded-3xl border border-stone-200/80 bg-linen/75 p-5 shadow-sm backdrop-blur-sm">
+    <div className="mb-6 rounded-[1.75rem] border border-stone-200/80 bg-linen/78 p-5 shadow-sm backdrop-blur-sm">
       <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
         <div>
           <p className="page-kicker">{scoreLabel}</p>
@@ -429,7 +433,7 @@ function WineList() {
 
   return (
     <div className="page-shell">
-      <header className="relative mb-10 overflow-hidden rounded-[2rem] border border-stone-200/80 bg-linen/85 p-6 shadow-editorial sm:p-8 lg:p-10">
+      <header className="relative mb-10 overflow-hidden rounded-[2rem] border border-stone-200/80 bg-linen/88 p-6 shadow-editorial sm:p-8 lg:p-10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(196,144,63,0.14),transparent_28%),linear-gradient(135deg,rgba(169,86,56,0.08),transparent_40%)]" />
         <div className="relative grid gap-10 lg:grid-cols-[minmax(0,1.3fr)_minmax(320px,0.7fr)] lg:items-end">
           <div>
@@ -472,6 +476,19 @@ function WineList() {
           </div>
         </div>
       </header>
+
+      <section className="mb-10 soft-panel p-5">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <p className="page-kicker">Active view</p>
+            <h2 className="mt-1 font-playfair text-2xl font-semibold text-ink">{VIEW_MODES.find((mode) => mode.key === viewMode)?.label}</h2>
+            <p className="mt-2 max-w-3xl text-sm leading-7 text-stone-600">{VIEW_MODES.find((mode) => mode.key === viewMode)?.description}</p>
+          </div>
+          <p className="max-w-sm text-sm leading-6 text-stone-500">
+            Cards now read a little more like compact cellar labels: the most important price and identity signals stay near the top, while secondary details stay tucked lower.
+          </p>
+        </div>
+      </section>
 
       <section className="mb-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
         <div className="rounded-3xl border border-stone-200 bg-white/75 p-5 shadow-sm">
