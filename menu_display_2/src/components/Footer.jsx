@@ -8,7 +8,7 @@ function Footer() {
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.22]"
         style={{
-          backgroundImage: 'url("/branding/greek_mosaic.webp")',
+          backgroundImage: 'url("/branding/footer-pattern.webp")',
           backgroundRepeat: 'repeat',
           backgroundSize: '180px auto',
           backgroundPosition: 'center',
