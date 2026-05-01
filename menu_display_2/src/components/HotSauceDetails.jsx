@@ -66,7 +66,6 @@ function HotSauceDetails() {
               loading="eager"
               className="w-full max-w-[24rem]"
               imageClassName="h-auto w-full object-contain object-center"
-              placeholderClassName="bg-gradient-to-b from-rose-50 via-white to-amber-50"
             />
           </div>
         </div>

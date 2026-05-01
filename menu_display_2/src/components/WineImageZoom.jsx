@@ -62,7 +62,6 @@ function WineImageZoom({ src, alt, className = '', appearance = 'default' }) {
             imageClassName={`h-full w-full object-contain transition duration-200 group-hover:scale-[1.01] ${
               isMuseum ? 'p-0' : 'p-4'
             }`}
-            placeholderClassName={isMuseum ? 'bg-transparent' : 'bg-white'}
           />
         </div>
       </button>

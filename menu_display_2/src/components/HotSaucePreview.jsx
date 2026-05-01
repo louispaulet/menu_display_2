@@ -39,7 +39,6 @@ function HotSaucePreview({
           loading="lazy"
           className="absolute inset-0 h-full w-full"
           imageClassName="h-full w-full object-contain object-center transition duration-500 ease-out group-hover:scale-105"
-          placeholderClassName="bg-gradient-to-b from-rose-50 via-white to-amber-50"
         />
         <div className="absolute left-4 top-4 rounded-full border border-white/70 bg-white/90 px-3 py-1 text-xs font-bold text-rose-900 shadow-sm">
           {hotnessLevel}/10 heat

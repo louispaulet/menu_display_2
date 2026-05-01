@@ -140,7 +140,6 @@ function WineBottleCard({ wine, imageSrc, style, country, priceBand, rarityScore
             loading="lazy"
             className="h-full w-full"
             imageClassName="h-full w-full object-contain object-center p-2"
-            placeholderClassName="bg-white"
           />
         </div>
         <div className="absolute left-6 top-6 flex flex-wrap gap-2">

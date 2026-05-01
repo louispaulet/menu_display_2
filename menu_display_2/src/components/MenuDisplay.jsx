@@ -62,7 +62,6 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
               loading="eager"
               className="relative z-10 h-full w-full rounded-lg border border-white/65 bg-white/80 shadow-editorial"
               imageClassName="h-full w-full object-cover object-center"
-              placeholderClassName="bg-white/75"
             />
           </div>
 
@@ -157,7 +156,6 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
                         loading={index < 2 ? 'eager' : 'lazy'}
                         className="h-full w-full"
                         imageClassName="h-full w-full object-cover"
-                        placeholderClassName="bg-stone-100"
                       />
                       <div className={`absolute inset-0 bg-gradient-to-br ${accent.glow} opacity-35`} />
                     </div>
