@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import test from 'node:test';
 
 import worker from '../../worker/menu-extractor.js';
@@ -9,6 +10,10 @@ const {
   parseOpenAIResponse,
   validateMenuImage,
 } = worker.__test;
+
+const wellBeanExtraction = JSON.parse(
+  readFileSync(new URL('./fixtures/well-bean-deli-extraction.json', import.meta.url), 'utf8'),
+);
 
 const sampleMenu = {
   restaurantName: 'Cafe Lumiere',
@@ -195,4 +200,70 @@ test('POST /api/menu-extractions rejects invalid uploads before calling OpenAI',
 
   assert.equal(response.status, 415);
   assert.match((await response.json()).error.message, /Upload a JPEG, PNG, or WebP menu image/);
+});
+
+test('POST /api/menu-extractions normalizes Well Bean Deli JSON returned by OpenAI', async (context) => {
+  const originalFetch = globalThis.fetch;
+  let openAIRequestBody;
+
+  context.after(() => {
+    globalThis.fetch = originalFetch;
+  });
+
+  globalThis.fetch = async (_url, init) => {
+    openAIRequestBody = JSON.parse(init.body);
+
+    return new Response(JSON.stringify({
+      output: [
+        {
+          content: [
+            {
+              type: 'output_text',
+              text: JSON.stringify(wellBeanExtraction.menu),
+            },
+          ],
+        },
+      ],
+    }), {
+      status: 200,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  };
+
+  const formData = new FormData();
+  formData.set('menuImage', new File([new Uint8Array([1, 2, 3])], 'well-bean.webp', { type: 'image/webp' }));
+
+  const response = await worker.fetch(
+    new Request('https://menus.example/api/menu-extractions', {
+      method: 'POST',
+      body: formData,
+      headers: { Origin: 'http://localhost:5173' },
+    }),
+    {
+      ALLOWED_ORIGINS: 'http://localhost:5173',
+      OPENAI_API_KEY: 'test-key',
+      OPENAI_IMAGE_DETAIL: 'low',
+      OPENAI_MENU_MODEL: 'gpt-test-menu',
+    },
+  );
+
+  const body = await response.json();
+  const burgers = body.menu.sections.find((section) => section.name === 'BURGERS');
+  const salads = body.menu.sections.find((section) => section.name === 'SALADS');
+  const artichokes = salads.items.find((item) => item.name === 'Marinated Artichokes');
+
+  assert.equal(response.status, 200);
+  assert.equal(response.headers.get('access-control-allow-origin'), 'http://localhost:5173');
+  assert.equal(body.menu.restaurantName, 'The Well Bean Deli');
+  assert.equal(body.meta.model, 'gpt-test-menu');
+  assert.equal(body.meta.detail, 'low');
+  assert.deepEqual(burgers.notes, [
+    'Served on a ww. sesame bun with sprouts, tomato, our special sauce, marinade, and a dill pickle.',
+  ]);
+  assert.deepEqual(burgers.items.map((item) => item.notes), Array.from({ length: 7 }, () => null));
+  assert.deepEqual(salads.notes, ['1/2 pt. / pt.']);
+  assert.equal(artichokes.price, '.95');
+  assert.equal(artichokes.notes, '1/3 cup');
+  assert.equal(openAIRequestBody.model, 'gpt-test-menu');
+  assert.equal(openAIRequestBody.text.format.strict, true);
 });

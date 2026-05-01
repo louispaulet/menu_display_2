@@ -193,6 +193,7 @@ chrome-user-data
 !menu_display_2/src/lib/
 menu_display_2/src/lib/*
 !menu_display_2/src/lib/menuStudioStorage.js
+!menu_display_2/src/lib/menuDisplayNormalization.js
 !menu_display_2/src/lib/wineLinks.jsx
 
 packages/react-devtools-core/dist
