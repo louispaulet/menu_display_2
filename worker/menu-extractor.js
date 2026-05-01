@@ -44,6 +44,11 @@ const menuSchema = {
             type: 'string',
             description: 'Section heading. Use General if no explicit heading is visible.',
           },
+          notes: {
+            type: 'array',
+            description: 'Visible section-wide notes, serving-size legends, sauce defaults, or preparation notes that apply to multiple items.',
+            items: { type: 'string' },
+          },
           items: {
             type: 'array',
             items: {
@@ -68,7 +73,7 @@ const menuSchema = {
                 },
                 notes: {
                   anyOf: [{ type: 'string' }, { type: 'null' }],
-                  description: 'Small visible notes tied to the item, or null if absent.',
+                  description: 'Small visible notes tied only to this item, or null if absent.',
                 },
               },
               required: ['name', 'description', 'price', 'dietaryTags', 'notes'],
@@ -76,7 +81,7 @@ const menuSchema = {
             },
           },
         },
-        required: ['name', 'items'],
+        required: ['name', 'notes', 'items'],
         additionalProperties: false,
       },
     },
@@ -226,12 +231,119 @@ function assertMenuShape(menu) {
       throw new HttpError(502, 'OpenAI returned an invalid section.', 'invalid_openai_response');
     }
 
+    if (section.notes !== undefined && !Array.isArray(section.notes)) {
+      throw new HttpError(502, 'OpenAI returned invalid section notes.', 'invalid_openai_response');
+    }
+
     for (const item of section.items) {
       if (!item || typeof item.name !== 'string' || !Array.isArray(item.dietaryTags)) {
         throw new HttpError(502, 'OpenAI returned an invalid menu item.', 'invalid_openai_response');
       }
     }
   }
+}
+
+function cleanText(value) {
+  if (typeof value !== 'string') return '';
+  return value.replace(/\s+/g, ' ').trim();
+}
+
+function addUnique(list, value) {
+  const cleaned = cleanText(value);
+  if (!cleaned) return;
+
+  const hasMatch = list.some((existing) => existing.toLowerCase() === cleaned.toLowerCase());
+  if (!hasMatch) list.push(cleaned);
+}
+
+function parseCompactPrice(price) {
+  const cleaned = cleanText(price);
+  if (!cleaned) return null;
+
+  const match = cleaned.match(
+    /^((?:\d+\/\d+|\d+(?:\.\d+)?)\s*(?:cup|cups|pt\.?|pts\.?|pint|pints|quart|quarts|qt\.?|qts\.?|oz\.?|ounce|ounces|slice|slices|piece|pieces|pc\.?|pcs\.?)\.?)\s+([$€£¥]?\s*\.?\d+(?:\.\d{1,2})?)$/i,
+  );
+
+  if (!match) return null;
+
+  return {
+    note: cleanText(match[1]),
+    price: cleanText(match[2]),
+  };
+}
+
+function mergeItemNote(existingNote, noteToAdd) {
+  const notes = [];
+  addUnique(notes, existingNote);
+  addUnique(notes, noteToAdd);
+
+  if (notes.length === 0) return null;
+  return notes.join(' · ');
+}
+
+function normalizeItem(item) {
+  const normalized = {
+    ...item,
+    description: item.description === undefined ? null : item.description,
+    price: item.price === undefined ? null : item.price,
+    dietaryTags: Array.isArray(item.dietaryTags) ? item.dietaryTags : [],
+    notes: item.notes === undefined ? null : item.notes,
+  };
+
+  const compactPrice = parseCompactPrice(normalized.price);
+  if (compactPrice) {
+    normalized.price = compactPrice.price;
+    normalized.notes = mergeItemNote(normalized.notes, compactPrice.note);
+  }
+
+  const cleanedNote = cleanText(normalized.notes);
+  normalized.notes = cleanedNote || null;
+
+  return normalized;
+}
+
+function normalizeSection(section) {
+  const sectionNotes = [];
+  for (const note of section.notes ?? []) addUnique(sectionNotes, note);
+
+  const items = section.items.map(normalizeItem);
+  const noteCounts = new Map();
+
+  for (const item of items) {
+    if (!item.notes) continue;
+    const key = item.notes.toLowerCase();
+    noteCounts.set(key, {
+      count: (noteCounts.get(key)?.count ?? 0) + 1,
+      text: item.notes,
+    });
+  }
+
+  const notesToHoist = new Set();
+  for (const [key, note] of noteCounts) {
+    if (note.count > 1) {
+      notesToHoist.add(key);
+      addUnique(sectionNotes, note.text);
+    }
+  }
+
+  const normalizedItems = items.map((item) => (
+    item.notes && notesToHoist.has(item.notes.toLowerCase())
+      ? { ...item, notes: null }
+      : item
+  ));
+
+  return {
+    ...section,
+    notes: sectionNotes,
+    items: normalizedItems,
+  };
+}
+
+function normalizeMenu(menu) {
+  return {
+    ...menu,
+    sections: menu.sections.map(normalizeSection),
+  };
 }
 
 function parseOpenAIResponse(openAIResponse) {
@@ -249,7 +361,7 @@ function parseOpenAIResponse(openAIResponse) {
   }
 
   assertMenuShape(menu);
-  return menu;
+  return normalizeMenu(menu);
 }
 
 async function callOpenAI({ dataUrl, env }) {
@@ -279,6 +391,8 @@ async function callOpenAI({ dataUrl, env }) {
                 'You extract restaurant menu information from uploaded menu photos.',
                 'Return only facts visible in the image. Do not invent images, pairings, recipes, prices, or missing items.',
                 'Preserve section order and item order. Clean obvious OCR artifacts while keeping menu wording faithful.',
+                'Put repeated service lines, serving-size legends, sauce defaults, and notes that apply to multiple items in section notes, not on every item.',
+                'Use item notes only for notes unique to that item. If a serving size is printed next to a price, keep the serving size in notes and the numeric amount in price.',
               ].join(' '),
             },
           ],
@@ -288,7 +402,7 @@ async function callOpenAI({ dataUrl, env }) {
           content: [
             {
               type: 'input_text',
-              text: 'Extract this menu into the requested JSON shape so the app can render a polished text-only menu.',
+              text: 'Extract this menu into the requested JSON shape so the app can render a polished text-only menu with section notes and clean item prices.',
             },
             {
               type: 'input_image',
@@ -382,6 +496,7 @@ export default {
   },
   __test: {
     MAX_UPLOAD_BYTES,
+    normalizeMenu,
     parseOpenAIResponse,
     validateMenuImage,
   },

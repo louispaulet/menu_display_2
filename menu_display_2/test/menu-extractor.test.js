@@ -5,6 +5,7 @@ import worker from '../../worker/menu-extractor.js';
 
 const {
   MAX_UPLOAD_BYTES,
+  normalizeMenu,
   parseOpenAIResponse,
   validateMenuImage,
 } = worker.__test;
@@ -18,6 +19,7 @@ const sampleMenu = {
   sections: [
     {
       name: 'Starters',
+      notes: [],
       items: [
         {
           name: 'Asparagus Veloute',
@@ -100,6 +102,79 @@ test('parseOpenAIResponse extracts structured menu JSON and metadata', () => {
   });
 
   assert.deepEqual(parsed, sampleMenu);
+});
+
+test('normalizeMenu hoists repeated item notes into section notes', () => {
+  const repeatedNote = 'Served on a sesame bun with sprouts, tomato, sauce, and a pickle.';
+  const parsed = normalizeMenu({
+    ...sampleMenu,
+    sections: [
+      {
+        name: 'Burgers',
+        items: [
+          {
+            name: 'Tofu Burger',
+            description: 'Fresh tofu patty',
+            price: '2.25',
+            dietaryTags: [],
+            notes: repeatedNote,
+          },
+          {
+            name: 'Tempeh Burger',
+            description: 'Tempeh and brown rice',
+            price: '2.25',
+            dietaryTags: [],
+            notes: repeatedNote,
+          },
+          {
+            name: 'Falafel Burger',
+            description: 'Chickpeas and tahini',
+            price: '2.25',
+            dietaryTags: [],
+            notes: repeatedNote,
+          },
+        ],
+      },
+    ],
+  });
+
+  assert.deepEqual(parsed.sections[0].notes, [repeatedNote]);
+  assert.deepEqual(
+    parsed.sections[0].items.map((item) => item.notes),
+    [null, null, null],
+  );
+});
+
+test('normalizeMenu separates serving-size labels from compact prices', () => {
+  const parsed = normalizeMenu({
+    ...sampleMenu,
+    sections: [
+      {
+        name: 'Salads',
+        items: [
+          {
+            name: 'Marinated Artichokes',
+            description: null,
+            price: '1/3 cup .95',
+            dietaryTags: [],
+            notes: '1/3 cup',
+          },
+          {
+            name: 'Pimento Stuffed Olives',
+            description: null,
+            price: '1/2 cup .65',
+            dietaryTags: [],
+            notes: null,
+          },
+        ],
+      },
+    ],
+  });
+
+  assert.equal(parsed.sections[0].items[0].price, '.95');
+  assert.equal(parsed.sections[0].items[0].notes, '1/3 cup');
+  assert.equal(parsed.sections[0].items[1].price, '.65');
+  assert.equal(parsed.sections[0].items[1].notes, '1/2 cup');
 });
 
 test('POST /api/menu-extractions rejects invalid uploads before calling OpenAI', async () => {

@@ -45,6 +45,7 @@ function MenuStudio() {
     () => (extraction ? JSON.stringify(extraction, null, 2) : ''),
     [extraction],
   );
+  const hasExtraction = Boolean(extraction?.menu);
 
   const fileStatus = selectedFile
     ? `${selectedFile.name} · ${formatBytes(selectedFile.size)}`
@@ -117,7 +118,7 @@ function MenuStudio() {
 
   return (
     <div className="page-shell">
-      <header className="mx-auto mb-10 max-w-6xl">
+      <header className={`mx-auto max-w-7xl ${hasExtraction ? 'mb-8' : 'mb-10'}`}>
         <div className="strong-panel p-7 sm:p-10 lg:p-12">
           <p className="page-kicker">Menu studio</p>
           <h1 className="page-title max-w-4xl">Turn a menu photo into a refined text menu.</h1>
@@ -127,7 +128,7 @@ function MenuStudio() {
         </div>
       </header>
 
-      <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[0.85fr_1.15fr]">
+      <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[18rem_minmax(0,1fr)]">
         <section className="soft-panel p-6 sm:p-7 lg:sticky lg:top-24 lg:self-start">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
@@ -195,7 +196,7 @@ function MenuStudio() {
           </form>
         </section>
 
-        <section className="space-y-8">
+        <section className="min-w-0 space-y-8">
           {extraction?.menu ? (
             <>
               <GeneratedMenuDisplay menu={extraction.menu} meta={extraction.meta} />
