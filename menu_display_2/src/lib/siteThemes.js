@@ -3,7 +3,7 @@ export const CONTENT_ZONES = [
     id: 'french',
     title: 'French Excellence',
     description: 'Indulge in the cradle of fine dining, from the heart of Paris to the snow-capped Alps.',
-    restaurantNames: ["L'Etoile d'Or", 'Le Paradis des Douceurs', "L'Étoile des Neiges", 'Le Jardin Végétal', 'Le Festin Opulent', "Le Papillon d'Or", 'Le Château des Choux', 'La Dame de Pic', 'The Imperial Room'],
+    restaurantNames: ["L'Etoile d'Or", 'Le Paradis des Douceurs', "L'Étoile des Neiges", 'Le Jardin Végétal', 'Le Festin Opulent', "Le Papillon d'Or", 'Le Château des Choux', 'La Dame de Pic', 'The Imperial Room', 'Table des Herbes'],
     accent: {
       border: 'border-clay/20',
       wash: 'bg-clay/8',
@@ -16,7 +16,7 @@ export const CONTENT_ZONES = [
     id: 'japanese',
     title: 'Japanese Artistry',
     description: 'Experience the precision and seasonal purity of traditional and modern Japanese cuisine.',
-    restaurantNames: ['Sakura No Hana', 'Le Jardin Zen', 'Sushi Zenkai'],
+    restaurantNames: ['Sakura No Hana', 'Le Jardin Zen', 'Sushi Zenkai', 'Sushi Lumière'],
     accent: {
       border: 'border-slate-300/70',
       wash: 'bg-slate-100/70',
@@ -114,6 +114,28 @@ export const CONTENT_ZONES = [
       fill: 'bg-indigo-100/60',
       text: 'text-indigo-900',
       glow: 'from-indigo-200/30 via-transparent to-transparent',
+    },
+  },
+  {
+    id: 'global-icons',
+    title: 'Global Icons',
+    description: 'A new set of fictional marquee destinations remixing the world’s most celebrated dining ideas into fresh, believable houses.',
+    restaurantNames: [
+      'Marea Andina',
+      'Brasa de Atxondo',
+      'Quelite',
+      'Surcos',
+      'Bronze Hall',
+      'Siam No. 9',
+      'Sézanne Nouvelle',
+      'Casa Rivero',
+    ],
+    accent: {
+      border: 'border-rose-200/80',
+      wash: 'bg-rose-50/75',
+      fill: 'bg-rose-100/70',
+      text: 'text-rose-900',
+      glow: 'from-rose-200/30 via-transparent to-transparent',
     },
   },
   {

@@ -45,6 +45,7 @@ SIZE = os.environ.get("OPENAI_IMAGE_SIZE", "1024x1024")
 QUALITY = os.environ.get("OPENAI_IMAGE_QUALITY", "high")
 OUTPUT_FORMAT = os.environ.get("OPENAI_IMAGE_OUTPUT_FORMAT", "png")
 POLL_INTERVAL_SECONDS = int(os.environ.get("OPENAI_BATCH_POLL_INTERVAL_SECONDS", "1800"))
+TARGET_COLLECTION = "worlds-best-remix"
 
 
 @dataclass(frozen=True)
@@ -86,6 +87,13 @@ def normalize_text(text: str) -> str:
 def load_wines() -> list[dict[str, Any]]:
     with (REPO_ROOT / "wines.json").open("r", encoding="utf-8") as handle:
         return json.load(handle)["wines"]
+
+
+def load_target_wines() -> list[dict[str, Any]]:
+    wines = [wine for wine in load_wines() if wine.get("collection") == TARGET_COLLECTION]
+    if not wines:
+        raise RuntimeError(f"no wines tagged with collection={TARGET_COLLECTION!r} were found")
+    return wines
 
 
 def load_menu_data() -> list[dict[str, Any]]:
@@ -197,12 +205,12 @@ def build_prompt(*, wine_name: str, price_eur_750ml: int, paired_dishes_text: st
         f"Wine bottle name: {wine_name}. Michelin list price: EUR {price_eur_750ml}. "
         f"Use these menu pairings as styling cues: {pairing_line}. "
         f"Treat the pairing guidance as {strategy_line}. "
-        "Keep the result luxurious, editorial, and suitable for a refined digital wine list."
+        "Keep the result luxurious, editorial, and suitable for a refined digital wine list, with bottle styling that feels aligned to the cuisine, cellar tone, and service mood."
     )
 
 
 def build_requests() -> tuple[list[WineRequest], dict[str, Any]]:
-    wines = load_wines()
+    wines = load_target_wines()
     menu_data = load_menu_data()
     recipe_catalog = load_recipe_catalog()
     exact_pairings = build_exact_pairings(menu_data)
@@ -645,20 +653,17 @@ def load_manifest_rows() -> list[dict[str, str]]:
 
 def validate_inputs() -> None:
     rows = load_rows()
-    if len(rows) != 261:
-        raise RuntimeError(f"expected 261 wine rows, got {len(rows)}")
+    expected_count = len(rows)
     if not MATCH_AUDIT_PATH.exists():
         raise RuntimeError("match audit file missing")
     audit = json.loads(MATCH_AUDIT_PATH.read_text(encoding="utf-8"))
-    if len(audit.get("wines", [])) != 261:
-        raise RuntimeError(f"expected 261 audit rows, got {len(audit.get('wines', []))}")
-    if audit.get("summary", {}).get("fallback_wines") != 1:
-        raise RuntimeError("expected exactly one fallback wine")
+    if len(audit.get("wines", [])) != expected_count:
+        raise RuntimeError(f"expected {expected_count} audit rows, got {len(audit.get('wines', []))}")
     if not JSONL_PATH.exists():
         build_jsonl()
     with JSONL_PATH.open("r", encoding="utf-8") as handle:
         jsonl_rows = [json.loads(line) for line in handle if line.strip()]
-    if len(jsonl_rows) != 261:
+    if len(jsonl_rows) != expected_count:
         raise RuntimeError(f"JSONL row count mismatch: {len(jsonl_rows)}")
     for payload in jsonl_rows:
         body = payload.get("body", {})
@@ -668,7 +673,7 @@ def validate_inputs() -> None:
             raise RuntimeError(f"unexpected image settings in {payload.get('custom_id')}: {body}")
         if body.get("background") != "opaque" or body.get("output_format") != OUTPUT_FORMAT:
             raise RuntimeError(f"unexpected output settings in {payload.get('custom_id')}: {body}")
-    print("validated 261 wine image requests")
+    print(f"validated {expected_count} wine image requests")
 
 
 def download_results_if_available(batch: dict[str, Any] | None = None) -> None:

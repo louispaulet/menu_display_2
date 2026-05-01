@@ -43,6 +43,7 @@ QUALITY = os.environ.get("OPENAI_IMAGE_QUALITY", "medium")
 WEBP_QUALITY = int(os.environ.get("WEBP_QUALITY", "90"))
 FULL_IMAGE_SIZE = (1024, 1024)
 THUMBNAIL_SIZE = (320, 320)
+TARGET_COLLECTION = "worlds-best-remix"
 
 
 @dataclass(frozen=True)
@@ -107,6 +108,13 @@ def load_menu_data() -> list[dict[str, Any]]:
     return json.loads(result.stdout)
 
 
+def load_target_menus() -> list[dict[str, Any]]:
+    menus = [menu for menu in load_menu_data() if menu.get("collection") == TARGET_COLLECTION]
+    if not menus:
+        raise RuntimeError(f"no menus tagged with collection={TARGET_COLLECTION!r} were found")
+    return menus
+
+
 def build_menu_context(menu: dict[str, Any]) -> str:
     tasting_menu = menu.get("tasting_menu", [])
     courses = [item.get("course", "") for item in tasting_menu if item.get("course")]
@@ -129,18 +137,19 @@ def build_prompt(
         "Square 1024x1024 photoreal luxury restaurant interior photograph for a polished digital menu. "
         "Show the dining room, architecture, tables, lighting, materials, and atmosphere as the main subject. "
         "Use believable hospitality photography, refined composition, natural warm service lighting, crisp detail, "
-        "elegant depth, and a clear sense of place. Avoid cartoon, illustration, CGI, surreal distortion, "
+        "elegant depth, and a clear sense of place. Let the interior hint at service style, menu philosophy, and cellar personality without showing readable signage. "
+        "Avoid cartoon, illustration, CGI, surreal distortion, "
         "text, logos, watermarks, signage, menus with readable writing, close-up people, hands, or food close-ups. "
         f"Restaurant: {restaurant_name}. Location: {location}. Chef: {chef_name}. "
         f"Dining room brief: {dining_room_description} "
         f"Menu context: {menu_context} "
-        "Let the interior design quietly reflect the cuisine, geography, and service level."
+        "Let the interior design quietly reflect the cuisine, geography, service level, and emotional temperature of the menu."
     )
 
 
 def build_requests() -> list[RestaurantImageRequest]:
     requests: list[RestaurantImageRequest] = []
-    for index, menu in enumerate(load_menu_data(), start=1):
+    for index, menu in enumerate(load_target_menus(), start=1):
         restaurant_name = menu["restaurant_name"]
         chef_name = menu["chef_name"]
         location = menu["location"]
@@ -225,19 +234,13 @@ def build_jsonl() -> None:
 
 def validate_inputs() -> None:
     rows = load_rows()
-    full_webps = list((REPO_ROOT / "restaurant_pictures").glob("*.webp"))
-    thumbnail_webps = list((REPO_ROOT / "restaurant_pictures" / "thumbnails").glob("*.webp"))
+    expected_count = len(rows)
     missing = [
         path
         for row in rows
         for path in (row["full_webp_path"], row["thumbnail_webp_path"])
         if not (REPO_ROOT / path).exists()
     ]
-    if len(rows) != 42 or len(full_webps) != 42 or len(thumbnail_webps) != 42:
-        raise RuntimeError(
-            f"expected 42 rows/full webps/thumbnails, got rows={len(rows)} "
-            f"full={len(full_webps)} thumbnails={len(thumbnail_webps)}"
-        )
     if missing:
         raise RuntimeError(f"missing mapped restaurant WebP files: {missing[:5]}")
 
@@ -253,7 +256,7 @@ def validate_inputs() -> None:
             raise RuntimeError(f"unexpected endpoint in {payload.get('custom_id')}")
         if body.get("model") != MODEL or body.get("size") != SIZE or body.get("quality") != QUALITY:
             raise RuntimeError(f"unexpected image settings in {payload.get('custom_id')}: {body}")
-    print("validated 42 restaurant image requests")
+    print(f"validated {expected_count} restaurant image requests")
 
 
 def api_request(

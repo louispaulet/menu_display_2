@@ -177,7 +177,7 @@ Generated manifests and OpenAI batch output are stored under `artifacts/recipe_i
 Useful commands from the repository root:
 
 ```bash
-make recipe-images-refresh   # Generate CSV + JSONL and validate all 289 dish image requests
+make recipe-images-refresh   # Generate CSV + JSONL and validate all dish image requests
 make recipe-images-submit    # Submit the OpenAI batch request
 make recipe-images-check     # Poll once; downloads and decodes output if complete
 make recipe-images-download  # Download/decode completed output from saved batch state
@@ -196,7 +196,7 @@ Generated manifests and OpenAI batch output are stored under `artifacts/restaura
 Useful commands from the repository root:
 
 ```bash
-make restaurant-images-refresh   # Generate CSV + JSONL and validate all 42 restaurant requests
+make restaurant-images-refresh   # Generate CSV + JSONL and validate all restaurant requests
 make restaurant-images-submit    # Submit the OpenAI batch request
 make restaurant-images-check     # Poll once; downloads and decodes output if complete
 make restaurant-images-download  # Download/decode completed output from saved batch state
@@ -230,7 +230,7 @@ Wine bottle images are generated from `wines.json`, with paired dishes pulled fr
 Useful commands from the repository root:
 
 ```bash
-make wine-images-refresh   # Generate CSV + JSONL + audit and validate all 261 wine image requests
+make wine-images-refresh   # Generate CSV + JSONL + audit and validate all wine image requests
 make wine-images-submit    # Submit the OpenAI batch request
 make wine-images-check     # Poll once; downloads and decodes output if complete
 make wine-images-download  # Download/decode completed output from saved batch state

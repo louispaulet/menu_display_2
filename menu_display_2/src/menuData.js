@@ -2147,7 +2147,409 @@ const menuData = [
         ],
         "grand_total": 3500,
         "dining_room_description": "The Imperial Room is a luxurious restaurant located within the Four Seasons Hotel George V in Paris. Known for its opulent décor and historic charm, the restaurant features hand-painted silk walls, ornate plasterwork ceilings, polished wood tables, and plush velvet chairs. A grand chandelier made of crystal and gold serves as the centerpiece of this classic, elegant dining space. The sophisticated menu, created by Chef Pierre Gagnaire, showcases classic French cuisine with a modern twist, using the finest ingredients like caviar, truffles, and foie gras. The impeccable, attentive service and extensive wine list, including rare vintages and exclusive labels, complete the unforgettable dining experience at The Imperial Room."
+    },
+
+    {
+        "location": "Casa Tupac, Barranco, Lima",
+        "restaurant_name": "Marea Andina",
+        "chef_name": "Chef Valeria Tsumori",
+        "collection": "worlds-best-remix",
+        "tasting_menu": [
+            {
+                "course": "Amuse-Bouche",
+                "description": "King crab tartlet with green ají, avocado cream, and toasted quinoa",
+                "price": 28,
+                "wine_pairing": "Champagne de Barranco Brut Nature 2016"
+            },
+            {
+                "course": "Ceviche",
+                "description": "Line-caught sea bass ceviche with rocoto leche de tigre and finger lime",
+                "price": 54,
+                "wine_pairing": "Ayni de Barranco Albariño 2023"
+            },
+            {
+                "course": "Fish",
+                "description": "Lobster steamed in banana leaf with coriander oil and purple potato purée",
+                "price": 68,
+                "wine_pairing": "Maison Varenne Junmai Daiginjo 2023"
+            },
+            {
+                "course": "Meat",
+                "description": "Aged duck breast with charred corn, cassava gratin, and miso jus",
+                "price": 72,
+                "wine_pairing": "Pampa Negra Malbec 2019"
+            },
+            {
+                "course": "Dessert",
+                "description": "Lucuma tart with cocoa nibs and fermented pineapple sorbet",
+                "price": 28,
+                "wine_pairing": "Banyuls Domaine La Tour Vieille 2018"
+            }
+        ],
+        "grand_total": 250,
+        "dining_room_description": "Marea Andina is a serene Lima dining room shaped like a private research atelier, with woven cane screens, cedar paneling, pale stone, and a narrow counter opening onto the kitchen and raw bar. The mood balances Japanese precision with Peruvian biodiversity, while the beverage program leans into coastal whites, saké, and a quietly luxurious cellar."
+    },
+    {
+        "location": "Atxondo Valley, Basque Country",
+        "restaurant_name": "Brasa de Atxondo",
+        "chef_name": "Chef Iker Aramburu",
+        "collection": "worlds-best-remix",
+        "tasting_menu": [
+            {
+                "course": "Snacks",
+                "description": "Smoked oyster with cider vinegar and dill oil",
+                "price": 22,
+                "wine_pairing": "Etxe Senda Txakoli 2022"
+            },
+            {
+                "course": "Fish",
+                "description": "Grilled red prawns with garlic aioli and lemon zest",
+                "price": 48,
+                "wine_pairing": "Albariño Pazo de Señoráns 2020"
+            },
+            {
+                "course": "Vegetable",
+                "description": "Charred artichoke with herb broth and almond cream",
+                "price": 36,
+                "wine_pairing": "Chablis Domaine William Fèvre 2019"
+            },
+            {
+                "course": "Meat",
+                "description": "Wood-fired lamb shoulder with spring onions and smoked pepper",
+                "price": 72,
+                "wine_pairing": "Rioja Roda I Reserva 2012"
+            },
+            {
+                "course": "Dessert",
+                "description": "Milk ice cream with burnt honey and hazelnut cake",
+                "price": 24,
+                "wine_pairing": "Cava Gramona Imperial Gran Reserva Brut 2016"
+            }
+        ],
+        "grand_total": 202,
+        "dining_room_description": "Brasa de Atxondo sits in a stone house above the valley, where the dining room is all oak beams, dark slate, and a central hearth built around custom grills. Smoke is treated like a seasoning rather than a spectacle, and the room feels unpretentious, tactile, and deeply rooted in the Basque landscape."
+    },
+    {
+        "location": "Polanco, Mexico City",
+        "restaurant_name": "Quelite",
+        "chef_name": "Chef Ximena Vallejo",
+        "collection": "worlds-best-remix",
+        "tasting_menu": [
+            {
+                "course": "Opening",
+                "description": "Blue corn tostada with scallop, hoja santa, and green tomato",
+                "price": 26,
+                "wine_pairing": "Cava Gramona Imperial Gran Reserva Brut 2016"
+            },
+            {
+                "course": "Soup",
+                "description": "Squash blossom soup with epazote oil and crema fresca",
+                "price": 32,
+                "wine_pairing": "Albariño Pazo de Señoráns 2020"
+            },
+            {
+                "course": "Fish",
+                "description": "Pescado zarandeado with plantain, avocado leaf, and lime ash",
+                "price": 54,
+                "wine_pairing": "Dr. Loosen Blue Slate Riesling Kabinett 2019"
+            },
+            {
+                "course": "Meat",
+                "description": "Duck in black mole with roasted cherry and sesame",
+                "price": 72,
+                "wine_pairing": "Mole de Piedra Blend 2021"
+            },
+            {
+                "course": "Dessert",
+                "description": "Goat milk flan with piloncillo and citrus oil",
+                "price": 24,
+                "wine_pairing": "Banyuls Domaine La Tour Vieille 2018"
+            }
+        ],
+        "grand_total": 208,
+        "dining_room_description": "Quelite feels like a contemporary garden room above Polanco, with hand-glazed tiles, botanical brasswork, and a cellar wall framed like a conservatory. The menu is built around Mexican biodiversity, but the room reads polished and urban, with the kind of calm confidence that lets the ingredients lead."
+    },
+    {
+        "location": "Centro, Madrid",
+        "restaurant_name": "Surcos",
+        "chef_name": "Chef Daniel Muñoz",
+        "collection": "worlds-best-remix",
+        "tasting_menu": [
+            {
+                "course": "Snacks",
+                "description": "Marinated anchovy with tomato water and arbequina oil",
+                "price": 24,
+                "wine_pairing": "Rioja Roda I Reserva 2012"
+            },
+            {
+                "course": "Rice",
+                "description": "Lobster rice with saffron, sea fennel, and smoked stock",
+                "price": 58,
+                "wine_pairing": "Sancerre Domaine Vacheron 2020"
+            },
+            {
+                "course": "Vegetable",
+                "description": "Charcoal artichoke with jamón consommé and garlic emulsion",
+                "price": 36,
+                "wine_pairing": "Chablis Domaine William Fèvre 2019"
+            },
+            {
+                "course": "Meat",
+                "description": "Suckling pig with grapes, rosemary, and PX glaze",
+                "price": 74,
+                "wine_pairing": "Gran Vía Garnacha 2021"
+            },
+            {
+                "course": "Dessert",
+                "description": "Almond crema catalana with sherry jelly and orange zest",
+                "price": 22,
+                "wine_pairing": "Pedro Ximénez Toro Albala Don PX Gran Reserva 1987"
+            }
+        ],
+        "grand_total": 214,
+        "dining_room_description": "Surcos is a theatrical Madrid townhouse dining room, all ribbed walnut, warm plaster, mirrored brass, and a softly lit open pass. The atmosphere is maximal but controlled, with a distinctly Spanish rhythm: bold flavor, polished service, and enough drama in the room to keep the tasting menu feeling like a performance."
+    },
+    {
+        "location": "Refshaleøen, Copenhagen",
+        "restaurant_name": "Bronze Hall",
+        "chef_name": "Chef Rasmus Berg",
+        "collection": "worlds-best-remix",
+        "tasting_menu": [
+            {
+                "course": "Snack",
+                "description": "Cured trout with dill oil, whey, and rye crisp",
+                "price": 26,
+                "wine_pairing": "Refshale Bloom Blanc de Noirs 2017"
+            },
+            {
+                "course": "Seafood",
+                "description": "Scallop with hay butter and green apple",
+                "price": 44,
+                "wine_pairing": "Meursault Les Narvaux Domaine Michelot 2018"
+            },
+            {
+                "course": "Broth",
+                "description": "Fermented mushroom broth with root vegetables and barley",
+                "price": 34,
+                "wine_pairing": "Domaine Louis Moreau Chablis 2019"
+            },
+            {
+                "course": "Game",
+                "description": "Reindeer with juniper, smoked beet, and blackcurrant leaf",
+                "price": 76,
+                "wine_pairing": "August Kesseler Pinot Noir 'R' 2017"
+            },
+            {
+                "course": "Dessert",
+                "description": "Frozen cloudberry with cultured cream and oat crunch",
+                "price": 24,
+                "wine_pairing": "Banyuls Domaine La Tour Vieille 2018"
+            }
+        ],
+        "grand_total": 204,
+        "dining_room_description": "Bronze Hall is conceived as an industrial cathedral on the Copenhagen waterfront, with a high ceiling, dark bronze fixtures, pale oak, and a calm horizon line beyond the windows. The room is spare but luxurious, and the menu moves through acts of fermentation, smoke, and coastal precision rather than overt theatrics."
+    },
+    {
+        "location": "Sukhumvit, Bangkok",
+        "restaurant_name": "Siam No. 9",
+        "chef_name": "Chef Pailin Anan",
+        "collection": "worlds-best-remix",
+        "tasting_menu": [
+            {
+                "course": "Opening",
+                "description": "Crab miang with betel leaf, coconut, and lime leaf",
+                "price": 24,
+                "wine_pairing": "Siam Silk Riesling 2022"
+            },
+            {
+                "course": "Seafood",
+                "description": "Grilled river prawn with chili, lime, and Thai basil",
+                "price": 46,
+                "wine_pairing": "Domaine Louis Moreau Chablis 2019"
+            },
+            {
+                "course": "Curry",
+                "description": "Turmeric-poached fish with herb broth and young coconut",
+                "price": 42,
+                "wine_pairing": "Dr. Loosen Blue Slate Riesling Kabinett 2019"
+            },
+            {
+                "course": "Meat",
+                "description": "Wagyu with green peppercorn relish and shallot ash",
+                "price": 78,
+                "wine_pairing": "Enrique Foster Reserva Malbec 2018"
+            },
+            {
+                "course": "Dessert",
+                "description": "Pandan custard with palm sugar caramel and sesame",
+                "price": 22,
+                "wine_pairing": "Château d'Yquem 1999"
+            }
+        ],
+        "grand_total": 212,
+        "dining_room_description": "Siam No. 9 is a polished Bangkok dining room with lacquered timber, smoky amber light, and a narrow counter that runs toward a wall of herbs and spice jars. The atmosphere is intense but elegant, designed to hold the heat, fragrance, and momentum of a progressive Thai tasting menu without losing clarity."
+    },
+    {
+        "location": "Marunouchi, Tokyo",
+        "restaurant_name": "Sézanne Nouvelle",
+        "chef_name": "Chef Kenji Morel",
+        "collection": "worlds-best-remix",
+        "tasting_menu": [
+            {
+                "course": "Bite",
+                "description": "Brioche with cultured butter and kombu salt",
+                "price": 20,
+                "wine_pairing": "Marunouchi Cuvée Éclat 2018"
+            },
+            {
+                "course": "Soup",
+                "description": "Bouillabaisse with saffron, yuzu kosho, and fennel",
+                "price": 44,
+                "wine_pairing": "Champagne Dom Pérignon Vintage 2010"
+            },
+            {
+                "course": "Fish",
+                "description": "Turbot with cauliflower and Champagne sabayon",
+                "price": 66,
+                "wine_pairing": "Domaine Louis Moreau Chablis 2019"
+            },
+            {
+                "course": "Meat",
+                "description": "Pigeon with morels and soy-glazed onion",
+                "price": 78,
+                "wine_pairing": "August Kesseler Pinot Noir 'R' 2017"
+            },
+            {
+                "course": "Dessert",
+                "description": "Strawberry mille-feuille with shiso cream",
+                "price": 24,
+                "wine_pairing": "Dassai 23 Junmai Daiginjo Sake"
+            }
+        ],
+        "grand_total": 232,
+        "dining_room_description": "Sézanne Nouvelle is a minimalist room in Tokyo with creamy plaster, pastel accents, and immaculate sightlines to the kitchen. It feels like modern French hospitality translated through Japanese restraint, with a cellar that privileges sparkling wine, mature whites, and elegant bottles with culinary precision."
+    },
+    {
+        "location": "12th arrondissement, Paris",
+        "restaurant_name": "Table des Herbes",
+        "chef_name": "Chef Clément Verjus",
+        "collection": "worlds-best-remix",
+        "tasting_menu": [
+            {
+                "course": "Opening",
+                "description": "Sea bream with fennel pollen, apple, and verjus",
+                "price": 30,
+                "wine_pairing": "Sancerre Domaine Vacheron 2020"
+            },
+            {
+                "course": "Vegetable",
+                "description": "Asparagus with smoked egg yolk and wild herbs",
+                "price": 38,
+                "wine_pairing": "Sancerre Domaine Vacheron 2020"
+            },
+            {
+                "course": "Fish",
+                "description": "Turbot with beurre blanc, spring peas, and tarragon",
+                "price": 64,
+                "wine_pairing": "Meursault Les Narvaux Domaine Michelot 2018"
+            },
+            {
+                "course": "Meat",
+                "description": "Veal sweetbread with mushroom jus and parsley root",
+                "price": 72,
+                "wine_pairing": "Gevrey-Chambertin Domaine Fourrier Vieilles Vignes 2017"
+            },
+            {
+                "course": "Dessert",
+                "description": "Madeleines with olive oil and citrus",
+                "price": 18,
+                "wine_pairing": "Château d'Yquem 1999"
+            }
+        ],
+        "grand_total": 222,
+        "dining_room_description": "Table des Herbes is a quietly refined Paris room built around a long communal table, pale woods, and a kitchen that feels almost like a studio. Nothing is overworked; the emphasis is on perfectly judged produce, clean saucing, and a wine list that moves from thoughtful French classics to a few unusually sharp surprises."
+    },
+    {
+        "location": "Rue du 4-Septembre, Paris",
+        "restaurant_name": "Sushi Lumière",
+        "chef_name": "Chef Tomoyuki Lambert",
+        "collection": "worlds-best-remix",
+        "tasting_menu": [
+            {
+                "course": "Sakizuke",
+                "description": "Seasonal crab with celeriac, yuzu, and chive oil",
+                "price": 26,
+                "wine_pairing": "Maison Varenne Junmai Daiginjo 2023"
+            },
+            {
+                "course": "Sashimi",
+                "description": "Sea bream sashimi with apple vinegar, shiso, and sea salt",
+                "price": 44,
+                "wine_pairing": "Dassai 23 Junmai Daiginjo Sake"
+            },
+            {
+                "course": "Nigiri",
+                "description": "Chutoro nigiri with aged soy and grated wasabi",
+                "price": 52,
+                "wine_pairing": "Dassai 23 Junmai Daiginjo Sake"
+            },
+            {
+                "course": "Grill",
+                "description": "Charcoal-kissed sea bass with kombu butter and citrus zest",
+                "price": 56,
+                "wine_pairing": "Hakkaisan Junmai Ginjo Sake"
+            },
+            {
+                "course": "Dessert",
+                "description": "Strawberry sorbet with sake kasu cream and sesame tuile",
+                "price": 20,
+                "wine_pairing": "Umetsu Yuzushu"
+            }
+        ],
+        "grand_total": 198,
+        "dining_room_description": "Sushi Lumière is a hush-toned Paris omakase counter inspired by both the discipline of Tokyo and the quiet polish of a serious French dining room. The room is lined in pale wood and ceramic, the service is precise and conversational, and the sake list is treated with the same care as the fish and rice."
+    },
+    {
+        "location": "Palermo Viejo, Buenos Aires",
+        "restaurant_name": "Casa Rivero",
+        "chef_name": "Chef Martina Tassi",
+        "collection": "worlds-best-remix",
+        "tasting_menu": [
+            {
+                "course": "Opening",
+                "description": "Beef tartare with smoked egg yolk and chimichurri",
+                "price": 28,
+                "wine_pairing": "Pampa Negra Malbec 2019"
+            },
+            {
+                "course": "Offal",
+                "description": "Grilled sweetbread with charred lettuce and lemon",
+                "price": 42,
+                "wine_pairing": "Pomerol Château Gazin 2016"
+            },
+            {
+                "course": "Pasta",
+                "description": "Hand-cut tagliatelle with bone marrow and parmesan",
+                "price": 48,
+                "wine_pairing": "Enrique Foster Reserva Malbec 2018"
+            },
+            {
+                "course": "Meat",
+                "description": "Dry-aged sirloin with potatoes and criolla salsa",
+                "price": 76,
+                "wine_pairing": "Pomerol Château Gazin 2016"
+            },
+            {
+                "course": "Dessert",
+                "description": "Dulce de leche mille-feuille with toasted milk ice cream",
+                "price": 22,
+                "wine_pairing": "Banyuls Domaine La Tour Vieille 2018"
+            }
+        ],
+        "grand_total": 216,
+        "dining_room_description": "Casa Rivero is a Palermo parrilla with polished concrete, oak, bottle-lined walls, and a view into a glass-fronted meat cellar. It feels like a neighborhood steakhouse elevated to destination status, combining regenerative beef, charcoal, and a wine list that reads like a love letter to Argentina."
     }
+
 
 ];
 

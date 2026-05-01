@@ -19,6 +19,7 @@ WINE_JSON_PATH = REPO_ROOT / "menu_display_2" / "public" / "wines.json"
 ENV_PATH = REPO_ROOT / ".env"
 OPENAI_API_URL = os.environ.get("OPENAI_API_BASE", "https://api.openai.com/v1").rstrip("/") + "/responses"
 MODEL = "gpt-5.4-mini"
+TARGET_COLLECTION = "worlds-best-remix"
 
 SOMMELIER_PROMPT = """You are a world-class sommelier and wine list editor.
 
@@ -131,6 +132,14 @@ def load_api_key() -> str:
 def load_wines() -> dict[str, Any]:
     with WINE_JSON_PATH.open("r", encoding="utf-8") as handle:
         return json.load(handle)
+
+
+def load_target_wines() -> list[dict[str, Any]]:
+    wines_payload = load_wines()
+    wines = [wine for wine in wines_payload.get("wines", []) if wine.get("collection") == TARGET_COLLECTION]
+    if not wines:
+        raise RuntimeError(f"no wines tagged with collection={TARGET_COLLECTION!r} were found")
+    return wines
 
 
 def save_wines(data: dict[str, Any]) -> None:
@@ -347,7 +356,7 @@ def main() -> int:
         parser.error("choose either --dry-run or --write")
 
     wines_payload = load_wines()
-    wines = wines_payload.get("wines", [])
+    wines = load_target_wines()
     wine = next((item for item in wines if isinstance(item, dict) and item.get("id") == args.wine_id), None)
     if wine is None:
         raise SystemExit(f"wine id {args.wine_id} not found in {WINE_JSON_PATH}")
