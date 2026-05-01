@@ -369,6 +369,11 @@ function WineList() {
 
   const sections = useMemo(() => buildGroupedSections(enrichedWines, viewMode), [enrichedWines, viewMode]);
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   const summary = useMemo(() => {
     const countryCounts = new Map();
     const styleCounts = new Map();
@@ -471,9 +476,14 @@ function WineList() {
         </div>
         <nav className="mt-5 flex flex-wrap gap-2" aria-label="Wine shelves">
           {sections.map((section) => (
-            <a key={section.key} href={`#wine-section-${section.key}`} className="quiet-link px-3 py-1.5 text-xs">
+            <button
+              key={section.key}
+              type="button"
+              onClick={() => scrollToSection(`wine-section-${section.key}`)}
+              className="quiet-link px-3 py-1.5 text-xs"
+            >
               {section.title}
-            </a>
+            </button>
           ))}
         </nav>
       </section>
