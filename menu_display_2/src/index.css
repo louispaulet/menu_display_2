@@ -135,20 +135,12 @@
     @apply rounded-lg border border-stone-200/80 bg-linen/80 p-5 shadow-sm backdrop-blur-sm;
   }
 
-  .wine-hero-panel {
-    @apply overflow-hidden rounded-[2rem] border border-stone-200/80 bg-[linear-gradient(135deg,#fffdf7_0%,#f8f0e5_52%,#efe3d3_100%)] shadow-editorial;
-  }
-
-  .wine-hero-frame {
-    @apply overflow-hidden rounded-[1.75rem] border border-stone-200/70 bg-white/90 p-4 shadow-sm;
-  }
-
   .wine-metric-card {
-    @apply rounded-2xl border border-stone-200/80 bg-white/85 px-4 py-4 shadow-sm backdrop-blur-sm;
+    @apply rounded-2xl bg-white/70 px-4 py-4 shadow-[0_6px_18px_rgba(55,38,19,0.04)] backdrop-blur-sm;
   }
 
   .wine-dossier-card {
-    @apply rounded-[1.5rem] border border-stone-200/80 bg-white/85 shadow-sm backdrop-blur-sm;
+    @apply rounded-[1.5rem] bg-white/70 shadow-[0_6px_18px_rgba(55,38,19,0.04)] backdrop-blur-sm;
   }
 
   .wine-dossier-label {
@@ -156,10 +148,10 @@
   }
 
   .wine-dossier-value {
-    @apply mt-2 break-words text-[0.98rem] font-semibold leading-6 text-ink sm:text-[1.05rem] sm:leading-7;
+    @apply mt-2 break-words text-[0.9rem] font-semibold leading-6 text-ink sm:text-[0.98rem] sm:leading-7;
   }
 
   .wine-dossier-note {
-    @apply mt-2 text-sm leading-7 text-stone-600;
+    @apply mt-2 text-[0.78rem] leading-6 text-stone-500;
   }
 }

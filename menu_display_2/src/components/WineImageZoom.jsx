@@ -41,7 +41,7 @@ function WineImageZoom({ src, alt, className = '', appearance = 'default' }) {
         onClick={openZoom}
         className={`group relative block w-full overflow-hidden text-left transition focus:outline-none focus:ring-2 focus:ring-clay/30 ${
           isMuseum
-            ? 'rounded-[1.75rem] bg-white/95 shadow-[0_18px_50px_rgba(55,38,19,0.14)] hover:shadow-[0_22px_60px_rgba(55,38,19,0.18)]'
+            ? 'shadow-[0_18px_50px_rgba(55,38,19,0.12)] hover:shadow-[0_22px_60px_rgba(55,38,19,0.16)]'
             : 'rounded-lg border border-stone-200 bg-white shadow-sm hover:border-clay/40 hover:shadow-lg'
         } ${className}`}
         aria-label="Open larger bottle image"
@@ -53,7 +53,7 @@ function WineImageZoom({ src, alt, className = '', appearance = 'default' }) {
         >
           <MagnifyingGlassPlusIcon className="h-5 w-5" />
         </div>
-        <div className={isMuseum ? 'aspect-square bg-[linear-gradient(180deg,#ffffff_0%,#faf7f1_100%)] p-6 sm:p-8' : 'aspect-square bg-white'}>
+        <div className={isMuseum ? 'aspect-square bg-transparent' : 'aspect-square bg-white'}>
           <ProgressiveImage
             src={src}
             alt={alt}
@@ -62,7 +62,7 @@ function WineImageZoom({ src, alt, className = '', appearance = 'default' }) {
             imageClassName={`h-full w-full object-contain transition duration-200 group-hover:scale-[1.01] ${
               isMuseum ? 'p-0' : 'p-4'
             }`}
-            placeholderClassName={isMuseum ? 'bg-[linear-gradient(180deg,#ffffff_0%,#faf7f1_100%)]' : 'bg-white'}
+            placeholderClassName={isMuseum ? 'bg-transparent' : 'bg-white'}
           />
         </div>
       </button>

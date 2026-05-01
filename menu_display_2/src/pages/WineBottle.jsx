@@ -44,9 +44,9 @@ function humanize(value) {
   return value.replace(/_/g, ' ');
 }
 
-function DetailCard({ label, value, note }) {
+function DetailCard({ label, value, note, className = '' }) {
   return (
-    <div className="wine-dossier-card min-h-[7.25rem] p-4 sm:p-5">
+    <div className={`wine-dossier-card min-h-[6.5rem] p-4 sm:p-5 ${className}`}>
       <p className="wine-dossier-label">{label}</p>
       <p className="wine-dossier-value">{value}</p>
       {note ? <p className="wine-dossier-note">{note}</p> : null}
@@ -56,10 +56,10 @@ function DetailCard({ label, value, note }) {
 
 function MetricCard({ label, value, note }) {
   return (
-    <div className="wine-metric-card">
+    <div className="wine-metric-card min-h-[8rem]">
       <p className="stat-label">{label}</p>
-      <p className="mt-2 text-2xl font-semibold leading-tight text-ink">{value}</p>
-      {note ? <p className="mt-1 text-xs leading-5 text-stone-500">{note}</p> : null}
+      <p className="mt-2 text-xl font-semibold leading-snug text-ink sm:text-[1.35rem]">{value}</p>
+      {note ? <p className="mt-1 text-[0.78rem] leading-5 text-stone-500">{note}</p> : null}
     </div>
   );
 }
@@ -104,9 +104,6 @@ function WineBottle() {
   const priceType = humanize(wine?.price_type);
   const pricingSource = humanize(wine?.pricing_source_basis);
   const bottleStatus = wine?.is_fictional_or_unpriceable ? 'Fictional or unpriceable' : 'Real bottle';
-  const bottleNote = wine?.is_fictional_or_unpriceable
-    ? 'Fictional or unpriceable'
-    : 'Real bottle with estimated market guidance';
 
   if (!wineData) {
     return (
@@ -153,21 +150,15 @@ function WineBottle() {
       <article className="mx-auto max-w-7xl space-y-8">
         <section className="grid gap-8 lg:grid-cols-[minmax(0,1.08fr)_minmax(0,0.92fr)]">
           <div className="lg:sticky lg:top-24 lg:self-start">
-            <div className="rounded-[2rem] bg-[linear-gradient(135deg,#fffdf7_0%,#f8f0e5_52%,#efe3d3_100%)] p-4 shadow-editorial sm:p-5 lg:p-6">
-              <WineImageZoom
-                src={`/the_cellar/${imageFilename}`}
-                alt={`${wine.name} bottle`}
-                appearance="museum"
-              />
-              <p className="mt-4 text-center text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-stone-400">
-                Click image to open a larger frame
-              </p>
-            </div>
+            <WineImageZoom
+              src={`/the_cellar/${imageFilename}`}
+              alt={`${wine.name} bottle`}
+              appearance="museum"
+            />
           </div>
 
-          <header className="wine-hero-panel relative overflow-hidden p-6 sm:p-8 lg:p-10">
-            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(196,144,63,0.18),transparent_34%),linear-gradient(180deg,rgba(255,255,255,0.42),transparent_24%)]" />
-            <div className="relative">
+          <header className="p-0 py-2 sm:py-4 lg:py-8">
+            <div>
               <div className="flex flex-wrap gap-2">
                 <span className="accent-chip border-stone-200 bg-white/85 text-stone-500">Wine bottle</span>
                 <span className="accent-chip border-clay/20 bg-clay/10 text-clay">{style.label}</span>
@@ -216,13 +207,9 @@ function WineBottle() {
         </section>
 
         <section className="grid gap-6 lg:grid-cols-2">
-          <div className="wine-dossier-card p-6 sm:p-7">
+          <div className="wine-dossier-card p-5 sm:p-6">
             <p className="page-kicker">Cellar profile</p>
-            <h2 className="mt-2 font-playfair text-3xl font-semibold text-ink">Identity and place</h2>
-            <p className="mt-3 max-w-2xl text-sm leading-7 text-stone-600">
-              The broad profile sits together here so the page reads like a carefully annotated cellar label rather than a database export.
-            </p>
-            <div className="mt-5 grid gap-3 md:grid-cols-2">
+            <div className="mt-4 grid gap-3 md:grid-cols-2">
               <DetailCard label="Style" value={style.label} />
               <DetailCard label="Origin" value={country.label} />
               <DetailCard label="Price band" value={priceBand.label} />
@@ -230,42 +217,31 @@ function WineBottle() {
             </div>
           </div>
 
-          <div className="wine-dossier-card p-6 sm:p-7">
+          <div className="wine-dossier-card p-5 sm:p-6">
             <p className="page-kicker">Pricing dossier</p>
-            <h2 className="mt-2 font-playfair text-3xl font-semibold text-ink">How the number is built</h2>
-            <p className="mt-3 max-w-2xl text-sm leading-7 text-stone-600">
-              The implementation details remain visible, but the typography and spacing should make them feel like a premium method note.
-            </p>
-            <div className="mt-5 grid gap-3 md:grid-cols-2">
+            <div className="mt-4 grid gap-3 md:grid-cols-2">
               <DetailCard
                 label="Price range"
-                value={`${formatPriceRange(wine.base_price_range_eur_750ml)} base, ${formatPriceRange(wine.michelin_star_price_range_eur_750ml)} Michelin`}
+                value={`${formatPriceRange(wine.base_price_range_eur_750ml)} base`}
+                note={`${formatPriceRange(wine.michelin_star_price_range_eur_750ml)} Michelin`}
+                className="md:col-span-2"
               />
               <DetailCard label="Confidence" value={wine.confidence} />
               <DetailCard label="Price type" value={priceType} />
-              <DetailCard label="Pricing source" value={pricingSource} />
+              <DetailCard label="Pricing source" value={pricingSource} className="md:col-span-2" />
               <DetailCard label="Status" value={bottleStatus} />
-              <DetailCard label="Bottle note" value={bottleNote} />
             </div>
           </div>
         </section>
 
-        <section className="wine-dossier-card p-6 sm:p-7">
+        <section className="wine-dossier-card p-5 sm:p-6">
           <p className="page-kicker">Bottle notes</p>
-          <div className="mt-2 flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
-            <div className="max-w-2xl">
-              <h2 className="font-playfair text-3xl font-semibold text-ink">Tasting note and context</h2>
-              <p className="mt-3 text-sm leading-7 text-stone-600">
-                This is the long-form copy that should feel more editorial than administrative.
-              </p>
-            </div>
-            <div className="grid gap-3 sm:grid-cols-3 lg:min-w-[30rem]">
-              <DetailCard label="List price" value={formatPrice(wine.michelin_star_price_eur_750ml)} />
-              <DetailCard label="Market price" value={formatPrice(wine.base_price_eur_750ml)} />
-              <DetailCard label="Cellar read" value={rarityText} />
-            </div>
+          <div className="mt-4 grid gap-3 sm:grid-cols-3">
+            <MetricCard label="List price" value={formatPrice(wine.michelin_star_price_eur_750ml)} note="per 750ml bottle" />
+            <MetricCard label="Market price" value={formatPrice(wine.base_price_eur_750ml)} note={priceBand.label} />
+            <MetricCard label="Cellar read" value={rarityText} note={popularityText} />
           </div>
-          <p className="mt-6 text-base leading-8 text-stone-600">{wine.notes}</p>
+          <p className="mt-6 text-sm leading-8 text-stone-600 sm:text-base">{wine.notes}</p>
         </section>
       </article>
     </div>
