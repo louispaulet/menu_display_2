@@ -1,1 +1,0 @@
-import{j as e}from"./index-Db1A81ZG.js";function f({src:s,alt:r,className:a="",imageClassName:l="",loading:o="lazy",decoding:i="async",objectClassName:t="object-cover",onClick:c,...m}){return e.jsx("div",{className:`relative overflow-hidden ${a}`,children:e.jsx("img",{src:s,alt:r,loading:o,decoding:i,onClick:c,className:`h-full w-full ${t} ${l}`,...m})})}export{f as P};
