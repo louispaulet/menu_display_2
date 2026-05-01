@@ -13,7 +13,7 @@ IMAGE_INPUT_DIR ?= artifacts/recipe_images/new_pngs
 IMAGE_OUTPUT_DIR ?=
 WEBP_QUALITY ?= 90
 
-.PHONY: up test unit lint build deploy menu-studio-worker-secret menu-studio-worker-dry-run menu-studio-worker-deploy menu-studio-worker-health menu-studio-worker-cors menu-studio-frontend-deploy menu-studio-deploy-prod images-webp hot-sauce-csv hot-sauce-jsonl hot-sauce-batch hot-sauce-check hot-sauce-submit hot-sauce-resume hot-sauce-refresh recipe-images-csv recipe-images-jsonl recipe-images-validate recipe-images-submit recipe-images-check recipe-images-download recipe-images-backup recipe-images-apply recipe-images-refresh restaurant-images-csv restaurant-images-jsonl restaurant-images-validate restaurant-images-submit restaurant-images-check restaurant-images-download restaurant-images-backup restaurant-images-apply restaurant-images-refresh wine-images-csv wine-images-jsonl wine-images-validate wine-images-submit wine-images-check wine-images-download wine-images-apply wine-images-refresh
+.PHONY: up test unit lint build coverage deploy menu-studio-worker-secret menu-studio-worker-dry-run menu-studio-worker-deploy menu-studio-worker-health menu-studio-worker-cors menu-studio-frontend-deploy menu-studio-deploy-prod images-webp hot-sauce-csv hot-sauce-jsonl hot-sauce-batch hot-sauce-check hot-sauce-submit hot-sauce-resume hot-sauce-refresh recipe-images-csv recipe-images-jsonl recipe-images-validate recipe-images-submit recipe-images-check recipe-images-download recipe-images-backup recipe-images-apply recipe-images-refresh restaurant-images-csv restaurant-images-jsonl restaurant-images-validate restaurant-images-submit restaurant-images-check restaurant-images-download restaurant-images-backup restaurant-images-apply restaurant-images-refresh wine-images-csv wine-images-jsonl wine-images-validate wine-images-submit wine-images-check wine-images-download wine-images-apply wine-images-refresh
 
 up:
 	cd $(FRONTEND_DIR) && npm run dev
@@ -28,6 +28,9 @@ lint:
 
 build:
 	cd $(FRONTEND_DIR) && npm run build
+
+coverage:
+	cd $(FRONTEND_DIR) && npm run coverage
 
 deploy:
 	cd $(FRONTEND_DIR) && VITE_MENU_API_BASE="$(MENU_WORKER_API_BASE)" npm run deploy
