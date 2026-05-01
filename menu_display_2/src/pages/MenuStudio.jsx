@@ -11,52 +11,6 @@ const ACCEPTED_TYPES = new Set(['image/jpeg', 'image/png', 'image/webp']);
 const MAX_UPLOAD_BYTES = 10 * 1024 * 1024;
 const apiBase = (import.meta.env.VITE_MENU_API_BASE || '/api').replace(/\/$/, '');
 
-const menuExampleEntries = [
-  {
-    filename: '9m26k47xjcxd1.png',
-    description:
-      "1986 Kmart/Kresge/Jupiter 'International Days' cafeteria flyer with weekday specials: Hungarian goulash, Chinese-style green pepper steak, spaghetti with meat sauce, braised Swiss steak, fish and chips, plus fried chicken dinner special.",
-  },
-  {
-    filename: 'peoikqdimjvg1.png',
-    description:
-      'Vintage Brentwood Lodge South San Francisco Special Easter Dinner Menu with formal prix-fixe-style courses, including vichyssoise, chicken consommé, spring lamb, duckling, prime rib, filet mignon, desserts, and children’s dinner.',
-  },
-  {
-    filename: '35yv4m9iymvg1.png',
-    description:
-      'Hotel St. Catherine dinner menu dated Friday, July 31, 1925, with soups, fish, entrées, roasts, vegetables, salads, pastries, cheese, and café noir, framed by Catalina-themed artwork.',
-  },
-  {
-    filename: 'xh6hk5h2rnug1.png',
-    description:
-      'Old English Grill menu from the Brown Hotel in Louisville, Kentucky, showing a dense à la carte and dinner menu with appetizers, soups, sandwiches, grill items, salads, desserts, vegetables, and table d’hôte dinners.',
-  },
-  {
-    filename: 'screencapture-localhost-5173-2026-05-01-12_46_00.png',
-    description:
-      'Screenshot of the Exquisite Menus web app showing an uploaded Well Bean Deli menu converted into a structured refined text menu with sections, item descriptions, prices, confidence metadata, and JSON output.',
-  },
-  {
-    filename: 'd6f3dq23ycwg1.png',
-    description:
-      'The Southfork sandwich menu from Helena, Montana, featuring handwritten-style sandwich listings such as Southfork Special, Montana Standard, tofu cutlet, tuna melt, veggie sandwich, peanut-butter-banana-tofu sandwich, and grilled cheese.',
-  },
-  {
-    filename: '8kd8eqkl2ywg1.png',
-    description:
-      'The Well Bean Deli vegetarian menu from Santa Cruz, California, featuring tofu and tempeh burgers, sandwiches, salads, house specialties, milkshakes, and tofu-based daily specials.',
-  },
-  {
-    filename: '614ZnZzSAdL._AC_SL1000_.png',
-    description:
-      'R.M.S. Titanic first-class dinner menu dated April 14, 1912, listing a formal multi-course dinner with oysters, consommé, salmon, filet mignon, chicken Lyonnaise, lamb, roast duckling, vegetables, punch Romaine, pâté de foie gras, and desserts.',
-  },
-].map((entry) => ({
-  ...entry,
-  imageUrl: `/menu_examples/${entry.filename.replace(/\.png$/i, '.webp')}`,
-}));
-
 function formatBytes(bytes) {
   if (!bytes) return '0 KB';
   if (bytes < 1024 * 1024) return `${Math.round(bytes / 1024)} KB`;
@@ -77,6 +31,7 @@ function MenuStudio() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [copyStatus, setCopyStatus] = useState('');
   const [isRestored, setIsRestored] = useState(false);
+  const [menuExamples, setMenuExamples] = useState([]);
   const inputRef = useRef(null);
 
   useEffect(() => {
@@ -85,6 +40,21 @@ function MenuStudio() {
       setExtraction(stored);
       setIsRestored(true);
     }
+  }, []);
+
+  useEffect(() => {
+    fetch('/menu_examples.json')
+      .then((response) => response.json())
+      .then((data) => {
+        const entries = Object.entries(data).map(([filename, info]) => ({
+          filename,
+          title: info.title,
+          description: info.description,
+          imageUrl: `/menu_examples/${filename}`,
+        }));
+        setMenuExamples(entries);
+      })
+      .catch(() => setMenuExamples([]));
   }, []);
 
   const jsonOutput = useMemo(
@@ -183,13 +153,13 @@ function MenuStudio() {
             </div>
           </div>
           <div className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
-            {menuExampleEntries.map((entry) => (
+            {menuExamples.map((entry) => (
               <article key={entry.filename} className="overflow-hidden rounded-lg border border-stone-200 bg-white shadow-sm">
                 <div className="aspect-[4/3] bg-stone-100">
-                  <img src={entry.imageUrl} alt={entry.description} className="h-full w-full object-cover" />
+                  <img src={entry.imageUrl} alt={entry.title} className="h-full w-full object-cover" />
                 </div>
                 <div className="p-4">
-                  <p className="text-sm font-semibold text-ink">{entry.filename}</p>
+                  <p className="text-sm font-semibold text-ink">{entry.title}</p>
                   <p className="mt-2 text-sm leading-6 text-stone-600">{entry.description}</p>
                 </div>
               </article>
