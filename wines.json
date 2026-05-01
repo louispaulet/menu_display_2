@@ -8,7 +8,7 @@
       "michelin_star_price": "plausible 1-star to 3-star restaurant wine-list price using tiered markup; trophy wines use lower multiple, affordable wines higher multiple",
       "fictional_items": "assigned fantasy prices so the list remains complete"
     },
-    "count": 261,
+    "count": 271,
     "fictional_or_unpriceable_count": 12,
     "base_price_summary_eur": {
       "min": 20,
@@ -5502,6 +5502,226 @@
       "pricing_source_basis": "estimated retail price inferred from producer/cuvée style and prior file; not live-verified bottle-by-bottle",
       "notes": "Likely a Sonoma-style Zinfandel of solid retail quality: ripe fruit, spice, and moderate structure. Priced as a practical estimate rather than a live market quote; Michelin-star list pricing reflects a standard restaurant markup for a mid-premium bottle.",
       "tasting_note": "A serious East Bench Zinfandel from 2018 is likely to show ripe blackberry, black cherry and plum, with notes of cracked pepper, dried herbs and a touch of sweet spice. Expect a medium-full, supple palate with moderate tannin, bright acidity for the style, and a savoury, gently warming finish rather than overt sweetness or jamminess."
+    },
+    {
+      "id": 262,
+      "name": "Champagne de Barranco Brut Nature 2016",
+      "collection": "worlds-best-remix",
+      "base_price_eur_750ml": 62,
+      "base_price_range_eur_750ml": {
+        "low": 52,
+        "high": 74
+      },
+      "michelin_star_price_eur_750ml": 210,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 180,
+        "high": 250
+      },
+      "michelin_markup_multiple_used": 3.39,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "made_up",
+      "is_fictional_or_unpriceable": true,
+      "pricing_source_basis": "invented_fantasy_price",
+      "notes": "An imagined coastal sparkling wine for a Lima tasting menu, priced to feel like a serious allocation bottle in a luxury restaurant rather than a retail quote. The figure is tuned for prestige, freshness, and a sense of celebratory precision.",
+      "tasting_note": "An imagined sparkling wine with a tight, mineral frame, white citrus, green apple, and a fine chalky mousse. The 2016 profile suggests a little autolytic breadth, so expect brioche, almond, and saline lift to fold into a dry, persistent finish that suits refined seafood and opening snacks."
+    },
+    {
+      "id": 263,
+      "name": "Ayni de Barranco Albariño 2023",
+      "collection": "worlds-best-remix",
+      "base_price_eur_750ml": 44,
+      "base_price_range_eur_750ml": {
+        "low": 36,
+        "high": 52
+      },
+      "michelin_star_price_eur_750ml": 148,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 125,
+        "high": 175
+      },
+      "michelin_markup_multiple_used": 3.36,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "made_up",
+      "is_fictional_or_unpriceable": true,
+      "pricing_source_basis": "invented_fantasy_price",
+      "notes": "A fictional, food-friendly Albariño-style white imagined for a coastal Peruvian tasting room. The pricing assumes a polished Michelin-style list rather than a retail shelf, with enough restraint to remain believable for a by-the-glass premium white or bottle pour.",
+      "tasting_note": "A bright, saline white imagined to open with lime zest, green pear, white peach, and a faint herbal edge. The palate should stay brisk and linear, with a lightly textured mid-palate and a clean, mouth-watering finish built for ceviche, shellfish, and delicate citrus sauces."
+    },
+    {
+      "id": 264,
+      "name": "Maison Varenne Junmai Daiginjo 2023",
+      "collection": "worlds-best-remix",
+      "base_price_eur_750ml": 60,
+      "base_price_range_eur_750ml": {
+        "low": 50,
+        "high": 72
+      },
+      "michelin_star_price_eur_750ml": 190,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 165,
+        "high": 225
+      },
+      "michelin_markup_multiple_used": 3.17,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "made_up",
+      "is_fictional_or_unpriceable": true,
+      "pricing_source_basis": "invented_fantasy_price",
+      "notes": "A fictional saké meant to bridge a Japanese omakase counter and a French dining room. The bottle is priced like a serious premium pour in a destination restaurant, with allocation-style scarcity but no attempt at live market accuracy.",
+      "tasting_note": "An imagined junmai daiginjo with melon skin, pear, rice polish, and a faint floral lift. Expect a silky, precise palate, discreet sweetness, and a clean, elegant finish that would sit comfortably beside sashimi, lightly cured fish, or a French-leaning sushi sequence."
+    },
+    {
+      "id": 265,
+      "name": "Pampa Negra Malbec 2019",
+      "collection": "worlds-best-remix",
+      "base_price_eur_750ml": 50,
+      "base_price_range_eur_750ml": {
+        "low": 42,
+        "high": 60
+      },
+      "michelin_star_price_eur_750ml": 170,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 145,
+        "high": 205
+      },
+      "michelin_markup_multiple_used": 3.4,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "made_up",
+      "is_fictional_or_unpriceable": true,
+      "pricing_source_basis": "invented_fantasy_price",
+      "notes": "A fictional Argentine red designed for grilled meats and a polished modern parrilla list. The pricing keeps the bottle in serious but plausible destination-restaurant territory, not at trophy-bottle altitude.",
+      "tasting_note": "A plush, dark-fruited Malbec imagined to show black cherry, plum, violet, cocoa, and a touch of graphite. The palate should be broad but not heavy, with ripe tannins, moderate freshness, and a savoury finish that works well with beef, smoke, and char."
+    },
+    {
+      "id": 266,
+      "name": "Etxe Senda Txakoli 2022",
+      "collection": "worlds-best-remix",
+      "base_price_eur_750ml": 32,
+      "base_price_range_eur_750ml": {
+        "low": 27,
+        "high": 38
+      },
+      "michelin_star_price_eur_750ml": 112,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 95,
+        "high": 135
+      },
+      "michelin_markup_multiple_used": 3.5,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "made_up",
+      "is_fictional_or_unpriceable": true,
+      "pricing_source_basis": "invented_fantasy_price",
+      "notes": "A fictional Basque white built to feel like a restaurant list staple rather than a rare collector bottle. The pricing reflects a serious restaurant markup on a crisp coastal white with enough personality for seafood and grilled shellfish.",
+      "tasting_note": "An imagined txakoli with brisk citrus, green apple, and a faint sea-breeze note over a light, energetic palate. The finish should be dry and vivid, with a little spritz and a salty snap that makes it ideal for oysters, prawns, and grilled fish."
+    },
+    {
+      "id": 267,
+      "name": "Mole de Piedra Blend 2021",
+      "collection": "worlds-best-remix",
+      "base_price_eur_750ml": 58,
+      "base_price_range_eur_750ml": {
+        "low": 48,
+        "high": 70
+      },
+      "michelin_star_price_eur_750ml": 188,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 160,
+        "high": 225
+      },
+      "michelin_markup_multiple_used": 3.24,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "made_up",
+      "is_fictional_or_unpriceable": true,
+      "pricing_source_basis": "invented_fantasy_price",
+      "notes": "A fictional Mexican red blend created for mole, duck, and other deeply spiced dishes. The price sits in serious restaurant territory and is meant to sound credible on a modern Mexico City cellar list.",
+      "tasting_note": "A structured, spice-friendly red imagined with black cherry, dried plum, toasted sesame, cocoa, and warm spice. Expect a medium-full palate with polished tannins and enough freshness to keep rich mole sauces and roast duck from feeling ponderous."
+    },
+    {
+      "id": 268,
+      "name": "Gran Vía Garnacha 2021",
+      "collection": "worlds-best-remix",
+      "base_price_eur_750ml": 48,
+      "base_price_range_eur_750ml": {
+        "low": 40,
+        "high": 58
+      },
+      "michelin_star_price_eur_750ml": 160,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 135,
+        "high": 190
+      },
+      "michelin_markup_multiple_used": 3.33,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "made_up",
+      "is_fictional_or_unpriceable": true,
+      "pricing_source_basis": "invented_fantasy_price",
+      "notes": "A fictional Spanish red positioned as a natural companion to suckling pig, char, and a lively Madrid dining room. The price assumes a polished list with good producer recognition and a meaningful, but not excessive, markup.",
+      "tasting_note": "An imagined Garnacha with red cherry, raspberry, dried herbs, and a little sweet spice, framed by supple tannins. The palate should be generous and lithe rather than heavy, with enough savoury lift to handle roast pork, peppers, and caramelized edges from the grill."
+    },
+    {
+      "id": 269,
+      "name": "Refshale Bloom Blanc de Noirs 2017",
+      "collection": "worlds-best-remix",
+      "base_price_eur_750ml": 85,
+      "base_price_range_eur_750ml": {
+        "low": 70,
+        "high": 100
+      },
+      "michelin_star_price_eur_750ml": 250,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 215,
+        "high": 295
+      },
+      "michelin_markup_multiple_used": 2.94,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "made_up",
+      "is_fictional_or_unpriceable": true,
+      "pricing_source_basis": "invented_fantasy_price",
+      "notes": "A fictional sparkling wine for the Copenhagen concept room, priced like a boutique allocation bottle on a serious fine-dining list. The goal is to feel luxurious, precise, and quietly cerebral.",
+      "tasting_note": "An imagined blanc de noirs with red apple skin, citrus peel, brioche, and a faint savoury, chalk-driven edge. The palate should be taut but layered, with gentle autolysis and a polished mousse that can accompany seafood, scallops, or delicate smoked preparations."
+    },
+    {
+      "id": 270,
+      "name": "Siam Silk Riesling 2022",
+      "collection": "worlds-best-remix",
+      "base_price_eur_750ml": 30,
+      "base_price_range_eur_750ml": {
+        "low": 25,
+        "high": 36
+      },
+      "michelin_star_price_eur_750ml": 100,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 85,
+        "high": 120
+      },
+      "michelin_markup_multiple_used": 3.33,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "made_up",
+      "is_fictional_or_unpriceable": true,
+      "pricing_source_basis": "invented_fantasy_price",
+      "notes": "A fictional aromatic white designed for Thai spice and herbs, with a restaurant price that feels accessible but still polished. It should read like a sommelier-approved pairing bottle rather than a casual market wine.",
+      "tasting_note": "A lifted, spice-friendly Riesling imagined with lime zest, green apple, white flowers, and a touch of ginger. The palate should stay light on its feet with brisk acidity and a dry finish, making it a natural match for chili, lime, herbs, and coconut-rich dishes."
+    },
+    {
+      "id": 271,
+      "name": "Marunouchi Cuvée Éclat 2018",
+      "collection": "worlds-best-remix",
+      "base_price_eur_750ml": 78,
+      "base_price_range_eur_750ml": {
+        "low": 65,
+        "high": 95
+      },
+      "michelin_star_price_eur_750ml": 230,
+      "michelin_star_price_range_eur_750ml": {
+        "low": 200,
+        "high": 275
+      },
+      "michelin_markup_multiple_used": 2.95,
+      "price_type": "made_up_practical_estimate",
+      "confidence": "made_up",
+      "is_fictional_or_unpriceable": true,
+      "pricing_source_basis": "invented_fantasy_price",
+      "notes": "A fictional modern French bottle imagined for a Tokyo dining room with champagne-forward hospitality. The pricing suggests a premium cellar placement and a polished house style rather than trophy scarcity.",
+      "tasting_note": "An imagined elegant white with pear, citrus blossom, toasted brioche, and a polished mineral finish. The palate should feel supple and gastronomic, broad enough for butter and shellfish but clean enough to keep the room’s French-Japanese precision intact."
     }
   ]
 }
