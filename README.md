@@ -80,8 +80,7 @@ To start the project in development mode:
 ```bash
 cp .env.example .env
 # Fill OPENAI_API_KEY in .env
-cd menu_display_2
-npm run dev
+make up
 ```
 
 This starts the Cloudflare Worker on `http://localhost:8787` and Vite on `http://localhost:5173`.
@@ -91,15 +90,73 @@ Access the application in your browser at `http://localhost:5173`.
 
 The Menu Studio route (`/#/menu-studio`) uploads a menu image to the local Cloudflare Worker, calls OpenAI from the Worker using `OPENAI_API_KEY`, and renders a typography-only menu plus the extracted JSON. The latest extraction is stored in the browser with `localStorage`.
 
-Local development uses the repository-root `.env` file. Production should set the Worker secret with:
+Local development uses the repository-root `.env` file, which Wrangler reads while running the Worker locally from `wrangler.jsonc`.
+
+Useful local checks:
 
 ```bash
-cd menu_display_2
-npx wrangler secret put OPENAI_API_KEY --config ../wrangler.jsonc
-npm run deploy:worker
+make up
+curl http://localhost:8787/api/health
+open http://localhost:5173/#/menu-studio
 ```
 
-If the frontend is deployed separately from the Worker, set `VITE_MENU_API_BASE` during the frontend build to the Worker origin plus `/api`.
+Production does not read `.env`. Production needs `OPENAI_API_KEY` stored as a Cloudflare Worker secret:
+
+```bash
+make menu-studio-worker-secret
+```
+
+That target reads `OPENAI_API_KEY` from the repository-root `.env` file and pipes it to `wrangler secret put` without printing the key. Run it the first time a Worker is deployed, and again whenever the key is rotated.
+
+Menu Studio deployment commands:
+
+```bash
+make menu-studio-worker-dry-run       # Validate Worker bundle and wrangler config
+make menu-studio-worker-deploy        # Deploy worker/menu-extractor.js
+make menu-studio-worker-health        # Confirm deployed /api/health returns 200
+make menu-studio-worker-cors          # Confirm production frontend origin is allowed
+make menu-studio-frontend-deploy      # Deploy GitHub Pages with VITE_MENU_API_BASE set
+```
+
+After the secret is already present in Cloudflare, the production happy path is:
+
+```bash
+make menu-studio-worker-dry-run
+make menu-studio-deploy-prod
+make menu-studio-worker-health
+make menu-studio-worker-cors
+```
+
+The default deployed Worker API base is:
+
+```bash
+https://menu-studio-extractor.louispaulet13.workers.dev/api
+```
+
+Override it when testing another Worker or domain:
+
+```bash
+make menu-studio-frontend-deploy MENU_WORKER_API_BASE=https://your-worker.example.com/api
+make menu-studio-worker-cors MENU_FRONTEND_ORIGIN=https://your-frontend.example.com
+```
+
+Raw command equivalents from `menu_display_2/`:
+
+```bash
+npx wrangler whoami --config ../wrangler.jsonc
+npx wrangler deploy --dry-run --config ../wrangler.jsonc
+npx wrangler secret put OPENAI_API_KEY --config ../wrangler.jsonc
+npm run deploy:worker
+VITE_MENU_API_BASE="https://menu-studio-extractor.louispaulet13.workers.dev/api" npm run deploy
+```
+
+Deployment tips:
+
+- `wrangler.jsonc` is at the repository root and points to the single Worker file: `worker/menu-extractor.js`.
+- `.env` is only for local development and for the `make menu-studio-worker-secret` helper; never commit it.
+- If Worker deploy fails with `The following required secrets have not been set: OPENAI_API_KEY`, run `make menu-studio-worker-secret`, then deploy again.
+- GitHub Pages builds must receive `VITE_MENU_API_BASE`; otherwise the production frontend falls back to `/api`, which only works when frontend and Worker share a host.
+- If the custom domain does not resolve immediately after `gh-pages` deploy, confirm the branch advanced with `git ls-remote --heads origin gh-pages`.
 
 ### 🏗️ Building the Project
 
@@ -186,11 +243,13 @@ The wine image requests use `gpt-image-2`, `1024x1024`, `high` quality, and an o
 
 This project uses **GitHub Pages** for easy deployment.
 
-To deploy to the domain specified in the `CNAME` file:
+To deploy to the domain specified in the `CNAME` file while pointing Menu Studio at the production Worker:
 
 ```bash
-npm run deploy
+make deploy
 ```
+
+`make deploy` is equivalent to `make menu-studio-frontend-deploy` with the default `MENU_WORKER_API_BASE`.
 
 ## 🤝 Contributing
 

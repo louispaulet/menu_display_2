@@ -5,16 +5,23 @@ RESTAURANT_IMAGE_BATCH_SCRIPT := scripts/restaurant_image_batch.py
 WINE_IMAGE_BATCH_SCRIPT := scripts/wine_image_batch.py
 WEBP_CONVERT_SCRIPT := scripts/convert_images_to_webp.py
 FRONTEND_DIR := menu_display_2
+ROOT_ENV_FILE ?= .env
+MENU_WORKER_ORIGIN ?= https://menu-studio-extractor.louispaulet13.workers.dev
+MENU_WORKER_API_BASE ?= $(MENU_WORKER_ORIGIN)/api
+MENU_FRONTEND_ORIGIN ?= https://exquisite-menus-2.thefrenchartist.dev
 IMAGE_INPUT_DIR ?= artifacts/recipe_images/new_pngs
 IMAGE_OUTPUT_DIR ?=
 WEBP_QUALITY ?= 90
 
-.PHONY: up test lint build deploy images-webp hot-sauce-csv hot-sauce-jsonl hot-sauce-batch hot-sauce-check hot-sauce-submit hot-sauce-resume hot-sauce-refresh recipe-images-csv recipe-images-jsonl recipe-images-validate recipe-images-submit recipe-images-check recipe-images-download recipe-images-backup recipe-images-apply recipe-images-refresh restaurant-images-csv restaurant-images-jsonl restaurant-images-validate restaurant-images-submit restaurant-images-check restaurant-images-download restaurant-images-backup restaurant-images-apply restaurant-images-refresh wine-images-csv wine-images-jsonl wine-images-validate wine-images-submit wine-images-check wine-images-download wine-images-apply wine-images-refresh
+.PHONY: up test unit lint build deploy menu-studio-worker-secret menu-studio-worker-dry-run menu-studio-worker-deploy menu-studio-worker-health menu-studio-worker-cors menu-studio-frontend-deploy menu-studio-deploy-prod images-webp hot-sauce-csv hot-sauce-jsonl hot-sauce-batch hot-sauce-check hot-sauce-submit hot-sauce-resume hot-sauce-refresh recipe-images-csv recipe-images-jsonl recipe-images-validate recipe-images-submit recipe-images-check recipe-images-download recipe-images-backup recipe-images-apply recipe-images-refresh restaurant-images-csv restaurant-images-jsonl restaurant-images-validate restaurant-images-submit restaurant-images-check restaurant-images-download restaurant-images-backup restaurant-images-apply restaurant-images-refresh wine-images-csv wine-images-jsonl wine-images-validate wine-images-submit wine-images-check wine-images-download wine-images-apply wine-images-refresh
 
 up:
 	cd $(FRONTEND_DIR) && npm run dev
 
-test: lint build
+test: unit lint build
+
+unit:
+	cd $(FRONTEND_DIR) && npm run test
 
 lint:
 	cd $(FRONTEND_DIR) && npm run lint
@@ -23,7 +30,35 @@ build:
 	cd $(FRONTEND_DIR) && npm run build
 
 deploy:
-	cd $(FRONTEND_DIR) && npm run deploy
+	cd $(FRONTEND_DIR) && VITE_MENU_API_BASE="$(MENU_WORKER_API_BASE)" npm run deploy
+
+menu-studio-worker-secret:
+	@if [ ! -f "$(ROOT_ENV_FILE)" ]; then echo "Create $(ROOT_ENV_FILE) from .env.example first."; exit 1; fi
+	@set -eu; \
+	API_KEY="$$(awk '/^OPENAI_API_KEY=/{sub(/^OPENAI_API_KEY=/, ""); print; exit}' "$(ROOT_ENV_FILE)")"; \
+	if [ -z "$$API_KEY" ]; then echo "Set OPENAI_API_KEY in $(ROOT_ENV_FILE) before running this target."; exit 1; fi; \
+	printf '%s' "$$API_KEY" | (cd $(FRONTEND_DIR) && npx wrangler secret put OPENAI_API_KEY --config ../wrangler.jsonc)
+
+menu-studio-worker-dry-run:
+	cd $(FRONTEND_DIR) && npx wrangler deploy --dry-run --config ../wrangler.jsonc
+
+menu-studio-worker-deploy:
+	cd $(FRONTEND_DIR) && npm run deploy:worker
+
+menu-studio-worker-health:
+	curl -sS -i "$(MENU_WORKER_API_BASE)/health" | sed -n '1,20p'
+
+menu-studio-worker-cors:
+	curl -sS -i -X OPTIONS "$(MENU_WORKER_API_BASE)/menu-extractions" \
+		-H "Origin: $(MENU_FRONTEND_ORIGIN)" \
+		-H "Access-Control-Request-Method: POST" | sed -n '1,24p'
+
+menu-studio-frontend-deploy:
+	cd $(FRONTEND_DIR) && VITE_MENU_API_BASE="$(MENU_WORKER_API_BASE)" npm run deploy
+
+menu-studio-deploy-prod:
+	$(MAKE) menu-studio-worker-deploy
+	$(MAKE) menu-studio-frontend-deploy
 
 images-webp:
 	$(PYTHON) $(WEBP_CONVERT_SCRIPT) $(IMAGE_INPUT_DIR) $(IMAGE_OUTPUT_DIR) --quality $(WEBP_QUALITY)
