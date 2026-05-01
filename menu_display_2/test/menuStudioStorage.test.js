@@ -1,6 +1,4 @@
-import assert from 'node:assert/strict';
-import test from 'node:test';
-
+import { describe, it, expect } from 'vitest';
 import {
   MENU_STUDIO_STORAGE_KEY,
   clearMenuStudioResult,
@@ -23,33 +21,35 @@ function createStorage(initialValue) {
   };
 }
 
-test('saveMenuStudioResult stores serialized extraction results', () => {
-  const storage = createStorage();
-  const result = { menu: { sections: [] }, meta: { model: 'gpt-5.4-mini' } };
+describe('menuStudioStorage', () => {
+  it('saveMenuStudioResult stores serialized extraction results', () => {
+    const storage = createStorage();
+    const result = { menu: { sections: [] }, meta: { model: 'gpt-5.4-mini' } };
 
-  saveMenuStudioResult(result, storage);
+    saveMenuStudioResult(result, storage);
 
-  assert.deepEqual(JSON.parse(storage.getItem(MENU_STUDIO_STORAGE_KEY)), result);
-});
+    expect(JSON.parse(storage.getItem(MENU_STUDIO_STORAGE_KEY))).toEqual(result);
+  });
 
-test('loadStoredMenuStudioResult returns parsed saved results', () => {
-  const result = { menu: { restaurantName: 'Cafe' }, meta: { generatedAt: '2026-04-30T00:00:00.000Z' } };
-  const storage = createStorage(JSON.stringify(result));
+  it('loadStoredMenuStudioResult returns parsed saved results', () => {
+    const result = { menu: { restaurantName: 'Cafe' }, meta: { generatedAt: '2026-04-30T00:00:00.000Z' } };
+    const storage = createStorage(JSON.stringify(result));
 
-  assert.deepEqual(loadStoredMenuStudioResult(storage), result);
-});
+    expect(loadStoredMenuStudioResult(storage)).toEqual(result);
+  });
 
-test('loadStoredMenuStudioResult clears invalid saved JSON', () => {
-  const storage = createStorage('{broken');
+  it('loadStoredMenuStudioResult clears invalid saved JSON', () => {
+    const storage = createStorage('{broken');
 
-  assert.equal(loadStoredMenuStudioResult(storage), null);
-  assert.equal(storage.getItem(MENU_STUDIO_STORAGE_KEY), null);
-});
+    expect(loadStoredMenuStudioResult(storage)).toBe(null);
+    expect(storage.getItem(MENU_STUDIO_STORAGE_KEY)).toBe(null);
+  });
 
-test('clearMenuStudioResult removes the saved result', () => {
-  const storage = createStorage(JSON.stringify({ menu: {} }));
+  it('clearMenuStudioResult removes the saved result', () => {
+    const storage = createStorage(JSON.stringify({ menu: {} }));
 
-  clearMenuStudioResult(storage);
+    clearMenuStudioResult(storage);
 
-  assert.equal(storage.getItem(MENU_STUDIO_STORAGE_KEY), null);
+    expect(storage.getItem(MENU_STUDIO_STORAGE_KEY)).toBe(null);
+  });
 });

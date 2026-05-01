@@ -94,6 +94,7 @@ function normalizeDisplaySection(section) {
 export function normalizeDisplayMenu(menu) {
   return {
     ...menu,
+    restaurantName: menu?.restaurantName || menu?.restaurant_name || 'Untitled menu',
     sections: (menu.sections ?? []).map(normalizeDisplaySection),
   };
 }
