@@ -156,7 +156,8 @@ function MenuStudio() {
                 </p>
               </div>
               <div className="inline-flex items-center gap-2 rounded-full border border-clay/30 bg-clay px-5 py-2.5 text-sm font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-ink group-open:bg-ink">
-                Show {menuExamples.length} examples
+                <span className="group-open:hidden">Show {menuExamples.length} examples</span>
+                <span className="hidden group-open:inline">Hide {menuExamples.length} examples</span>
               </div>
             </div>
           </summary>
