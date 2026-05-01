@@ -155,8 +155,9 @@ function MenuStudio() {
                   Explore a few previous menus to see the kind of layouts and image quality the studio can handle.
                 </p>
               </div>
-              <div className="rounded-full border border-clay/20 bg-clay/10 px-4 py-2 text-sm font-semibold text-clay transition group-open:bg-white">
-                Show {menuExamples.length} examples
+              <div className="inline-flex items-center gap-2 rounded-full border border-clay/30 bg-clay px-5 py-2.5 text-sm font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-ink group-open:bg-ink">
+                <span>Button:</span>
+                <span>Show {menuExamples.length} examples</span>
               </div>
             </div>
           </summary>
