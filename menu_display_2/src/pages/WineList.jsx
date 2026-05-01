@@ -131,13 +131,13 @@ function WineBottleCard({ wine, imageSrc, style, country, priceBand, rarityScore
       className="editorial-card flex h-full flex-col transition hover:border-clay/40"
     >
       <div className="relative border-b border-stone-100 bg-white p-4">
-        <div className="aspect-[4/3] overflow-hidden rounded-lg border border-stone-200 bg-white">
+        <div className="aspect-[2/3] overflow-hidden rounded-lg border border-stone-200 bg-white">
           <ProgressiveImage
             src={imageSrc}
             alt={`${wine.name} bottle`}
             loading="lazy"
             className="h-full w-full"
-            imageClassName="h-full w-full object-contain p-3"
+            imageClassName="h-full w-full object-contain object-center p-2"
             placeholderClassName="bg-white"
           />
         </div>
