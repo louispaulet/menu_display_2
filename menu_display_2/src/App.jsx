@@ -14,6 +14,7 @@ const NotFound = lazy(() => import('./pages/NotFound'));
 const Recipe = lazy(() => import('./components/Recipe'));
 const WineList = lazy(() => import('./pages/WineList'));
 const WineBottle = lazy(() => import('./pages/WineBottle'));
+const MenuStudio = lazy(() => import('./pages/MenuStudio'));
 
 function PageFallback() {
   return (
@@ -42,6 +43,7 @@ function App() {
             <Route path="/recipe/:recipeName" element={<Recipe />} />
             <Route path="/wines" element={<WineList />} />
             <Route path="/wines/:wineKey" element={<WineBottle />} />
+            <Route path="/menu-studio" element={<MenuStudio />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

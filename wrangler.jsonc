@@ -1,0 +1,19 @@
+{
+  "$schema": "./menu_display_2/node_modules/wrangler/config-schema.json",
+  "name": "menu-studio-extractor",
+  "main": "worker/menu-extractor.js",
+  "compatibility_date": "2026-04-30",
+  "compatibility_flags": ["nodejs_compat_v2"],
+  "secrets": {
+    "required": ["OPENAI_API_KEY"]
+  },
+  "vars": {
+    "OPENAI_MENU_MODEL": "gpt-5.4-mini",
+    "OPENAI_IMAGE_DETAIL": "high",
+    "ALLOWED_ORIGINS": "http://localhost:5173,http://localhost:4173,https://exquisite-menus-2.thefrenchartist.dev,https://exquisite-menus.thefrenchartist.dev"
+  },
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  }
+}
