@@ -78,10 +78,28 @@ Ensure you have **Node.js** installed. Dependencies can be installed using **npm
 To start the project in development mode:
 
 ```bash
+cp .env.example .env
+# Fill OPENAI_API_KEY in .env
+cd menu_display_2
 npm run dev
 ```
 
+This starts the Cloudflare Worker on `http://localhost:8787` and Vite on `http://localhost:5173`.
 Access the application in your browser at `http://localhost:5173`.
+
+### 🍽️ Menu Studio
+
+The Menu Studio route (`/#/menu-studio`) uploads a menu image to the local Cloudflare Worker, calls OpenAI from the Worker using `OPENAI_API_KEY`, and renders a typography-only menu plus the extracted JSON. The latest extraction is stored in the browser with `localStorage`.
+
+Local development uses the repository-root `.env` file. Production should set the Worker secret with:
+
+```bash
+cd menu_display_2
+npx wrangler secret put OPENAI_API_KEY --config ../wrangler.jsonc
+npm run deploy:worker
+```
+
+If the frontend is deployed separately from the Worker, set `VITE_MENU_API_BASE` during the frontend build to the Worker origin plus `/api`.
 
 ### 🏗️ Building the Project
 

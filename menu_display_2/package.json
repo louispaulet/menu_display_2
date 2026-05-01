@@ -5,9 +5,13 @@
   "type": "module",
   "homepage": "https://exquisite-menus-2.thefrenchartist.dev/",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently -n worker,web -c cyan,magenta \"npm run dev:worker\" \"npm run dev:web\"",
+    "dev:web": "vite",
+    "dev:worker": "wrangler dev --config ../wrangler.jsonc --port 8787",
+    "test": "node --test test/*.test.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
+    "deploy:worker": "wrangler deploy --config ../wrangler.jsonc",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -30,6 +34,7 @@
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "autoprefixer": "^10.4.20",
+    "concurrently": "^9.2.1",
     "eslint": "^9.9.0",
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
@@ -37,6 +42,7 @@
     "globals": "^15.9.0",
     "postcss": "^8.4.41",
     "tailwindcss": "^3.4.10",
-    "vite": "^5.4.1"
+    "vite": "^5.4.1",
+    "wrangler": "^4.87.0"
   }
 }

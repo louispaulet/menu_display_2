@@ -4,6 +4,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navItems = [
   { to: '/', label: 'Menus', activePaths: ['/', '/menu', '/recipe'] },
+  { to: '/menu-studio', label: 'Menu studio', activePaths: ['/menu-studio'] },
   { to: '/wines', label: 'Wine List', activePaths: ['/wines'] },
   { to: '/hot-sauces', label: 'Hot sauces', activePaths: ['/hot-sauces', '/hot-sauce'] },
   { to: '/about', label: 'About', activePaths: ['/about'] },
