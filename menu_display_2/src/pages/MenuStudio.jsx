@@ -35,6 +35,7 @@ function MenuStudio() {
   const [isRestored, setIsRestored] = useState(false);
   const [menuExamples, setMenuExamples] = useState([]);
   const inputRef = useRef(null);
+  const detailsRef = useRef(null);
 
   useEffect(() => {
     const stored = loadStoredMenuStudioResult();
@@ -134,6 +135,32 @@ function MenuStudio() {
     }
   };
 
+  const handleLoadExample = async (filename) => {
+    try {
+      const jsonFilename = filename.replace(/\.(webp|png|jpe?g)$/i, '.json');
+      const response = await fetch(`/menu_examples_json/${jsonFilename}`);
+      if (!response.ok) throw new Error('Example not found');
+      const data = await response.json();
+      setExtraction(data);
+      setIsRestored(false);
+      saveMenuStudioResult(data);
+      
+      setSelectedFile(null);
+      setError('');
+      setCopyStatus('');
+      if (inputRef.current) inputRef.current.value = '';
+      
+      if (detailsRef.current) {
+        detailsRef.current.removeAttribute('open');
+      }
+      
+      // Scroll slightly down to show the result
+      window.scrollTo({ top: 400, behavior: 'smooth' });
+    } catch {
+      setError('Failed to load example menu.');
+    }
+  };
+
   return (
     <div className="page-shell">
       <header className={`mx-auto max-w-7xl ${hasExtraction ? 'mb-8' : 'mb-10'}`}>
@@ -147,7 +174,7 @@ function MenuStudio() {
       </header>
 
       <section className="mx-auto mb-8 max-w-7xl">
-        <details className="soft-panel group p-6 sm:p-7 lg:p-8">
+        <details ref={detailsRef} className="soft-panel group p-6 sm:p-7 lg:p-8">
           <summary className="cursor-pointer list-none rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-clay/40">
             <div className="flex items-center justify-between gap-4 border-b border-stone-200 pb-5">
               <div>
@@ -165,7 +192,12 @@ function MenuStudio() {
           </summary>
           <div className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
             {menuExamples.map((entry) => (
-              <article key={entry.filename} className="overflow-hidden rounded-lg border border-stone-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+              <button
+                key={entry.filename}
+                type="button"
+                onClick={() => handleLoadExample(entry.filename)}
+                className="text-left overflow-hidden rounded-lg border border-stone-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay/40"
+              >
                 <div className="aspect-[4/3] bg-stone-100">
                   <img src={entry.imageUrl} alt={entry.title} className="h-full w-full object-cover" />
                 </div>
@@ -173,7 +205,7 @@ function MenuStudio() {
                   <p className="text-sm font-semibold text-ink">{entry.title}</p>
                   <p className="mt-2 text-sm leading-6 text-stone-600">{entry.description}</p>
                 </div>
-              </article>
+              </button>
             ))}
           </div>
         </details>
