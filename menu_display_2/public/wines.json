@@ -62,7 +62,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Ripe white peach and lemon zest grip a thread of fennel and chalk, finishing with precise saline clarity."
+      "tasting_note": "A poised Albariño likely to show ripe citrus, white peach and pear, with subtle floral and fennel notes over a clean, stony frame. Expect a supple but focused palate, brisk acidity and a lightly textured mid-palate, finishing dry, savoury and neatly saline rather than overtly exuberant."
     },
     {
       "id": 3,
@@ -83,7 +83,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Pure lime, green apple, and saline complexity with a crisp alabaster finish."
+      "tasting_note": "A classic Albariño profile is likely here: bright lime, green apple, white peach and citrus blossom, with a subtle maritime edge and a touch of fennel or wet stone. Expect a dry, medium-light palate with brisk acidity, a fine textural grip, and a clean, mouth-watering finish that should make it especially versatile at the table."
     },
     {
       "id": 4,
@@ -104,7 +104,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Candied grapefruit, honeyed florals, and lingering river-stone mineral tension."
+      "tasting_note": "A mature Albariño of this calibre is likely to show preserved lemon, dried apricot, chamomile and subtle almond over a faint waxy, lees-derived richness. The palate should be medium-bodied and textural, with bright but integrated acidity, a gentle saline edge and a dry, savoury finish that balances fruit depth with quiet complexity."
     },
     {
       "id": 5,
@@ -125,7 +125,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Serrated citrus core, salted apricot brightness, and a chalky, invigorating finish."
+      "tasting_note": "A classic Albariño profile is likely here: bright citrus, white peach and apricot, with hints of green apple, blossom and a subtle herbal edge. Expect a dry, medium-bodied palate with brisk acidity, a fine textural grip and a clean, slightly saline finish that makes it especially versatile at the table."
     },
     {
       "id": 6,
@@ -146,7 +146,7 @@
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
       "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
-      "tasting_note": "Celestial citrus, frosted melon, and a hint of violet dust with a luminous finish."
+      "tasting_note": "An imagined, speculative Sauvignon Blanc profile: expect lifted aromas of grapefruit zest, white currant, elderflower and cut grass, with a faint exotic edge of passion fruit and green mango. The palate would likely be taut and precise, medium-bodied rather than opulent, with brisk acidity, a clean, dry core and a crisp, stony finish that keeps the fruit in check."
     },
     {
       "id": 7,
@@ -167,7 +167,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "White peach, jasmine blossom, and a touch of rosemary oil over a racy backbone."
+      "tasting_note": "A poised, aromatic Malagousia likely to open with white peach, apricot skin, jasmine and a subtle herbal edge of rosemary or sage. The palate should be medium-bodied and supple, with ripe orchard fruit balanced by brisk acidity and a faint phenolic grip, finishing cleanly with a lightly savoury, floral lift."
     },
     {
       "id": 8,
@@ -188,7 +188,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Dried cherry, cocoa nibs, star anise, and a hint of cedar delivering a layered, plush finish."
+      "tasting_note": "A classic Amarone profile is likely here: dried cherry, black plum, fig, cocoa, sweet spice and a touch of cedar or tobacco from age and oak. Expect a full-bodied, richly textured palate with ripe but firm tannins, moderate freshness for balance, and a long, warming finish that leans savoury rather than overtly sweet."
     },
     {
       "id": 9,
@@ -209,7 +209,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Black cherry, espresso powder, dried figs, and a whisper of graphite round out an intense, elegant finish."
+      "tasting_note": "A serious, mature Amarone profile is likely here: dried black cherry, fig, plum compote, cocoa, espresso and sweet spice, with hints of tobacco, leather and balsamic depth from age. Expect a full-bodied, layered palate with ample extract, polished tannins and a warming, persistent finish that balances richness with Quintarelli’s trademark restraint and finesse."
     },
     {
       "id": 10,
@@ -230,7 +230,7 @@
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
       "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
-      "tasting_note": "Opaline honey, candied orange peel, and a ribbon of stardust spice finish with neon clarity."
+      "tasting_note": "An imagined late-harvest profile of opulent sweetness and precision: expect acacia honey, candied orange peel, apricot compote and a touch of saffron or ginger on the nose, with a glossy, concentrated palate balanced by bright acidity. The finish would likely be long, clean and gently warming, with enough freshness to keep the richness from becoming cloying."
     },
     {
       "id": 11,
@@ -251,7 +251,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Luminous cranberry, violet, and forest-floor whispers, finished with fine-grained tannins."
+      "tasting_note": "A poised German Pinot Noir likely to show red cherry, cranberry, rose petal and subtle woodland spice, with a touch of smoke or savoury reduction from élevage. The palate should be medium-bodied and finely etched, with bright acidity, polished tannins and a cool, mineral-tinged finish that favours precision over weight."
     },
     {
       "id": 12,
@@ -272,7 +272,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Candied orange peel, dried fig, saline loquat, and a trailing bitterness that keeps the sweetness honest."
+      "tasting_note": "A classic Banyuls profile is likely here: ripe black cherry, fig, orange peel and cocoa, with hints of walnut, coffee and Mediterranean herbs. Expect a rich, fortified palate with supple sweetness balanced by warming alcohol and a thread of freshness, finishing on dried fruit, spice and a gentle bitter edge that keeps it food-friendly."
     },
     {
       "id": 13,
@@ -293,7 +293,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Black tea, plum compote, winter spice, and a thread of leather that unwinds into caramel warmth."
+      "tasting_note": "A classic Banyuls Rimage profile is likely here: ripe black cherry, plum compote, cocoa and dried fig, with hints of black tea, spice and a faint leathery edge from gentle maturation. Expect a sweet, fortified palate that is supple rather than heavy, with warming alcohol, moderate freshness and a lingering finish of caramelised fruit and nutty savouriness."
     },
     {
       "id": 14,
@@ -314,7 +314,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Blood orange, sarsaparilla, cocoa nib dust, and a chalky mineral seam anchoring the finish."
+      "tasting_note": "A classic Banyuls Rimage is likely to show ripe black cherry, fig, dried plum and cocoa, with a touch of garrigue, coffee and warm spice from its fortified, sun-baked style. Expect a supple, sweet palate with moderate freshness to keep it from feeling heavy, and a gently warming, savoury finish that leans toward bitter chocolate and dried fruit rather than overt richness."
     },
     {
       "id": 15,
@@ -335,7 +335,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Wild cherry, licorice root, tar, and a cedar spine framing a mineral-clad finish."
+      "tasting_note": "A classic Barbaresco profile is likely here: wild cherry, dried rose, anise and liquorice, with hints of tar, cedar and crushed earth from the Montefico site. The palate should be medium-bodied and firmly structured, with fine-grained tannins, bright acidity and a savoury, mineral-tinged finish that will reward further bottle age."
     },
     {
       "id": 16,
@@ -356,7 +356,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Rose petal, smoked salami, graphite, and crushed herb acidity on a long velvet tannin fade."
+      "tasting_note": "A classic Barolo profile from a serious site, likely combining rose petal, sour cherry, dried strawberry, liquorice and subtle tarry spice with a faint herbal edge. The palate should be medium-bodied but firmly structured, with bright acidity, fine-grained tannins and a savoury, mineral-tinged finish that will reward further bottle age."
     },
     {
       "id": 17,
@@ -377,7 +377,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Ink, black cherry, dark chocolate, and porcini with an iron grip and a balsamic lift at the end."
+      "tasting_note": "A serious Barolo profile of black cherry, dried rose, liquorice, tar and subtle woodland spice, with hints of balsamic, cocoa and porcini in the background. The palate is likely to be dense and tightly coiled, with firm, ripe tannins, bright acidity and considerable depth. Expect a long, savoury finish that will reward patience and decanting."
     },
     {
       "id": 18,
@@ -398,7 +398,7 @@
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
       "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
-      "tasting_note": "Neon lime zest, yuzu blossom, honeyed ginger, and a polished slate seam keeping the sweetness crystalline."
+      "tasting_note": "An imagined profile of a futuristic Riesling, likely off-dry to medium-sweet in style, with vivid lime zest, yuzu, white peach and jasmine over a thread of ginger and wet stone. The palate would be sleek and finely etched, balancing ripe fruit with bright acidity and a touch of honeyed depth, finishing clean, precise and lightly spicy."
     },
     {
       "id": 19,
@@ -419,7 +419,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Toasty brioche, citrus pith, orchard blossom, and leesy warmth balanced by chalky minerality."
+      "tasting_note": "A mature, serious Champagne profile is likely here: toasted brioche, lemon peel, baked apple and white flowers, with hints of hazelnut and subtle lees complexity. The palate should be broad yet precise, with fine mousse, brisk acidity and a chalk-dusted, savoury finish that reflects the house’s polished, gastronomic style."
     },
     {
       "id": 20,
@@ -440,7 +440,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Sparkling raspberry, rosewater fizz, candied hibiscus, and levitating acidity that feels like a kiss."
+      "tasting_note": "A lightly sparkling Brachetto d’Acqui is likely to be fragrant and immediately appealing, with raspberry, wild strawberry, rose petal and a touch of candied orange peel. Expect a soft, gently sweet palate, low alcohol and bright, refreshing acidity, finishing on red berry fruit and floral perfume rather than depth or weight."
     },
     {
       "id": 21,
@@ -461,7 +461,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
+      "tasting_note": "A classic, long-lived Brunello profile is likely here: perfumed sour cherry, rose petal, dried herbs and subtle tobacco, with the Riserva pedigree suggesting added depth and restraint rather than overt richness. Expect firm, finely grained tannins, bright acidity and a savoury core of leather, cedar and truffle as it opens, finishing with poise and considerable length."
     },
     {
       "id": 22,
@@ -482,7 +482,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
+      "tasting_note": "A serious Brunello profile is likely here: ripe cherry, dried rose, orange peel and sweet spice, with hints of tobacco and cedar as it opens. The 2015 vintage should give generous fruit and polished tannins, yet retain the firm Sangiovese spine. Expect a supple, medium-full palate, savoury length and enough structure for further development."
     },
     {
       "id": 23,
@@ -503,7 +503,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A polished non-vintage Franciacorta in a refined, aperitif-friendly style, likely to open with white peach, green apple, citrus peel and a touch of brioche from lees ageing. The palate should be creamy yet brisk, with fine mousse, clean acidity and a dry, composed finish that leans toward almond and subtle savoury notes rather than overt richness."
     },
     {
       "id": 24,
@@ -524,7 +524,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
+      "tasting_note": "A classic Napa Cabernet profile is likely here: ripe blackcurrant, blackberry and plum framed by cedar, tobacco leaf and a touch of graphite, with the warm 2017 vintage lending generous fruit and supple ripeness. Expect a full-bodied palate with polished tannins, measured oak spice and a savoury, persistent finish rather than overt austerity."
     },
     {
       "id": 25,
@@ -545,7 +545,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Imposing depth, dark berries, polished tannins, and lingering smoke."
+      "tasting_note": "A serious Napa Cabernet profile is likely here: cassis, blackberry, cedar, graphite and a touch of tobacco, with subtle new oak framing rather than dominating. The palate should be full-bodied and concentrated, yet composed, with polished tannins, ripe but firm structure, and a long, savoury finish that may now be beginning to show hints of leather and dried herbs."
     },
     {
       "id": 26,
@@ -566,7 +566,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
+      "tasting_note": "A polished, Napa-influenced Cabernet profile is likely here: cassis, black cherry and plum framed by cedar, vanilla, sweet tobacco and a touch of graphite. The 2016 vintage should now be settling into a more harmonious phase, with supple tannins, moderate freshness and a rounded, oak-polished palate. Expect a generous, savoury finish with enough structure for the table."
     },
     {
       "id": 27,
@@ -587,7 +587,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A serious Cahors likely built on dark plum, blackberry and damson, with graphite, violets, tobacco leaf and a savoury, earthy edge. Expect a medium-full palate with firm but ripe tannins, fresh acidity and a compact, muscular shape rather than overt richness. In a good 2017, the finish should be dry, slightly ferrous and food-friendly, with enough polish to drink well now or over the next few years."
     },
     {
       "id": 28,
@@ -608,7 +608,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Cava profile, likely to open with green apple, pear skin, lemon zest and a touch of white blossom, with subtle brioche and almond from extended lees ageing. The palate should be dry and brisk rather than austere, with fine mousse, clean citrus drive and a lightly savoury, nutty finish that makes it well suited to tapas and seafood."
     },
     {
       "id": 29,
@@ -629,7 +629,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A mature, traditional-method Cava likely to show fine autolytic complexity: baked apple, pear skin, lemon peel and toasted almond, with hints of brioche and dried flowers. Brut Nature dryness should keep the palate taut and precise, while extended lees ageing brings a creamy mousse and savoury depth. Expect a dry, persistent finish with subtle nutty and chalky notes."
     },
     {
       "id": 30,
@@ -650,7 +650,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A serious Cava in a traditional, lees-aged style, likely to open with ripe pear, baked apple, citrus peel and white flowers, alongside brioche, almond and a touch of pastry from extended ageing. The palate should be dry and finely textured, with creamy mousse, brisk acidity and a savoury, lightly nutty finish that gives it real gastronomic appeal."
     },
     {
       "id": 31,
@@ -671,7 +671,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A serious Cava profile is likely here: fine, persistent mousse with aromas of baked apple, pear skin, lemon peel, toasted almond and a faint brioche note from extended lees ageing. Dry and tightly composed on the palate, it should combine brisk acidity with a creamy mid-palate, finishing savoury, chalky and precise rather than overtly fruity."
     },
     {
       "id": 32,
@@ -692,7 +692,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A cool-climate Sauvignon Blanc profile is likely here: lime zest, gooseberry, green apple and a touch of Cape fynbos, with a faint herbal edge. The palate should be brisk and focused, medium-bodied at most, with crisp acidity, a clean stony line and a dry, refreshing finish suited to shellfish, goat’s cheese or simply as an aperitif."
     },
     {
       "id": 33,
@@ -713,7 +713,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Montée de Tonnerre profile would likely combine ripe lemon, green apple and white peach with subtle acacia and crushed shell notes. In 2018, expect a little more breadth and generosity than in a cooler year, but still with Chablis’ firm line of acidity, a chalky, tightly wound texture, and a dry, precise finish."
     },
     {
       "id": 34,
@@ -734,7 +734,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Montée de Tonnerre profile would likely combine ripe citrus, white peach and green apple with subtle white flowers and a touch of struck flint. On the palate, expect a taut, finely etched Chablis structure: brisk acidity, a chalky, lightly creamy mid-palate and a dry, precise finish with discreet saline and smoky nuances."
     },
     {
       "id": 35,
@@ -755,7 +755,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Chablis profile is likely here: lemon peel, green apple and white flowers, with a subtle oyster-shell and wet-stone edge. On the palate, expect a dry, medium-light frame, brisk acidity and a clean, linear texture rather than overt richness. The finish should be crisp, savoury and food-friendly, with a touch of chalky grip."
     },
     {
       "id": 36,
@@ -776,7 +776,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Chablis profile is likely here: lemon peel, green apple and white flowers over a cool, chalky, oyster-shell edge. On the palate, expect a dry, medium-light frame with brisk acidity, a clean, linear texture and subtle leesy breadth rather than overt richness. The finish should be crisp, savoury and mouth-watering."
     },
     {
       "id": 37,
@@ -797,7 +797,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
+      "tasting_note": "A serious Grand Cru Chablis profile is likely here: ripe lemon, white peach and orchard fruit framed by oyster shell, crushed stone and a discreet smoky, spicy edge from the 2018 vintage. Expect a broad but tightly composed palate, with layered texture, firm acidity and a long, savoury finish that should gain complexity with a little bottle age."
     },
     {
       "id": 38,
@@ -818,7 +818,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic non-vintage Champagne profile: fine mousse with aromas of white peach, pear, citrus peel and fresh brioche, lifted by subtle floral notes. The palate is poised and creamy rather than forceful, with bright acidity, discreet leesy depth and a clean, dry finish that makes it especially versatile at the table."
     },
     {
       "id": 39,
@@ -839,7 +839,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic non-vintage Champagne profile: ripe orchard fruit, baked apple and pear, with citrus peel, brioche and a discreet hazelnut note from extended lees ageing. The palate is broad and vinous rather than delicate, with fine mousse, firm acidity and a dry, savoury finish that gives the wine its familiar depth and gastronomic appeal."
     },
     {
       "id": 40,
@@ -860,7 +860,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
+      "tasting_note": "A serious vintage Champagne profile: expect restrained citrus, white peach and baked apple, with subtle brioche, almond and chalky nuances from extended lees ageing. The palate is likely broad yet precise, with a creamy mousse, firm acidity and a dry, composed finish that balances maturity with tension rather than overt richness."
     },
     {
       "id": 41,
@@ -881,7 +881,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A dry, incisive Champagne in the Brut Nature style, likely to open with green apple, pear skin, citrus zest and a faint brioche note, with subtle floral lift. The palate should be taut and linear, with very little dosage, giving a chalky, savoury impression and a clean, mouthwatering finish rather than overt richness."
     },
     {
       "id": 42,
@@ -902,7 +902,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic non-vintage Champagne profile, likely combining crisp apple, pear and citrus with white flowers, brioche and a touch of almond from lees ageing. The palate should be finely textured and dry, with brisk acidity, a creamy mousse and a balanced, moderately savoury finish that favours poise and versatility over sheer power."
     },
     {
       "id": 43,
@@ -923,7 +923,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
+      "tasting_note": "A benchmark non-vintage Champagne, likely to open with baked apple, pear, citrus peel and toasted brioche, layered with almond, hazelnut and subtle spice. The palate is broad yet finely etched, with creamy mousse, brisk acidity and impressive depth, finishing dry, savoury and persistent with a polished, gastronomic edge."
     },
     {
       "id": 44,
@@ -944,7 +944,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Blanc de Blancs profile: fine citrus and white orchard fruit, lemon blossom, and a touch of fresh almond over a discreet brioche note. The palate is typically sleek and finely etched, with brisk acidity, a creamy mousse, and a dry, chalky finish that keeps the wine poised and gastronomic rather than overtly rich."
     },
     {
       "id": 45,
@@ -965,7 +965,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Blanc de Blancs profile: delicate citrus, white peach and pear are framed by acacia blossom, fresh brioche and a subtle chalky edge. The palate is fine-boned and brisk, with creamy mousse, bright acidity and a clean, dry finish that leans toward lemon zest and toasted almond. Elegant rather than forceful, with real finesse."
     },
     {
       "id": 46,
@@ -986,7 +986,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic non-vintage Champagne profile: bright apple, pear and white peach are framed by citrus zest, brioche and a light floral perfume. The palate is poised and creamy rather than forceful, with fine mousse, brisk acidity and a clean, gently saline finish. Expect an elegant, aperitif-friendly style with enough breadth for shellfish or delicate fish."
     },
     {
       "id": 47,
@@ -1007,7 +1007,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic non-vintage Champagne profile: fine mousse with aromas of white peach, pear, citrus peel and acacia, supported by subtle brioche and biscuit notes from lees ageing. The palate is brisk and polished rather than forceful, with creamy texture, clean acidity and a dry, balanced finish that makes it especially versatile at the table."
     },
     {
       "id": 48,
@@ -1028,7 +1028,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Napa Chardonnay profile is likely here: ripe lemon, yellow apple and pear, with hints of white peach, vanilla and lightly toasted oak. Expect a medium to full-bodied palate, creamy in texture but kept in check by fresh acidity, with a polished, food-friendly finish and enough breadth to suit richer seafood or roast poultry."
     },
     {
       "id": 49,
@@ -1049,7 +1049,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A serious, high-altitude Chardonnay profile is likely here: white peach, lemon peel, green apple and subtle floral notes, with a faint smoky, chalky edge from the Adrianna Vineyard site. The palate should be taut and concentrated rather than broad, with brisk acidity, a fine lees-derived creaminess and a long, savoury finish."
     },
     {
       "id": 50,
@@ -1070,7 +1070,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A poised Chablis-style Chardonnay likely to show lemon peel, green apple and white blossom, with a discreet touch of struck flint and oyster shell. The palate should be medium-bodied and taut, with brisk acidity, a fine chalky texture and a clean, savoury finish rather than overt oak or richness."
     },
     {
       "id": 51,
@@ -1091,7 +1091,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A poised Sonoma Coast Chardonnay likely to balance ripe citrus, white peach and pear with subtle blossom and a touch of toasted almond. Expect a medium-bodied palate with a creamy edge from oak or lees, kept in check by brisk acidity and a cool coastal line, finishing cleanly with gentle spice and a savoury, stony close."
     },
     {
       "id": 52,
@@ -1112,7 +1112,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
+      "tasting_note": "A poised Puligny-Montrachet profile is likely here: white peach, pear and citrus peel framed by subtle hazelnut, acacia and a touch of toasted oak. The palate should be medium-bodied and finely textured, with ripe but measured acidity, a discreet creamy edge and a long, chalky, savoury finish typical of a serious 2018 white Burgundy."
     },
     {
       "id": 53,
@@ -1133,7 +1133,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
+      "tasting_note": "A poised Sonoma Coast Chardonnay in the Kistler mould, likely to open with ripe pear, yellow apple, lemon curd and a touch of hazelnut, toast and subtle vanilla from well-judged oak. The palate should be broad yet controlled, with a creamy mid-palate, bright acidity and a savoury, lightly smoky finish that keeps the richness in check."
     },
     {
       "id": 54,
@@ -1154,7 +1154,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
+      "tasting_note": "A poised, ripe Sonoma Chardonnay profile: expect pear, baked apple and citrus oil layered with subtle hazelnut, vanilla and toast from well-judged oak. The palate is likely broad and silky yet kept in check by fresh acidity, with a creamy mid-palate and a composed, gently spicy finish rather than overt richness."
     },
     {
       "id": 55,
@@ -1175,7 +1175,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A poised Sonoma Coast Chardonnay in a restrained, Burgundian-leaning style, likely offering ripe lemon, green apple and white peach over subtle toast, almond and a touch of cream from oak and lees. The palate should be medium-bodied and finely textured, with bright acidity, a gentle savoury edge and a clean, composed finish."
     },
     {
       "id": 56,
@@ -1196,7 +1196,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Bourgogne Chardonnay profile is likely here: lemon peel, green apple and white peach, with a discreet touch of hazelnut or light lees from the house style. The palate should be medium-bodied and neatly textured, with brisk acidity, modest creaminess and a clean, dry finish that favours freshness and balance over overt richness."
     },
     {
       "id": 57,
@@ -1217,7 +1217,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
+      "tasting_note": "A poised, barrel-fermented Chardonnay in a rich but disciplined style, likely to open with ripe pear, baked apple, lemon curd and subtle hazelnut, with a touch of vanilla and toast from well-judged oak. The palate should be broad and silky, yet kept in line by fresh acidity, finishing with citrus peel, spice and a clean, persistent savoury edge."
     },
     {
       "id": 58,
@@ -1238,7 +1238,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Russian River Chardonnay profile is likely here: ripe lemon, green apple and pear framed by subtle vanilla, toasted almond and a touch of leesy creaminess. Expect a medium-bodied palate with supple texture, bright acidity and a clean, gently oaked finish that keeps the wine poised rather than heavy."
     },
     {
       "id": 59,
@@ -1259,7 +1259,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A dry, understated Chasselas likely to show pear skin, green apple, white flowers and a faint almond note, with a light to medium body and a supple, gently textured palate. Expect brisk but not aggressive acidity, a subtle stony, savoury edge, and a clean, discreet finish suited to simple fish, cheese or alpine dishes."
     },
     {
       "id": 60,
@@ -1280,7 +1280,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic dry Vouvray profile: expect pear, quince, lemon peel and white flowers, with a subtle honeyed edge from the Chenin. The palate is likely medium-bodied and taut, with bright acidity, a fine chalky texture and a gently savoury, stony finish that should make it especially versatile at table."
     },
     {
       "id": 61,
@@ -1301,7 +1301,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Vouvray demi-sec profile is likely here: ripe pear, quince, yellow apple and acacia blossom, with a touch of honeyed citrus and wet wool. The palate should balance gentle sweetness with brisk Chenin acidity, giving a supple, lightly waxy texture and a clean, stony finish that makes it especially versatile at the table."
     },
     {
       "id": 62,
@@ -1322,7 +1322,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A serious Montlouis Chenin likely showing quince, ripe pear, lemon peel and white blossom, with a subtle honeyed edge from bottle age. The palate should be dry to off-dry in feel, textured yet precise, with brisk acidity, a chalky, savoury line and a gently waxy finish that broadens rather than fades."
     },
     {
       "id": 63,
@@ -1343,7 +1343,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A poised Montlouis Chenin with ripe pear, quince and lemon zest over subtle acacia and wet stone notes. Expect a dry to off-dry palate with a fine, lightly waxy texture, brisk acidity and a touch of chalky grip, finishing cleanly with citrus peel and a faint honeyed nuance."
     },
     {
       "id": 64,
@@ -1364,7 +1364,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A poised Montlouis Chenin likely to open with pear, quince, lemon zest and white flowers, with a subtle honeyed edge and a touch of lanolin. The palate should be dry to off-dry in impression, medium-bodied and finely textured, with brisk acidity, a chalky, savoury line and a clean, persistent finish."
     },
     {
       "id": 65,
@@ -1385,7 +1385,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A serious Chianti Classico profile is likely here: ripe sour cherry, red plum, dried herbs and a touch of violet, with subtle cedar and tobacco from élevage. The palate should be medium-bodied and finely structured, with firm but polished tannins, bright acidity and a savoury, slightly earthy finish that suits food rather than sheer opulence."
     },
     {
       "id": 66,
@@ -1406,7 +1406,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Barsac profile is likely here: fragrant apricot, pear and acacia blossom, with honeyed citrus and a touch of saffron or candied peel. The palate should be supple yet precise, balancing botrytis richness with bright acidity and a fine, lightly waxy texture. Expect a graceful, persistent finish rather than overt opulence."
     },
     {
       "id": 67,
@@ -1427,7 +1427,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Barsac profile is likely here: acacia, orange blossom, ripe pear and apricot, with honeyed citrus and a touch of saffron or candied peel from botrytis. Expect a supple, polished palate rather than heavy sweetness, with bright acidity keeping the wine poised and precise, finishing on a clean, lightly waxy, gently savoury note."
     },
     {
       "id": 68,
@@ -1448,7 +1448,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Sainte-Croix-du-Mont sweet white is likely to show ripe apricot, quince, candied citrus peel and acacia honey, with a subtle botrytis note of saffron and beeswax. Expect a rounded, gently unctuous palate balanced by fresh acidity, finishing on dried stone fruit and a clean, lightly honeyed edge."
     },
     {
       "id": 69,
@@ -1469,7 +1469,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
+      "tasting_note": "A poised, Bordeaux Blanc style likely built on Sauvignon Blanc with a touch of Sémillon, showing white peach, citrus peel, elderflower and subtle cedar, with a faint waxy richness from bottle age. The palate should be medium-bodied and finely textured, balancing ripe fruit with fresh acidity and a discreet savoury, smoky finish."
     },
     {
       "id": 70,
@@ -1490,7 +1490,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Imposing depth, dark berries, polished tannins, and lingering smoke."
+      "tasting_note": "A classic Pauillac profile in a ripe, generous vintage: expect cassis, black cherry, cedar, graphite and subtle tobacco, with hints of cocoa and sweet spice from well-judged oak. The palate should be full-bodied and layered, with polished tannins, ripe but firm structure, and a long, savoury finish that balances richness with authority."
     },
     {
       "id": 71,
@@ -1511,7 +1511,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
+      "tasting_note": "A classic Pauillac profile is likely here: cassis, black cherry, cedar, graphite and a touch of tobacco, framed by polished oak and the estate’s usual sense of depth. The 2012 vintage should now be entering a more savoury phase, with supple but still firm tannins, medium-full body and a long, composed finish that may show truffle, dried herbs and dark chocolate."
     },
     {
       "id": 72,
@@ -1532,7 +1532,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
+      "tasting_note": "A classic Pauillac profile is likely here: cassis, black cherry, cedar, graphite and finely judged tobacco, with the 2015 vintage lending ripe fruit and a little extra warmth. Expect a full, polished palate with ripe but firm tannins, discreet oak spice and a long, savoury finish that should be entering a graceful early plateau."
     },
     {
       "id": 73,
@@ -1553,7 +1553,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Imposing depth, dark berries, polished tannins, and lingering smoke."
+      "tasting_note": "A classic Pomerol profile is likely here: ripe black plum, blackberry, damson and violets, with cedar, truffle, cocoa and a discreet earthy savour. The palate should be full-bodied yet composed, with fine-grained tannins, supple mid-palate richness and well-judged freshness for the vintage. Expect a long, layered finish that trades power for precision and persistence."
     },
     {
       "id": 74,
@@ -1574,7 +1574,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Sauternes profile is likely here: ripe apricot, peach, candied citrus peel and acacia honey, with a touch of saffron and botrytis spice. Expect a rich, unctuous palate balanced by bright acidity, giving shape to the sweetness and carrying a long finish of marmalade, toasted almond and subtle vanilla."
     },
     {
       "id": 75,
@@ -1595,7 +1595,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Sauternes profile is likely here: ripe apricot, peach, candied citrus peel and acacia blossom, with honeyed richness and a touch of saffron or almond as the wine matures. The palate should be unctuous yet balanced by bright acidity, giving shape to the sweetness and carrying a long, polished finish."
     },
     {
       "id": 76,
@@ -1616,7 +1616,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Sauternes profile is likely here: ripe apricot, peach preserve, acacia honey and candied citrus over a thread of saffron and vanilla from élevage. The palate should be rich and unctuous yet kept in check by 2016’s freshness, with botrytis complexity, a supple mid-palate and a long, honeyed finish."
     },
     {
       "id": 77,
@@ -1637,7 +1637,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A pale, dry Provence rosé likely to show delicate strawberry, white peach and pink grapefruit, with a touch of citrus blossom and subtle herbal lift. The palate should be light to medium-bodied, crisp and cleanly textured, with bright acidity and a gently savoury, refreshing finish suited to aperitif or seafood service."
     },
     {
       "id": 78,
@@ -1658,7 +1658,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
+      "tasting_note": "A classic mature Sauternes profile is likely here: honeyed apricot, orange peel, saffron and candied citrus over subtle almond, wax and toasted brioche notes. The palate should be rich and layered yet still poised, with botrytis sweetness balanced by fresh acidity, leading to a long, gently savoury finish with hints of dried herbs and truffle."
     },
     {
       "id": 79,
@@ -1679,7 +1679,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
+      "tasting_note": "A classic Sauternes profile is likely here: layered apricot, candied citrus peel, saffron, honey and toasted almond, with the botrytis lending dried fruit depth rather than overt sweetness. On the palate, expect a rich, satin-textured wine with vivid acidity to keep it poised, finishing long, savoury and gently spiced, with hints of marmalade and crème brûlée."
     },
     {
       "id": 80,
@@ -1700,7 +1700,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
+      "tasting_note": "A classic Sauternes profile is likely here: apricot, quince, orange peel and acacia honey, with saffron, beeswax and a touch of botrytis spice. On the palate, expect a rich, layered texture balanced by firm acidity, keeping the sweetness poised rather than cloying. The finish should be long, polished and gently nutty, with enough freshness to carry the wine gracefully."
     },
     {
       "id": 81,
@@ -1721,7 +1721,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
+      "tasting_note": "A classic young Sauternes profile is likely here: apricot, candied citrus peel, saffron, acacia honey and a touch of botrytis spice, with the estate’s usual sense of precision beneath the richness. Expect a sumptuous, layered palate with creamy texture, bright balancing acidity and a long finish that should gradually turn to marmalade, toasted almond and subtle vanilla."
     },
     {
       "id": 82,
@@ -1742,7 +1742,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Beaucastel profile would be expected here: ripe black cherry, plum, garrigue, dried herbs and a savoury, gently gamey undertone, with a touch of pepper and earth. The palate is likely full-bodied and layered, yet kept in check by firm structure and fresh acidity, finishing with a dry, spicy, food-friendly grip."
     },
     {
       "id": 83,
@@ -1763,7 +1763,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
+      "tasting_note": "A serious, ageworthy Rhône white of great distinction, likely to show restrained apricot, quince and pear fruit over beeswax, almond, fennel and subtle smoky oak. The palate should be broad yet tightly composed, with a silken texture, firm acidity and a savoury, slightly saline line. With a little air, expect notes of honeyed herbs, spice and a long, mineral-tinged finish."
     },
     {
       "id": 84,
@@ -1784,7 +1784,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A serious Southern Rhône white is likely to show ripe pear, white peach, citrus peel and a touch of fennel or garrigue, with subtle honeyed breadth from the 2018 vintage. Expect a textured, medium-bodied palate balanced by fresh acidity, gentle phenolic grip and a savoury, slightly waxy finish rather than overt oak or exuberant fruit."
     },
     {
       "id": 85,
@@ -1805,7 +1805,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Marlborough Sauvignon Blanc profile: expect lifted aromas of gooseberry, lime zest, passion fruit and fresh-cut herbs, with a hint of elderflower. The palate is typically brisk and medium-bodied, showing bright acidity, a clean, dry core and a crisp, mouthwatering finish rather than overt richness."
     },
     {
       "id": 86,
@@ -1826,7 +1826,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Imposing depth, dark berries, polished tannins, and lingering smoke."
+      "tasting_note": "A serious Corton-Charlemagne from a top Domaine is likely to show restrained power rather than overt opulence: citrus oil, white peach, crushed stone, hazelnut and subtle reduction, with a faint smoky, struck-match edge. The palate should be concentrated and tightly coiled, with firm acidity, a broad but precise texture, and a long, savoury finish that suggests considerable ageing potential."
     },
     {
       "id": 87,
@@ -1847,7 +1847,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A Bordeaux-inspired Hawke’s Bay red, likely to show blackcurrant, plum and dried herb aromas with cedar, graphite and a touch of tobacco from bottle age. The palate should be medium-bodied and composed, with ripe but firm tannins, fresh acidity and a savoury, slightly earthy finish that favours balance and food rather than overt power."
     },
     {
       "id": 88,
@@ -1868,7 +1868,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A polished junmai daiginjo style, likely to show pristine aromas of pear, white peach, melon and subtle blossom, with a faint rice sweetness and delicate umami in the background. The palate should be silky and very pure, with fine acidity, a light, almost weightless texture, and a clean, precise finish that favours finesse over power."
     },
     {
       "id": 89,
@@ -1889,7 +1889,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A polished junmai daiginjo style, likely to show very pure aromas of pear, melon, white peach and subtle floral notes, with a faint rice sweetness and a touch of anise or fresh almond. The palate should be silken and finely etched, with restrained acidity, no obvious heat, and a clean, precise finish that feels delicate rather than weighty."
     },
     {
       "id": 90,
@@ -1910,7 +1910,7 @@
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
       "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
-      "tasting_note": "Imaginative cosmic aromatics with bright tang and a refined sparkle."
+      "tasting_note": "An imagined fine-wine Pinot Noir profile: expect lifted red cherry, wild strawberry and rose petal, with subtle spice, forest floor and a faint smoky edge. The palate would likely be medium-bodied and finely textured, with supple tannins, fresh acidity and a savoury, persistent finish that balances purity of fruit with a cool, polished frame."
     },
     {
       "id": 91,
@@ -1931,7 +1931,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A Cape Bordeaux-style blend from Stellenbosch, likely to show ripe blackcurrant, plum and dark cherry framed by cedar, graphite and a touch of dried herbs. Expect a medium to full-bodied palate with polished tannins, moderate oak seasoning and enough freshness to keep the finish savoury, structured and food-friendly rather than overtly opulent."
     },
     {
       "id": 92,
@@ -1952,7 +1952,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A refined ginjo style, likely to open with pear, green apple, white blossom and a touch of rice polish, perhaps edged by subtle melon and anise. The palate should be light to medium in body, very clean and finely textured, with poised acidity and a delicate, dry finish that favours precision over power."
     },
     {
       "id": 93,
@@ -1973,7 +1973,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Marlborough Sauvignon Blanc profile is likely here: grapefruit, lime zest, gooseberry and cut herbs, with a touch of passion fruit rather than overt sweetness. Expect a dry, medium-bodied palate with brisk acidity, a fine textural edge and a clean, savoury finish that may lean toward flint and fresh pea shoot rather than tropical exuberance."
     },
     {
       "id": 94,
@@ -1994,7 +1994,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
+      "tasting_note": "A poised, mature Champagne profile is likely here, with baked apple, pear skin, citrus peel and subtle brioche, almond and chalky nuances from bottle age. The palate should be broad yet taut, with creamy mousse, measured richness and a dry, savoury line through the finish. Expect a composed, gastronomic style rather than overtly exuberant fruit."
     },
     {
       "id": 95,
@@ -2015,7 +2015,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
+      "tasting_note": "A poised, vintage Champagne profile with ripe pear, white peach, citrus peel and subtle brioche, framed by almond, chalk and a faint smoky edge. The palate is layered and creamy rather than overtly forceful, with fine mousse, bright acidity and a discreet savoury depth. Expect a long, composed finish that balances richness with precision."
     },
     {
       "id": 96,
@@ -2036,7 +2036,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Tokaji Aszú profile is likely here: apricot, quince, orange peel and acacia honey, with saffron, dried pear and a touch of tea leaf as the wine opens. The palate should be lusciously sweet yet balanced by brisk acidity, giving a polished, layered texture and a clean, persistent finish rather than heaviness."
     },
     {
       "id": 97,
@@ -2057,7 +2057,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A poised, Mediterranean-style Viognier, likely to open with apricot, white peach, orange blossom and a touch of ripe pear, framed by subtle herbal and stony notes. On the palate it should be medium-bodied and supple rather than opulent, with enough freshness to keep the fruit in check and a gently textured, dry finish."
     },
     {
       "id": 98,
@@ -2078,7 +2078,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Vouvray moelleux profile: ripe pear, quince, yellow apple and acacia blossom, with hints of honey and lanolin. The palate is likely medium-bodied and silken, balancing generous sweetness with Chenin Blanc’s brisk acidity, so the wine should feel poised rather than heavy, finishing on citrus peel, wet stone and a lightly waxy note."
     },
     {
       "id": 99,
@@ -2099,7 +2099,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Chablis profile is likely here: lemon peel, green apple and white flowers, with a subtle hint of oyster shell and struck flint. The palate should be dry and taut, medium-bodied rather than broad, with brisk acidity and a clean, chalky finish that makes it especially suited to shellfish, goat’s cheese or simply as an aperitif."
     },
     {
       "id": 100,
@@ -2120,7 +2120,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
+      "tasting_note": "A poised Puligny-Montrachet in a richer 2018 register, likely to open with ripe pear, citrus oil, white flowers and a discreet hazelnut, toast and struck-stone nuance from élevage. The palate should be medium to full-bodied, layered and textural rather than lean, with ripe acidity, subtle creaminess and a long, savoury finish that balances generosity with Leflaive’s trademark precision."
     },
     {
       "id": 101,
@@ -2141,7 +2141,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Chablis profile is likely here: lemon peel, green apple and white flowers, with a subtle oyster-shell and flinty edge. On the palate, expect a dry, medium-light frame, brisk acidity and a clean, linear texture rather than overt richness. The finish should be crisp and savoury, making it well suited to shellfish, goat’s cheese or simply grilled fish."
     },
     {
       "id": 102,
@@ -2162,7 +2162,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Santorini Assyrtiko profile is likely here: lemon zest, green apple, white flowers and a subtle smoky, volcanic edge. The palate should be dry and taut, with brisk acidity, a firm, almost chalky texture and a savoury, saline finish that makes it especially suited to shellfish and grilled fish."
     },
     {
       "id": 103,
@@ -2183,7 +2183,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Alsace Riesling profile is likely here: lime zest, green apple, white peach and a touch of citrus blossom, with the domaine’s usual sense of depth and precision. The palate should be dry to very dry, medium-bodied and finely textured, with firm acidity, a subtle stony edge and a clean, persistent finish that makes it especially food-friendly."
     },
     {
       "id": 104,
@@ -2204,7 +2204,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A mature fortified Rivesaltes with an amber, oxidative profile: expect dried apricot, orange peel, toasted almond, caramel and a touch of coffee, lifted by walnut skin and warm spice. The palate should be silky and gently sweet, with preserved freshness, savoury depth and a long, nutty finish typical of well-aged Rancio-style wines."
     },
     {
       "id": 105,
@@ -2225,7 +2225,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Imposing depth, dark berries, polished tannins, and lingering smoke."
+      "tasting_note": "A serious Échézeaux from a warm, ripe 2015 vintage is likely to show deep black cherry, blackberry and plum fruit, with rose petal, spice, subtle earth and a touch of oak toast. The palate should be broad and layered rather than delicate, with polished tannins, ripe acidity and a long, savoury finish that balances richness with precision."
     },
     {
       "id": 106,
@@ -2246,7 +2246,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Quarts de Chaume profile is likely here: ripe quince, baked pear, acacia blossom and honeyed citrus, with a subtle saffron and lanolin edge as the 2017 vintage settles in. Expect a rich but poised palate, balancing sweetness with bright Chenin acidity, and a long, gently waxy finish."
     },
     {
       "id": 107,
@@ -2267,7 +2267,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Wachau Riesling profile is likely here: lime, green apple and white peach over subtle blossom and wet stone notes. The Federspiel level suggests a dry, medium-light palate with brisk acidity, a clean, linear texture and just enough mid-palate fruit to soften the edge. Expect a precise, savoury finish with good food-pairing versatility."
     },
     {
       "id": 108,
@@ -2288,7 +2288,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Mosel-style Kabinett profile is likely, though from Nahe: delicate lime, green apple and white peach over subtle herbal and floral notes, with a faint slatey edge. Expect a light-bodied, finely etched palate, gentle sweetness balanced by bright acidity, and a clean, mouthwatering finish that should make it especially versatile at the table."
     },
     {
       "id": 109,
@@ -2309,7 +2309,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Mosel Kabinett profile: delicate lime, green apple and white peach with a subtle floral lift and a faint slatey, smoky edge. The palate is light-bodied and finely textured, with a gentle sweetness balanced by bright acidity and low alcohol, finishing clean, precise and appetising rather than overtly rich."
     },
     {
       "id": 110,
@@ -2330,7 +2330,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A dry Riesling sparkling wine in the Mosel idiom, likely to open with green apple, lemon zest, white peach and a touch of floral lift, underpinned by fine autolytic notes and a subtle slatey edge. The palate should be brisk and precise, with a creamy mousse, racy acidity and a clean, mouthwatering finish."
     },
     {
       "id": 111,
@@ -2351,7 +2351,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Eiswein profile would likely combine concentrated pear, apricot and citrus peel with honeyed floral notes and a touch of white peach. Expect a silken, intensely sweet palate balanced by brisk acidity, giving clarity rather than heaviness, with a clean, lingering finish of candied fruit and light mineral tension."
     },
     {
       "id": 112,
@@ -2372,7 +2372,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A ripe Mendoza Malbec profile is likely, with black cherry, plum and blackberry framed by violet, cocoa and a touch of sweet spice from oak. Expect a medium-full palate with supple tannins, generous fruit concentration and enough fresh acidity to keep it balanced. The finish should be smooth, savoury and gently toasted rather than overtly heavy."
     },
     {
       "id": 113,
@@ -2393,7 +2393,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A youthful Falanghina from Feudi di San Gregorio is likely to show bright lemon, pear and white peach, with hints of acacia blossom and fennel. The palate should be medium-bodied and brisk, with clean, mouthwatering acidity, a lightly textured mid-palate and a dry, savoury finish that leans toward citrus peel and subtle stone-fruit persistence."
     },
     {
       "id": 114,
@@ -2414,7 +2414,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Valais Fendant profile is likely here: crisp pear, green apple and lemon zest, with subtle alpine flowers and a faint stony, chalky edge. The palate should be light to medium-bodied, dry and brisk, with clean, mouth-watering acidity and a supple, uncomplicated texture. Expect a fresh, direct finish suited to raclette, freshwater fish or simple mountain fare."
     },
     {
       "id": 115,
@@ -2435,7 +2435,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A serious vintage Franciacorta in a refined, Champagne-inspired style, likely to open with baked apple, pear skin, citrus peel and white flowers, with subtle brioche, almond and lees complexity from extended ageing. The palate should be dry and finely textured, with brisk acidity, creamy mousse and a savoury, persistent finish."
     },
     {
       "id": 116,
@@ -2456,7 +2456,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A polished non-vintage Franciacorta in the classic Ca’ del Bosco mould, likely to open with ripe pear, green apple, citrus peel and white flowers, framed by fine leesy notes of brioche and almond. The palate should be creamy yet brisk, with clean mousse, bright acidity and a dry, composed finish that makes it especially versatile at the table."
     },
     {
       "id": 117,
@@ -2477,7 +2477,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Wachau Grüner Veltliner profile is likely here: green pear, lime zest, white pepper and a touch of apricot kernel, with the Rotes Tor site lending a little more depth and savoury nuance. As a Federspiel, expect a dry, medium-light palate with brisk acidity, a fine textural grip and a clean, stony finish."
     },
     {
       "id": 118,
@@ -2498,7 +2498,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
+      "tasting_note": "A serious Barbaresco in a poised, classical register: expect red cherry, rose petal, anise and dried herbs, with subtle cedar and tobacco from élevage. The palate is likely medium-bodied but firmly structured, with fine-grained tannins, bright acidity and a savoury, truffle-tinged finish that should be gaining complexity with age rather than sheer power."
     },
     {
       "id": 119,
@@ -2519,7 +2519,7 @@
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
       "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
-      "tasting_note": "Imaginative cosmic aromatics with bright tang and a refined sparkle."
+      "tasting_note": "An imagined sparkling wine profile with lifted citrus peel, green apple and white blossom, perhaps edged by a faint brioche note from lees ageing. Expect a fine, persistent mousse, brisk acidity and a dry, focused palate with a clean, chalky finish, combining freshness and a touch of savoury complexity in a polished, modern style."
     },
     {
       "id": 120,
@@ -2540,7 +2540,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Côte-Rôtie profile from a respected northern Rhône producer: expect perfumed black cherry, blackberry, violet and cracked pepper, with a discreet smoky, bacon-fat savouriness in support. The palate is likely medium-bodied and finely textured, with ripe but fresh tannins, bright acidity and a polished, tapering finish that should balance fruit, spice and a subtle mineral edge."
     },
     {
       "id": 121,
@@ -2561,7 +2561,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Gevrey-Chambertin profile is likely here: dark cherry, wild strawberry, rose petal and subtle spice, with the old-vine material lending extra depth and concentration. Expect a supple but structured palate, fine-grained tannins and bright acidity, with a savoury, earthy finish that should be more poised than powerful in this vintage."
     },
     {
       "id": 122,
@@ -2582,7 +2582,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Alsace Gewürztraminer profile is likely here: rose petal, lychee, ginger, orange peel and a touch of spice, with Trimbach’s usual restraint keeping the aromatics in check. Expect a dry to off-dry palate, medium body and a firm, refreshing line of acidity, finishing clean rather than exuberant."
     },
     {
       "id": 123,
@@ -2603,7 +2603,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Alsace Gewürztraminer profile is likely here: rose petal, lychee, ripe apricot and ginger, with a touch of spice and citrus peel. Zind-Humbrecht’s style often brings a fuller, more textural palate, so expect a rounded, gently oily mouthfeel balanced by firm acidity and a dry, savoury finish rather than overt sweetness."
     },
     {
       "id": 124,
@@ -2624,7 +2624,7 @@
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
       "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
-      "tasting_note": "Imaginative cosmic aromatics with bright tang and a refined sparkle."
+      "tasting_note": "An imagined profile of a far-future Merlot: expect ripe black cherry, plum compote and dried violet, with hints of cedar, graphite and sweet spice. On the palate it would likely be medium to full-bodied, supple in texture and polished rather than heavy, with rounded tannins, freshening acidity and a savoury, gently mineral finish."
     },
     {
       "id": 125,
@@ -2645,7 +2645,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A poised Godello likely to show ripe pear, lemon peel and white peach, with subtle floral notes and a faint almond edge. The palate should be medium-bodied and textural rather than overtly aromatic, balanced by bright acidity and a gently savoury, stony finish. A polished, food-friendly white with quiet depth and good definition."
     },
     {
       "id": 126,
@@ -2666,7 +2666,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A serious Kammern Grüner Veltliner from Heiligenstein is likely to show white pepper, green pear, citrus peel and a faint herbal edge, with the site’s warm, sandy character lending a little breadth beneath the freshness. Expect a dry, medium-bodied palate with brisk acidity, a subtle stony, savoury line and a clean, persistent finish."
     },
     {
       "id": 127,
@@ -2687,7 +2687,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A serious Kamptal Grüner Veltliner from the Heiligenstein is likely to show ripe pear, yellow apple, white pepper and a touch of herbal spice, with a subtle smoky, stony edge from the site. Expect a dry, medium-bodied palate with firm acidity, a fine textural grip and a savoury, persistent finish that should be just beginning to soften in 2018."
     },
     {
       "id": 128,
@@ -2708,7 +2708,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A polished junmai ginjo style, likely to show delicate pear, green apple and white flower aromas with a subtle rice sweetness beneath. The palate should be silky and finely textured, with clean, measured acidity, a faint umami edge and a dry, graceful finish that makes it especially versatile at the table."
     },
     {
       "id": 129,
@@ -2729,7 +2729,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A polished, dry honjozo style likely to open with pear, green apple, white flowers and a touch of steamed rice, with a faint savoury edge from the added spirit. The palate should be clean and supple rather than weighty, with brisk acidity, gentle umami and a crisp, refreshing finish that suits seafood and lightly seasoned dishes."
     },
     {
       "id": 130,
@@ -2750,7 +2750,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A refined junmai ginjo style is likely to open with pear, white peach and melon, lifted by jasmine, rice blossom and a faint aniseed note. The palate should be silky and medium-light in body, with clean, polished acidity and a discreet umami core rather than overt sweetness. Expect a graceful, dry finish with subtle savoury length."
     },
     {
       "id": 131,
@@ -2771,7 +2771,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A clean, polished junmai style likely to show soft pear and apple fruit, a touch of rice sweetness, and discreet floral notes, with a savoury edge and gentle umami on the palate. Expect a supple, rounded texture, fresh but not sharp acidity, and a calm, lightly saline finish that makes it versatile at the table."
     },
     {
       "id": 132,
@@ -2792,7 +2792,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A poised, cool-climate Chardonnay profile is likely here: citrus peel, green apple and white peach framed by subtle struck-match reduction and a touch of toasted almond. The palate should be medium-bodied and finely textured, with bright acidity, restrained oak and a taut, savoury finish that favours precision over richness."
     },
     {
       "id": 133,
@@ -2813,7 +2813,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Humagne Rouge profile would be medium-bodied and savoury, with red cherry, wild berry and dried alpine herb notes, perhaps a touch of pepper and earthy undergrowth. Expect a supple but firm palate, moderate tannins and bright acidity, finishing with a slightly rustic, food-friendly grip rather than overt richness."
     },
     {
       "id": 134,
@@ -2834,7 +2834,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A rich, dessert-style ice cider likely to show concentrated baked apple, pear compote and honeyed citrus, with a lifted floral edge and a touch of spice. The palate should be luscious yet balanced by brisk acidity, giving definition to the sweetness and a clean, gently saline finish rather than cloying weight."
     },
     {
       "id": 135,
@@ -2855,7 +2855,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A polished junmai daiginjo style is likely to show delicate pear, white peach and melon, lifted by jasmine and a touch of rice sweetness. The palate should be silky and finely textured, with clean, precise acidity, subtle umami depth and a dry, graceful finish rather than overt richness."
     },
     {
       "id": 136,
@@ -2876,7 +2876,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A poised white Burgundy profile is likely here, with citrus peel, green apple and white peach lifted by subtle floral notes and a discreet touch of hazelnut or lees. The palate should be medium-bodied and finely textured, with bright acidity, a gentle roundness from the warm 2018 vintage, and a clean, savoury finish."
     },
     {
       "id": 137,
@@ -2897,7 +2897,7 @@
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
       "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
-      "tasting_note": "Imaginative cosmic aromatics with bright tang and a refined sparkle."
+      "tasting_note": "An imagined fine-wine profile of Pinot Noir from a far-future, otherworldly setting: expect lifted red cherry, wild strawberry and rose petal, with subtle spice, forest floor and a faint smoky edge. The palate would likely be medium-bodied and finely etched, with supple tannins, fresh acidity and a poised, savoury finish rather than overt power."
     },
     {
       "id": 138,
@@ -2918,7 +2918,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A serious Naoussa Xinomavro, likely to show dried cherry, red plum, tomato leaf, black olive and rose petal, with a savoury, earthy undertow. The 2016 vintage should now be moving into a more complex phase, with firm but resolved tannins, bright acidity and a medium-bodied, food-friendly palate finishing on spice, leather and dried herb notes."
     },
     {
       "id": 139,
@@ -2939,7 +2939,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Imposing depth, dark berries, polished tannins, and lingering smoke."
+      "tasting_note": "A profound, tightly composed Champagne with the depth and authority expected of Krug’s single-vineyard Pinot Noir from Ambonnay. Expect layered aromas of red cherry, wild strawberry, citrus peel, brioche and toasted almond, with hints of spice and chalk. The palate is concentrated yet finely etched, with creamy mousse, vivid acidity and a long, savoury finish that should unfold with remarkable complexity."
     },
     {
       "id": 140,
@@ -2960,7 +2960,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Imposing depth, dark berries, polished tannins, and lingering smoke."
+      "tasting_note": "A grand, tightly focused Champagne likely to combine lemon zest, white peach, toasted brioche and chalky restraint, with the 2006 vintage lending a little more breadth and ripeness than usual. Expect a layered palate of citrus oil, orchard fruit and subtle hazelnut, carried by fine mousse, incisive acidity and a long, savoury, mineral-tinged finish."
     },
     {
       "id": 141,
@@ -2981,7 +2981,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Imposing depth, dark berries, polished tannins, and lingering smoke."
+      "tasting_note": "A very fine Blanc de Blancs Champagne profile is likely here: lemon zest, white peach, green apple and subtle almond over chalk, brioche and a faint smoky edge. The palate should be taut and layered, with pinpoint mousse, racy acidity and impressive concentration, finishing long, dry and finely saline with a poised, mineral drive."
     },
     {
       "id": 142,
@@ -3002,7 +3002,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A serious Greek red from Drama is likely to be Cabernet-led or Bordeaux-inspired, with ripe blackcurrant, plum and dried herb notes framed by cedar, graphite and a touch of Mediterranean spice. Expect a medium to full-bodied palate with firm but polished tannins, fresh acidity and a savoury, slightly earthy finish that should suit grilled meats or game."
     },
     {
       "id": 143,
@@ -3023,7 +3023,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A polished junmai daiginjo style, likely to open with pear, white peach and melon, lifted by subtle blossom and a touch of rice sweetness. The palate should be silky and finely textured, with clean, measured acidity and a discreet savoury edge that keeps it poised rather than overtly fruity. Expect a graceful, dry finish with quiet length."
     },
     {
       "id": 144,
@@ -3044,7 +3044,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A polished ginjo style, likely to open with pear, green apple and white blossom, alongside a touch of rice sweetness and subtle melon. The palate should be light to medium-bodied, very clean and finely textured, with brisk acidity and a delicate, dry finish that keeps the fruit precise rather than exuberant."
     },
     {
       "id": 145,
@@ -3065,7 +3065,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A serious Friulian white blend, likely to show ripe citrus, white peach and pear, with hints of acacia, herbs and a touch of almond from bottle age. The palate should be medium-bodied and textural, balancing generous fruit with brisk acidity and a fine, savoury edge, finishing cleanly with subtle spice and stone-fruit persistence."
     },
     {
       "id": 146,
@@ -3086,7 +3086,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Moulin-à-Vent from a warm 2018 vintage is likely to show ripe black cherry, raspberry compote and violet, with a touch of spice and subtle earth. Expect a medium-bodied palate with firmer tannic grip than many Beaujolais, balanced by fresh acidity and a savoury, slightly mineral finish that should suit game, poultry or mushroom dishes."
     },
     {
       "id": 147,
@@ -3107,7 +3107,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
+      "tasting_note": "A poised, mature Cristal profile is likely to combine citrus peel, white peach and orchard fruit with toasted brioche, almond and subtle honeyed notes. The palate should be broad yet finely etched, with creamy mousse, taut acidity and a chalky, savoury line through the finish. Expect impressive depth and precision rather than overt richness."
     },
     {
       "id": 148,
@@ -3128,7 +3128,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
+      "tasting_note": "A serious vintage Champagne likely to combine ripe citrus, white peach and orchard fruit with toasted brioche, almond and subtle floral notes. The palate should be broad yet precise, with fine mousse, layered depth and a firm line of acidity carrying through to a long, chalk-tinged finish. Expect a poised, gastronomic style rather than overt opulence."
     },
     {
       "id": 149,
@@ -3149,7 +3149,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Loupiac profile would likely show ripe apricot, orange peel and acacia blossom, with a touch of honeyed botrytis complexity. The palate should be medium-bodied and gently unctuous, balanced by bright acidity and a clean, citrus-edged finish, making it more poised and food-friendly than overtly opulent."
     },
     {
       "id": 150,
@@ -3170,7 +3170,7 @@
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
       "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
-      "tasting_note": "Imaginative cosmic aromatics with bright tang and a refined sparkle."
+      "tasting_note": "An imagined fine-wine Chardonnay profile: expect ripe citrus, white peach and baked apple layered with subtle vanilla, toasted almond and a faint smoky edge. The palate would likely be medium to full-bodied, with creamy texture balanced by fresh acidity and a polished, gently savoury finish, suggesting a serious, oak-influenced style rather than overt richness."
     },
     {
       "id": 151,
@@ -3191,7 +3191,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic dry Sercial profile is likely here: lifted citrus peel, green apple and almond over subtle floral notes, with the characteristic tang of sea spray and a faint oxidative edge. On the palate it should be taut and medium-bodied, with brisk acidity, a dry, savoury core and a clean, persistent finish that makes it especially food-friendly."
     },
     {
       "id": 152,
@@ -3212,7 +3212,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A serious Mendoza Malbec likely showing ripe black cherry, plum and blackberry framed by violet, cocoa and a touch of sweet spice from oak. Expect a full-bodied palate with polished tannins, generous mid-palate weight and enough freshness to keep it balanced, finishing with dark fruit, savoury herbs and a firm, persistent close."
     },
     {
       "id": 153,
@@ -3233,7 +3233,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Mosel Spätlese profile: expect lime, green apple and white peach lifted by slate, fennel and a touch of floral perfume. The palate is likely to balance delicate sweetness with racy acidity, giving a sleek, lightly glossy texture and a precise, mouthwatering finish rather than overt weight."
     },
     {
       "id": 154,
@@ -3254,7 +3254,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Imposing depth, dark berries, polished tannins, and lingering smoke."
+      "tasting_note": "A serious Meursault of great concentration, likely to open with ripe citrus, pear skin, white flowers and struck flint, with subtle hazelnut and toast from élevage. The palate should be broad and layered yet tightly composed, with firm acidity, chalky extract and a long, savoury finish that balances richness with precision."
     },
     {
       "id": 155,
@@ -3275,7 +3275,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
+      "tasting_note": "A classic Meursault profile is likely here: ripe pear, yellow apple and white peach, with hazelnut, subtle toast and a touch of citrus peel. Les Narvaux often brings a little more tension and stony cut than the village core, so expect a medium-bodied palate with creamy texture, bright acidity and a dry, savoury finish."
     },
     {
       "id": 156,
@@ -3296,7 +3296,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A fragrant Moscato d’Asti profile, likely to open with white peach, orange blossom, pear and a touch of sage, lifted by gentle spritz. The palate should be light, off-dry and supple, with bright acidity balancing the sweetness and keeping the finish clean, aromatic and refreshingly crisp rather than heavy."
     },
     {
       "id": 157,
@@ -3317,7 +3317,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "Expect a fragrant, lightly sparkling Moscato d’Asti with peach, apricot, orange blossom and grape-skin perfume, lifted by a touch of sage and citrus zest. The palate is likely to be gently sweet, low in alcohol and delicately frothy, with bright acidity keeping it poised rather than cloying. Clean, aromatic and refreshing, with a soft, fruity finish."
     },
     {
       "id": 158,
@@ -3338,7 +3338,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A fragrant Moscato d’Asti profile of peach, apricot, orange blossom and grape must, with a touch of pear and fresh herbs. Lightly sparkling and gently sweet, it should feel airy and supple on the palate, balanced by bright acidity and a clean, aromatic finish rather than overt weight or complexity."
     },
     {
       "id": 159,
@@ -3359,7 +3359,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A lightly sparkling Moscato d’Asti in a classic, fragrant style: expect peach, apricot, orange blossom and grape-skin aromatics, with a touch of pear and honeyed citrus. The palate should be gently sweet, low in alcohol and finely frothy, balanced by bright acidity and a clean, refreshing finish rather than weight or complexity."
     },
     {
       "id": 160,
@@ -3380,7 +3380,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Moscato d’Asti profile is likely here: fragrant peach, apricot, orange blossom and grape skin, with a touch of sage and honeyed citrus. Light-bodied and gently frizzante, it should feel supple and airy rather than sweetly heavy, with bright acidity keeping the finish clean, aromatic and refreshing."
     },
     {
       "id": 161,
@@ -3401,7 +3401,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A mature, elegant Champagne rosé likely to show red berry and orchard-fruit notes, with rose petal, citrus peel and a touch of brioche from bottle age. The palate should be fine-boned rather than powerful, with creamy mousse, brisk acidity and a dry, savoury finish that may have begun to pick up subtle nutty complexity."
     },
     {
       "id": 162,
@@ -3422,7 +3422,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A poised Stellenbosch Chenin Blanc likely to show ripe pear, yellow apple and citrus peel, with a touch of white blossom and subtle lanolin. The palate should be medium-bodied and textural, balanced by bright acidity and a gently savoury, stony edge, finishing cleanly with good freshness and quiet persistence."
     },
     {
       "id": 163,
@@ -3443,7 +3443,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Muscat de Beaumes-de-Venise profile is likely here: orange blossom, apricot, white peach and grape skin aromatics, with a touch of honeyed spice. On the palate, expect a supple, gently sweet texture balanced by bright acidity, keeping it lively rather than cloying. The finish should be fragrant, clean and lightly grapey, making it well suited to fruit desserts or blue cheese."
     },
     {
       "id": 164,
@@ -3464,7 +3464,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Muscat de Rivesaltes profile is likely here: fragrant orange blossom, apricot, white peach and grape skin, with a touch of citrus peel and honeyed lift. Expect a supple, gently sweet palate balanced by fresh acidity, keeping the wine lively rather than heavy, and finishing on candied citrus and a lightly floral, aromatic note."
     },
     {
       "id": 165,
@@ -3485,7 +3485,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A sweet Muscat from Samos is likely to show lifted orange blossom, apricot, candied citrus peel and honeyed grape aromas, with a touch of dried herbs and tea as it ages. Expect a lush, viscous palate balanced by bright acidity, keeping the sweetness in check and finishing with a clean, gently nutty, citrus-inflected persistence."
     },
     {
       "id": 166,
@@ -3506,7 +3506,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Pfalz Auslese profile, likely combining ripe apricot, yellow plum and citrus peel with floral lift and a touch of honeyed richness. Rieslaner should bring keen acidity and a precise, lightly oily texture, keeping the sweetness in check. Expect a clean, poised finish with stone-fruit persistence and a subtle savoury edge."
     },
     {
       "id": 167,
@@ -3527,7 +3527,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
+      "tasting_note": "A rich, polished Napa Chardonnay likely to show ripe pear, baked apple and citrus oil, with notes of toasted almond, vanilla and subtle brioche from oak and lees. The palate should be broad and creamy yet kept in check by fresh acidity, finishing with spice, gentle toast and a clean, lingering fruit core."
     },
     {
       "id": 168,
@@ -3548,7 +3548,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Pouilly-Fumé profile is likely here: restrained citrus and white peach, with elderflower, gooseberry and a subtle smoky, flinty edge. On the palate, expect a dry, medium-bodied Sauvignon Blanc with crisp acidity, a fine chalky texture and a clean, savoury finish that should suit shellfish, goat’s cheese or simply grilled fish."
     },
     {
       "id": 169,
@@ -3569,7 +3569,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Sancerre profile is likely here: citrus peel, green apple and white peach, with elderflower and a subtle flinty edge. On the palate, expect a dry, medium-light frame, brisk acidity and a clean, focused texture rather than overt richness. The finish should be crisp and savoury, with a faint saline note and good food-friendly precision."
     },
     {
       "id": 170,
@@ -3590,7 +3590,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A serious Hermitage Syrah likely to be deep and structured, with black cherry, blackberry, violet and peppery spice over smoked meat, olive tapenade and a touch of cedar. The palate should be full-bodied and firmly framed, with ripe tannins, measured oak and a savoury, mineral edge. In 2015, expect impressive concentration and a long, brooding finish."
     },
     {
       "id": 171,
@@ -3611,7 +3611,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A deeply mature Pedro Ximénez in the classic Toro Albalá style, likely offering intense aromas of raisin, fig, date paste, molasses and walnut, with lifted notes of coffee, cocoa, orange peel and polished wood. The palate should be dense, silky and unctuous yet balanced by bright acidity, finishing long with caramelised fruit, spice and a savoury, nutty edge."
     },
     {
       "id": 172,
@@ -3632,7 +3632,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A rich, sweet Pedro Ximénez style is likely to show deep aromas of raisins, dates, figs, molasses and coffee, with hints of cocoa, walnut and orange peel. The palate should be dense and unctuous yet balanced by a thread of acidity, finishing long with treacle, dried fruit and a savoury, lightly bitter edge."
     },
     {
       "id": 173,
@@ -3653,7 +3653,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A mature, richly concentrated Pedro Ximénez likely to show layers of raisined fig, date, molasses, coffee and toasted nuts, with lifted notes of orange peel, cocoa and dried flowers. The palate should be unctuous yet balanced by fresh acidity, finishing long, warming and savoury with a polished, nutty persistence."
     },
     {
       "id": 174,
@@ -3674,7 +3674,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Barossa-style Shiraz profile is likely here, with ripe blackberry, plum and dark cherry framed by liquorice, cocoa and a touch of black pepper. Expect a full-bodied palate with supple but present tannins, generous mid-palate weight and a polished, gently oaked finish that should retain enough freshness to keep the wine balanced rather than heavy."
     },
     {
       "id": 175,
@@ -3695,7 +3695,7 @@
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
       "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
-      "tasting_note": "Imaginative cosmic aromatics with bright tang and a refined sparkle."
+      "tasting_note": "An imagined fine-wine Riesling profile: lifted lime zest, green apple and white peach over a faint smoky, flinty edge, with a suggestion of dried herbs and citrus blossom. Expect a taut, dry palate with incisive acidity, a sleek, mineral-leaning texture and a precise, mouth-watering finish that would suit shellfish or delicate Asian dishes."
     },
     {
       "id": 176,
@@ -3716,7 +3716,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A serious Soave Classico from a warm vintage, likely to show ripe pear, yellow apple, citrus peel and almond blossom, with a subtle hint of honeyed richness from the La Rocca site. The palate should be medium-bodied and textural, balanced by firm acidity and a gently savoury, stony finish rather than overt opulence."
     },
     {
       "id": 177,
@@ -3737,7 +3737,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
+      "tasting_note": "A poised Chassagne-Montrachet in the Pierre-Yves Colin-Morey mould is likely to show restrained white peach, pear and citrus peel, with subtle hazelnut, struck match and light toast from élevage. The palate should be taut and finely textured, combining ripe fruit with bright acidity and a chalky, savoury line through the finish."
     },
     {
       "id": 178,
@@ -3758,7 +3758,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A poised Friulian Pinot Grigio, likely to offer pear, white peach, lemon zest and a touch of almond blossom, with the variety’s faint coppery edge kept in check by cool, precise fruit. The palate should be medium-bodied and textural rather than simple, with brisk acidity, a clean, savoury line and a dry, gently stony finish."
     },
     {
       "id": 179,
@@ -3779,7 +3779,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A serious Alsace Pinot Gris is likely to show ripe pear, yellow apple, quince and a touch of smoke or spice, with the domaine’s usual sense of texture and precision. Expect a broad, gently oily palate balanced by firm acidity, a dry, savoury edge and a clean, persistent finish rather than overt sweetness."
     },
     {
       "id": 180,
@@ -3800,7 +3800,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A serious Alsace Pinot Gris likely to show ripe pear, quince, yellow apple and a touch of smoke, with subtle spice and a faint waxy richness from the Clos Windsbuhl site. The palate should be dry to off-dry in impression, broad yet finely etched, with brisk acidity, a savoury, stony edge and a composed, persistent finish."
     },
     {
       "id": 181,
@@ -3821,7 +3821,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A likely dry, medium-bodied Pinot Gris in a ripe Oregon style, with pear, white peach, lemon zest and a touch of melon on the nose, perhaps framed by subtle floral notes. The palate should be supple and rounded, balanced by bright acidity and a clean, gently stony finish, making it a straightforward, food-friendly white rather than a highly complex one."
     },
     {
       "id": 182,
@@ -3842,7 +3842,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A poised Oregon Pinot Noir in a more mature phase, likely offering red cherry, wild strawberry, rose petal and subtle forest floor notes, with a touch of spice and cedar from careful élevage. The palate should be medium-bodied and supple, with fine-grained tannins, fresh acidity and a polished, savoury finish rather than overt power."
     },
     {
       "id": 183,
@@ -3863,7 +3863,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A poised Dundee Hills Pinot Noir in a restrained, Burgundian-leaning style, likely offering red cherry, wild strawberry, rose petal and a touch of forest floor, with subtle spice and fine oak in support. The palate should be medium-bodied and supple, with bright acidity, polished tannins and a savoury, gently earthy finish rather than overt ripeness."
     },
     {
       "id": 184,
@@ -3884,7 +3884,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A restrained Bourgogne Pinot Noir profile is likely here: red cherry, wild strawberry and a touch of rose petal, with subtle earth and light spice in the background. The palate should be medium-bodied and supple, with fine tannins, fresh acidity and a savoury, lightly mineral finish rather than overt power or oak."
     },
     {
       "id": 185,
@@ -3905,7 +3905,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A poised, Alpine-leaning Pinot Noir likely to offer red cherry, wild strawberry and rose petal, with a faint earthy, herbal edge. The palate should be medium-bodied and finely textured rather than powerful, with bright acidity, supple tannins and a savoury, slightly stony finish that keeps the wine fresh and food-friendly."
     },
     {
       "id": 186,
@@ -3926,7 +3926,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A polished Oregon Pinot Noir in a ripe but restrained style, likely offering red cherry, wild strawberry, rose petal and a touch of forest floor, with subtle spice and light toast from élevage. The palate should be medium-bodied and supple, with fine-grained tannins, fresh acidity and a silky, composed finish rather than overt power."
     },
     {
       "id": 187,
@@ -3947,7 +3947,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Imposing depth, dark berries, polished tannins, and lingering smoke."
+      "tasting_note": "A serious Echézeaux from DRC is likely to combine ripe black cherry, wild strawberry and redcurrant with rose petal, spice, subtle earth and a faint smoky reduction. The palate should be layered yet poised, with fine-grained tannins, bright acidity and a silky, caressing texture rather than overt weight. Expect a long, savoury finish with mineral detail and impressive precision."
     },
     {
       "id": 188,
@@ -3968,7 +3968,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Imposing depth, dark berries, polished tannins, and lingering smoke."
+      "tasting_note": "A serious Échézeaux from a warm, ripe 2015 vintage would likely combine black cherry, wild strawberry and plum with rose petal, spice, and a subtle earthy, sous-bois edge. Expect a supple but concentrated palate, finely etched tannins, and impressive persistence, with the DRC signature of precision and perfume keeping the richness in check."
     },
     {
       "id": 189,
@@ -3989,7 +3989,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A ripe, polished Russian River Valley Pinot Noir is likely to offer dark cherry, raspberry compote and rose petal, with hints of baking spice, cola and subtle toast from oak. The palate should be supple and medium-bodied, with fine-grained tannins, generous fruit and enough freshness to keep it poised, finishing with savoury spice and a touch of earth."
     },
     {
       "id": 190,
@@ -4010,7 +4010,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A polished Sicilian Chardonnay likely to show ripe citrus, white peach and a touch of melon, with subtle vanilla, toasted almond and gentle lees complexity from careful élevage. The palate should be medium-bodied and supple, balancing generous fruit with fresh acidity and a discreet savoury edge, finishing cleanly with a lightly creamy, food-friendly impression."
     },
     {
       "id": 191,
@@ -4031,7 +4031,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic vintage Champagne profile: poised aromas of baked apple, pear skin, citrus peel and white flowers, with a discreet biscuity note from time on lees. The palate is brisk and finely textured, combining creamy mousse with taut acidity and a dry, chalky finish. Likely to be elegant rather than overtly powerful, with good gastronomic appeal."
     },
     {
       "id": 192,
@@ -4052,7 +4052,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Pomerol profile would likely show ripe plum, black cherry and cedar, with hints of truffle, cocoa and damp earth as it opens. The 2016 vintage should bring polished tannins, supple mid-palate depth and well-judged freshness, giving the wine a rounded but composed feel. Expect a savoury, persistent finish rather than overt power."
     },
     {
       "id": 193,
@@ -4073,7 +4073,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Pomerol profile is likely here: ripe plum, black cherry and damson framed by cedar, cocoa and a touch of truffle. In 2016, expect supple Merlot-led fruit with polished tannins, medium to full body and a savoury, gently earthy finish, with enough freshness to keep the wine poised rather than heavy."
     },
     {
       "id": 194,
@@ -4094,7 +4094,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A serious Priorat blend is likely to show ripe black cherry, plum and blackberry, lifted by violet, Mediterranean herbs and a touch of graphite or warm stone. The palate should be full-bodied and concentrated, with firm but polished tannins, fresh acidity and a savoury, mineral-tinged finish that balances the wine’s natural richness."
     },
     {
       "id": 195,
@@ -4115,7 +4115,7 @@
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
       "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
-      "tasting_note": "Imaginative cosmic aromatics with bright tang and a refined sparkle."
+      "tasting_note": "An imagined fine-wine Chardonnay profile: expect restrained citrus and white peach on the nose, with subtle hazelnut, struck flint and a faint creamy lees note. The palate would likely be medium to full-bodied, taut rather than opulent, with brisk acidity, a polished texture and a dry, composed finish carrying citrus peel and savoury toast."
     },
     {
       "id": 196,
@@ -4136,7 +4136,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Imposing depth, dark berries, polished tannins, and lingering smoke."
+      "tasting_note": "A serious white Burgundy of great precision and depth, likely to show white peach, citrus oil, pear and subtle hazelnut over a discreetly smoky, chalk-tinged frame. The palate should be concentrated yet finely etched, with layered texture, bright acidity and a long, savoury finish that balances richness with tension. In 2016, expect early complexity without losing the wine’s underlying poise and drive."
     },
     {
       "id": 197,
@@ -4157,7 +4157,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A polished Napa-style Sauvignon Blanc is likely to offer grapefruit, lime zest, white peach and a touch of gooseberry, with subtle herbal notes and a faint floral lift. Expect a supple, medium-bodied palate with bright acidity, a rounded texture from careful élevage, and a clean, dry finish that balances freshness with a little mid-palate breadth."
     },
     {
       "id": 198,
@@ -4178,7 +4178,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic 20-year tawny profile is likely here: dried apricot, fig, orange peel, toasted almond and caramelised walnut, with hints of cedar, tea leaf and spice. The palate should be silky and medium-bodied, balancing mellow sweetness with fresh acidity and a savoury, nutty edge. Expect a polished, persistent finish with fine oxidative complexity rather than overt richness."
     },
     {
       "id": 199,
@@ -4199,7 +4199,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A poised, off-dry style of Riesling is likely here, with lime, green apple, white peach and a touch of jasmine on the nose, underpinned by a faint petrol note as it opens. The palate should be sleek and focused, balancing ripe fruit with bright acidity and a subtle sweetness, finishing cleanly with a stony, mouthwatering edge."
     },
     {
       "id": 200,
@@ -4220,7 +4220,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic dry Alsace Riesling profile is likely here: lime zest, green apple, white peach and subtle floral notes, with a touch of wet stone and gentle spice. The palate should be taut and precise, medium-bodied rather than weighty, with bright acidity and a fine, chalky texture. Expect a clean, persistent finish with savoury citrus grip."
     },
     {
       "id": 201,
@@ -4241,7 +4241,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Mosel Kabinett profile: delicate lime, green apple and white peach, with a faint floral note and the slatey, smoky edge suggested by the Blue Slate designation. Light-bodied and finely etched, it should balance a touch of residual sweetness with brisk acidity, finishing clean, juicy and appetising rather than overtly rich."
     },
     {
       "id": 202,
@@ -4262,7 +4262,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A serious Mosel Riesling likely to combine lime, green apple and white peach with subtle floral and herbal notes, framed by the slatey, smoky character of the steep Erdener Prälat site. Expect a concentrated yet finely etched palate, bright acidity and a touch of residual sweetness, finishing long, precise and savoury."
     },
     {
       "id": 203,
@@ -4283,7 +4283,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
+      "tasting_note": "A classic Kabinett profile from Scharzhofberger is likely to be finely etched and delicately sweet, with lime, green apple, white peach and a hint of jasmine or slatey reduction on the nose. The palate should be light-bodied yet precise, balancing bright acidity with a touch of residual sugar, finishing clean, racy and subtly spicy rather than overtly powerful."
     },
     {
       "id": 204,
@@ -4304,7 +4304,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic dry Alsace Riesling profile is likely here: lime zest, green apple, white peach and subtle floral notes, with the Trimbach house style bringing a taut, linear frame. Expect a firm, mouth-watering acidity, a dry, chalky texture and a savoury, stony finish that should be gaining a little honeyed complexity with age while remaining precise and focused."
     },
     {
       "id": 205,
@@ -4325,7 +4325,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic dry Alsace Riesling profile is likely here: lime zest, green apple, white peach and subtle floral notes, with the Trimbach house style bringing tautness and a faint smoky, stony edge. The palate should be concentrated yet restrained, with brisk acidity, a fine chalky texture and a long, savoury finish that suggests excellent development potential."
     },
     {
       "id": 206,
@@ -4346,7 +4346,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Rioja Reserva profile is likely here: ripe red cherry, plum and dried strawberry framed by cedar, tobacco leaf, vanilla and sweet spice from oak ageing. The palate should be medium-bodied and polished, with supple tannins, fresh acidity and a savoury, gently earthy finish that reflects the wine’s maturity without losing its core fruit."
     },
     {
       "id": 207,
@@ -4367,7 +4367,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A mature Rioja Reserva from Roda is likely to show a polished, modern profile: dried cherry, plum skin, cedar, sweet spice and a touch of tobacco over a faint balsamic lift. The palate should be medium-bodied and supple, with resolved tannins, fresh but integrated acidity, and a savoury, gently earthy finish rather than overt power."
     },
     {
       "id": 208,
@@ -4388,7 +4388,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A polished Rioja Reserva in a modern, restrained style, likely offering ripe red cherry, plum skin, dried herbs and cedar, with a touch of vanilla and spice from oak. The palate should be medium-bodied and supple, with fine-grained tannins, fresh acidity and a savoury, gently earthy finish that suggests good balance rather than sheer power."
     },
     {
       "id": 209,
@@ -4409,7 +4409,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Napa-style Fumé Blanc profile is likely here: ripe grapefruit, lime zest, gooseberry and a touch of white peach, with subtle herbaceous notes and a gentle smoky, toasty edge from oak. The palate should be medium-bodied and supple, with bright acidity, a rounded texture and a clean, dry finish that keeps the fruit in balance."
     },
     {
       "id": 210,
@@ -4430,7 +4430,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A pale, dry Provence rosé in a polished, crowd-pleasing style, likely to offer white peach, pink grapefruit, wild strawberry and a hint of citrus blossom. The palate should be light to medium-bodied, crisp and supple, with clean acidity, a faint creamy texture and a dry, refreshing finish suited to aperitifs and simple Mediterranean dishes."
     },
     {
       "id": 211,
@@ -4451,7 +4451,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A serious Bandol rosé in the classic mould, likely to offer pale strawberry, blood orange, pink grapefruit and a touch of Provençal herbs, with a faint savoury edge from Mourvèdre. The palate should be dry, textured and firmly structured rather than simple, with bright acidity, a little grip and a long, food-friendly finish."
     },
     {
       "id": 212,
@@ -4472,7 +4472,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic late-harvest Tokaji profile is likely to show ripe apricot, pear compote, acacia blossom and a touch of honeyed citrus, with the botrytis element adding subtle spice and dried fruit complexity rather than heaviness. Expect a silky, medium-sweet palate balanced by bright acidity, finishing cleanly with a lightly waxy, gently savoury edge."
     },
     {
       "id": 213,
@@ -4493,7 +4493,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A serious Stellenbosch Cabernet Sauvignon is likely to show cassis, black cherry and plum, with cedar, tobacco leaf and a touch of graphite from oak and site. Expect a medium-full palate with firm, ripe tannins, fresh acidity and a savoury, structured finish that should be beginning to soften with a few years in bottle."
     },
     {
       "id": 214,
@@ -4514,7 +4514,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A serious Saint-Émilion with Cabernet Franc-led lift, likely offering blackcurrant, plum skin, cedar, graphite and subtle tobacco over a polished, medium-full palate. The 2015 vintage should bring ripe fruit and supple tannins, balanced by fresh acidity and a savoury, finely textured finish with enough structure to age gracefully."
     },
     {
       "id": 215,
@@ -4535,7 +4535,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Sancerre profile is likely here: crisp citrus, green apple and white peach framed by elderflower, cut herbs and a subtle smoky, chalky edge. Domaine Vacheron’s style usually suggests a taut, finely etched palate with bright acidity, moderate concentration and a dry, stony finish that should suit shellfish, goat’s cheese and other clean, savoury dishes."
     },
     {
       "id": 216,
@@ -4556,7 +4556,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A poised Sancerre with the restrained, mineral-tinged profile expected from Domaine Vacheron. Likely to open with citrus peel, white peach, elderflower and a touch of fresh herbs, before moving into a taut, chalky palate with fine acidity and a subtle savoury edge. The finish should be clean, precise and quietly persistent rather than overtly aromatic."
     },
     {
       "id": 217,
@@ -4577,7 +4577,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A poised Sancerre likely to show citrus peel, white peach and elderflower, with a subtle smoky, flinty edge typical of serious Sauvignon from the Loire. The palate should be dry and finely textured, with brisk acidity, a little mid-palate breadth and a clean, chalky finish that keeps the fruit precise rather than exuberant."
     },
     {
       "id": 218,
@@ -4598,7 +4598,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A serious, site-driven Sancerre likely to show ripe citrus, white peach and pear, with elderflower, crushed herbs and a subtle smoky, flinty edge. The palate should be concentrated yet finely etched, with a broad, textural mid-palate balanced by bright acidity and a dry, chalky finish. Expect more depth and savoury complexity than a simple, linear Sauvignon Blanc."
     },
     {
       "id": 219,
@@ -4619,7 +4619,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
+      "tasting_note": "A poised, classic Sassicaia profile is likely here: cassis, black cherry, cedar and graphite, with dried Mediterranean herbs and a faint tobacco note. The 2018 vintage should give a medium-to-full-bodied palate with polished tannins, fresh acidity and restrained oak, finishing savoury and composed rather than opulent, with enough structure to develop further in bottle."
     },
     {
       "id": 220,
@@ -4640,7 +4640,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Sauternes profile is likely here: ripe apricot, peach, acacia honey and candied citrus, with a touch of saffron and botrytis spice. Expect a rich, silky palate balanced by fresh acidity, giving lift to the sweetness and keeping the wine poised rather than cloying. The finish should be long, gently nutty and refined."
     },
     {
       "id": 221,
@@ -4661,7 +4661,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Sauternes profile is likely here: ripe apricot, peach preserve, acacia honey and candied citrus, with a touch of saffron and toasted almond from botrytis and élevage. Expect a rich, silky palate balanced by fresh acidity, giving the sweetness shape rather than heaviness, and a long, gently spicy finish."
     },
     {
       "id": 222,
@@ -4682,7 +4682,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Sauternes profile is likely here: ripe apricot, peach preserve, acacia honey and candied citrus peel, with a thread of saffron and toasted almond from botrytis complexity. The palate should be rich yet poised, balancing sweetness with fresh acidity, and finishing on marmalade, spice and a lightly waxy, lingering note."
     },
     {
       "id": 223,
@@ -4703,7 +4703,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Sauternes profile is likely here: ripe apricot, peach preserve, acacia honey and candied citrus, with a touch of saffron and toasted almond from botrytis and élevage. The palate should be rich yet poised, balancing sweetness with bright acidity, and finishing on marmalade, spice and a clean, lingering gloss."
     },
     {
       "id": 224,
@@ -4724,7 +4724,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Sauternes profile is likely here: ripe apricot, peach, candied citrus peel and acacia, with honeyed richness and a touch of saffron and vanilla from élevage. Expect a supple, unctuous palate balanced by fresh acidity, with botrytis lending depth rather than heaviness and a long, gently spiced finish."
     },
     {
       "id": 225,
@@ -4745,7 +4745,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
+      "tasting_note": "A classic Sauternes profile is likely here: apricot preserve, saffron, orange peel and acacia honey, with the noble botrytis bringing marmalade, beeswax and a subtle smoky spice. The palate should be rich yet poised, with layered sweetness balanced by bright acidity and a long, polished finish of candied citrus and toasted almond."
     },
     {
       "id": 226,
@@ -4766,7 +4766,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A cool-climate Sauvignon Blanc likely to show lime zest, grapefruit, gooseberry and a touch of cut grass, with subtle herbal lift and a faint maritime edge. The palate should be taut and medium-bodied, driven by brisk acidity and a clean, stony line, finishing dry, precise and food-friendly rather than overtly tropical."
     },
     {
       "id": 227,
@@ -4787,7 +4787,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Marlborough Sauvignon Blanc profile: expect lifted aromas of gooseberry, lime zest, passion fruit and fresh-cut herbs, with a hint of elderflower. The palate is typically brisk and medium-light, driven by bright acidity and a clean, dry core, finishing crisp and mouthwatering rather than weighty."
     },
     {
       "id": 228,
@@ -4808,7 +4808,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Marlborough Sauvignon Blanc profile: lifted gooseberry, lime zest, passion fruit and fresh-cut herbs, with a hint of elderflower. The palate is brisk and medium-bodied, showing crisp acidity, a clean, dry core and a lightly grassy, stony edge. Expect a bright, direct finish that makes it especially suited to shellfish, goat’s cheese or simply as an aperitif."
     },
     {
       "id": 229,
@@ -4829,7 +4829,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A more restrained, barrel-fermented style of Sauvignon Blanc, likely to show grapefruit, lime zest, white peach and subtle struck-flint notes, with hints of toast and lees complexity from bottle age. The palate should be medium-bodied and textural rather than overtly pungent, with bright acidity, a dry, savoury finish and enough depth to suit richer seafood or poultry."
     },
     {
       "id": 230,
@@ -4850,7 +4850,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A likely crisp, Alpine-style Sauvignon Blanc, showing grapefruit, lime zest and green apple over subtle elderflower and fresh-cut herbs. The palate should be taut and dry, with brisk acidity, a light to medium body and a clean, stony finish, favouring precision and freshness over overt tropical fruit or richness."
     },
     {
       "id": 231,
@@ -4871,7 +4871,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A polished Marlborough-style Sauvignon Blanc, likely to open with gooseberry, lime zest, passion fruit and a touch of fresh-cut herbs, perhaps with a faint smoky or flinty edge from the Reserve designation. The palate should be brisk and medium-bodied, with crisp acidity, a clean, textural core and a dry, citrus-led finish that keeps the style focused rather than overtly tropical."
     },
     {
       "id": 232,
@@ -4892,7 +4892,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Sancerre profile is likely here: citrus peel, green apple, white flowers and a touch of gooseberry, with a subtle flinty edge. On the palate, expect a dry, medium-light frame, brisk acidity and a clean, precise texture rather than overt richness. The finish should be fresh, savoury and lightly chalky, making it well suited to shellfish, goat’s cheese and herb-led dishes."
     },
     {
       "id": 233,
@@ -4913,7 +4913,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic sweet Oloroso-style profile, likely to show dried apricot, fig, toasted walnut, orange peel and a touch of toffee, with the oxidative depth balanced by polished acidity and a faint saline edge. The palate should be rich and rounded rather than heavy, finishing savoury, nutty and gently warming, making it well suited to hard cheeses or nut-based desserts."
     },
     {
       "id": 234,
@@ -4934,7 +4934,7 @@
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
       "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
-      "tasting_note": "Imaginative cosmic aromatics with bright tang and a refined sparkle."
+      "tasting_note": "An imagined ice-wine profile of intense candied citrus, apricot preserve and white blossom, with a thread of honeyed richness and a cool, crystalline edge. The palate would likely be lusciously sweet yet balanced by brisk acidity, giving a polished, almost weightless feel and a clean, lingering finish marked by citrus peel and nectar."
     },
     {
       "id": 235,
@@ -4955,7 +4955,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A late-harvest Malbec from Susana Balbo is likely to show ripe plum, blackberry compote and violet, lifted by dried fig, cocoa and a touch of spice. Expect a plush, gently sweet palate with supple tannins, balanced by fresh acidity to keep it from feeling heavy, finishing with dark fruit and a savoury, lightly chocolatey edge."
     },
     {
       "id": 236,
@@ -4976,7 +4976,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic northern Rhône Syrah profile is likely here: black cherry, blackberry and violet, with pepper, smoked meat and a touch of olive tapenade. On the palate, expect medium body, firm but ripe tannins and fresh acidity, with a savoury, slightly earthy finish that should make it especially food-friendly."
     },
     {
       "id": 237,
@@ -4997,7 +4997,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Côtes du Rhône Syrah profile is likely here: ripe black cherry, blackberry and plum, with pepper, violets and a touch of smoked meat or olive. Expect a medium-bodied palate with supple tannins, fresh acidity and a savoury, slightly earthy finish rather than overt oak or weight, making it a straightforward, food-friendly red."
     },
     {
       "id": 238,
@@ -5018,7 +5018,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A serious Petit Verdot is likely to show deep black fruit, violet, graphite and a touch of dried herbs, with firm tannins and a dark, savoury core. Expect a full-bodied palate, perhaps with some oak spice and cocoa, finishing dry and structured rather than plush, making it best suited to robust food."
     },
     {
       "id": 239,
@@ -5039,7 +5039,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic non-vintage Champagne profile, likely to open with pear, green apple, white peach and a touch of brioche, alongside discreet floral notes and a hint of citrus zest. The palate should be fine-boned and creamy rather than forceful, with brisk acidity, a light chalky edge and a clean, dry finish suited to aperitif service or delicate seafood."
     },
     {
       "id": 240,
@@ -5060,7 +5060,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
+      "tasting_note": "A poised, age-worthy Blanc de Blancs in the Comtes de Champagne mould, likely to show lemon zest, white peach, green apple and subtle brioche, with chalky restraint and a fine, persistent mousse. The 2010 vintage should bring a taut, linear palate, bright acidity and a discreetly creamy mid-palate, finishing with citrus peel, toasted almond and a dry, elegant close."
     },
     {
       "id": 241,
@@ -5081,7 +5081,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "An elegant junmai daiginjo style, likely to open with pear, white peach and melon, lifted by jasmine, rice polish and a faint aniseed note. The palate should be silky and finely textured, with restrained sweetness, very pure fruit and a clean, tapering finish that leaves a delicate savoury edge."
     },
     {
       "id": 242,
@@ -5102,7 +5102,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic 20-year-old tawny profile, likely to offer dried apricot, fig, orange peel and toasted almond, with hints of caramel, walnut and warm spice. The palate should be silky and rounded, balancing mellow sweetness with fresh acidity and a savoury, nutty edge. Expect a polished, lingering finish with notes of toffee and citrus zest."
     },
     {
       "id": 243,
@@ -5123,7 +5123,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Rioja Reserva profile is likely here: ripe black cherry, plum and redcurrant framed by cedar, vanilla, dried herbs and a touch of tobacco from oak ageing. Medium to full-bodied, with polished tannins and fresh acidity, it should feel composed rather than heavy, finishing savoury, gently spicy and persistent."
     },
     {
       "id": 244,
@@ -5144,7 +5144,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Velvety body, brioche warmth, with dried herbs and truffle edges."
+      "tasting_note": "A classic Bolgheri Cabernet blend, likely to show cassis, black cherry, cedar and Mediterranean herbs, with the 2017 vintage bringing a touch more ripeness and warmth than cooler years. Expect a polished, medium-full palate with fine-grained tannins, freshening acidity and a savoury finish of tobacco, graphite and subtle spice rather than overt power."
     },
     {
       "id": 245,
@@ -5165,7 +5165,7 @@
       "is_fictional_or_unpriceable": true,
       "pricing_source_basis": "invented_fantasy_price",
       "notes": "Fictional/unpriceable bottle: assigned a plausible restaurant-menu fantasy price, not a market price.",
-      "tasting_note": "Imaginative cosmic aromatics with bright tang and a refined sparkle."
+      "tasting_note": "An imagined fine-wine Cabernet Sauvignon profile: ripe blackcurrant, cassis and graphite framed by cedar, tobacco leaf and a touch of dark chocolate. Expect a full-bodied palate with firm, polished tannins, measured oak and fresh acidity to keep the richness in check, finishing savoury and persistent rather than overtly sweet-fruited."
     },
     {
       "id": 246,
@@ -5186,7 +5186,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "Aromatic and distinctly varietal, with orange blossom, white peach, lime zest and a hint of grape skin spice. Expect a dry, medium-bodied palate with bright acidity, a lightly oily texture and a clean, gently bitter finish that keeps it food-friendly rather than exuberant. In a good vintage, it should be fresh, precise and quietly expressive."
     },
     {
       "id": 247,
@@ -5207,7 +5207,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Silky texture with ripe orchard fruit and fine-grained spice."
+      "tasting_note": "A classic Tignanello profile would likely combine ripe black cherry, plum and dried herbs with cedar, tobacco and a touch of sweet spice from oak. The palate is medium to full-bodied, polished and supple, with ripe but measured tannins and fresh acidity giving shape to the fruit. Expect a savoury, persistent finish with a hint of leather and graphite as it opens."
     },
     {
       "id": 248,
@@ -5228,7 +5228,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A natural-style Mendoza blend from 2017 is likely to show a slightly evolved, textural profile: ripe stone fruit, citrus peel, quince and perhaps a touch of dried herb or hay, with a faintly cloudy, artisanal edge. Expect moderate body, brisk acidity and a dry, savoury finish, with some grip and a gently oxidative nuance rather than polished fruit purity."
     },
     {
       "id": 249,
@@ -5249,7 +5249,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Tokaji Aszú profile is likely here: apricot, quince, orange peel and acacia honey, with saffron, tea leaf and a subtle nutty edge from bottle age. Expect a rich but finely balanced palate, the sweetness kept in check by bright acidity, giving a layered, silky texture and a long, gently spicy finish."
     },
     {
       "id": 250,
@@ -5270,7 +5270,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Tokaji Aszú profile is likely here: apricot, quince, orange peel and acacia honey, with hints of saffron and dried tea leaf. The palate should be lusciously sweet yet balanced by brisk acidity, giving definition and freshness rather than heaviness. Expect a silky, layered texture and a long finish of citrus peel, spice and subtle nuttiness."
     },
     {
       "id": 251,
@@ -5291,7 +5291,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "An aromatic yuzu liqueur or citrus sake style, likely bright and perfumed with grapefruit, mandarin peel and lemon blossom, perhaps edged by a gentle sweetness and a faint herbal bitterness from the peel. Expect a supple, lightly viscous palate with brisk acidity, clean citrus intensity and a refreshing, zesty finish suited to aperitif or dessert service."
     },
     {
       "id": 252,
@@ -5312,7 +5312,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Chilean Sauvignon Blanc profile is likely here: bright lime, grapefruit and green apple, with cut grass, elderflower and a faint herbal edge. The palate should be light to medium-bodied, crisp and direct, with brisk acidity, a clean, dry finish and enough freshness to work well as an aperitif or with shellfish and goat’s cheese."
     },
     {
       "id": 253,
@@ -5333,7 +5333,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A serious Verdejo profile is likely here: ripe citrus, pear skin, fennel and white blossom, with a subtle herbal edge and a touch of leesy richness from the 2018 vintage. The palate should be medium-bodied and textural rather than simple, balancing stone-fruit depth with brisk acidity and a dry, savoury finish."
     },
     {
       "id": 254,
@@ -5354,7 +5354,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A serious Rueda white likely to show ripe citrus, pear and fennel over subtle almond, hay and a faint waxy note from bottle age. The palate should be medium-bodied and textural, with brisk acidity, a dry, savoury edge and a polished, slightly creamy mid-palate before finishing on citrus peel and gentle herbaceous lift."
     },
     {
       "id": 255,
@@ -5375,7 +5375,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Verdicchio profile is likely here: lemon peel, green apple, white flowers and a faint almond note, with the Castelli di Jesi’s characteristic savoury edge. Expect a medium-bodied palate with firm, refreshing acidity, a little textural breadth from the Classico Superiore level, and a dry, slightly bitter finish that suits seafood and white meats."
     },
     {
       "id": 256,
@@ -5396,7 +5396,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A classic Sardinian Vermentino profile is likely here: bright lemon and grapefruit, white peach and green almond, with hints of wild herbs and sea spray. Expect a dry, medium-bodied palate with brisk acidity, a lightly textured mid-palate and a clean, savoury finish that should make it especially food-friendly."
     },
     {
       "id": 257,
@@ -5417,7 +5417,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic demi-sec Champagne profile, likely offering ripe pear, baked apple and white peach over brioche, almond and subtle citrus peel. The palate should feel rounded and creamy, with a noticeable touch of sweetness balanced by fresh acidity and fine mousse, finishing on gentle pastry and orchard-fruit notes rather than austerity."
     },
     {
       "id": 258,
@@ -5438,7 +5438,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Soft orchard fruit, floral perfume, and gentle salinity."
+      "tasting_note": "A classic Vin Santo profile is likely here: dried apricot, fig, orange peel, acacia honey and toasted almond, with a touch of caramel and spice from long oxidative ageing. The palate should be rich and viscous yet balanced by fresh acidity, finishing savoury, nutty and persistent rather than cloying."
     },
     {
       "id": 259,
@@ -5459,7 +5459,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A poised, Rhône-style Viognier likely to offer apricot, white peach and citrus blossom, with a touch of pear and subtle honeysuckle. On the palate it should be medium-bodied and supple rather than opulent, with enough freshness to keep the ripe fruit in check and a gently textured, dry finish."
     },
     {
       "id": 260,
@@ -5480,7 +5480,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A clean, unoaked Chardonnay in a bright, modern Cape style, likely to open with lemon zest, green apple, white peach and a touch of pear, with subtle almond and wet stone nuances. The palate should be medium-bodied and brisk, with crisp acidity, a supple, fruit-led core and a dry, refreshing finish rather than overt richness or oak-derived weight."
     },
     {
       "id": 261,
@@ -5501,7 +5501,7 @@
       "is_fictional_or_unpriceable": false,
       "pricing_source_basis": "estimated_retail_price_from_previous_file",
       "notes": "Likely base market/retail price, rounded for practical use; not live-verified bottle-by-bottle.",
-      "tasting_note": "Citrus-driven with river stone minerality and a refreshing spine."
+      "tasting_note": "A serious East Bench Zinfandel from 2018 is likely to show ripe blackberry, black cherry and plum, with notes of cracked pepper, dried herbs and a touch of sweet spice. Expect a medium-full, supple palate with moderate tannin, bright acidity for the style, and a savoury, gently warming finish rather than overt sweetness or jamminess."
     }
   ]
 }
