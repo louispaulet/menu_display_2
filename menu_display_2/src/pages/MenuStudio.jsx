@@ -146,7 +146,7 @@ function MenuStudio() {
 
       <section className="mx-auto mb-8 max-w-7xl">
         <details className="soft-panel group p-6 sm:p-7 lg:p-8">
-          <summary className="cursor-pointer list-none">
+          <summary className="cursor-pointer list-none rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-clay/40">
             <div className="flex items-center justify-between gap-4 border-b border-stone-200 pb-5">
               <div>
                 <p className="page-kicker">Examples</p>
@@ -156,7 +156,7 @@ function MenuStudio() {
                 </p>
               </div>
               <div className="rounded-full border border-clay/20 bg-clay/10 px-4 py-2 text-sm font-semibold text-clay transition group-open:bg-white">
-                {menuExamples.length} examples
+                Show {menuExamples.length} examples
               </div>
             </div>
           </summary>
