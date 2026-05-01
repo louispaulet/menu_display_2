@@ -51,6 +51,9 @@ function medianPrice(wines) {
 
 function tastingNoteFor(wine) {
   if (!wine) return 'Balanced and precise.';
+  if (typeof wine.tasting_note === 'string' && wine.tasting_note.trim()) {
+    return wine.tasting_note.trim();
+  }
   if (wine.is_fictional_or_unpriceable) {
     return 'Fantasized profile: vibrant, curious, and space-age.';
   }
@@ -63,7 +66,7 @@ function tastingNoteFor(wine) {
     return 'Layered orchard fruit, luminous body, and subtle spice.';
   }
   if (price < 500) {
-    return 'Silky texture, ripe stone fruit, and a salivating savory streak.';
+    return 'Silky texture, ripe stone fruit, and a salivating savoury streak.';
   }
   return 'Opulent, deeply layered, with lingering spice and truffle notes.';
 }
@@ -162,7 +165,7 @@ function WineBottleCard({ wine, imageSrc, style, country, priceBand, rarityScore
             <p className="stat-value text-lg">{formatPrice(wine.base_price_eur_750ml)}</p>
           </div>
         </div>
-        <p className="text-sm leading-6 text-stone-600">{tastingNoteFor(wine)}</p>
+        <p className="line-clamp-3 text-sm leading-6 text-stone-600">{tastingNoteFor(wine)}</p>
         <div className="mt-auto flex flex-wrap items-center gap-2 border-t border-stone-200 pt-4 text-xs font-semibold text-stone-500">
           <span className="rounded-full bg-stone-100 px-3 py-1">{rarity}</span>
           <span className="rounded-full bg-stone-100 px-3 py-1">{popularity}</span>
