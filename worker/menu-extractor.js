@@ -169,7 +169,7 @@ function errorResponse(error, request, env) {
 }
 
 function validateMenuImage(file) {
-  if (!(file instanceof File)) {
+  if (!file || typeof file.arrayBuffer !== 'function') {
     throw new HttpError(400, 'Upload a menu image using the menuImage field.', 'missing_menu_image');
   }
 
