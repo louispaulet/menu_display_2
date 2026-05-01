@@ -33,6 +33,11 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
     return `/recipe/${courseEncoded}-${descriptionEncoded}`;
   };
 
+  const scrollToCourse = (courseId) => {
+    const element = document.getElementById(courseId);
+    element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   const courseIds = useMemo(
     () => tastingMenu.map((item, index) => ({
       id: `course-${index + 1}`,
@@ -194,13 +199,14 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
               <h3 className="mt-2 font-playfair text-2xl font-semibold text-ink">Course index</h3>
               <nav className="mt-4 space-y-2" aria-label="Menu courses">
                 {courseIds.map((course) => (
-                  <a
+                  <button
                     key={course.id}
-                    href={`#${course.id}`}
-                    className="index-link"
+                    type="button"
+                    onClick={() => scrollToCourse(course.id)}
+                    className="index-link w-full appearance-none text-left"
                   >
                     {course.label}
-                  </a>
+                  </button>
                 ))}
               </nav>
             </div>
