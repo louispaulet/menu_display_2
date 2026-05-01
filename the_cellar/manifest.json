@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-04-26T20:08:24+02:00",
-  "count": 262,
+  "count": 271,
   "items": [
     {
       "wine_name": "Albariño Do Ferreiro Cepas Vellas 2019",
@@ -781,6 +781,51 @@
       "wine_name": "Mole de Piedra Blend 2021",
       "custom_id": "wine-image-267-mole-de-piedra-blend-2021-v2",
       "filename": "wine-image-267-mole-de-piedra-blend-2021-v2.webp"
+    },
+    {
+      "wine_name": "Champagne de Barranco Brut Nature 2016",
+      "custom_id": "wine-image-262-champagne-de-barranco-brut-nature-2016-v2",
+      "filename": "wine-image-262-champagne-de-barranco-brut-nature-2016-v2.webp"
+    },
+    {
+      "wine_name": "Ayni de Barranco Albariño 2023",
+      "custom_id": "wine-image-263-ayni-de-barranco-albarino-2023-v2",
+      "filename": "wine-image-263-ayni-de-barranco-albarino-2023-v2.webp"
+    },
+    {
+      "wine_name": "Maison Varenne Junmai Daiginjo 2023",
+      "custom_id": "wine-image-264-maison-varenne-junmai-daiginjo-2023-v2",
+      "filename": "wine-image-264-maison-varenne-junmai-daiginjo-2023-v2.webp"
+    },
+    {
+      "wine_name": "Pampa Negra Malbec 2019",
+      "custom_id": "wine-image-265-pampa-negra-malbec-2019-v2",
+      "filename": "wine-image-265-pampa-negra-malbec-2019-v2.webp"
+    },
+    {
+      "wine_name": "Etxe Senda Txakoli 2022",
+      "custom_id": "wine-image-266-etxe-senda-txakoli-2022-v2",
+      "filename": "wine-image-266-etxe-senda-txakoli-2022-v2.webp"
+    },
+    {
+      "wine_name": "Gran Vía Garnacha 2021",
+      "custom_id": "wine-image-268-gran-via-garnacha-2021-v2",
+      "filename": "wine-image-268-gran-via-garnacha-2021-v2.webp"
+    },
+    {
+      "wine_name": "Refshale Bloom Blanc de Noirs 2017",
+      "custom_id": "wine-image-269-refshale-bloom-blanc-de-noirs-2017-v2",
+      "filename": "wine-image-269-refshale-bloom-blanc-de-noirs-2017-v2.webp"
+    },
+    {
+      "wine_name": "Siam Silk Riesling 2022",
+      "custom_id": "wine-image-270-siam-silk-riesling-2022-v2",
+      "filename": "wine-image-270-siam-silk-riesling-2022-v2.webp"
+    },
+    {
+      "wine_name": "Marunouchi Cuvée Éclat 2018",
+      "custom_id": "wine-image-271-marunouchi-cuvee-eclat-2018-v2",
+      "filename": "wine-image-271-marunouchi-cuvee-eclat-2018-v2.webp"
     },
     {
       "wine_name": "Moscato d'Asti Elio Perrone Sourgal 2020",
