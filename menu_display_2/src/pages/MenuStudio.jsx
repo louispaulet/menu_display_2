@@ -147,19 +147,22 @@ function MenuStudio() {
       <section className="mx-auto mb-8 max-w-7xl">
         <details className="soft-panel group p-6 sm:p-7 lg:p-8">
           <summary className="cursor-pointer list-none">
-            <div className="flex flex-col gap-3 border-b border-stone-200 pb-5 sm:flex-row sm:items-end sm:justify-between">
+            <div className="flex items-center justify-between gap-4 border-b border-stone-200 pb-5">
               <div>
                 <p className="page-kicker">Examples</p>
                 <h2 className="mt-2 font-playfair text-3xl font-semibold text-ink">try some of our examples!</h2>
+                <p className="mt-2 max-w-2xl text-sm leading-6 text-stone-500">
+                  Explore a few previous menus to see the kind of layouts and image quality the studio can handle.
+                </p>
               </div>
-              <p className="text-sm font-semibold text-stone-500 transition group-open:text-clay">
-                Click to expand
-              </p>
+              <div className="rounded-full border border-clay/20 bg-clay/10 px-4 py-2 text-sm font-semibold text-clay transition group-open:bg-white">
+                {menuExamples.length} examples
+              </div>
             </div>
           </summary>
           <div className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
             {menuExamples.map((entry) => (
-              <article key={entry.filename} className="overflow-hidden rounded-lg border border-stone-200 bg-white shadow-sm">
+              <article key={entry.filename} className="overflow-hidden rounded-lg border border-stone-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
                 <div className="aspect-[4/3] bg-stone-100">
                   <img src={entry.imageUrl} alt={entry.title} className="h-full w-full object-cover" />
                 </div>
