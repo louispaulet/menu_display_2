@@ -5,6 +5,8 @@ import { MdAttachMoney, MdLocationOn, MdRestaurantMenu } from 'react-icons/md';
 import ProgressiveImage from './ProgressiveImage';
 import { getZoneAccentForRestaurant } from '../lib/siteThemes';
 
+const encodeAssetSegment = (value) => encodeURIComponent(value.replace(/ /g, '_')).replace(/%2C/gi, ',');
+
 function MenuPreview({ restaurantName, chefName, location, numberOfCourses, totalPrice, id }) {
   const baseImageUrl = import.meta.env.DEV
     ? '/restaurant_pictures/thumbnails/'
@@ -12,7 +14,7 @@ function MenuPreview({ restaurantName, chefName, location, numberOfCourses, tota
   const accent = getZoneAccentForRestaurant(restaurantName);
 
   const generateImageUrl = (restaurantName) => {
-    const restaurantNameEncoded = encodeURIComponent(restaurantName.replace(/ /g, '_'));
+    const restaurantNameEncoded = encodeAssetSegment(restaurantName);
     return `${baseImageUrl}${restaurantNameEncoded}.webp`;
   };
   return (

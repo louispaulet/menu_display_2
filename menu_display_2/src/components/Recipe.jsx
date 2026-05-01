@@ -10,6 +10,8 @@ const dishImageBaseUrl = import.meta.env.DEV
   ? '/dish_pictures/'
   : 'https://raw.githubusercontent.com/louispaulet/menu_display_2/main/dish_pictures/';
 
+const encodeAssetSegment = (value) => encodeURIComponent(value.replace(/ /g, '_')).replace(/%2C/gi, ',');
+
 const normalizeText = (value = '') =>
   value
     .normalize('NFD')
@@ -324,10 +326,10 @@ function getDishImageUrl(markdown) {
   for (const menu of menuData) {
     for (const item of menu.tasting_menu) {
       if (normalizeText(item.description) === recipeTitle) {
-        const chefNameEncoded = encodeURIComponent(menu.chef_name.replace(/ /g, '_'));
-        const restaurantNameEncoded = encodeURIComponent(menu.restaurant_name.replace(/ /g, '_'));
-        const courseNameEncoded = encodeURIComponent(item.course.replace(/ /g, '_'));
-        const courseDescriptionEncoded = encodeURIComponent(item.description.replace(/ /g, '_'));
+        const chefNameEncoded = encodeAssetSegment(menu.chef_name);
+        const restaurantNameEncoded = encodeAssetSegment(menu.restaurant_name);
+        const courseNameEncoded = encodeAssetSegment(item.course);
+        const courseDescriptionEncoded = encodeAssetSegment(item.description);
 
         return `${dishImageBaseUrl}${chefNameEncoded}-${restaurantNameEncoded}-${courseNameEncoded}-${courseDescriptionEncoded}.webp`;
       }

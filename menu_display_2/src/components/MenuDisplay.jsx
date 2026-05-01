@@ -6,6 +6,8 @@ import ProgressiveImage from './ProgressiveImage';
 import { useWineLinkContext, linkifyWineText } from '../lib/wineLinks';
 import { findZoneByRestaurantName, getZoneAccentForRestaurant } from '../lib/siteThemes';
 
+const encodeAssetSegment = (value) => encodeURIComponent(value.replace(/ /g, '_')).replace(/%2C/gi, ',');
+
 function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRoomDescription, grandTotal }) {
   const wineLinkContext = useWineLinkContext();
   const menuZone = useMemo(() => findZoneByRestaurantName(restaurantName), [restaurantName]);
@@ -19,15 +21,15 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
     : 'https://raw.githubusercontent.com/louispaulet/menu_display_2/main/restaurant_pictures/';
 
   const generateImageUrl = (courseName, courseDescription) => {
-    const chefNameEncoded = encodeURIComponent(chefName.replace(/ /g, '_'));
-    const restaurantNameEncoded = encodeURIComponent(restaurantName.replace(/ /g, '_'));
-    const courseNameEncoded = encodeURIComponent(courseName.replace(/ /g, '_'));
-    const courseDescriptionEncoded = encodeURIComponent(courseDescription.replace(/ /g, '_'));
+    const chefNameEncoded = encodeAssetSegment(chefName);
+    const restaurantNameEncoded = encodeAssetSegment(restaurantName);
+    const courseNameEncoded = encodeAssetSegment(courseName);
+    const courseDescriptionEncoded = encodeAssetSegment(courseDescription);
     return `${baseImageUrl}${chefNameEncoded}-${restaurantNameEncoded}-${courseNameEncoded}-${courseDescriptionEncoded}.webp`;
   };
 
   const generateRestaurantImageUrl = (name) => {
-    const restaurantNameEncoded = encodeURIComponent(name.replace(/ /g, '_'));
+    const restaurantNameEncoded = encodeAssetSegment(name);
     return `${baseRestaurantImageUrl}${restaurantNameEncoded}.webp`;
   };
 
