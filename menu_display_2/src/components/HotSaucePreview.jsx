@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import { FaCalendarAlt, FaDollarSign, FaHourglassHalf, FaPepperHot, FaWarehouse } from 'react-icons/fa';
 import { GiFireBottle } from 'react-icons/gi';
 import ProgressiveImage from './ProgressiveImage';
+import { getGeneratedImageBaseUrl } from '../lib/imageAssets';
+
+const sauceImageBaseUrl = getGeneratedImageBaseUrl('sauce_pictures');
 
 function heatTone(level) {
   if (level >= 9) return 'bg-rose-700';
@@ -24,7 +27,7 @@ function HotSaucePreview({
 }) {
   const generateImageUrl = (name) => {
     const nameEncoded = encodeURIComponent(name.replace(/ /g, '_'));
-    return `/sauce_pictures/${nameEncoded}.webp`;
+    return `${sauceImageBaseUrl}${nameEncoded}.webp`;
   };
 
   return (

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useEffect, useMemo, useState } from 'react';
 import { buildWineImageIndex, resolveWineImageFilename } from '../lib/wineImages';
 import { buildWineBottlePath } from '../lib/wineLinks';
+import { getGeneratedImageBaseUrl } from '../lib/imageAssets';
 import ProgressiveImage from '../components/ProgressiveImage';
 import {
   classifyWineCountry,
@@ -31,6 +32,7 @@ const STYLE_ORDER = ['red', 'white', 'champagne', 'other'];
 const PRICE_BAND_ORDER = ['under-50', '50-149', '150-399', '400-plus'];
 const POPULARITY_BUCKETS = ['crowd-favorites', 'sommeliers-picks', 'cult-classics', 'deep-cuts'];
 const RARITY_BUCKETS = ['legendary', 'rare', 'notable', 'accessible'];
+const cellarImageBaseUrl = getGeneratedImageBaseUrl('the_cellar');
 
 function formatPrice(value) {
   if (typeof value !== 'number') return '—';
@@ -534,7 +536,7 @@ function WineList() {
               <WineBottleCard
                 key={wine.id}
                 wine={wine}
-                imageSrc={`/the_cellar/${imageFilename}`}
+                imageSrc={`${cellarImageBaseUrl}${imageFilename}`}
                 style={style}
                 country={country}
                 priceBand={priceBand}
@@ -564,7 +566,7 @@ function WineList() {
                     <WineBottleCard
                       key={entry.wine.id}
                       wine={entry.wine}
-                      imageSrc={`/the_cellar/${imageFilename}`}
+                      imageSrc={`${cellarImageBaseUrl}${imageFilename}`}
                       style={entry.style}
                       country={entry.country}
                       priceBand={entry.priceBand}

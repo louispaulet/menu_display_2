@@ -6,10 +6,12 @@ import {
   loadStoredMenuStudioResult,
   saveMenuStudioResult,
 } from '../lib/menuStudioStorage';
+import { getGeneratedImageBaseUrl } from '../lib/imageAssets';
 
 const ACCEPTED_TYPES = new Set(['image/jpeg', 'image/png', 'image/webp']);
 const MAX_UPLOAD_BYTES = 10 * 1024 * 1024;
 const apiBase = (import.meta.env.VITE_MENU_API_BASE || '/api').replace(/\/$/, '');
+const menuExampleImageBaseUrl = getGeneratedImageBaseUrl('menu_examples');
 
 function formatBytes(bytes) {
   if (!bytes) return '0 KB';
@@ -50,7 +52,7 @@ function MenuStudio() {
           filename,
           title: info.title,
           description: info.description,
-          imageUrl: `/menu_examples/${filename}`,
+          imageUrl: `${menuExampleImageBaseUrl}${filename}`,
         }));
         setMenuExamples(entries);
       })

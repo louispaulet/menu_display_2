@@ -4,6 +4,9 @@ import hotSauceData from '../hotsauceData';
 import { FaCalendarAlt, FaDollarSign, FaHourglassHalf, FaPepperHot, FaWarehouse } from 'react-icons/fa';
 import { GiFireBottle } from 'react-icons/gi';
 import ProgressiveImage from './ProgressiveImage';
+import { getGeneratedImageBaseUrl } from '../lib/imageAssets';
+
+const sauceImageBaseUrl = getGeneratedImageBaseUrl('sauce_pictures');
 
 function HeatBar({ level }) {
   const heatColor = level >= 9 ? 'bg-rose-700' : level >= 7 ? 'bg-orange-600' : level >= 5 ? 'bg-amber-500' : 'bg-lime-600';
@@ -58,7 +61,7 @@ function HotSauceDetails() {
         <div className="soft-panel overflow-hidden border-rose-200/70 bg-gradient-to-b from-rose-50 via-white to-amber-50 p-6">
           <div className="relative flex items-center justify-center">
             <ProgressiveImage
-              src={`/sauce_pictures/${encodeURIComponent(sauce.name.replace(/ /g, '_'))}.webp`}
+              src={`${sauceImageBaseUrl}${encodeURIComponent(sauce.name.replace(/ /g, '_'))}.webp`}
               alt={`${sauce.name} bottle`}
               loading="eager"
               className="w-full max-w-[24rem]"

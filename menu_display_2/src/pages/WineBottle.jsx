@@ -3,6 +3,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { buildWineImageIndex, resolveWineImageFilename } from '../lib/wineImages';
 import { slugify } from '../lib/wineLinks';
+import { getGeneratedImageBaseUrl } from '../lib/imageAssets';
 import WineImageZoom from '../components/WineImageZoom';
 import {
   classifyWineCountry,
@@ -19,6 +20,7 @@ const currencyFormatter = new Intl.NumberFormat('en-US', {
   currency: 'EUR',
   maximumFractionDigits: 0,
 });
+const cellarImageBaseUrl = getGeneratedImageBaseUrl('the_cellar');
 
 function formatPrice(value) {
   if (typeof value !== 'number') return '—';
@@ -151,7 +153,7 @@ function WineBottle() {
         <section className="grid gap-8 lg:grid-cols-[minmax(0,1.08fr)_minmax(0,0.92fr)]">
           <div className="lg:sticky lg:top-24 lg:self-start">
             <WineImageZoom
-              src={`/the_cellar/${imageFilename}`}
+              src={`${cellarImageBaseUrl}${imageFilename}`}
               alt={`${wine.name} bottle`}
               appearance="museum"
             />
