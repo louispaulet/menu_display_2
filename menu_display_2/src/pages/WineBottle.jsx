@@ -46,7 +46,7 @@ function humanize(value) {
 
 function DetailCard({ label, value, note }) {
   return (
-    <div className="wine-dossier-card">
+    <div className="wine-dossier-card min-h-[7.25rem] p-4 sm:p-5">
       <p className="wine-dossier-label">{label}</p>
       <p className="wine-dossier-value">{value}</p>
       {note ? <p className="wine-dossier-note">{note}</p> : null}
@@ -153,14 +153,12 @@ function WineBottle() {
       <article className="mx-auto max-w-7xl space-y-8">
         <section className="grid gap-8 lg:grid-cols-[minmax(0,1.08fr)_minmax(0,0.92fr)]">
           <div className="lg:sticky lg:top-24 lg:self-start">
-            <div className="wine-hero-panel p-4 sm:p-5 lg:p-6">
-              <div className="wine-hero-frame">
-                <WineImageZoom
-                  src={`/the_cellar/${imageFilename}`}
-                  alt={`${wine.name} bottle`}
-                  className="shadow-none hover:shadow-none"
-                />
-              </div>
+            <div className="rounded-[2rem] bg-[linear-gradient(135deg,#fffdf7_0%,#f8f0e5_52%,#efe3d3_100%)] p-4 shadow-editorial sm:p-5 lg:p-6">
+              <WineImageZoom
+                src={`/the_cellar/${imageFilename}`}
+                alt={`${wine.name} bottle`}
+                appearance="museum"
+              />
               <p className="mt-4 text-center text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-stone-400">
                 Click image to open a larger frame
               </p>
@@ -224,7 +222,7 @@ function WineBottle() {
             <p className="mt-3 max-w-2xl text-sm leading-7 text-stone-600">
               The broad profile sits together here so the page reads like a carefully annotated cellar label rather than a database export.
             </p>
-            <div className="mt-5 grid gap-3 sm:grid-cols-2">
+            <div className="mt-5 grid gap-3 md:grid-cols-2">
               <DetailCard label="Style" value={style.label} />
               <DetailCard label="Origin" value={country.label} />
               <DetailCard label="Price band" value={priceBand.label} />
@@ -238,7 +236,7 @@ function WineBottle() {
             <p className="mt-3 max-w-2xl text-sm leading-7 text-stone-600">
               The implementation details remain visible, but the typography and spacing should make them feel like a premium method note.
             </p>
-            <div className="mt-5 grid gap-3 sm:grid-cols-2">
+            <div className="mt-5 grid gap-3 md:grid-cols-2">
               <DetailCard
                 label="Price range"
                 value={`${formatPriceRange(wine.base_price_range_eur_750ml)} base, ${formatPriceRange(wine.michelin_star_price_range_eur_750ml)} Michelin`}
@@ -261,7 +259,7 @@ function WineBottle() {
                 This is the long-form copy that should feel more editorial than administrative.
               </p>
             </div>
-            <div className="grid gap-3 sm:grid-cols-3 lg:min-w-[28rem]">
+            <div className="grid gap-3 sm:grid-cols-3 lg:min-w-[30rem]">
               <DetailCard label="List price" value={formatPrice(wine.michelin_star_price_eur_750ml)} />
               <DetailCard label="Market price" value={formatPrice(wine.base_price_eur_750ml)} />
               <DetailCard label="Cellar read" value={rarityText} />
