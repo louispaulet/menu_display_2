@@ -145,13 +145,18 @@ function MenuStudio() {
       </header>
 
       <section className="mx-auto mb-8 max-w-7xl">
-        <div className="soft-panel p-6 sm:p-7 lg:p-8">
-          <div className="flex flex-col gap-3 border-b border-stone-200 pb-5 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <p className="page-kicker">Examples</p>
-              <h2 className="mt-2 font-playfair text-3xl font-semibold text-ink">Reference menus</h2>
+        <details className="soft-panel group p-6 sm:p-7 lg:p-8">
+          <summary className="cursor-pointer list-none">
+            <div className="flex flex-col gap-3 border-b border-stone-200 pb-5 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="page-kicker">Examples</p>
+                <h2 className="mt-2 font-playfair text-3xl font-semibold text-ink">try some of our examples!</h2>
+              </div>
+              <p className="text-sm font-semibold text-stone-500 transition group-open:text-clay">
+                Click to expand
+              </p>
             </div>
-          </div>
+          </summary>
           <div className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
             {menuExamples.map((entry) => (
               <article key={entry.filename} className="overflow-hidden rounded-lg border border-stone-200 bg-white shadow-sm">
@@ -165,7 +170,7 @@ function MenuStudio() {
               </article>
             ))}
           </div>
-        </div>
+        </details>
       </section>
 
       <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[18rem_minmax(0,1fr)]">
