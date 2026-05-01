@@ -28,7 +28,7 @@ function Homepage() {
   const featuredMenu = indexedMenuData[0];
   const featuredZone = featuredMenu ? findZoneByRestaurantName(featuredMenu.restaurant_name) : null;
   const featuredImageUrl = featuredMenu
-    ? `https://raw.githubusercontent.com/louispaulet/menu_display_2/main/restaurant_pictures/thumbnails/${encodeURIComponent(
+    ? `${import.meta.env.DEV ? '/restaurant_pictures/thumbnails/' : 'https://raw.githubusercontent.com/louispaulet/menu_display_2/main/restaurant_pictures/thumbnails/'}${encodeURIComponent(
         featuredMenu.restaurant_name.replace(/ /g, '_'),
       )}.webp`
     : null;

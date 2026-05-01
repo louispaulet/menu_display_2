@@ -6,7 +6,9 @@ import ProgressiveImage from './ProgressiveImage';
 import { getZoneAccentForRestaurant } from '../lib/siteThemes';
 
 function MenuPreview({ restaurantName, chefName, location, numberOfCourses, totalPrice, id }) {
-  const baseImageUrl = "https://raw.githubusercontent.com/louispaulet/menu_display_2/main/restaurant_pictures/thumbnails/";
+  const baseImageUrl = import.meta.env.DEV
+    ? '/restaurant_pictures/thumbnails/'
+    : 'https://raw.githubusercontent.com/louispaulet/menu_display_2/main/restaurant_pictures/thumbnails/';
   const accent = getZoneAccentForRestaurant(restaurantName);
 
   const generateImageUrl = (restaurantName) => {

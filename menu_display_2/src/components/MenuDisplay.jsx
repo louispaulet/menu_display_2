@@ -11,8 +11,12 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
   const menuZone = useMemo(() => findZoneByRestaurantName(restaurantName), [restaurantName]);
   const accent = getZoneAccentForRestaurant(restaurantName);
   const averageCoursePrice = Math.round(grandTotal / Math.max(tastingMenu.length, 1));
-  const baseImageUrl = 'https://raw.githubusercontent.com/louispaulet/menu_display_2/main/dish_pictures/';
-  const baseRestaurantImageUrl = 'https://raw.githubusercontent.com/louispaulet/menu_display_2/main/restaurant_pictures/';
+  const baseImageUrl = import.meta.env.DEV
+    ? '/dish_pictures/'
+    : 'https://raw.githubusercontent.com/louispaulet/menu_display_2/main/dish_pictures/';
+  const baseRestaurantImageUrl = import.meta.env.DEV
+    ? '/restaurant_pictures/'
+    : 'https://raw.githubusercontent.com/louispaulet/menu_display_2/main/restaurant_pictures/';
 
   const generateImageUrl = (courseName, courseDescription) => {
     const chefNameEncoded = encodeURIComponent(chefName.replace(/ /g, '_'));

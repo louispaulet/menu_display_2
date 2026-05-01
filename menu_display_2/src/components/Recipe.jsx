@@ -6,7 +6,9 @@ import ProgressiveImage from './ProgressiveImage';
 import { linkifyWineMarkdown, useWineLinkContext } from '../lib/wineLinks';
 import { findZoneByRestaurantName, getZoneAccentForRestaurant } from '../lib/siteThemes';
 
-const dishImageBaseUrl = 'https://raw.githubusercontent.com/louispaulet/menu_display_2/main/dish_pictures/';
+const dishImageBaseUrl = import.meta.env.DEV
+  ? '/dish_pictures/'
+  : 'https://raw.githubusercontent.com/louispaulet/menu_display_2/main/dish_pictures/';
 
 const normalizeText = (value = '') =>
   value
