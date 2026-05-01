@@ -144,7 +144,6 @@ function Homepage() {
             <div key={zone.id} id={zone.id} className="zone-section scroll-mt-28">
               <div className={`mb-8 rounded-lg border px-6 py-6 sm:px-8 ${zone.accent.border} ${zone.accent.wash}`}>
                 <p className="page-kicker">{zone.title}</p>
-                <h2 className="mt-2 font-playfair text-3xl font-bold text-ink sm:text-4xl">Featured kitchens</h2>
                 <p className="mt-3 max-w-2xl text-lg leading-8 text-stone-600">{zone.description}</p>
               </div>
               <section className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
