@@ -1,28 +1,10 @@
-/* eslint-disable react/prop-types */
 import { Link, useParams } from 'react-router-dom';
 import hotSauceData from '../hotsauceData';
-import { FaCalendarAlt, FaDollarSign, FaHourglassHalf, FaPepperHot, FaWarehouse } from 'react-icons/fa';
-import { GiFireBottle } from 'react-icons/gi';
 import ProgressiveImage from './ProgressiveImage';
 import { getGeneratedImageBaseUrl } from '../lib/imageAssets';
+import HotSauceStats from './HotSauce/HotSauceStats';
 
 const sauceImageBaseUrl = getGeneratedImageBaseUrl('sauce_pictures');
-
-function HeatBar({ level }) {
-  const heatColor = level >= 9 ? 'bg-rose-700' : level >= 7 ? 'bg-orange-600' : level >= 5 ? 'bg-amber-500' : 'bg-lime-600';
-
-  return (
-    <div>
-      <div className="mb-2 flex items-center justify-between text-sm font-semibold text-stone-600">
-        <span>Heat level</span>
-        <span>{level}/10</span>
-      </div>
-      <div className="h-2 overflow-hidden rounded-full bg-stone-100">
-        <div className={`h-full ${heatColor}`} style={{ width: `${Math.min(100, level * 10)}%` }} />
-      </div>
-    </div>
-  );
-}
 
 function HotSauceDetails() {
   const { id } = useParams();
@@ -49,12 +31,8 @@ function HotSauceDetails() {
   return (
     <div className="page-shell">
       <div className="mb-6">
-        <Link
-          to="/hot-sauces"
-          className="quiet-link inline-flex items-center gap-2"
-        >
-          <span aria-hidden="true">←</span>
-          Back to hot sauces
+        <Link to="/hot-sauces" className="quiet-link inline-flex items-center gap-2">
+          <span aria-hidden="true">←</span> Back to hot sauces
         </Link>
       </div>
       <article className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)]">
@@ -80,38 +58,7 @@ function HotSauceDetails() {
             {sauce.description}
           </p>
 
-          <div className="mt-6 rounded-lg border border-stone-200/80 bg-white/70 p-5 text-stone-700">
-            <HeatBar level={sauce.hotness_level} />
-            <div className="mt-5 grid gap-3 sm:grid-cols-2">
-            <p className="flex items-center gap-2 text-sm font-semibold">
-              <FaPepperHot className="h-4 w-4 text-rose-600" />
-              Heat level {sauce.hotness_level}/10
-            </p>
-            <p className="flex items-center gap-2 text-sm font-semibold">
-              <GiFireBottle className="h-4 w-4 text-rose-600" />
-              {sauce.scoville_units.toLocaleString()} SHU
-            </p>
-            <p className="flex items-center gap-2 text-sm font-semibold">
-              <FaDollarSign className="h-4 w-4 text-rose-600" />
-              ${sauce.price} bottle
-            </p>
-            <p className="flex items-center gap-2 text-sm font-semibold">
-              <FaHourglassHalf className="h-4 w-4 text-rose-600" />
-              Aged {sauce.age_months} months
-            </p>
-            <p className="flex items-center gap-2 text-sm font-semibold">
-              <FaWarehouse className="h-4 w-4 text-rose-600" />
-              {sauce.batch_size} bottle batch
-            </p>
-            <p className="flex items-center gap-2 text-sm font-semibold">
-              <FaCalendarAlt className="h-4 w-4 text-rose-600" />
-              Bottled {sauce.bottling_date}
-            </p>
-            <p className="flex items-center gap-2 text-sm font-semibold">
-              pH {sauce.acidity_ph.toFixed(1)}
-            </p>
-            </div>
-          </div>
+          <HotSauceStats sauce={sauce} />
         </div>
       </article>
     </div>

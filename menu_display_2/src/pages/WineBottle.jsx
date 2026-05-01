@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { buildWineImageIndex, resolveWineImageFilename } from '../lib/wineImages';
@@ -14,57 +13,10 @@ import {
   popularityTier,
   rarityTier,
 } from '../lib/wineFacets';
+import { formatPrice, formatPriceRange, humanize } from '../lib/wineBottleUtils';
+import { DetailCard, MetricCard } from '../components/WineBottle/WineBottleCards';
 
-const currencyFormatter = new Intl.NumberFormat('en-US', {
-  style: 'currency',
-  currency: 'EUR',
-  maximumFractionDigits: 0,
-});
 const cellarImageBaseUrl = getGeneratedImageBaseUrl('the_cellar');
-
-function formatPrice(value) {
-  if (typeof value !== 'number') return '—';
-  return currencyFormatter.format(value);
-}
-
-function formatPriceRange(range) {
-  if (!range) return '—';
-
-  const low = formatPrice(range.low);
-  const high = formatPrice(range.high);
-
-  if (low === '—' && high === '—') return '—';
-  if (low === '—') return high;
-  if (high === '—') return low;
-  if (low === high) return low;
-
-  return `${low} to ${high}`;
-}
-
-function humanize(value) {
-  if (typeof value !== 'string') return '—';
-  return value.replace(/_/g, ' ');
-}
-
-function DetailCard({ label, value, note, className = '' }) {
-  return (
-    <div className={`wine-dossier-card min-h-[6.5rem] p-4 sm:p-5 ${className}`}>
-      <p className="wine-dossier-label">{label}</p>
-      <p className="wine-dossier-value">{value}</p>
-      {note ? <p className="wine-dossier-note">{note}</p> : null}
-    </div>
-  );
-}
-
-function MetricCard({ label, value, note }) {
-  return (
-    <div className="wine-metric-card min-h-[8rem]">
-      <p className="stat-label">{label}</p>
-      <p className="mt-2 text-xl font-semibold leading-snug text-ink sm:text-[1.35rem]">{value}</p>
-      {note ? <p className="mt-1 text-[0.78rem] leading-5 text-stone-500">{note}</p> : null}
-    </div>
-  );
-}
 
 function WineBottle() {
   const { wineKey } = useParams();
@@ -140,23 +92,15 @@ function WineBottle() {
   return (
     <div className="page-shell">
       <div className="mb-8">
-        <Link
-          to="/wines"
-          className="quiet-link inline-flex items-center gap-2"
-        >
-          <span aria-hidden="true">←</span>
-          Back to cellar
+        <Link to="/wines" className="quiet-link inline-flex items-center gap-2">
+          <span aria-hidden="true">←</span> Back to cellar
         </Link>
       </div>
 
       <article className="mx-auto max-w-7xl space-y-8">
         <section className="grid gap-8 lg:grid-cols-[minmax(0,1.08fr)_minmax(0,0.92fr)]">
           <div className="lg:sticky lg:top-24 lg:self-start">
-            <WineImageZoom
-              src={`${cellarImageBaseUrl}${imageFilename}`}
-              alt={`${wine.name} bottle`}
-              appearance="museum"
-            />
+            <WineImageZoom src={`${cellarImageBaseUrl}${imageFilename}`} alt={`${wine.name} bottle`} appearance="museum" />
           </div>
 
           <header className="p-0 py-2 sm:py-4 lg:py-8">
@@ -167,42 +111,19 @@ function WineBottle() {
                 <span className="accent-chip border-saffron/20 bg-saffron/10 text-amber-900">{country.label}</span>
               </div>
 
-              <h1 className="page-title mt-5 max-w-2xl text-[clamp(2.6rem,5vw,4.9rem)] leading-[0.92]">
-                {wine.name}
-              </h1>
-
-              <p className="mt-5 max-w-3xl text-lg leading-8 text-stone-600 sm:text-xl sm:leading-9">
-                {wine.tasting_note}
-              </p>
+              <h1 className="page-title mt-5 max-w-2xl text-[clamp(2.6rem,5vw,4.9rem)] leading-[0.92]">{wine.name}</h1>
+              <p className="mt-5 max-w-3xl text-lg leading-8 text-stone-600 sm:text-xl sm:leading-9">{wine.tasting_note}</p>
 
               <div className="mt-8 grid gap-3 sm:grid-cols-3">
-                <MetricCard
-                  label="List price"
-                  value={formatPrice(wine.michelin_star_price_eur_750ml)}
-                  note="per 750ml bottle"
-                />
-                <MetricCard
-                  label="Market price"
-                  value={formatPrice(wine.base_price_eur_750ml)}
-                  note={priceBand.label}
-                />
-                <MetricCard
-                  label="Cellar read"
-                  value={rarityText}
-                  note={popularityText}
-                />
+                <MetricCard label="List price" value={formatPrice(wine.michelin_star_price_eur_750ml)} note="per 750ml bottle" />
+                <MetricCard label="Market price" value={formatPrice(wine.base_price_eur_750ml)} note={priceBand.label} />
+                <MetricCard label="Cellar read" value={rarityText} note={popularityText} />
               </div>
 
               <div className="mt-6 flex flex-wrap gap-2 text-xs font-semibold text-stone-500">
-                <span className="rounded-full border border-stone-200 bg-white/85 px-3 py-1.5 shadow-sm">
-                  Markup ×{wine.michelin_markup_multiple_used}
-                </span>
-                <span className="rounded-full border border-stone-200 bg-white/85 px-3 py-1.5 shadow-sm">
-                  {popularityText}
-                </span>
-                <span className="rounded-full border border-stone-200 bg-white/85 px-3 py-1.5 shadow-sm">
-                  Confidence {wine.confidence}
-                </span>
+                <span className="rounded-full border border-stone-200 bg-white/85 px-3 py-1.5 shadow-sm">Markup ×{wine.michelin_markup_multiple_used}</span>
+                <span className="rounded-full border border-stone-200 bg-white/85 px-3 py-1.5 shadow-sm">{popularityText}</span>
+                <span className="rounded-full border border-stone-200 bg-white/85 px-3 py-1.5 shadow-sm">Confidence {wine.confidence}</span>
               </div>
             </div>
           </header>
@@ -222,12 +143,7 @@ function WineBottle() {
           <div className="wine-dossier-card p-5 sm:p-6">
             <p className="page-kicker">Pricing dossier</p>
             <div className="mt-4 grid gap-3 md:grid-cols-2">
-              <DetailCard
-                label="Price range"
-                value={`${formatPriceRange(wine.base_price_range_eur_750ml)} base`}
-                note={`${formatPriceRange(wine.michelin_star_price_range_eur_750ml)} Michelin`}
-                className="md:col-span-2"
-              />
+              <DetailCard label="Price range" value={`${formatPriceRange(wine.base_price_range_eur_750ml)} base`} note={`${formatPriceRange(wine.michelin_star_price_range_eur_750ml)} Michelin`} className="md:col-span-2" />
               <DetailCard label="Confidence" value={wine.confidence} />
               <DetailCard label="Price type" value={priceType} />
               <DetailCard label="Pricing source" value={pricingSource} className="md:col-span-2" />

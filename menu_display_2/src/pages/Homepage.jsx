@@ -1,26 +1,11 @@
 import MenuPreview from '../components/MenuPreview';
-import ProgressiveImage from '../components/ProgressiveImage';
 import menuData from '../menuData';
 import { CONTENT_ZONES, findZoneByRestaurantName } from '../lib/siteThemes';
 import { getGeneratedImageBaseUrl } from '../lib/imageAssets';
+import HomepageHero from '../components/Homepage/HomepageHero';
+import ZoneNavigation from '../components/Homepage/ZoneNavigation';
 
 const encodeAssetSegment = (value) => encodeURIComponent(value.replace(/ /g, '_')).replace(/%2C/gi, ',');
-
-function scrollToZone(zoneId) {
-  const target = document.getElementById(zoneId);
-  if (!target) return;
-
-  const root = document.documentElement;
-  const previousScrollBehavior = root.style.scrollBehavior;
-  root.style.scrollBehavior = 'auto';
-
-  const targetTop = Math.max(0, target.getBoundingClientRect().top + window.scrollY - 112);
-  window.scrollTo({ top: targetTop, behavior: 'auto' });
-
-  window.requestAnimationFrame(() => {
-    root.style.scrollBehavior = previousScrollBehavior;
-  });
-}
 
 function Homepage() {
   const indexedMenuData = menuData.map((menu, index) => ({ ...menu, originalIndex: index }));
@@ -38,104 +23,14 @@ function Homepage() {
 
   return (
     <div className="page-shell">
-      <header className="mx-auto mb-14 max-w-6xl">
-        <div className="grid gap-6 lg:grid-cols-[1.08fr_0.92fr] lg:items-stretch">
-          <div className="strong-panel p-7 sm:p-10 lg:p-12">
-            <p className="page-kicker">Restaurant guide</p>
-            <h1 className="page-title">Exquisite tasting menus from imagined kitchens.</h1>
-            <p className="page-lede mx-0 max-w-2xl">
-              Browse imagined restaurants, dining rooms, wine pairings, and full tasting menus from around the globe. Each destination keeps a distinct regional mood inside one warm editorial atlas.
-            </p>
+      <HomepageHero
+        availableZones={availableZones}
+        featuredMenu={featuredMenu}
+        featuredZone={featuredZone}
+        featuredImageUrl={featuredImageUrl}
+      />
 
-            <div className="mt-8 flex flex-wrap gap-3">
-              {availableZones.slice(0, 6).map((zone) => (
-                <button
-                  key={zone.id}
-                  type="button"
-                  onClick={() => scrollToZone(zone.id)}
-                  className={`rounded-full border px-4 py-2 text-sm font-semibold transition ${zone.accent.border} ${zone.accent.wash} ${zone.accent.text} hover:bg-white`}
-                >
-                  {zone.title}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <aside className="grid gap-4">
-            {featuredMenu && featuredImageUrl && (
-              <article className={`soft-panel overflow-hidden ${featuredZone?.accent.border ?? ''}`}>
-                <div className={`relative aspect-[4/3] bg-gradient-to-br ${featuredZone?.accent.wash ?? 'bg-white/80'} from-white to-stone-100`}>
-                  <ProgressiveImage
-                    src={featuredImageUrl}
-                    alt={`${featuredMenu.restaurant_name} dining room`}
-                    loading="eager"
-                    className="h-full w-full"
-                    imageClassName="h-full w-full object-cover"
-                  />
-                  <div className={`absolute inset-0 bg-gradient-to-br ${featuredZone?.accent.glow ?? 'from-stone-200/30 via-transparent to-transparent'} opacity-50`} />
-                </div>
-                <div className="p-5">
-                  <div className="flex flex-wrap gap-2">
-                    <span className={`accent-chip ${featuredZone?.accent.border ?? 'border-stone-200'} ${featuredZone?.accent.wash ?? 'bg-white/80'} ${featuredZone?.accent.text ?? 'text-stone-700'}`}>
-                      Featured menu
-                    </span>
-                    {featuredZone && (
-                      <span className="accent-chip border-stone-200 bg-white/80 text-stone-500">
-                        {featuredZone.title}
-                      </span>
-                    )}
-                  </div>
-                  <h2 className="mt-4 font-playfair text-3xl font-semibold text-ink">{featuredMenu.restaurant_name}</h2>
-                  <p className="mt-2 text-sm leading-6 text-stone-600">{featuredMenu.chef_name}</p>
-                  <div className="mt-5 grid grid-cols-2 gap-3 text-sm">
-                    <div className="stat-tile">
-                      <p className="stat-label">Location</p>
-                      <p className="mt-1 font-semibold text-ink">{featuredMenu.location}</p>
-                    </div>
-                    <div className="stat-tile">
-                      <p className="stat-label">Courses</p>
-                      <p className="mt-1 font-semibold text-ink">{featuredMenu.tasting_menu.length}</p>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            )}
-
-            <div className="soft-panel p-5">
-              <p className="page-kicker">Atlas note</p>
-              <p className="mt-2 text-sm leading-7 text-stone-600">
-                Regional tints guide the eye without splitting the site into separate brands: Paris stays polished, Bali glows green, and Mars keeps a violet edge.
-              </p>
-            </div>
-          </aside>
-        </div>
-      </header>
-
-      <nav className="mb-14" aria-label="Jump to category">
-        <div className="soft-panel p-4 sm:p-5">
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <p className="page-kicker">Quick jump</p>
-              <h2 className="mt-1 font-playfair text-2xl font-semibold text-ink">Pick a region</h2>
-            </div>
-            <p className="max-w-sm text-sm leading-6 text-stone-500">
-              Move straight into the dining worlds below.
-            </p>
-          </div>
-          <div className="mt-5 flex flex-wrap gap-3 pb-1 pr-1">
-            {availableZones.map((zone) => (
-              <button
-                key={zone.id}
-                type="button"
-                onClick={() => scrollToZone(zone.id)}
-                className={`rounded-full border px-4 py-2 text-sm font-semibold transition ${zone.accent.border} ${zone.accent.wash} ${zone.accent.text} hover:bg-white`}
-              >
-                {zone.title}
-              </button>
-            ))}
-          </div>
-        </div>
-      </nav>
+      <ZoneNavigation availableZones={availableZones} />
 
       <div className="space-y-20">
         {CONTENT_ZONES.map((zone) => {

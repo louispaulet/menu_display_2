@@ -37,14 +37,19 @@ menu_display_2/
 ├── package-lock.json     # Dependency versions lock file
 ├── package.json          # Project metadata and scripts
 ├── postcss.config.js     # PostCSS configuration for CSS transformations
+├── tailwind.config.js    # Tailwind CSS configuration
+├── vite.config.js        # Vite configuration for build and dev server
 ├── public/               # Static assets (images, icons, etc.)
 └── src/                  # Application source code
-    ├── components/       # React components
     ├── assets/           # Images, icons, and static assets
-    ├── styles/           # Global and component-specific styles
-    ├── utils/            # Utility functions and helpers
-    └── tailwind.config.js # Tailwind CSS configuration
-    └── vite.config.js     # Vite configuration for build and dev server
+    ├── components/       # Reusable React components and modular sub-components
+    ├── dish_recipes/     # Markdown files containing dish recipes
+    ├── lib/              # Utility functions, helpers, and extracted logic
+    ├── pages/            # Top-level route components (Homepage, MenuStudio, etc.)
+    ├── App.jsx           # Main application component and routing
+    ├── index.css         # Global styles
+    ├── main.jsx          # React application entry point
+    └── menuData.js       # Core data source for restaurant menus
 ```
 
 ## 🚀 Getting Started
