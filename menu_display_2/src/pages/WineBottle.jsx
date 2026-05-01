@@ -25,11 +25,41 @@ function formatPrice(value) {
   return currencyFormatter.format(value);
 }
 
-function InfoPair({ label, value }) {
+function formatPriceRange(range) {
+  if (!range) return '—';
+
+  const low = formatPrice(range.low);
+  const high = formatPrice(range.high);
+
+  if (low === '—' && high === '—') return '—';
+  if (low === '—') return high;
+  if (high === '—') return low;
+  if (low === high) return low;
+
+  return `${low} to ${high}`;
+}
+
+function humanize(value) {
+  if (typeof value !== 'string') return '—';
+  return value.replace(/_/g, ' ');
+}
+
+function DetailCard({ label, value, note }) {
   return (
-    <div className="stat-tile">
+    <div className="wine-dossier-card">
+      <p className="wine-dossier-label">{label}</p>
+      <p className="wine-dossier-value">{value}</p>
+      {note ? <p className="wine-dossier-note">{note}</p> : null}
+    </div>
+  );
+}
+
+function MetricCard({ label, value, note }) {
+  return (
+    <div className="wine-metric-card">
       <p className="stat-label">{label}</p>
-      <p className="mt-2 text-sm leading-6 text-ink">{value}</p>
+      <p className="mt-2 text-2xl font-semibold leading-tight text-ink">{value}</p>
+      {note ? <p className="mt-1 text-xs leading-5 text-stone-500">{note}</p> : null}
     </div>
   );
 }
@@ -71,6 +101,12 @@ function WineBottle() {
   const popularityScore = useMemo(() => getWinePopularityScore(wine), [wine]);
   const rarity = useMemo(() => rarityTier(rarityScore), [rarityScore]);
   const popularity = useMemo(() => popularityTier(popularityScore), [popularityScore]);
+  const priceType = humanize(wine?.price_type);
+  const pricingSource = humanize(wine?.pricing_source_basis);
+  const bottleStatus = wine?.is_fictional_or_unpriceable ? 'Fictional or unpriceable' : 'Real bottle';
+  const bottleNote = wine?.is_fictional_or_unpriceable
+    ? 'Fictional or unpriceable'
+    : 'Real bottle with estimated market guidance';
 
   if (!wineData) {
     return (
@@ -114,82 +150,125 @@ function WineBottle() {
         </Link>
       </div>
 
-      <article className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.92fr)]">
-        <div className="lg:sticky lg:top-24 lg:self-start">
-          <div className="strong-panel p-5 sm:p-6">
-            <WineImageZoom src={`/the_cellar/${imageFilename}`} alt={`${wine.name} bottle`} className="shadow-none hover:shadow-none" />
-            <p className="stat-label mt-3 text-center">
-              Click image to open a larger frame
-            </p>
+      <article className="mx-auto max-w-7xl space-y-8">
+        <section className="grid gap-8 lg:grid-cols-[minmax(0,1.08fr)_minmax(0,0.92fr)]">
+          <div className="lg:sticky lg:top-24 lg:self-start">
+            <div className="wine-hero-panel p-4 sm:p-5 lg:p-6">
+              <div className="wine-hero-frame">
+                <WineImageZoom
+                  src={`/the_cellar/${imageFilename}`}
+                  alt={`${wine.name} bottle`}
+                  className="shadow-none hover:shadow-none"
+                />
+              </div>
+              <p className="mt-4 text-center text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-stone-400">
+                Click image to open a larger frame
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div className="flex flex-col gap-6">
-          <header className="strong-panel p-7 sm:p-8 lg:p-10">
-            <div className="flex flex-wrap gap-2">
-              <span className="accent-chip border-stone-200 bg-white/80 text-stone-500">Wine bottle</span>
-              <span className={`accent-chip border-clay/20 bg-clay/10 text-clay`}>{style.label}</span>
-              <span className={`accent-chip border-saffron/20 bg-saffron/10 text-amber-900`}>{country.label}</span>
-            </div>
-            <h1 className="page-title mt-4">{wine.name}</h1>
-            <p className="mt-4 max-w-3xl text-lg leading-8 text-stone-600">{wine.tasting_note}</p>
+          <header className="wine-hero-panel relative overflow-hidden p-6 sm:p-8 lg:p-10">
+            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(196,144,63,0.18),transparent_34%),linear-gradient(180deg,rgba(255,255,255,0.42),transparent_24%)]" />
+            <div className="relative">
+              <div className="flex flex-wrap gap-2">
+                <span className="accent-chip border-stone-200 bg-white/85 text-stone-500">Wine bottle</span>
+                <span className="accent-chip border-clay/20 bg-clay/10 text-clay">{style.label}</span>
+                <span className="accent-chip border-saffron/20 bg-saffron/10 text-amber-900">{country.label}</span>
+              </div>
 
-            <div className="mt-8 grid gap-3 sm:grid-cols-3">
-              <div className="stat-tile">
-                <p className="stat-label">List price</p>
-                <p className="stat-value text-2xl">{formatPrice(wine.michelin_star_price_eur_750ml)}</p>
-                <p className="mt-1 text-xs text-stone-400">per 750ml bottle</p>
+              <h1 className="page-title mt-5 max-w-2xl text-[clamp(2.6rem,5vw,4.9rem)] leading-[0.92]">
+                {wine.name}
+              </h1>
+
+              <p className="mt-5 max-w-3xl text-lg leading-8 text-stone-600 sm:text-xl sm:leading-9">
+                {wine.tasting_note}
+              </p>
+
+              <div className="mt-8 grid gap-3 sm:grid-cols-3">
+                <MetricCard
+                  label="List price"
+                  value={formatPrice(wine.michelin_star_price_eur_750ml)}
+                  note="per 750ml bottle"
+                />
+                <MetricCard
+                  label="Market price"
+                  value={formatPrice(wine.base_price_eur_750ml)}
+                  note={priceBand.label}
+                />
+                <MetricCard
+                  label="Cellar read"
+                  value={rarityText}
+                  note={popularityText}
+                />
               </div>
-              <div className="stat-tile">
-                <p className="stat-label">Market price</p>
-                <p className="stat-value text-2xl">{formatPrice(wine.base_price_eur_750ml)}</p>
-                <p className="mt-1 text-xs text-stone-400">{priceBand.label}</p>
+
+              <div className="mt-6 flex flex-wrap gap-2 text-xs font-semibold text-stone-500">
+                <span className="rounded-full border border-stone-200 bg-white/85 px-3 py-1.5 shadow-sm">
+                  Markup ×{wine.michelin_markup_multiple_used}
+                </span>
+                <span className="rounded-full border border-stone-200 bg-white/85 px-3 py-1.5 shadow-sm">
+                  {popularityText}
+                </span>
+                <span className="rounded-full border border-stone-200 bg-white/85 px-3 py-1.5 shadow-sm">
+                  Confidence {wine.confidence}
+                </span>
               </div>
-              <div className="stat-tile">
-                <p className="stat-label">Cellar read</p>
-                <p className="stat-value text-2xl">{rarityText}</p>
-                <p className="mt-1 text-xs text-stone-400">{popularityText}</p>
-              </div>
-            </div>
-            <div className="mt-5 flex flex-wrap gap-2 text-xs font-semibold text-stone-500">
-              <span className="rounded-full border border-stone-200 bg-white/80 px-3 py-1">Markup ×{wine.michelin_markup_multiple_used}</span>
-              <span className="rounded-full border border-stone-200 bg-white/80 px-3 py-1">{popularityText}</span>
-              <span className="rounded-full border border-stone-200 bg-white/80 px-3 py-1">Confidence {wine.confidence}</span>
             </div>
           </header>
+        </section>
 
-          <section className="soft-panel p-6">
-            <div className="grid gap-4 sm:grid-cols-2">
-              <InfoPair label="Style" value={style.label} />
-              <InfoPair label="Origin" value={country.label} />
-              <InfoPair label="Price band" value={priceBand.label} />
-              <InfoPair label="Rarity / popularity" value={`${rarityText} · ${popularityText}`} />
-              <InfoPair
+        <section className="grid gap-6 lg:grid-cols-2">
+          <div className="wine-dossier-card p-6 sm:p-7">
+            <p className="page-kicker">Cellar profile</p>
+            <h2 className="mt-2 font-playfair text-3xl font-semibold text-ink">Identity and place</h2>
+            <p className="mt-3 max-w-2xl text-sm leading-7 text-stone-600">
+              The broad profile sits together here so the page reads like a carefully annotated cellar label rather than a database export.
+            </p>
+            <div className="mt-5 grid gap-3 sm:grid-cols-2">
+              <DetailCard label="Style" value={style.label} />
+              <DetailCard label="Origin" value={country.label} />
+              <DetailCard label="Price band" value={priceBand.label} />
+              <DetailCard label="Rarity / popularity" value={`${rarityText} · ${popularityText}`} />
+            </div>
+          </div>
+
+          <div className="wine-dossier-card p-6 sm:p-7">
+            <p className="page-kicker">Pricing dossier</p>
+            <h2 className="mt-2 font-playfair text-3xl font-semibold text-ink">How the number is built</h2>
+            <p className="mt-3 max-w-2xl text-sm leading-7 text-stone-600">
+              The implementation details remain visible, but the typography and spacing should make them feel like a premium method note.
+            </p>
+            <div className="mt-5 grid gap-3 sm:grid-cols-2">
+              <DetailCard
                 label="Price range"
-                value={`${formatPrice(wine.base_price_range_eur_750ml?.low)} to ${formatPrice(
-                  wine.base_price_range_eur_750ml?.high,
-                )} base, ${formatPrice(wine.michelin_star_price_range_eur_750ml?.low)} to ${formatPrice(
-                  wine.michelin_star_price_range_eur_750ml?.high,
-                )} Michelin`}
+                value={`${formatPriceRange(wine.base_price_range_eur_750ml)} base, ${formatPriceRange(wine.michelin_star_price_range_eur_750ml)} Michelin`}
               />
-              <InfoPair label="Bottle note" value={wine.is_fictional_or_unpriceable ? 'Fictional or unpriceable' : 'Real bottle with estimated market guidance'} />
+              <DetailCard label="Confidence" value={wine.confidence} />
+              <DetailCard label="Price type" value={priceType} />
+              <DetailCard label="Pricing source" value={pricingSource} />
+              <DetailCard label="Status" value={bottleStatus} />
+              <DetailCard label="Bottle note" value={bottleNote} />
             </div>
-          </section>
+          </div>
+        </section>
 
-          <section className="soft-panel p-6">
-            <div className="grid gap-4 sm:grid-cols-2">
-              <InfoPair label="Confidence" value={wine.confidence} />
-              <InfoPair label="Price type" value={wine.price_type.replace(/_/g, ' ')} />
-              <InfoPair label="Pricing source" value={wine.pricing_source_basis} />
-              <InfoPair label="Status" value={wine.is_fictional_or_unpriceable ? 'Fictional or unpriceable' : 'Real bottle'} />
+        <section className="wine-dossier-card p-6 sm:p-7">
+          <p className="page-kicker">Bottle notes</p>
+          <div className="mt-2 flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+            <div className="max-w-2xl">
+              <h2 className="font-playfair text-3xl font-semibold text-ink">Tasting note and context</h2>
+              <p className="mt-3 text-sm leading-7 text-stone-600">
+                This is the long-form copy that should feel more editorial than administrative.
+              </p>
             </div>
-          </section>
-
-          <section className="soft-panel p-6">
-            <p className="page-kicker">Bottle notes</p>
-            <p className="mt-3 text-base leading-8 text-stone-600">{wine.notes}</p>
-          </section>
-        </div>
+            <div className="grid gap-3 sm:grid-cols-3 lg:min-w-[28rem]">
+              <DetailCard label="List price" value={formatPrice(wine.michelin_star_price_eur_750ml)} />
+              <DetailCard label="Market price" value={formatPrice(wine.base_price_eur_750ml)} />
+              <DetailCard label="Cellar read" value={rarityText} />
+            </div>
+          </div>
+          <p className="mt-6 text-base leading-8 text-stone-600">{wine.notes}</p>
+        </section>
       </article>
     </div>
   );
