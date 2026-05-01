@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-04-26T20:08:24+02:00",
-  "count": 261,
+  "count": 262,
   "items": [
     {
       "wine_name": "Albariño Do Ferreiro Cepas Vellas 2019",
@@ -776,6 +776,11 @@
       "wine_name": "Meursault Les Narvaux Domaine Michelot 2018",
       "custom_id": "wine-image-155-meursault-les-narvaux-domaine-michelot-2018",
       "filename": "wine-image-155-meursault-les-narvaux-domaine-michelot-2018.webp"
+    },
+    {
+      "wine_name": "Mole de Piedra Blend 2021",
+      "custom_id": "wine-image-267-mole-de-piedra-blend-2021-v2",
+      "filename": "wine-image-267-mole-de-piedra-blend-2021-v2.webp"
     },
     {
       "wine_name": "Moscato d'Asti Elio Perrone Sourgal 2020",

@@ -13,11 +13,15 @@ export function defaultWineImageFilename(wine) {
   return `wine-image-${idPart}-${namePart}.webp`;
 }
 
+const wineImageFilenameOverrides = new Map([
+  ['Mole de Piedra Blend 2021', 'wine-image-267-mole-de-piedra-blend-2021-v2.webp'],
+]);
+
 export function buildWineImageIndex(manifest) {
   const entries = manifest?.items ?? [];
   return new Map(entries.map((entry) => [entry.wine_name, entry.filename]));
 }
 
 export function resolveWineImageFilename(wine, imageIndex) {
-  return imageIndex.get(wine.name) ?? defaultWineImageFilename(wine);
+  return imageIndex.get(wine.name) ?? wineImageFilenameOverrides.get(wine.name) ?? defaultWineImageFilename(wine);
 }
