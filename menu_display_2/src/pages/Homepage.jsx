@@ -2,6 +2,7 @@ import MenuPreview from '../components/MenuPreview';
 import ProgressiveImage from '../components/ProgressiveImage';
 import menuData from '../menuData';
 import { CONTENT_ZONES, findZoneByRestaurantName } from '../lib/siteThemes';
+import { getGeneratedImageBaseUrl } from '../lib/imageAssets';
 
 const encodeAssetSegment = (value) => encodeURIComponent(value.replace(/ /g, '_')).replace(/%2C/gi, ',');
 
@@ -30,7 +31,7 @@ function Homepage() {
   const featuredMenu = indexedMenuData[0];
   const featuredZone = featuredMenu ? findZoneByRestaurantName(featuredMenu.restaurant_name) : null;
   const featuredImageUrl = featuredMenu
-    ? `${import.meta.env.DEV ? '/restaurant_pictures/thumbnails/' : 'https://raw.githubusercontent.com/louispaulet/menu_display_2/main/restaurant_pictures/thumbnails/'}${encodeAssetSegment(
+    ? `${getGeneratedImageBaseUrl('restaurant_pictures/thumbnails')}${encodeAssetSegment(
         featuredMenu.restaurant_name,
       )}.webp`
     : null;

@@ -5,6 +5,7 @@ import { MdAttachMoney, MdLocalBar, MdLocationOn, MdRestaurantMenu } from 'react
 import ProgressiveImage from './ProgressiveImage';
 import { useWineLinkContext, linkifyWineText } from '../lib/wineLinks';
 import { findZoneByRestaurantName, getZoneAccentForRestaurant } from '../lib/siteThemes';
+import { getGeneratedImageBaseUrl } from '../lib/imageAssets';
 
 const encodeAssetSegment = (value) => encodeURIComponent(value.replace(/ /g, '_')).replace(/%2C/gi, ',');
 
@@ -13,12 +14,8 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
   const menuZone = useMemo(() => findZoneByRestaurantName(restaurantName), [restaurantName]);
   const accent = getZoneAccentForRestaurant(restaurantName);
   const averageCoursePrice = Math.round(grandTotal / Math.max(tastingMenu.length, 1));
-  const baseImageUrl = import.meta.env.DEV
-    ? '/dish_pictures/'
-    : 'https://raw.githubusercontent.com/louispaulet/menu_display_2/main/dish_pictures/';
-  const baseRestaurantImageUrl = import.meta.env.DEV
-    ? '/restaurant_pictures/'
-    : 'https://raw.githubusercontent.com/louispaulet/menu_display_2/main/restaurant_pictures/';
+  const baseImageUrl = getGeneratedImageBaseUrl('dish_pictures');
+  const baseRestaurantImageUrl = getGeneratedImageBaseUrl('restaurant_pictures');
 
   const generateImageUrl = (courseName, courseDescription) => {
     const chefNameEncoded = encodeAssetSegment(chefName);

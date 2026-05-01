@@ -4,13 +4,12 @@ import { GiChefToque } from 'react-icons/gi';
 import { MdAttachMoney, MdLocationOn, MdRestaurantMenu } from 'react-icons/md';
 import ProgressiveImage from './ProgressiveImage';
 import { getZoneAccentForRestaurant } from '../lib/siteThemes';
+import { getGeneratedImageBaseUrl } from '../lib/imageAssets';
 
 const encodeAssetSegment = (value) => encodeURIComponent(value.replace(/ /g, '_')).replace(/%2C/gi, ',');
 
 function MenuPreview({ restaurantName, chefName, location, numberOfCourses, totalPrice, id }) {
-  const baseImageUrl = import.meta.env.DEV
-    ? '/restaurant_pictures/thumbnails/'
-    : 'https://raw.githubusercontent.com/louispaulet/menu_display_2/main/restaurant_pictures/thumbnails/';
+  const baseImageUrl = getGeneratedImageBaseUrl('restaurant_pictures/thumbnails');
   const accent = getZoneAccentForRestaurant(restaurantName);
 
   const generateImageUrl = (restaurantName) => {

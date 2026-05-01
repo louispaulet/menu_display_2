@@ -5,10 +5,9 @@ import menuData from '../menuData';
 import ProgressiveImage from './ProgressiveImage';
 import { linkifyWineMarkdown, useWineLinkContext } from '../lib/wineLinks';
 import { findZoneByRestaurantName, getZoneAccentForRestaurant } from '../lib/siteThemes';
+import { getGeneratedImageBaseUrl } from '../lib/imageAssets';
 
-const dishImageBaseUrl = import.meta.env.DEV
-  ? '/dish_pictures/'
-  : 'https://raw.githubusercontent.com/louispaulet/menu_display_2/main/dish_pictures/';
+const dishImageBaseUrl = getGeneratedImageBaseUrl('dish_pictures');
 
 const encodeAssetSegment = (value) => encodeURIComponent(value.replace(/ /g, '_')).replace(/%2C/gi, ',');
 
