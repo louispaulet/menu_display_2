@@ -162,6 +162,11 @@ const Recipe = () => {
   const ingredientsCount = countBullets(renderedContent, 'Ingredients', 'Instructions');
   const methodCount = countMethodSteps(renderedContent);
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   const markdownComponents = useMemo(
     () => ({
       h2: ({ children }) => <h2 id={slugifyHeading(childrenToText(children))}>{children}</h2>,
@@ -261,15 +266,16 @@ const Recipe = () => {
                   <h2 className="mt-2 font-playfair text-2xl font-semibold text-ink">Recipe outline</h2>
                   <nav className="mt-4 space-y-2" aria-label="Recipe sections">
                     {outline.map((entry, index) => (
-                      <a
+                      <button
                         key={`${entry.id}-${entry.level}-${index}`}
-                        href={`#${entry.id}`}
-                        className={`index-link ${
+                        type="button"
+                        onClick={() => scrollToSection(entry.id)}
+                        className={`index-link w-full appearance-none text-left ${
                           entry.level === 3 ? 'pl-6' : ''
                         }`}
                       >
                         {entry.title}
-                      </a>
+                      </button>
                     ))}
                   </nav>
                 </div>
