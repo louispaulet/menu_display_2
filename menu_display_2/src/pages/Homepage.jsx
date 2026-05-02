@@ -5,6 +5,23 @@ import { getGeneratedImageBaseUrl } from '../lib/imageAssets';
 import HomepageHero from '../components/Homepage/HomepageHero';
 import ZoneNavigation from '../components/Homepage/ZoneNavigation';
 
+const ZONE_EMOJI = {
+  french: '🇫🇷',
+  japanese: '🇯🇵',
+  'southeast-asian': '🌴',
+  'south-asian': '🌊',
+  polynesian: '🐚',
+  nordic: '❄️',
+  mediterranean: '☀️',
+  'latin-american': '🌮',
+  'north-american': '🗽',
+  'global-icons': '🌍',
+  'european-heritage': '🏰',
+  'middle-eastern': '🕌',
+  african: '🦁',
+  'outer-space': '🚀',
+};
+
 const encodeAssetSegment = (value) => encodeURIComponent(value.replace(/ /g, '_')).replace(/%2C/gi, ',');
 
 function Homepage() {
@@ -41,7 +58,13 @@ function Homepage() {
           return (
             <div key={zone.id} id={zone.id} className="zone-section scroll-mt-28">
               <div className={`mb-8 rounded-lg border px-6 py-6 sm:px-8 ${zone.accent.border} ${zone.accent.wash}`}>
-                <p className="page-kicker">{zone.title}</p>
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl">{ZONE_EMOJI[zone.id] ?? '🍽️'}</span>
+                  <p className="page-kicker">{zone.title}</p>
+                  <span className="inline-flex h-6 min-w-6 items-center justify-center rounded-full bg-ink/10 px-2 text-xs font-bold text-ink/60">
+                    {zoneRestaurants.length}
+                  </span>
+                </div>
                 <p className="mt-3 max-w-2xl text-lg leading-8 text-stone-600">{zone.description}</p>
               </div>
               <section className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

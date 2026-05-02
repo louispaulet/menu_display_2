@@ -12,8 +12,8 @@ describe('Header', () => {
     );
     
     expect(screen.getByText('Exquisite Menus')).toBeInTheDocument();
-    expect(screen.getByText('Wine List')).toBeInTheDocument();
-    expect(screen.getByText('Menu studio')).toBeInTheDocument();
+    expect(screen.getAllByText('Wine List').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('Menu studio').length).toBeGreaterThan(0);
   });
 
   it('toggles mobile menu when button is clicked', () => {

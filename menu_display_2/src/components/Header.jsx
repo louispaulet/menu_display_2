@@ -17,7 +17,7 @@ function Header() {
     item.activePaths.some((path) => pathname === path || (path !== '/' && pathname.startsWith(`${path}/`)));
   const navLinkClass = (isActive) =>
     [
-      'rounded-lg px-4 py-2 text-sm font-semibold transition',
+      'relative rounded-lg px-4 py-2 text-sm font-semibold transition',
       isActive
         ? 'bg-ink text-linen shadow-sm'
         : 'text-stone-600 hover:bg-white hover:text-ink',
@@ -27,7 +27,7 @@ function Header() {
     <header className="sticky top-0 z-50 border-b border-stone-200 bg-linen/95 shadow-[0_8px_24px_rgba(55,38,19,0.04)] backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3.5 sm:px-8 lg:px-10">
         <Link to="/" className="group flex items-center gap-3" onClick={() => setIsOpen(false)}>
-          <span className="flex h-10 w-10 items-center justify-center rounded-full border border-saffron/40 bg-white font-playfair text-lg font-semibold text-clay shadow-sm">
+          <span className="flex h-10 w-10 items-center justify-center rounded-full border border-saffron/40 bg-white font-playfair text-lg font-semibold text-clay shadow-sm transition-shadow duration-500 group-hover:animate-pulse-glow">
             EM
           </span>
           <span>
@@ -66,27 +66,32 @@ function Header() {
           </button>
         </div>
       </div>
-      {isOpen && (
-        <nav className="border-t border-stone-200 bg-linen/98 px-5 py-3 shadow-card md:hidden" aria-label="Mobile navigation">
-          <ul className="space-y-1">
-            {navItems.map((item) => (
-              <li key={item.to}>
-                <Link
-                  to={item.to}
-                  onClick={() => setIsOpen(false)}
-                  aria-current={isItemActive(item) ? 'page' : undefined}
-                  className={[
-                    'block rounded-lg px-4 py-3 text-sm font-semibold transition',
-                    isItemActive(item) ? 'bg-ink text-linen shadow-sm' : 'text-stone-700 hover:bg-white',
-                  ].join(' ')}
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      )}
+      <nav
+        className={[
+          'overflow-hidden border-t border-stone-200 bg-linen/98 shadow-card md:hidden',
+          'transition-all duration-300 ease-out',
+          isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 border-t-0',
+        ].join(' ')}
+        aria-label="Mobile navigation"
+      >
+        <ul className="space-y-1 px-5 py-3">
+          {navItems.map((item) => (
+            <li key={item.to}>
+              <Link
+                to={item.to}
+                onClick={() => setIsOpen(false)}
+                aria-current={isItemActive(item) ? 'page' : undefined}
+                className={[
+                  'block rounded-lg px-4 py-3 text-sm font-semibold transition',
+                  isItemActive(item) ? 'bg-ink text-linen shadow-sm' : 'text-stone-700 hover:bg-white',
+                ].join(' ')}
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </header>
   );
 }

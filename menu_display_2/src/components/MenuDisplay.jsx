@@ -5,6 +5,7 @@ import { findZoneByRestaurantName, getZoneAccentForRestaurant } from '../lib/sit
 import { getGeneratedImageBaseUrl } from '../lib/imageAssets';
 import MenuDisplayHeader from './MenuDisplay/MenuDisplayHeader';
 import CourseItem from './MenuDisplay/CourseItem';
+import useScrollSpy from '../lib/useScrollSpy';
 
 const encodeAssetSegment = (value) => encodeURIComponent(value.replace(/ /g, '_')).replace(/%2C/gi, ',');
 
@@ -47,6 +48,9 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
     })),
     [tastingMenu],
   );
+
+  const sectionIds = useMemo(() => courseIds.map((c) => c.id), [courseIds]);
+  const activeId = useScrollSpy(sectionIds);
 
   return (
     <article className="mx-auto max-w-6xl">
@@ -102,7 +106,9 @@ function MenuDisplay({ restaurantName, chefName, location, tastingMenu, diningRo
                     key={course.id}
                     type="button"
                     onClick={() => scrollToCourse(course.id)}
-                    className="index-link w-full appearance-none text-left"
+                    className={`index-link w-full appearance-none text-left transition-all duration-200 ${
+                      activeId === course.id ? 'index-link-active' : ''
+                    }`}
                   >
                     {course.label}
                   </button>

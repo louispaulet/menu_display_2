@@ -12,7 +12,7 @@ export default function HotSauceFilter({ sortBy, setSortBy }) {
         </p>
       </div>
       <label className="flex flex-col gap-2 text-sm font-semibold text-ink sm:min-w-64">
-        Filter by
+        Sort by
         <span className="relative">
           <select
             value={sortBy}

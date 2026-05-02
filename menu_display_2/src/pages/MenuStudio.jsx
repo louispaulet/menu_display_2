@@ -133,9 +133,7 @@ function MenuStudio() {
       setCopyStatus('');
       if (inputRef.current) inputRef.current.value = '';
       
-      if (detailsRef.current) {
-        detailsRef.current.removeAttribute('open');
-      }
+      
       
       window.scrollTo({ top: 400, behavior: 'smooth' });
     } catch {

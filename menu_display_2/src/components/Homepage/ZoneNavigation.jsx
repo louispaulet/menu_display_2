@@ -1,9 +1,26 @@
 /* eslint-disable react/prop-types */
 import { scrollToZone } from '../../lib/homepageUtils';
 
+const ZONE_EMOJI = {
+  french: '🇫🇷',
+  japanese: '🇯🇵',
+  'southeast-asian': '🌴',
+  'south-asian': '🌊',
+  polynesian: '🐚',
+  nordic: '❄️',
+  mediterranean: '☀️',
+  'latin-american': '🌮',
+  'north-american': '🗽',
+  'global-icons': '🌍',
+  'european-heritage': '🏰',
+  'middle-eastern': '🕌',
+  african: '🦁',
+  'outer-space': '🚀',
+};
+
 export default function ZoneNavigation({ availableZones }) {
   return (
-    <nav className="mb-14" aria-label="Jump to category">
+    <nav className="mb-14 animate-fade-in" aria-label="Jump to category">
       <div className="soft-panel p-4 sm:p-5">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
@@ -20,9 +37,13 @@ export default function ZoneNavigation({ availableZones }) {
               key={zone.id}
               type="button"
               onClick={() => scrollToZone(zone.id)}
-              className={`rounded-full border px-4 py-2 text-sm font-semibold transition ${zone.accent.border} ${zone.accent.wash} ${zone.accent.text} hover:bg-white`}
+              className={`group inline-flex items-center gap-2 rounded-full border px-4 py-2.5 text-sm font-semibold transition hover:bg-white hover:-translate-y-0.5 hover:shadow-sm ${zone.accent.border} ${zone.accent.wash} ${zone.accent.text}`}
             >
+              <span className="text-base">{ZONE_EMOJI[zone.id] ?? '🍽️'}</span>
               {zone.title}
+              <span className="inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-ink/10 px-1.5 text-[0.6rem] font-bold text-ink/60">
+                {zone.restaurantNames.length}
+              </span>
             </button>
           ))}
         </div>

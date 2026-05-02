@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── Keyframes ─────────────────────────────────────────────── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes slideDown {
+  from { opacity: 0; max-height: 0; }
+  to   { opacity: 1; max-height: 600px; }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(196, 144, 63, 0); }
+  50%      { box-shadow: 0 0 12px 4px rgba(196, 144, 63, 0.18); }
+}
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 @layer base {
   :root {
     color: #252019;
@@ -32,6 +59,19 @@
       linear-gradient(180deg, #fffaf3 0%, #f7f1e8 52%, #efe5d7 100%);
   }
 
+  /* subtle grain overlay */
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.028;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 256px 256px;
+  }
+
   a {
     @apply transition-colors duration-200;
   }
@@ -50,6 +90,64 @@
 }
 
 @layer components {
+  /* ── Animation utilities ──────────────────────────────────── */
+  .animate-fade-in-up {
+    animation: fadeInUp 0.5s ease-out both;
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.4s ease-out both;
+  }
+  .animate-slide-down {
+    animation: slideDown 0.3s ease-out both;
+  }
+  .animate-pulse-glow {
+    animation: pulseGlow 2.4s ease-in-out infinite;
+  }
+
+  /* Intersection-observer driven entrance (starts invisible) */
+  .io-hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  .io-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Stagger children: add increasing delay via CSS variable */
+  .stagger-1 { transition-delay: 0.05s; }
+  .stagger-2 { transition-delay: 0.10s; }
+  .stagger-3 { transition-delay: 0.15s; }
+  .stagger-4 { transition-delay: 0.20s; }
+  .stagger-5 { transition-delay: 0.25s; }
+  .stagger-6 { transition-delay: 0.30s; }
+  .stagger-7 { transition-delay: 0.35s; }
+  .stagger-8 { transition-delay: 0.40s; }
+
+  /* Skeleton / shimmer placeholder */
+  .skeleton {
+    @apply rounded-lg bg-stone-200/70;
+    background: linear-gradient(90deg, rgba(0,0,0,0.04) 25%, rgba(0,0,0,0.08) 50%, rgba(0,0,0,0.04) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.8s ease-in-out infinite;
+  }
+
+  /* Scroll progress bar */
+  .scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    z-index: 9999;
+    background: linear-gradient(90deg, #a95638, #c4903f, #a95638);
+    background-size: 200% 100%;
+    animation: gradientShift 3s ease infinite;
+    transform-origin: left;
+    pointer-events: none;
+  }
+
+  /* ── Layout & typography ──────────────────────────────────── */
   .page-shell {
     @apply mx-auto w-full max-w-7xl px-5 py-8 sm:px-8 lg:px-10 lg:py-12;
   }
@@ -153,5 +251,21 @@
 
   .wine-dossier-note {
     @apply mt-2 text-[0.78rem] leading-6 text-stone-500;
+  }
+
+  /* ── Active scroll-spy link ───────────────────────────────── */
+  .index-link-active {
+    @apply border-clay/50 text-ink;
+    background-color: rgb(169 86 56 / 0.08);
+  }
+
+  /* ── Gradient text effect ─────────────────────────────────── */
+  .gradient-text {
+    background: linear-gradient(135deg, #252019 0%, #a95638 45%, #c4903f 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 5s ease infinite;
   }
 }

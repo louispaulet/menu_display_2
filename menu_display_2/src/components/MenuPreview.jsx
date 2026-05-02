@@ -5,19 +5,25 @@ import { MdAttachMoney, MdLocationOn, MdRestaurantMenu } from 'react-icons/md';
 import ProgressiveImage from './ProgressiveImage';
 import { getZoneAccentForRestaurant } from '../lib/siteThemes';
 import { getGeneratedImageBaseUrl } from '../lib/imageAssets';
+import { useSingleFadeIn } from '../lib/useIntersectionFadeIn';
 
 const encodeAssetSegment = (value) => encodeURIComponent(value.replace(/ /g, '_')).replace(/%2C/gi, ',');
 
 function MenuPreview({ restaurantName, chefName, location, numberOfCourses, totalPrice, id }) {
   const baseImageUrl = getGeneratedImageBaseUrl('restaurant_pictures/thumbnails');
   const accent = getZoneAccentForRestaurant(restaurantName);
+  const { ref, visible } = useSingleFadeIn();
 
   const generateImageUrl = (restaurantName) => {
     const restaurantNameEncoded = encodeAssetSegment(restaurantName);
     return `${baseImageUrl}${restaurantNameEncoded}.webp`;
   };
   return (
-    <Link to={`/menu/${id}`} className={`editorial-card group flex h-full flex-col ${accent.border}`}>
+    <Link
+      ref={ref}
+      to={`/menu/${id}`}
+      className={`editorial-card group flex h-full flex-col ${accent.border} io-hidden ${visible ? 'io-visible' : ''}`}
+    >
       <div className={`relative aspect-[4/3] overflow-hidden bg-gradient-to-br ${accent.wash} from-white to-stone-100`}>
         <ProgressiveImage
           src={generateImageUrl(restaurantName)}

@@ -6,6 +6,13 @@ import HotSauceStats from './HotSauce/HotSauceStats';
 
 const sauceImageBaseUrl = getGeneratedImageBaseUrl('sauce_pictures');
 
+function heatTone(level) {
+  if (level >= 9) return 'bg-rose-700';
+  if (level >= 7) return 'bg-orange-600';
+  if (level >= 5) return 'bg-amber-500';
+  return 'bg-lime-600';
+}
+
 function HotSauceDetails() {
   const { id } = useParams();
   const sauce = Object.values(hotSauceData)[id];
@@ -53,6 +60,20 @@ function HotSauceDetails() {
             <span className="accent-chip border-amber-200 bg-amber-50 text-amber-900">Spice cellar</span>
           </div>
           <h1 className="mt-3 font-playfair text-4xl font-semibold leading-tight text-ink sm:text-5xl">{sauce.name}</h1>
+
+          {/* Heat visualization bar */}
+          <div className="mt-5">
+            <div className="flex items-center justify-between text-sm font-semibold text-stone-600">
+              <span>Heat level</span>
+              <span className="text-rose-700">{sauce.hotness_level}/10</span>
+            </div>
+            <div className="mt-2 relative h-3 overflow-hidden rounded-full bg-stone-100">
+              <div
+                className={`h-full ${heatTone(sauce.hotness_level)} transition-all duration-700`}
+                style={{ width: `${Math.min(100, sauce.hotness_level * 10)}%` }}
+              />
+            </div>
+          </div>
 
           <p className="mt-5 max-w-3xl text-lg leading-8 text-stone-600">
             {sauce.description}

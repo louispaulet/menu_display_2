@@ -7,12 +7,24 @@ export default function MenuStudioResult({ extraction, jsonOutput, copyStatus, h
     return (
       <section className="min-w-0 space-y-8">
         <div className="soft-panel flex min-h-[28rem] items-center justify-center p-8 text-center">
-          <div>
+          <div className="animate-fade-in">
+            <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-stone-100">
+              <span className="text-4xl">🍽️</span>
+            </div>
             <p className="page-kicker">Waiting room</p>
             <h2 className="mt-3 font-playfair text-4xl font-semibold text-ink">No menu yet</h2>
             <p className="mt-3 max-w-md text-sm leading-7 text-stone-600">
-              The generated version will appear here after extraction.
+              Upload a menu photo or try one of our examples to see the extraction result here.
             </p>
+            <div className="mt-6 flex justify-center gap-1">
+              {[0, 1, 2].map((i) => (
+                <span
+                  key={i}
+                  className="inline-block h-2 w-2 rounded-full bg-clay/40"
+                  style={{ animation: `fadeIn 1s ease-in-out ${i * 0.3}s infinite alternate` }}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -20,7 +32,7 @@ export default function MenuStudioResult({ extraction, jsonOutput, copyStatus, h
   }
 
   return (
-    <section className="min-w-0 space-y-8">
+    <section className="min-w-0 space-y-8 animate-fade-in-up">
       <GeneratedMenuDisplay menu={extraction.menu} meta={extraction.meta} />
 
       <div className="soft-panel overflow-hidden">

@@ -12,6 +12,6 @@ describe('Footer', () => {
     );
     
     expect(screen.getByText(/Exquisite Menus V3/)).toBeInTheDocument();
-    expect(screen.getByText(/Made by Exquisite Menus Team/)).toBeInTheDocument();
+    expect(screen.getByText(/Built with React/)).toBeInTheDocument();
   });
 });

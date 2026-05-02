@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { buildWineImageIndex, resolveWineImageFilename } from '../lib/wineImages';
-import { slugify } from '../lib/wineLinks';
+import { slugify, buildWineBottlePath } from '../lib/wineLinks';
 import { getGeneratedImageBaseUrl } from '../lib/imageAssets';
 import WineImageZoom from '../components/WineImageZoom';
 import {
@@ -59,6 +59,14 @@ function WineBottle() {
   const pricingSource = humanize(wine?.pricing_source_basis);
   const bottleStatus = wine?.is_fictional_or_unpriceable ? 'Fictional or unpriceable' : 'Real bottle';
 
+  // Find similar wines (same style, excluding current)
+  const similarWines = useMemo(() => {
+    if (!wine || !style) return [];
+    return wines
+      .filter((w) => w.id !== wine.id && classifyWineStyle(w).key === style.key)
+      .slice(0, 4);
+  }, [wine, wines, style]);
+
   if (!wineData) {
     return (
       <div className="page-shell">
@@ -97,7 +105,7 @@ function WineBottle() {
         </Link>
       </div>
 
-      <article className="mx-auto max-w-7xl space-y-8">
+      <article className="mx-auto max-w-7xl space-y-8 animate-fade-in-up">
         <section className="grid gap-8 lg:grid-cols-[minmax(0,1.08fr)_minmax(0,0.92fr)]">
           <div className="lg:sticky lg:top-24 lg:self-start">
             <WineImageZoom src={`${cellarImageBaseUrl}${imageFilename}`} alt={`${wine.name} bottle`} appearance="museum" />
@@ -152,15 +160,54 @@ function WineBottle() {
           </div>
         </section>
 
-        <section className="wine-dossier-card p-5 sm:p-6">
-          <p className="page-kicker">Bottle notes</p>
-          <div className="mt-4 grid gap-3 sm:grid-cols-3">
-            <MetricCard label="List price" value={formatPrice(wine.michelin_star_price_eur_750ml)} note="per 750ml bottle" />
-            <MetricCard label="Market price" value={formatPrice(wine.base_price_eur_750ml)} note={priceBand.label} />
-            <MetricCard label="Cellar read" value={rarityText} note={popularityText} />
-          </div>
-          <p className="mt-6 text-sm leading-8 text-stone-600 sm:text-base">{wine.notes}</p>
-        </section>
+        {/* Notes section (no longer duplicates the metric cards) */}
+        {wine.notes && (
+          <section className="wine-dossier-card p-5 sm:p-6">
+            <p className="page-kicker">Bottle notes</p>
+            <p className="mt-4 text-sm leading-8 text-stone-600 sm:text-base">{wine.notes}</p>
+          </section>
+        )}
+
+        {/* Similar wines */}
+        {similarWines.length > 0 && (
+          <section className="mt-4">
+            <div className="mb-6 flex items-center justify-between">
+              <div>
+                <p className="page-kicker">You may also like</p>
+                <h2 className="mt-1 font-playfair text-2xl font-semibold text-ink">Similar {style.label} bottles</h2>
+              </div>
+              <Link to="/wines" className="quiet-link text-xs">
+                View all wines →
+              </Link>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {similarWines.map((w) => {
+                const imgFile = resolveWineImageFilename(w, imageIndex);
+                return (
+                  <Link
+                    key={w.id}
+                    to={buildWineBottlePath(w)}
+                    className="editorial-card group flex flex-col transition hover:border-clay/40"
+                  >
+                    <div className="aspect-[2/3] overflow-hidden border-b border-stone-100 bg-white p-3">
+                      <img
+                        src={`${cellarImageBaseUrl}${imgFile}`}
+                        alt={`${w.name} bottle`}
+                        loading="lazy"
+                        className="h-full w-full object-contain object-center transition duration-500 group-hover:scale-105"
+                      />
+                    </div>
+                    <div className="p-4">
+                      <p className="stat-label">{classifyWineStyle(w).shortLabel}</p>
+                      <h3 className="mt-1 text-sm font-semibold leading-tight text-ink">{w.name}</h3>
+                      <p className="mt-2 text-sm font-semibold text-clay">{formatPrice(w.michelin_star_price_eur_750ml)}</p>
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
+          </section>
+        )}
       </article>
     </div>
   );

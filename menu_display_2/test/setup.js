@@ -34,6 +34,16 @@ window.ResizeObserver = class ResizeObserver {
   disconnect = vi.fn();
 };
 
+// Mock IntersectionObserver
+window.IntersectionObserver = class IntersectionObserver {
+  constructor(callback) {
+    this._callback = callback;
+  }
+  observe = vi.fn();
+  unobserve = vi.fn();
+  disconnect = vi.fn();
+};
+
 // Mock fetch
 globalThis.fetch = vi.fn(() =>
   Promise.resolve({

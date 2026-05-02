@@ -19,6 +19,7 @@ function WineList() {
   const [wineData, setWineData] = useState(null);
   const [cellarManifest, setCellarManifest] = useState(null);
   const [viewMode, setViewMode] = useState('styles');
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     fetch('/wines.json')
@@ -53,7 +54,19 @@ function WineList() {
     [wines],
   );
 
-  const sections = useMemo(() => buildGroupedSections(enrichedWines, viewMode), [enrichedWines, viewMode]);
+  // Filter wines by search query
+  const filteredWines = useMemo(() => {
+    if (!searchQuery.trim()) return enrichedWines;
+    const q = searchQuery.toLowerCase();
+    return enrichedWines.filter(
+      (entry) =>
+        entry.wine.name.toLowerCase().includes(q) ||
+        entry.style.label.toLowerCase().includes(q) ||
+        entry.country.label.toLowerCase().includes(q),
+    );
+  }, [enrichedWines, searchQuery]);
+
+  const sections = useMemo(() => buildGroupedSections(filteredWines, viewMode), [filteredWines, viewMode]);
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -85,11 +98,11 @@ function WineList() {
 
   const allCards = useMemo(
     () =>
-      enrichedWines.map((entry) => ({
+      filteredWines.map((entry) => ({
         ...entry,
         imageFilename: resolveWineImageFilename(entry.wine, imageByWineName),
       })),
-    [enrichedWines, imageByWineName],
+    [filteredWines, imageByWineName],
   );
 
   if (!wineData) {
@@ -105,17 +118,18 @@ function WineList() {
 
   return (
     <div className="page-shell">
-      <header className="relative mb-10 overflow-hidden rounded-2xl border border-stone-200/80 bg-linen/90 p-6 shadow-editorial sm:p-8 lg:p-10">
+      {/* Compact header with segmented control */}
+      <header className="relative mb-8 overflow-hidden rounded-2xl border border-stone-200/80 bg-linen/90 p-6 shadow-editorial sm:p-8 lg:p-10 animate-fade-in-up">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(196,144,63,0.14),transparent_28%),linear-gradient(135deg,rgba(169,86,56,0.08),transparent_40%)]" />
-        <div className="relative grid gap-10 lg:grid-cols-[minmax(0,1.3fr)_minmax(320px,0.7fr)] lg:items-end">
-          <div>
-            <p className="page-kicker">Wine list</p>
-            <h1 className="page-title">Browse the cellar by style, origin, and mood.</h1>
-            <p className="page-lede mx-0 max-w-4xl">
-              {metadata.description} Move through reds, whites, sparkling bottles, origins, price ladders, and collector-coded shelves.
-            </p>
+        <div className="relative">
+          <p className="page-kicker">Wine list</p>
+          <h1 className="page-title">Browse the cellar by style, origin, and mood.</h1>
+          <p className="page-lede mx-0 max-w-4xl">
+            {metadata.description} Move through reds, whites, sparkling bottles, origins, price ladders, and collector-coded shelves.
+          </p>
 
-            <div className="segmented-control mt-8">
+          <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div className="segmented-control">
               {VIEW_MODES.map((mode) => (
                 <button
                   key={mode.key}
@@ -131,36 +145,47 @@ function WineList() {
                 </button>
               ))}
             </div>
-          </div>
 
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
-            <div className="stat-tile p-5 backdrop-blur-sm">
-              <p className="text-sm text-stone-500">Total bottles tracked</p>
-              <p className="mt-1 text-3xl font-semibold text-ink">{metadata.count}</p>
-              <p className="stat-label mt-2">Source data</p>
-              <p className="mt-1 text-sm text-stone-600">{metadata.fictional_or_unpriceable_count} fictional or unpriceable entries included.</p>
-            </div>
-            <div className="stat-tile p-5 backdrop-blur-sm">
-              <p className="text-sm text-stone-500">Current focus</p>
-              <p className="mt-1 text-2xl font-semibold text-ink">{VIEW_MODES.find((mode) => mode.key === viewMode)?.label}</p>
-              <p className="mt-2 text-sm text-stone-600">{VIEW_MODES.find((mode) => mode.key === viewMode)?.description}</p>
+            {/* Search input */}
+            <div className="relative sm:w-72">
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search wines, styles, regions…"
+                className="w-full rounded-full border border-stone-200 bg-white/90 py-2.5 pl-10 pr-4 text-sm font-medium text-ink shadow-sm outline-none transition placeholder:text-stone-400 focus:border-clay/50 focus:ring-2 focus:ring-clay/20"
+              />
+              <svg className="absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-stone-400" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+              </svg>
             </div>
           </div>
         </div>
       </header>
 
-      <section className="mb-10 soft-panel p-5">
-        <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-          <div>
-            <p className="page-kicker">Active view</p>
-            <h2 className="mt-1 font-playfair text-2xl font-semibold text-ink">{VIEW_MODES.find((mode) => mode.key === viewMode)?.label}</h2>
-            <p className="mt-2 max-w-3xl text-sm leading-7 text-stone-600">{VIEW_MODES.find((mode) => mode.key === viewMode)?.description}</p>
-          </div>
-          <p className="max-w-sm text-sm leading-6 text-stone-500">
-            Jump into a shelf or open any bottle for the full label, pricing, and tasting note.
-          </p>
+      {/* Compact stats */}
+      <section className="mb-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="stat-tile p-4">
+          <p className="stat-label">Total bottles</p>
+          <p className="stat-value text-2xl">{metadata.count}</p>
         </div>
-        <nav className="mt-5 flex flex-wrap gap-2" aria-label="Wine shelves">
+        <div className="stat-tile p-4">
+          <p className="stat-label">Dominant style</p>
+          <p className="stat-value text-lg">{summary.topStyle}</p>
+        </div>
+        <div className="stat-tile p-4">
+          <p className="stat-label">Top origin</p>
+          <p className="stat-value text-lg">{summary.topCountry}</p>
+        </div>
+        <div className="stat-tile p-4">
+          <p className="stat-label">Rare / legendary</p>
+          <p className="stat-value text-2xl">{summary.rareCount}</p>
+        </div>
+      </section>
+
+      {/* Section jump nav */}
+      {!searchQuery && sections.length > 1 && (
+        <nav className="mb-8 flex flex-wrap gap-2" aria-label="Wine shelves">
           {sections.map((section) => (
             <button
               key={section.key}
@@ -172,42 +197,17 @@ function WineList() {
             </button>
           ))}
         </nav>
-      </section>
+      )}
 
-      <section className="mb-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-        <div className="stat-tile p-5">
-          <p className="text-sm text-stone-500">Dominant style</p>
-          <p className="mt-1 text-2xl font-semibold text-ink">{summary.topStyle}</p>
-          <p className="mt-2 text-sm text-stone-600">{summary.styleCount} style buckets detected.</p>
+      {/* Search feedback */}
+      {searchQuery && (
+        <div className="mb-6 text-sm text-stone-500">
+          Showing <strong className="text-ink">{filteredWines.length}</strong> of {enrichedWines.length} bottles
+          {filteredWines.length === 0 && (
+            <span className="ml-1">— try a different search term.</span>
+          )}
         </div>
-        <div className="stat-tile p-5">
-          <p className="text-sm text-stone-500">Top origin</p>
-          <p className="mt-1 text-2xl font-semibold text-ink">{summary.topCountry}</p>
-          <p className="mt-2 text-sm text-stone-600">{summary.countryCount} country buckets detected.</p>
-        </div>
-        <div className="stat-tile p-5">
-          <p className="text-sm text-stone-500">Sparkling shelf</p>
-          <p className="mt-1 text-2xl font-semibold text-ink">{summary.sparklingCount}</p>
-          <p className="mt-2 text-sm text-stone-600">Champagnes and related sparkling bottles.</p>
-        </div>
-        <div className="stat-tile p-5">
-          <p className="text-sm text-stone-500">Rare or legendary</p>
-          <p className="mt-1 text-2xl font-semibold text-ink">{summary.rareCount}</p>
-          <p className="mt-2 text-sm text-stone-600">Higher price and lower-confidence bottles.</p>
-        </div>
-      </section>
-
-      <section className="section-panel mb-14">
-        <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-          <div>
-            <p className="page-kicker">Cellar key</p>
-            <h2 className="mt-1 font-playfair text-2xl font-semibold text-ink">Styles and origins are inferred, prices are listed per 750ml bottle</h2>
-          </div>
-          <p className="max-w-3xl text-sm leading-7 text-stone-600">
-            Each bottle opens into a detail page with the larger label image, tasting note, confidence, and price guidance.
-          </p>
-        </div>
-      </section>
+      )}
 
       {viewMode === 'all' ? (
         <section>

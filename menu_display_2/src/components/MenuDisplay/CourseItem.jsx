@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { MdAttachMoney, MdLocalBar } from 'react-icons/md';
 import ProgressiveImage from '../ProgressiveImage';
 import { linkifyWineText } from '../../lib/wineLinksRenderer';
+import { useSingleFadeIn } from '../../lib/useIntersectionFadeIn';
 
 export default function CourseItem({
   item,
@@ -13,14 +14,16 @@ export default function CourseItem({
   wineLinkContext,
 }) {
   const isEven = index % 2 === 1;
+  const { ref, visible } = useSingleFadeIn();
 
   return (
     <section
+      ref={ref}
       id={`course-${index + 1}`}
-      className={`content-card scroll-mt-28 ${isEven ? 'lg:bg-white/70' : ''}`}
+      className={`content-card scroll-mt-28 io-hidden ${visible ? 'io-visible' : ''} ${isEven ? 'lg:bg-white/70' : ''}`}
     >
       <div className={`grid lg:grid-cols-2 ${isEven ? 'lg:[&>div:first-child]:order-2' : ''}`}>
-        <div className="relative aspect-[4/3] bg-stone-100 lg:aspect-auto">
+        <div className="relative aspect-[4/3] bg-stone-100 lg:aspect-auto overflow-hidden">
           <ProgressiveImage
             src={imageUrl}
             alt={`${item.course}: ${item.description}`}
@@ -47,7 +50,9 @@ export default function CourseItem({
             </p>
             <p className="flex items-start gap-2">
               <MdLocalBar className={`mt-1 h-4 w-4 shrink-0 ${accent.text}`} />
-              <span className="leading-6">{linkifyWineText(item.wine_pairing, wineLinkContext)}</span>
+              <span className={`leading-6 rounded-md bg-stone-50 px-2 py-0.5 ${accent.text}`}>
+                {linkifyWineText(item.wine_pairing, wineLinkContext)}
+              </span>
             </p>
           </div>
           <Link

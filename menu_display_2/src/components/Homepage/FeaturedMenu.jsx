@@ -1,20 +1,30 @@
 /* eslint-disable react/prop-types */
+import { Link } from 'react-router-dom';
 import ProgressiveImage from '../ProgressiveImage';
 
 export default function FeaturedMenu({ featuredMenu, featuredZone, featuredImageUrl }) {
   if (!featuredMenu || !featuredImageUrl) return null;
 
   return (
-    <article className={`soft-panel overflow-hidden ${featuredZone?.accent.border ?? ''}`}>
-      <div className={`relative aspect-[4/3] bg-gradient-to-br ${featuredZone?.accent.wash ?? 'bg-white/80'} from-white to-stone-100`}>
+    <Link
+      to={`/menu/0`}
+      className="group soft-panel overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-editorial"
+      style={{ borderColor: featuredZone?.accent.border ? undefined : undefined }}
+    >
+      <div className={`relative aspect-[4/3] bg-gradient-to-br ${featuredZone?.accent.wash ?? 'bg-white/80'} from-white to-stone-100 overflow-hidden`}>
         <ProgressiveImage
           src={featuredImageUrl}
           alt={`${featuredMenu.restaurant_name} dining room`}
           loading="eager"
           className="h-full w-full"
-          imageClassName="h-full w-full object-cover"
+          imageClassName="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
         <div className={`absolute inset-0 bg-gradient-to-br ${featuredZone?.accent.glow ?? 'from-stone-200/30 via-transparent to-transparent'} opacity-50`} />
+
+        {/* Hover arrow indicator */}
+        <div className="absolute bottom-4 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-ink opacity-0 shadow-md transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 -translate-x-2">
+          <span className="text-lg">→</span>
+        </div>
       </div>
       <div className="p-5">
         <div className="flex flex-wrap gap-2">
@@ -40,6 +50,6 @@ export default function FeaturedMenu({ featuredMenu, featuredZone, featuredImage
           </div>
         </div>
       </div>
-    </article>
+    </Link>
   );
 }

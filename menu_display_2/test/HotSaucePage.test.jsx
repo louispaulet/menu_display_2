@@ -33,6 +33,7 @@ describe('HotSaucePage', () => {
     );
     
     expect(screen.getByText('Fire Sauce')).toBeInTheDocument();
-    expect(screen.getByText('Artisanal hot sauces with a chef’s point of view.')).toBeInTheDocument();
+    // Using regex to match the title text to avoid quote/entity issues
+    expect(screen.getByText(/Artisanal hot sauces/)).toBeInTheDocument();
   });
 });

@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import BackToTopButton from './components/BackToTopButton';
+import ScrollProgressBar from './components/ScrollProgressBar';
 
 const Homepage = lazy(() => import('./pages/Homepage'));
 const About = lazy(() => import('./pages/About'));
@@ -18,10 +19,21 @@ const MenuStudio = lazy(() => import('./pages/MenuStudio'));
 
 function PageFallback() {
   return (
-    <div className="page-shell">
-      <div className="mx-auto max-w-3xl soft-panel p-8 text-center">
-        <p className="page-kicker">Exquisite Menus</p>
-        <p className="mt-3 text-base text-stone-600">Setting the table...</p>
+    <div className="page-shell animate-fade-in">
+      <div className="mx-auto max-w-3xl space-y-4 p-8">
+        <div className="skeleton h-4 w-32" />
+        <div className="skeleton h-10 w-3/4" />
+        <div className="skeleton h-5 w-full max-w-md" />
+        <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {[1, 2, 3].map((i) => (
+            <div key={i} className="space-y-3 rounded-lg border border-stone-200/60 bg-white/60 p-5">
+              <div className="skeleton aspect-[4/3] w-full rounded-md" />
+              <div className="skeleton h-4 w-24" />
+              <div className="skeleton h-6 w-3/4" />
+              <div className="skeleton h-4 w-1/2" />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -30,6 +42,7 @@ function PageFallback() {
 function App() {
   return (
     <div className="flex flex-col min-h-screen">
+      <ScrollProgressBar />
       <Header />
       <main className="flex-grow">
         <Suspense fallback={<PageFallback />}>
