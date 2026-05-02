@@ -14,7 +14,7 @@ export default function HotSauceStats({ sauce }) {
         </p>
         <p className="flex items-center gap-2 text-sm font-semibold">
           <GiFireBottle className="h-4 w-4 text-rose-600" />
-          {sauce.scoville_units.toLocaleString()} SHU
+          {sauce.scoville_units.toLocaleString('en-US')} SHU
         </p>
         <p className="flex items-center gap-2 text-sm font-semibold">
           <FaDollarSign className="h-4 w-4 text-rose-600" />

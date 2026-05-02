@@ -33,3 +33,11 @@ window.ResizeObserver = class ResizeObserver {
   unobserve = vi.fn();
   disconnect = vi.fn();
 };
+
+// Mock fetch
+globalThis.fetch = vi.fn(() =>
+  Promise.resolve({
+    ok: true,
+    json: () => Promise.resolve({ wines: [], metadata: { count: 0, description: '' } }),
+  })
+);
